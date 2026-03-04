@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Music on My New Hugo Project</title>
+    <link>http://localhost:1313/tags/music/</link>
+    <description>Recent content in Music on My New Hugo Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/music/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>music gestation</title>
+      <link>http://localhost:1313/posts/20241217/</link>
+      <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/20241217/</guid>
+      <description>&lt;h1 id=&#34;the-basic-idea&#34;&gt;the basic idea&lt;a class=&#34;anchor&#34; href=&#34;#the-basic-idea&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;We think in language. True, we can experience our senses mentally, e.g., when we &amp;ldquo;see images&amp;rdquo; or &amp;ldquo;hear sounds&amp;rdquo; in our mind, but each of these mental concepts can be thought of as symbols, codifying their own language. In short, words and symbols form the fundamental basis for all our thoughts, and by extension, they shape the way we perceive our environment. Again, we think in language. This sentence is not a difficult pill to swallow. But, what about the claim &amp;ldquo;we feel in language&amp;rdquo;? This is a strange sentence, and it seems a bit disquieting when we say it. Sure, we can &lt;em&gt;attempt&lt;/em&gt; to express our feelings through language, but the inadequacy of the phrase suggests we can feel things which cannot be expressed by language. So, we ask&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>reinforcement learning and ethics</title>
+      <link>http://localhost:1313/posts/20201220/</link>
+      <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/20201220/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;In the short film &lt;em&gt;Perfectly Natural&lt;/em&gt;, we see a young couple, their new baby, and a simulated reality where the baby interacts with her artificially programmed parents. Over the course of this film’s fourteen minutes, we see a familiar thread of theoretical interactions between humans and their artificially intelligent counterparts. First, there is an apparent excitement from experiencing something new and fantastic, then a series of routine correspondence, and finally a hint of mortal obsoletion. Now, if we replace the human parents in this film with humans in the real world, and the simulated reality with colloquial “artificial intelligence”, these three interactions are not a far cry from what we have observed since the idea of AI was born. That is, the human creates some thing new and fantastic, exploits the utility of said thing via regular correspondence (or use), and is potentially overtaken by the same. What does this say about our place in the evolution of “thinking machines,” and what are some ethical concerns therein?&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

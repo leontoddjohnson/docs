@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="data visualization design, analysis, and evaluation# This class is meant to give students practical experience with data visualization tools that they will likely use in future jobs.
+[Link to course webpage in progress as IU migrates its online assets to an updated platform.]
+tools# Tool Note Plotly / Dash This is one of the most common interactive data visualization tools for Python, and in my opinion, it offers the best mixture of robustness, flexibility, and (coding) accessibility. Google Colab In this class, students submit their weekly visualizations in Google Colab. It allows them to render their Dash apps, and it makes it easier for us to evaluate. Tableau (Public) Students need experience with this tool, so of course we include it in the curriculum. Render and GitHub (optional) For those students with more coding experience, they can publicly host their final interactive data visualization on Render. ">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/teaching/courses/h517/">
+  <meta property="og:site_name" content="My New Hugo Project">
+  <meta property="og:title" content="data vis">
+  <meta property="og:description" content="data visualization design, analysis, and evaluation# This class is meant to give students practical experience with data visualization tools that they will likely use in future jobs.
+[Link to course webpage in progress as IU migrates its online assets to an updated platform.]
+tools# Tool Note Plotly / Dash This is one of the most common interactive data visualization tools for Python, and in my opinion, it offers the best mixture of robustness, flexibility, and (coding) accessibility. Google Colab In this class, students submit their weekly visualizations in Google Colab. It allows them to render their Dash apps, and it makes it easier for us to evaluate. Tableau (Public) Students need experience with this tool, so of course we include it in the curriculum. Render and GitHub (optional) For those students with more coding experience, they can publicly host their final interactive data visualization on Render.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="docs">
+
+
+  <meta itemprop="name" content="data vis">
+  <meta itemprop="description" content="data visualization design, analysis, and evaluation# This class is meant to give students practical experience with data visualization tools that they will likely use in future jobs.
+[Link to course webpage in progress as IU migrates its online assets to an updated platform.]
+tools# Tool Note Plotly / Dash This is one of the most common interactive data visualization tools for Python, and in my opinion, it offers the best mixture of robustness, flexibility, and (coding) accessibility. Google Colab In this class, students submit their weekly visualizations in Google Colab. It allows them to render their Dash apps, and it makes it easier for us to evaluate. Tableau (Public) Students need experience with this tool, so of course we include it in the curriculum. Render and GitHub (optional) For those students with more coding experience, they can publicly host their final interactive data visualization on Render.">
+  <meta itemprop="wordCount" content="146">
+
+<title>data vis | My New Hugo Project</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/teaching/courses/h517/">
+<link rel="stylesheet" href="/book.min.cc2c524ed250aac81b23d1f4af87344917b325208841feca0968fe450f570575.css" integrity="sha256-zCxSTtJQqsgbI9H0r4c0SRezJSCIQf7KCWj&#43;RQ9XBXU=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.5402e47af5d42550b31e255556496f54892a614c81435e57978d31bcb3ad98e8.js" integrity="sha256-VALkevXUJVCzHiVVVklvVIkqYUyBQ15Xl40xvLOtmOg=" crossorigin="anonymous"></script>
+
+
+
+  
+</head>
+<body dir="ltr" class="book-kind-page book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My New Hugo Project</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/teaching/" class="">
+      teaching</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/philosophy/" class="">
+      philosophy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-033e8ad9e3ec129de3841067534968a8" class="toggle" checked />
+    <label for="section-033e8ad9e3ec129de3841067534968a8" class="flex">
+      <a href="/docs/teaching/courses/" class="">
+        courses</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/courses/h501/" class="">
+      python</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/courses/h510/" class="">
+      stats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/courses/h517/" class="active">
+      data vis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/courses/h611/" class="">
+      math</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0a79b16f28754ae72bab9db4dd21f8ef" class="toggle"  />
+    <label for="section-0a79b16f28754ae72bab9db4dd21f8ef" class="flex">
+      <a href="/docs/teaching/methods/" class="">
+        methods</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/methods/metacognition/" class="">
+      metacognition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/methods/assignments/" class="">
+      assignments</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/methods/ungrading/" class="">
+      ungrading</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/coding/" class="">
+      coding</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/coding/moments/" class="">
+      moments</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/coding/movements/" class="">
+      movements</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/coding/swons/" class="">
+      swons</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/posts/" title="journal">journal</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>data vis</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tools">tools</a></li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="data-visualization-design-analysis-and-evaluation">data visualization design, analysis, and evaluation<a class="anchor" href="#data-visualization-design-analysis-and-evaluation">#</a></h1>
+<p>This class is meant to give students <em>practical</em> experience with data visualization tools that they will likely use in future jobs.</p>
+<p>[Link to course webpage in progress as IU migrates its online assets to an updated platform.]</p>
+<h2 id="tools">tools<a class="anchor" href="#tools">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>Tool</th>
+          <th>Note</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><a href="https://dash.plotly.com/">Plotly / Dash</a></td>
+          <td>This is one of the most common interactive data visualization tools for Python, and in my opinion, it offers the best mixture of robustness, flexibility, and (coding) accessibility.</td>
+      </tr>
+      <tr>
+          <td><a href="https://colab.research.google.com/">Google Colab</a></td>
+          <td>In this class, students submit their weekly visualizations in Google Colab. It allows them to render their Dash apps, and it makes it easier for us to evaluate.</td>
+      </tr>
+      <tr>
+          <td><a href="https://public.tableau.com/app">Tableau</a> (Public)</td>
+          <td>Students need experience with this tool, so of course we include it in the curriculum.</td>
+      </tr>
+      <tr>
+          <td><a href="https://render.com/">Render</a> and GitHub (optional)</td>
+          <td>For those students with more coding experience, they can publicly host their final interactive data visualization on Render.</td>
+      </tr>
+  </tbody>
+</table>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/teaching/courses/h510/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>stats</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/teaching/courses/h611/" class="flex align-center">
+        <span>math</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#tools">tools</a></li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

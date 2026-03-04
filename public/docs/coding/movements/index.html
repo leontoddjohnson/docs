@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="movements# movements is a sequencer of samples from audio files or of slices from recorded input.
+requirements
+grid (128) audio files or sound source in maiden …
+;install https://github.com/leontoddjohnson/movementsoverview# This script was designed with flexible sequencing and independent track adjustment in mind. movements consists of 11 individual tracks, each with their own separate clock. Each track has its own set of parameters which can be individually adjusted, without affecting the other tracks. Also, each track allows you to sequence up to 128 steps.
+">
+<meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
+<meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/coding/movements/">
+  <meta property="og:site_name" content="My New Hugo Project">
+  <meta property="og:title" content="movements">
+  <meta property="og:description" content="movements# movements is a sequencer of samples from audio files or of slices from recorded input.
+requirements
+grid (128) audio files or sound source in maiden …
+;install https://github.com/leontoddjohnson/movementsoverview# This script was designed with flexible sequencing and independent track adjustment in mind. movements consists of 11 individual tracks, each with their own separate clock. Each track has its own set of parameters which can be individually adjusted, without affecting the other tracks. Also, each track allows you to sequence up to 128 steps.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
+
+
+  <meta itemprop="name" content="movements">
+  <meta itemprop="description" content="movements# movements is a sequencer of samples from audio files or of slices from recorded input.
+requirements
+grid (128) audio files or sound source in maiden …
+;install https://github.com/leontoddjohnson/movementsoverview# This script was designed with flexible sequencing and independent track adjustment in mind. movements consists of 11 individual tracks, each with their own separate clock. Each track has its own set of parameters which can be individually adjusted, without affecting the other tracks. Also, each track allows you to sequence up to 128 steps.">
+  <meta itemprop="wordCount" content="7393">
+
+<title>movements | My New Hugo Project</title>
+<link rel="icon" href="/favicon.png" >
+<link rel="manifest" href="/manifest.json">
+<link rel="canonical" href="http://localhost:1313/docs/coding/movements/">
+<link rel="stylesheet" href="/book.min.cc2c524ed250aac81b23d1f4af87344917b325208841feca0968fe450f570575.css" integrity="sha256-zCxSTtJQqsgbI9H0r4c0SRezJSCIQf7KCWj&#43;RQ9XBXU=" crossorigin="anonymous">
+
+
+  <script defer src="/fuse.min.js"></script>
+  <script defer src="/en.search.min.5402e47af5d42550b31e255556496f54892a614c81435e57978d31bcb3ad98e8.js" integrity="sha256-VALkevXUJVCzHiVVVklvVIkqYUyBQ15Xl40xvLOtmOg=" crossorigin="anonymous"></script>
+
+
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/coding/movements/index.xml" title="My New Hugo Project" />
+
+  
+</head>
+<body dir="ltr" class="book-kind-section book-type-docs">
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  <input type="checkbox" class="hidden toggle" id="toc-control" />
+  <main class="container flex">
+    
+<aside class="book-menu">
+  <div class="book-menu-content">
+    
+  <nav>
+<h2 class="book-brand">
+  <a class="flex align-center" href="/"><span>My New Hugo Project</span>
+  </a>
+</h2>
+
+
+<div class="book-search hidden">
+  <input id="book-search-input" type="text" 
+    placeholder="Search"
+    aria-label="Search"
+    maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+<script>document.querySelector(".book-search").classList.remove("hidden")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <ul>
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/teaching/" class="">
+      teaching</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/philosophy/" class="">
+      philosophy</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-033e8ad9e3ec129de3841067534968a8" class="toggle"  />
+    <label for="section-033e8ad9e3ec129de3841067534968a8" class="flex">
+      <a href="/docs/teaching/courses/" class="">
+        courses</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/courses/h501/" class="">
+      python</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/courses/h510/" class="">
+      stats</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/courses/h517/" class="">
+      data vis</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/courses/h611/" class="">
+      math</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <input type="checkbox" id="section-0a79b16f28754ae72bab9db4dd21f8ef" class="toggle"  />
+    <label for="section-0a79b16f28754ae72bab9db4dd21f8ef" class="flex">
+      <a href="/docs/teaching/methods/" class="">
+        methods</a>
+      <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
+    </label>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/methods/metacognition/" class="">
+      metacognition</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/methods/assignments/" class="">
+      assignments</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/teaching/methods/ungrading/" class="">
+      ungrading</a>
+  
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+  
+
+  
+    <a href="/docs/coding/" class="">
+      coding</a>
+  
+
+          
+  <ul>
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/coding/moments/" class="">
+      moments</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/coding/movements/" class="active">
+      movements</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+  
+
+  
+    <a href="/docs/coding/swons/" class="">
+      swons</a>
+  
+
+          
+  <ul>
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+        </li>
+      
+    
+  </ul>
+
+
+
+
+
+
+
+
+
+
+<ul><li><a href="/posts/" title="journal">journal</a></li></ul>
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var e=document.querySelector("aside .book-menu-content");addEventListener("beforeunload",function(){localStorage.setItem("menu.scrollTop",e.scrollTop)}),e.scrollTop=localStorage.getItem("menu.scrollTop")})()</script>
+
+
+
+  </div>
+</aside>
+ 
+
+    <div class="book-page">
+      <header class="book-header hidden">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/icons/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <h3>movements</h3>
+
+  <label for="toc-control">
+    
+    <img src="/icons/toc.svg" class="book-icon" alt="Table of Contents" />
+    
+  </label>
+</div>
+
+
+  
+  <aside class="hidden">
+    
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">overview</a></li>
+    <li><a href="#tldr-basic-setup">tldr; basic setup</a>
+      <ul>
+        <li><a href="#sample">sample</a></li>
+        <li><a href="#tape">tape</a></li>
+      </ul>
+    </li>
+    <li><a href="#sample-1">sample</a></li>
+    <li><a href="#tape-1">tape</a></li>
+    <li><a href="#delay">delay</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#navigation">navigation</a></li>
+    <li><a href="#sample-pages">sample pages</a>
+      <ul>
+        <li><a href="#sample-config">sample config</a></li>
+        <li><a href="#sample-sequence">sample sequence</a></li>
+        <li><a href="#sample-levels">sample levels</a></li>
+        <li><a href="#sample-time">sample time</a></li>
+      </ul>
+    </li>
+    <li><a href="#tape-pages">tape pages</a>
+      <ul>
+        <li><a href="#tape-config">tape config</a></li>
+        <li><a href="#tape-sequence">tape sequence</a></li>
+        <li><a href="#tape-levels">tape levels</a></li>
+        <li><a href="#tape-time">tape time</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#navigation-1">navigation</a></li>
+    <li><a href="#sample-displays">sample displays</a>
+      <ul>
+        <li><a href="#track-pool">track pool</a></li>
+        <li><a href="#track-params">track params</a></li>
+        <li><a href="#sample-waveform">sample waveform</a></li>
+        <li><a href="#sample-envelope">sample envelope</a></li>
+      </ul>
+    </li>
+    <li><a href="#tape-displays">tape displays</a>
+      <ul>
+        <li><a href="#track-pool-1">track pool</a></li>
+        <li><a href="#track-params-1">track params</a></li>
+        <li><a href="#track-waveform">track waveform</a></li>
+      </ul>
+    </li>
+    <li><a href="#delay-displays">delay displays</a>
+      <ul>
+        <li><a href="#sample-delay">sample delay</a></li>
+        <li><a href="#tape-delay">tape delay</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#squelching">squelching</a>
+      <ul>
+        <li><a href="#unidirectional">unidirectional</a></li>
+        <li><a href="#bidirectional">bidirectional</a></li>
+      </ul>
+    </li>
+    <li><a href="#amplitude">amplitude</a></li>
+    <li><a href="#panning">panning</a></li>
+    <li><a href="#filter">filter</a></li>
+    <li><a href="#delay-1">delay</a></li>
+    <li><a href="#probability">probability</a></li>
+    <li><a href="#scale">scale</a></li>
+    <li><a href="#interval">interval</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#a-few-notes-on-this">a few notes on this</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+  </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown book-article"><h1 id="movements">movements<a class="anchor" href="#movements">#</a></h1>
+<p>movements is a sequencer of samples from audio files or of slices from recorded input.</p>
+<p><strong>requirements</strong></p>
+<ul>
+<li>grid (128)</li>
+<li>audio files <em>or</em> sound source</li>
+</ul>
+<p><strong>in maiden &hellip;</strong></p>
+<pre tabindex="0"><code>;install https://github.com/leontoddjohnson/movements</code></pre><h2 id="overview">overview<a class="anchor" href="#overview">#</a></h2>
+<p>This script was designed with flexible sequencing and independent track adjustment in mind. movements consists of 11 individual tracks, each with their own separate clock. Each track has its own set of parameters which can be individually adjusted, without affecting the other tracks. Also, each track allows you to sequence up to 128 steps.</p>
+<p>The 11 tracks are divided into two different &ldquo;functionalities&rdquo;:</p>
+<ul>
+<li><strong>sample</strong> (tracks 1-7): pre-loaded audio files</li>
+<li><strong>tape</strong> (track 8-11): slices from recorded input (or loaded files)</li>
+</ul>
+<p>The idea is for all tracks (regardless of functionality) to share <em>roughly</em> the same attributes. I.e., if you can do it with <strong>sample</strong>, you can do it with <strong>tape</strong>, and vice versa. Thus, both share the same parameters, with a few caveats.</p>
+<!-- raw HTML omitted -->
+<p><strong>vocabulary</strong></p>
+<p>Just a few terms that might otherwise be easily confused:</p>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">term</th>
+          <th style="text-align: left">definition</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">page</td>
+          <td style="text-align: left">a <em>grid</em> page, navigable by the 6 nav keys on the lower right corner of the grid</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">display</td>
+          <td style="text-align: left">a display on the norns <em>screen</em></td>
+      </tr>
+      <tr>
+          <td style="text-align: center">transport</td>
+          <td style="text-align: left">the mechanism moving a sequence from step to step</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>pattern</code></td>
+          <td style="text-align: left">a collection of steps for triggering or defining parameters</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>bar</code></td>
+          <td style="text-align: left">one of eight partitions of 16 steps</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>sample</code></td>
+          <td style="text-align: left">an audio file loaded into a <strong>sample</strong> bank</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"><code>slice</code></td>
+          <td style="text-align: left">a small section of the <strong>tape</strong> partition</td>
+      </tr>
+  </tbody>
+</table>
+<p><strong>notation</strong></p>
+<ul>
+<li><strong>bold</strong> text indicates (1) a functionality (either sample or tape), or (2) a user interface item (e.g., a key or encoder on your norns, a pad on the grid, or a specific page or display).</li>
+<li><em>italics</em> indicates emphasis or some special term.</li>
+<li><code>monospace</code> indicates some <em>particular</em> value (or collection of values) which could be selected or adjusted.</li>
+</ul>
+<!-- raw HTML omitted -->
+<h2 id="tldr-basic-setup">tldr; basic setup<a class="anchor" href="#tldr-basic-setup">#</a></h2>
+<h3 id="sample">sample<a class="anchor" href="#sample">#</a></h3>
+<p><em>Refer to the grid navigation bar and the <strong>sample config</strong> page, below.</em></p>
+<ol>
+<li>Load some samples from a folder into a bank with <strong>K2</strong> on the <strong>track pool</strong> display.</li>
+<li>On the <strong>sample config</strong> (grid) page, load samples onto the selected track <em>cue</em> by holding <strong>ALT</strong> + the sample pad.</li>
+<li>Once you have samples you&rsquo;d like to load onto a track, hold <strong>ALT</strong> + the track pad. When this track&rsquo;s sequence is played, it will cycle through these samples.</li>
+<li>Add some steps on the <strong>sample seq</strong> page. Maybe adjust some levels on the <strong>sample levels</strong> page (select the <strong>S1</strong> pad twice).</li>
+<li>Play with the clock time for each track on the <strong>sample time</strong> page, and control track levels on the <strong>sample config</strong> page or the <strong>sample params</strong> display.</li>
+<li>Navigate to the <strong>sample delay</strong> display section with <strong>K1 + E1</strong>, and adjust the <strong>sample</strong> delay on the corresponding display.</li>
+</ol>
+<h3 id="tape">tape<a class="anchor" href="#tape">#</a></h3>
+<p><em>Refer to the grid navigation bar and the <strong>tape config</strong> page, below.</em></p>
+<ol>
+<li>Choose a buffer with load some audio into a partition:
+<ul>
+<li>Option 1: Load a file at the current slice with <strong>K2</strong> on the <strong>slice pool</strong> display.</li>
+<li>Option 2: Record into the current slice with <strong>K2</strong> on the <strong>tape waveform</strong> display.</li>
+</ul>
+</li>
+<li>On the <strong>tape config</strong> (grid) page, load slices onto the selected track <em>cue</em> by holding <strong>ALT</strong> + the slice pad.</li>
+<li>Once you have slices you&rsquo;d like to load onto a track, hold <strong>ALT</strong> + the track pad. When this track&rsquo;s sequence is played, it will cycle through these slices.</li>
+<li>Add some steps on the <strong>tape seq</strong> page. Maybe adjust some levels on the <strong>tape levels</strong> page (select the <strong>T1</strong> pad twice).</li>
+<li>Play with the clock time for each track on the corresponding <strong>tape time</strong> page, and control track levels on the <strong>tape config</strong> page or the <strong>tape params</strong> display.</li>
+<li>Navigate to the <strong>tape delay</strong> display section with <strong>K1 + E1</strong>, and adjust the <strong>tape</strong> delay on the corresponding display.</li>
+</ol>
+<h2 id="sample-1">sample<a class="anchor" href="#sample-1">#</a></h2>
+<p>The <strong>sample</strong> functionality is meant for loading, playing, and sequencing audio files from a <code>bank</code>. There are 4 banks of up to 32 possible samples each, and there are 7 sample tracks with independent clocks. The <strong>sample</strong> functionality in this script uses an adaptation of the <a href="https://github.com/markwheeler/timber/tree/master">Timber</a> engine.</p>
+<ul>
+<li>Each track has a <code>track_pool</code> of samples that the sequencer will rotate through. You can adjust <em>how</em> (forward, backward, or random) with the <code>play_order</code> parameter in the <strong>PARAMS</strong> menu.</li>
+<li>Once a sample is assigned to a <code>track_pool</code>, it cannot be assigned to any other track. So, you cannot have a sample &ldquo;shared&rdquo; between tracks.</li>
+<li>A <code>track_pool</code> can only contain samples from <em>one</em> bank. That said, each track can have a separate <code>track_pool_cue</code> for each bank, and any of these can replace the <code>track_pool</code> on the fly using the grid interface (see the <a href="#grid">grid</a> section below, as well as the <a href="#ui">ui</a> section).</li>
+<li><a href="https://llllllll.co/t/timber/21407">According to the Timber developer</a>, Timber is intended to play up to 7 voices at a time; this is why the <strong>sample</strong> functionality is limited to seven tracks.</li>
+<li>When playing a sequence, movements will stop playing the &ldquo;current&rdquo; step before starting to play the next step.</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>If an audio file is <em>over</em> 5 seconds stereo or over 10 seconds mono (at 48kHz), then Timber will stream it. Otherwise, shorter files will be loaded into the Timber buffer. Shorter audio files are more versatile in Timber, as streaming samples cannot be played backward, and they do not have the <code>Infinite Loop</code> option.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>For the best playback performance, <strong>use audio files with a sample rate of 48kHz</strong>. Anything less than that may cause the playback to be warped a bit &hellip;</p>
+<!-- raw HTML omitted -->
+<h2 id="tape-1">tape<a class="anchor" href="#tape-1">#</a></h2>
+<p>The <strong>tape</strong> functionality is meant for playing, recording, and sequencing slices from a <code>partition</code> of the stereo <a href="https://monome.org/docs/norns/softcut/">softcut</a> buffer(s). There are <em>four</em> such partitions: each one is 80 seconds long<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and each partition is divided into 32 slices. By default, these slices are evenly distributed, so they start at 2.5 seconds long, but the user can adjust the start/stop positions for each slice. There are 4 tracks, each one with access to the four partitions.</p>
+<ul>
+<li>The <code>track_pool</code> and <code>track_pool_cue</code> for <strong>tape</strong> behave the same as they do for the <strong>sample</strong> functionality, above. Just swap out the word &ldquo;sample&rdquo; with &ldquo;slice&rdquo;, and &ldquo;bank&rdquo; with &ldquo;partition&rdquo;.</li>
+<li>Each <code>partition</code> consists of two <code>buffer</code>s, which can be thought of as either a <em>single</em> stereo buffer or <em>two</em> separate mono buffers to swap between. You can assign tracks to record/play as mono from either buffer, or as stereo from both.</li>
+<li>A recording can only be made to a <code>slice</code>, which can only exist within a <code>partition</code>. (Of course, the beginning and end of any slice can be adjusted, within the bounds of the partition.)</li>
+<li><strong>tape</strong> can record from the Norns input, or the <strong>sample</strong> functionality, or both. You can set this by adjusting the <code>tape_audio_in</code> parameter.</li>
+<li>You can record to a slice in two ways:
+<ul>
+<li>&ldquo;on demand&rdquo; using the <strong>slice waveform</strong> display</li>
+<li>&ldquo;in time&rdquo; with the sequence using the <strong>tape seq</strong> grid page.</li>
+</ul>
+</li>
+</ul>
+<h2 id="delay">delay<a class="anchor" href="#delay">#</a></h2>
+<p>Both <strong>sample</strong> and <strong>tape</strong> have their own independent delay functionalities. The <strong>sample</strong> side uses a SuperCollider delay bus in the Timber engine, and <strong>tape</strong> uses softcut. Both delay times are synced to the internal <strong>CLOCK</strong> using the same <code>clock_fraction</code> options as the <strong>sequence</strong>r (see below).</p>
+<!-- raw HTML omitted -->
+<p>When using the <strong>tape delay</strong>, you should keep the internal tempo <em>over</em> 12 BPM; so 13 BPM at a minimum.<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<!-- raw HTML omitted -->
+<h1 id="grid">grid<a class="anchor" href="#grid">#</a></h1>
+<h2 id="navigation">navigation<a class="anchor" href="#navigation">#</a></h2>
+<p>For <em>both</em> the <strong>sample</strong> and <strong>tape</strong> functionalities, there are four grid pages:</p>
+<ul>
+<li>sequence</li>
+<li>levels</li>
+<li>time</li>
+<li>config</li>
+</ul>
+<p>For the most part, these pages are the same for both functionalities, with small deviations for <strong>tape</strong>. <em>All</em> grid pages will share the same navigation bar on the lower right (with <strong>mode</strong> and <strong>ALT</strong> pads included).</p>
+<figure class="center-image-75"><img src="/docs/coding/movements/main_grid.svg">
+</figure>
+
+<p>Here, <strong>S</strong> corresponds to <strong>sample</strong> and <strong>T</strong> corresponds to <strong>tape</strong>. For each of these, you have the following:</p>
+<ul>
+<li><strong>_1:</strong> toggle between the <strong>sequence</strong> and <strong>levels</strong> page</li>
+<li><strong>_2:</strong> the <strong>time</strong> page</li>
+<li><strong>_3:</strong> the <strong>config</strong> page</li>
+</ul>
+<p>The <strong>mode</strong> pad toggles between the following modes:</p>
+<ul>
+<li><strong>PLAY MODE</strong> (bright)</li>
+<li><strong>FOCUS MODE</strong> (not bright)</li>
+</ul>
+<p>The <strong>mode</strong> and <strong>ALT</strong> pads typically correspond to different functions within <strong>sample</strong> or <strong>tape</strong>.</p>
+<!-- raw HTML omitted -->
+<p>When you switch between <strong>sample</strong> and <strong>tape</strong> functionalities on the grid, the display will also update in turn (and vice versa).</p>
+<!-- raw HTML omitted -->
+<h2 id="sample-pages">sample pages<a class="anchor" href="#sample-pages">#</a></h2>
+<h3 id="sample-config">sample config<a class="anchor" href="#sample-config">#</a></h3>
+<p>For both <strong>sample</strong> and <strong>tape</strong>, the best place to start is often with the <strong>config</strong> page.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/sample_config_1.svg">
+</figure>
+
+<h4 id="track-parameters">track parameters<a class="anchor" href="#track-parameters">#</a></h4>
+<ul>
+<li>Each row in the <strong>track param adjustment</strong> region corresponds to a track. Making adjustments here will affect a parameter for the whole track. Select a parameter to adjust/focus on with the <strong>track param selection</strong>. For more on these, see the <a href="#parameters">parameters</a> section, below.
+<ul>
+<li>The focused parameter will be shared across functionalities and pages.</li>
+</ul>
+</li>
+<li>Hold <strong>ALT</strong> and select the pad in the <em>seventh</em> column (between the highest parameter value and the track selection) <em>for the current track</em> to randomize the current parameter pattern for that track-bank. <em>Note: this will only work for the currently selected track.</em></li>
+</ul>
+<h4 id="track-selection">track selection<a class="anchor" href="#track-selection">#</a></h4>
+<ul>
+<li>Select a track in the <strong>track selection</strong> region. This really just sets the display and grid to &ldquo;focus&rdquo; on that track.</li>
+</ul>
+<h4 id="bank">bank<a class="anchor" href="#bank">#</a></h4>
+<ul>
+<li>Select samples in the <strong>bank</strong> region. The currently selected pad will light up when you hold the currently selected <code>bank</code> pad in the <strong>bank selection</strong> region.</li>
+<li>There are 4+1 levels of brightness here:
+<ol>
+<li>(Only when you hold the current <code>bank</code> pad) The selected sample will be brightest.</li>
+<li>When a sample is part of the current <code>track_pool_cue</code> (not yet loaded), it will be slightly less bright.</li>
+<li>When it is loaded into the current <code>track_pool</code>, it will be slightly less bright.</li>
+<li>When a sample is loaded into some other track, it will be slightly less bright.</li>
+<li>Lastly, if there is an audio file loaded into that sample, it will be most dim.</li>
+</ol>
+</li>
+<li>If you hold the pad for a sample that is loaded into another track, that track pad will light up in the <strong>track selection</strong> region. In these cases, that sample is &ldquo;used up&rdquo;, and can&rsquo;t be assigned elsewhere until it&rsquo;s relieved from the <code>track_pool</code> with <strong>ALT</strong> + <code>sample</code> <strong>pad</strong>.</li>
+<li>You can dictate the row/column for audio files in a bank by using a <code>&lt;row&gt;&lt;col&gt;*...</code> naming convention, where <code>*</code> is <code>&quot; &quot;</code>, <code>&quot;-&quot;</code> or <code>&quot;_&quot;</code>. For example, the file with the name <em>23_sound.wav</em> would be loaded into the second row and the third column.
+<ul>
+<li>Duplicate or invalid indices will be <em>overwritten</em> by the latest related filename.</li>
+<li>If you are NOT using &ldquo;row-column&rdquo; indexing and you are numbering files, use a 3-digit syntax <code>###_...</code>, or start <em>all files in the folder</em> with some character other than a 1, 2, 3, or 4.</li>
+<li>Folders with more than 32 files will stop loading at file #32.</li>
+</ul>
+</li>
+<li>In <strong>PLAY</strong> mode &hellip;
+<ul>
+<li>pushing a pad will play (or stop) the sample loaded into that pad.</li>
+<li>&ldquo;currently&rdquo; playing samples will be indicated with a bright pad.</li>
+</ul>
+</li>
+<li>Hold <strong>ALT</strong> + <code>a sample pad</code> to load a sample into the current <code>track_pool_cue</code>.</li>
+<li>When you&rsquo;re ready, load the cue into the <code>track_pool</code> with <strong>ALT</strong> + <code>the track selection</code>.
+<ul>
+<li>This will only work if you are already focused on the track to be loaded (i.e., you are pushing an already lit <code>track selection</code> pad).</li>
+</ul>
+</li>
+</ul>
+<h4 id="play-mode">play mode<a class="anchor" href="#play-mode">#</a></h4>
+<ul>
+<li>For a sample (or slice), the <strong>play mode</strong> is different from <strong>PLAY MODE</strong>. It represents the way a sample/slice will be played.</li>
+<li>For a selected <code>sample</code>, we have two sets of <strong>play mode</strong> options
+<ul>
+<li>Streaming Samples: <code>&quot;Loop&quot;  &quot;Loop&quot;  &quot;1-Shot&quot;  &quot;Gated&quot;</code> (defaults to <em>Gated</em>)</li>
+<li>Buffer Samples: <code>&quot;Loop&quot;  &quot;Inf. Loop&quot;  &quot;1-Shot&quot;  &quot;Gated&quot;</code> (defaults to <em>1-Shot</em>)</li>
+</ul>
+</li>
+<li>Hold <strong>ALT</strong> and select a play mode to apply that play mode to all samples/slices in the current <code>track_pool_cue</code>.</li>
+</ul>
+<h4 id="bank-selection">bank selection<a class="anchor" href="#bank-selection">#</a></h4>
+<ul>
+<li>Select one of the four banks here.</li>
+<li>If a <code>bank</code> has audio files loaded into it, it will be slightly brighter than the rest.</li>
+<li>Each bank has its own patterns (<strong>sample</strong> trigger patterns and parameter patterns). You can copy <em>all</em> pattern steps and parameter pattern values of the current <code>track</code> from one bank to another bank by holding <strong>ALT + the &ldquo;from&rdquo; bank + the &ldquo;to&rdquo; bank</strong>.
+<ul>
+<li>This only copies pattern steps, not sample selections.</li>
+<li>This will overwrite the pattern(s) on the &ldquo;to bank&rdquo;</li>
+</ul>
+</li>
+</ul>
+<h4 id="sample-range">sample range<a class="anchor" href="#sample-range">#</a></h4>
+<ul>
+<li>The <strong>sample range</strong> shows the range of the slice that is played. It makes more sense when seen in conjunction with the <strong>sample waveform</strong> display.</li>
+<li>Selecting a pad in this range dictates the <code>start</code> time for the playable range of the sample.</li>
+<li>Hold <strong>ALT</strong> while selecting a pad to choose the <code>end</code> time for the playable range.</li>
+</ul>
+<h3 id="sample-sequence">sample sequence<a class="anchor" href="#sample-sequence">#</a></h3>
+<p>The <strong>sample seq</strong> page is an interface for the transports for the 7 <strong>sample</strong> tracks.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/sample_seq.svg">
+</figure>
+
+<h4 id="track-rows">track rows<a class="anchor" href="#track-rows">#</a></h4>
+<ul>
+<li>The first 7 rows correspond to the 7 sample <code>track</code>s. When a transport is playing, movements will cycle through the samples loaded in the <code>track_pool</code> as long as a <code>step</code> is active.</li>
+<li>There are 4 brightness levels here:
+<ol>
+<li>The current <code>step</code> will be the brightest in a row.</li>
+<li>Slightly less bright are inactive/&ldquo;loaded&rdquo; steps. (Of course, unlit pads are &ldquo;skipped&rdquo;)</li>
+<li>Slightly less than that are pads to indicate an &ldquo;island&rdquo;. The transport in an island will only loop within that range until the island is removed.</li>
+<li>The dimmest pads indicate the selected row/selected <code>track</code>.</li>
+</ol>
+</li>
+<li>To select a track, hold <strong>ALT</strong> and push a pad in that row. The selected track spans across the 4 <strong>sample</strong> pages.</li>
+<li>To create an island, hold the first step of the island, and then the last step of the island.
+<ul>
+<li>To remove this, reselect the same bounds.</li>
+</ul>
+</li>
+<li>In <strong>PLAY MODE</strong>:
+<ul>
+<li>selecting a pad forces the transport to that step.</li>
+<li>hold <strong>ALT</strong> and a pad to force all <strong>sample</strong> transports to that step.</li>
+</ul>
+</li>
+</ul>
+<h4 id="pattern-bars">pattern bars<a class="anchor" href="#pattern-bars">#</a></h4>
+<ul>
+<li>The sequencer for each track is completely independent of the rest. It can have a different length and a different time between steps.</li>
+<li>Each sequence is a series of 1-8 pattern <code>bar</code>s, where a <code>bar</code> is 16 steps. If a pattern <code>bar</code> has a step loaded into it, then that bar <em>and the ones before it</em> contribute to the sequence. So, if I activate step 10 and step 36, then that track will have a sequence of length $3 \cdot 16 = 48$ steps.</li>
+<li>There are 3 brightness levels for the pattern bars:
+<ol>
+<li>The current <code>bar</code> is the brightest.</li>
+<li>If the current track transport is in a pattern bar, that bar will be slightly less bright.</li>
+<li>In <strong>FOCUS MODE</strong>, the dimmest pads have active steps between them for the selected track. In <strong>PLAY MODE</strong> the dimmest pads have active steps between them for at least one track.</li>
+</ol>
+</li>
+<li>In <strong>PLAY MODE</strong>, the page will &ldquo;follow&rdquo; the transport for the current track.</li>
+<li>You can copy a pattern (along with the parameter patterns) from one bar to another bar by holding <strong>ALT + the &ldquo;copy&rdquo; bar + the &ldquo;paste&rdquo; bar</strong>.</li>
+</ul>
+<h3 id="sample-levels">sample levels<a class="anchor" href="#sample-levels">#</a></h3>
+<p>Parameter levels for each <strong>sample</strong> step can be adjusted in the <strong>sample levels</strong> page.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/sample_levels.svg">
+</figure>
+
+<ul>
+<li>The top row shows the sequence for the selected track, and it can be adjusted in the same way as any row in the <strong>sample sequence</strong> page.</li>
+<li>When you add a new step to the sequence, the parameter value will default to the track value.</li>
+<li>The middle region allows for parameter adjustment for each step. More on parameter adjustment in the <a href="#parameters">parameter</a> section, below.</li>
+<li>The bottom navigation row remains the same as the rest of the grid pages.</li>
+<li>In <strong>PLAY MODE</strong>, the <strong>pattern bars</strong> becomes the <strong>track param selection</strong> region seen in the <a href="#sample-config">sample config</a> section above. In this mode, you can use that region to select the parameter to focus on.</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>Keep in mind, the <strong>levels</strong> page reflects <strong>relative</strong> values based on the track level. The &ldquo;final&rdquo; step value will depend on these levels and the <code>track</code> level. For more on this, see the <a href="#squelching">squelching</a> section.</p>
+<!-- raw HTML omitted -->
+<h3 id="sample-time">sample time<a class="anchor" href="#sample-time">#</a></h3>
+<p>Each track proceeds on its own independent transport. These transports move from one step to the next based on either (a) a fraction of a <em>beat</em> (from the tempo set in <strong>PARAMS/CLOCK</strong>), or (b) a fraction of a <em>second</em>. For <strong>sample</strong>, these <code>clock_fraction</code>s can be adjusted on the <strong>sample time</strong> page.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/sample_time.svg">
+</figure>
+
+<ul>
+<li>Each of the first 7 rows correspond to a <strong>sample</strong> track.</li>
+<li>The first column toggles between playing and not playing a track sequence.
+<ul>
+<li>Hold <strong>ALT</strong> and select a lit pad to <em>stop</em> all transports</li>
+<li>Hold <strong>ALT</strong> and select an unlit pad to <em>play</em> all transports</li>
+</ul>
+</li>
+<li>The second column dictates whether the sequence time is based on the beat or based on seconds.</li>
+<li>Columns 4-16 indicate the <code>clock_fraction</code>, or the fraction of a beat or second to exist between steps:
+<ul>
+<li><code>1/8, 1/7, 1/6, 1/5, 1/4, 1/3, 1/2, 1, 2, 3, 4, 5, 6</code></li>
+</ul>
+</li>
+<li>Hold one pad, and select another one in the same row, and you&rsquo;ll create a <code>clock_fraction_pool</code>. The time between steps will be <em>randomly</em> chosen from this range, for each step.
+<ul>
+<li>Select any other pad in the row to clear the pool.</li>
+</ul>
+</li>
+<li>The dimly highlighted column indicate &ldquo;compatible&rdquo; fractions. If all your <code>clock_fraction</code> selections are in one of these columns, you&rsquo;ll find the syncopation to be relatively agreeable.
+<ul>
+<li>The fractions <code>1/8, 1/4, 1/2, 1, 2, 4</code> are highlighted upon entering the page. These complement the typical $4/4$-type time.</li>
+<li>Hold <strong>ALT</strong>, and you&rsquo;ll find that the fractions <code>1/6, 1/3, 1, 3, 6</code> are highlighted. These complement a sort of $3/4$-type time.</li>
+</ul>
+</li>
+<li>In the bottom row, the 6th and 7th pads act as a metronome, flashing based on the last selected clock fraction. The time type of the last pressed clock fraction (<em>beat</em>s or <em>second</em>s) will reflect here as well.</li>
+</ul>
+<h4 id="play-triggers">play triggers<a class="anchor" href="#play-triggers">#</a></h4>
+<p><strong>track cue</strong></p>
+<p>Hold a pad in the <em>third</em> column to define track <code>i</code> as a &ldquo;play trigger&rdquo;, then select an <em>unlit</em> pad in the first column to assign the play trigger to track <code>j</code>. Track <code>j</code> will start at step 1 when track <code>i</code> reaches the end of its current pattern bar (i.e., they will sync up at the first step of a sequence bar). For this to work, track <code>i</code> (the trigger) must only have a <em>singular</em> <code>clock_fraction</code> (no clock range).</p>
+<p>If you hold a pad in the third column and select a <em>lit</em> pad <em>in the same row</em> (i.e., a playing track), then that track will STOP at the end of its current pattern bar.</p>
+<p><strong>bank cue</strong></p>
+<p>Hold a pad in the <em>third</em> column to define track <code>i</code> as a &ldquo;play trigger&rdquo;, then select one of the four pads in the bottom row (at the lower left) to assign the trigger to bank <code>j</code>. Once track <code>i</code> reaches the end of its current pattern bar, <em>all</em> tracks will switch to bank <code>j</code> and continue playing (even if there are no samples or patterns loaded on that bank).</p>
+<ul>
+<li>If you hold a pad in the third column, you&rsquo;ll be shown the tracks or bank triggered by that track.</li>
+<li>A track can trigger multiple other tracks.</li>
+<li>A track can only trigger <em>one</em> bank, and only one bank can be triggered at a time.</li>
+<li>Re-selecting any &ldquo;triggered&rdquo; track or bank (no need to hold anything) will undo the trigger.</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>Note: clock fractions and track-level parameters will remain the same when switching from bank to bank. You might need to get creative here: e.g., use the pattern bars to &ldquo;slow/speed up&rdquo; the time, use the parameter patterns to control parameters between banks.</p>
+<!-- raw HTML omitted -->
+<h2 id="tape-pages">tape pages<a class="anchor" href="#tape-pages">#</a></h2>
+<p>For the most part, <strong>tape</strong> pages and <strong>sample</strong> grid pages look and function the same way, with two main differences:</p>
+<ul>
+<li><strong>tape</strong> only deals with four tracks while <strong>sample</strong> deals with 7 tracks.</li>
+<li><strong>tape</strong> incorporates buffer and recording management.</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>The script was written with <strong>tape</strong> tracks being tracks 8-11. But, you can safely think of them as &ldquo;tape 1-4&rdquo;. In this documentation, we&rsquo;ll use the 8-11 notation.</p>
+<!-- raw HTML omitted -->
+<h3 id="tape-config">tape config<a class="anchor" href="#tape-config">#</a></h3>
+<p>The <strong>tape config</strong> page is very similar to the <strong>sample config</strong> page.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/tape_config.svg">
+</figure>
+
+<ul>
+<li>The <strong>track param adjustment</strong>, <strong>track param selection</strong>, and <strong>track selection</strong> regions function the same way as their complements on the <strong>sample</strong> side.</li>
+<li><strong>PLAY MODE</strong> also functions the same way.</li>
+<li>Instead of <code>banks</code> (of audio files), the <strong>tape</strong> functionality offers four <code>partitions</code> of the stereo buffer. Each partition is divided into 32 <code>slices</code>. In the same way you can select <code>samples</code> in the <strong>sample</strong> functionality, you select <code>slices</code> with the <strong>tape</strong>.</li>
+<li><strong>play mode</strong> and <strong>partition selection</strong> function the same way as their complements on the <strong>sample side</strong>. The default play mode for <strong>tape</strong> is <em>1-Shot</em>.</li>
+<li>The <strong>slice locator</strong> indicates where in the partition the selected <code>slice</code> exists. You can use this locator in the same way you might use the <strong>sample range</strong> on the <strong>sample config</strong> page.
+<ul>
+<li>That is, you can choose where the slice starts and stops (using <strong>ALT</strong> for the latter).</li>
+</ul>
+</li>
+<li>The <strong>buffer selection</strong> region dictates whether a track is assigned to the left buffer (<em>bright</em>) or the right buffer (<em>dim</em>). <em>Note: <code>INPUT 1</code> on the Norns always corresponds to the first buffer, and <code>INPUT 2</code> on the Norns always corresponds to the second buffer.</em></li>
+<li>You can assign <code>stereo tracks</code> by assigning buffers and <code>pan</code> accordingly:
+<ul>
+<li>The only possible stereo pairs are <strong>tape</strong> tracks <code>8-9</code> and tracks <code>10-11</code>, where the lower track number is <em>LEFT</em>.</li>
+<li>To assign a pair a stereo, set the panning for the two tracks as hard left, and hard right, respectively. Also, make sure that the buffers are set accordingly (lower to the left, and higher to the right).</li>
+<li>The <em>left</em> track is the one that &ldquo;drives&rdquo; the stereo pair. E.g., if you want to sequence the <code>8-9</code> stereo pair, you would set the tracks as described above, and <em>only</em> adjust/sequence <code>track 8</code>. In this way, movements can only accommodate two stereo tracks.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>You&rsquo;ll notice it&rsquo;s not easy to use the <strong>slice locator</strong> to &ldquo;move&rdquo; a slice anywhere in the partition. I.e., the slice start/end times can only be adjusted &ldquo;in the vicinity&rdquo; of the current slice. This is to keep slices in positions that <em>for the most part</em> divide the partition up, in order.</p>
+<!-- raw HTML omitted -->
+<h3 id="tape-sequence">tape sequence<a class="anchor" href="#tape-sequence">#</a></h3>
+<p>The <strong>tape seq</strong> page takes the <strong>sample seq</strong> and adds the ability to arm recording <em>at</em> a step.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/tape_seq.svg">
+</figure>
+
+<ul>
+<li>The first four rows correspond to the four <strong>tape</strong> tracks. These behave the same way as the rows in the <strong>sample seq</strong> page.</li>
+<li>Select a step in the 6th row to arm recording <em>at</em> that step. As long as the step corresponds to a step in the <em>focused</em> track, movements will record to the slice corresponding to that track.
+<ul>
+<li>This applies to stereo track pairs as well.</li>
+<li>When recording, you&rsquo;ll hear the sound of the slice being overdubbed based on the <code>pre</code> level set for that track. For more on this, see the <a href="#parameters">parameters</a> section.</li>
+<li>The 7th row shows recording progress for the slice (it is also indicated in the <strong>slice waveform</strong> display).</li>
+</ul>
+</li>
+<li><em>Recording takes precedence.</em> So, if a track is recording, it will not play any step until the recording is through.</li>
+</ul>
+<h3 id="tape-levels">tape levels<a class="anchor" href="#tape-levels">#</a></h3>
+<p>The <strong>tape levels</strong> page functions the same way as the <strong><a href="#sample-levels">sample levels</a></strong> page.</p>
+<h3 id="tape-time">tape time<a class="anchor" href="#tape-time">#</a></h3>
+<p>The <strong>tape time</strong> page functions the same way as the <strong><a href="#sample-time">sample time</a></strong> page. The only difference with <strong>tape</strong> is there are only four rows for the four tracks.</p>
+<h1 id="ui">ui<a class="anchor" href="#ui">#</a></h1>
+<h2 id="navigation-1">navigation<a class="anchor" href="#navigation-1">#</a></h2>
+<p>The UI for movements is divided into three display &ldquo;sections&rdquo;:</p>
+<ol>
+<li><strong>sample</strong></li>
+<li><strong>tape</strong></li>
+<li><strong>delay</strong></li>
+</ol>
+<p>At the top left of the Norns screen for every section are three vertical bars, the brightest of which indicates which section is active. To navigate between sections, use <strong>K1 + E1</strong> (hold the key, turn the knob). The change in section will reflect on the grid.</p>
+<h2 id="sample-displays">sample displays<a class="anchor" href="#sample-displays">#</a></h2>
+<p>For all <strong>sample</strong> displays, the top navigation bar indicates the following:</p>
+<p><code>TRACK • BANK • filename of currently selected SAMPLE</code></p>
+<p>Use <strong>E1</strong> on its own to scroll through the following displays.</p>
+<h3 id="track-pool">track pool<a class="anchor" href="#track-pool">#</a></h3>
+<p>The first <strong>sample</strong> display is the <strong>track pool</strong> display. On the right side is the list of audio files corresponding to samples in the <code>track_pool_cue</code>. These are &ldquo;on deck&rdquo; to be added to the <code>track_pool</code>, whose audio files are listed in brighter text on the left side.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_1.png">
+</figure>
+
+<ul>
+<li><strong>K2</strong> on this page will enter the file selection, where you can pick a folder to load into the current bank for the focussed track.
+<ul>
+<li>After a folder is loaded, the folder name will show up at the bottom of this page (specifically for the selected bank).</li>
+</ul>
+</li>
+<li>The order of the audio files on this page correspond to the order of the <code>sample</code>s in the <code>track_pool</code> (and <code>track_pool_cue</code>). To ensure a particular order, make sure to select (or deselect) samples on the grid accordingly.</li>
+</ul>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_2.png">
+</figure>
+
+<ul>
+<li>Use <strong>E2</strong> to scroll through the <code>track_pool</code>, and <strong>E3</strong> to scroll through the <code>track_pool_cue</code>.</li>
+</ul>
+<h3 id="track-params">track params<a class="anchor" href="#track-params">#</a></h3>
+<p>For the <strong>sample</strong> functionality, the <strong>track params</strong> display shows the current track parameter on the left, and the <code>noise</code> level on the right.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_3.png">
+</figure>
+
+<ul>
+<li><strong>E2</strong> will adjust the track parameter level (in this case, <code>amp</code>), and <strong>E3</strong> will adjust the <code>noise</code> level.</li>
+<li>For <code>filter</code> and <code>scale</code> parameters, <strong>K2</strong> swaps between types (i.e., between low pass / high pass, and forward / reverse).</li>
+<li>The track parameter will update with your selection on the grid.</li>
+</ul>
+<h3 id="sample-waveform">sample waveform<a class="anchor" href="#sample-waveform">#</a></h3>
+<p>The <strong>sample waveform</strong> display can show the waveform for the selected sample. By default, Timber will only render the sample waveform when requested.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_4.png">
+</figure>
+
+<ul>
+<li>Use <strong>K3</strong> to render the waveform.</li>
+<li>Use <strong>E2</strong> to adjust the start frame, and <strong>E3</strong> to adjust the end frame.</li>
+</ul>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_5.png">
+</figure>
+
+<ul>
+<li>When the <strong>play mode</strong> (on the grid) is set to <code>&quot;Loop&quot;</code> or <code>&quot;Inf. Loop&quot;</code>, this display will show the <code>start</code> and <code>stop</code> positions (vertical lines) <em>as well as</em> the <code>loop_start</code> and <code>loop_stop</code> positions (brackets).
+<ul>
+<li>To switch between setting these, use <strong>K2</strong>. Then, <strong>E2</strong> and <strong>E3</strong> work as expected.</li>
+</ul>
+</li>
+<li>The play mode and the sample information will show above the waveform.
+<ul>
+<li>Along with the associated grid pads, you can use <strong>K3</strong> to swap between <strong>sample</strong> play modes on this page (after the waveform is rendered).</li>
+</ul>
+</li>
+</ul>
+<h3 id="sample-envelope">sample envelope<a class="anchor" href="#sample-envelope">#</a></h3>
+<p>When the <strong>play mode</strong> is set to <code>&quot;Gated&quot;</code> or <code>&quot;1-Shot&quot;</code>, then you can adjust the amplitude envelope <em>for the sample</em>. This is done on the <strong>sample envelope</strong> page.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_6.png">
+</figure>
+
+<ul>
+<li>Use <strong>K2</strong> to swap between adjusting <code>attack</code> and <code>delay</code> (the top two) or adjusting <code>sustain</code> and <code>release</code> (the bottom two).</li>
+<li><strong>E2</strong> and <strong>E3</strong> will make the adjustments accordingly.</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>Note that the sample envelope parameters are tied to the <em>sample itself</em>. So, no matter what track pool the sample is assigned to, or how the other parameters are updated, the enveloping set here will remain the same.</p>
+<!-- raw HTML omitted -->
+<h2 id="tape-displays">tape displays<a class="anchor" href="#tape-displays">#</a></h2>
+<p>For all <strong>tape</strong> displays, the top navigation bar indicates the following:</p>
+<p><code>TRACK • BANK • SLICE_start - SLICE_end</code></p>
+<p>Again, use <strong>E1</strong> on its own to scroll through the following displays.</p>
+<h3 id="track-pool-1">track pool<a class="anchor" href="#track-pool-1">#</a></h3>
+<p>The <strong>track pool</strong> display for <strong>tape</strong> shows the two buffers of the currently selected <code>partition</code>, and the slices assigned to the <code>track_pool</code> and <code>track_pool_cue</code>. Use <strong>E2</strong> to adjust the <code>slice</code> start time and <strong>E3</strong> to adjust the <code>slice</code> end time for the currently selected <code>slice</code>.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_7.png">
+</figure>
+
+<ul>
+<li>The bright bar closest to the buffers indicates the range of the currently selected sample.</li>
+<li>The bright-ish bars in the middle region represent the slices assigned to the current <code>track_pool</code>.</li>
+<li>The dimmer bars in the lower region represent the slices assigned to the current <code>track_pool_cue</code>.</li>
+<li>Use <strong>K2</strong> to load an audio file starting at the beginning of the current <code>slice</code>.
+<ul>
+<li>The file will only load into the buffer assigned to the current track. If the track is a stereo pair, and you are calling <strong>K2</strong> from the <em>left</em> track, this will load in stereo.</li>
+<li>The file will start at the beginning of the current <code>slice</code>, but movements will cut it off at the end of the <code>partition</code>.</li>
+<li>Set the <code>overdub</code> level in the <strong>track params</strong> display to preserve that amount of audio &ldquo;under&rdquo; the audio file. I.e., if <code>overdub == 0</code>, then the audio file will overwrite everything in that range.</li>
+</ul>
+</li>
+</ul>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_8.png">
+</figure>
+
+<ul>
+<li>The top two horizontal lines indicate the left and right buffers, respectively. In the regions where these are bright, there is audio.
+<ul>
+<li>The <code>rec_threshold</code> parameter in <strong>PARAMS</strong> sets the minimum level required for audio to be shown here.<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> E.g., increasing this parameter will make the &ldquo;audio regions&rdquo; seem more sparse.</li>
+<li>Adjusting <code>rec_threshold</code> will also determine which <em>grid</em> pads in the <strong>partition</strong> indicate audio.</li>
+</ul>
+</li>
+<li>If your selected <code>slice</code> contains a region in which a file loaded into the buffer, the text at the bottom of the screen will show the name of the <em>latest</em> file loaded in that range.</li>
+<li>Use <strong>K1 + K3</strong> to clear the audio in a selected slice range. Again, the <code>track_buffer</code> (and whether the track represents a stereo pair) will dictate which buffer(s) are cleared.</li>
+</ul>
+<h3 id="track-params-1">track params<a class="anchor" href="#track-params-1">#</a></h3>
+<p>This display functions the same as the <strong>track params</strong> display for <strong>sample</strong>. The only difference is that the &ldquo;extra&rdquo; parameter here is <code>overdub</code> level.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_9.png">
+</figure>
+
+<ul>
+<li>On this display, <strong>E2</strong> and <strong>E3</strong> will still adjust the <code>slice</code> start and end times, respectively.</li>
+</ul>
+<h3 id="track-waveform">track waveform<a class="anchor" href="#track-waveform">#</a></h3>
+<p>The <strong>track waveform</strong> display for <strong>tape</strong> is very similar to the same for <strong>sample</strong>.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_10.png">
+</figure>
+
+<ul>
+<li>The waveform on this page will render <em>after</em> a recording is complete. While softcut is recording, you&rsquo;ll see a little circle show up on the bottom of the display.
+<ul>
+<li>This includes loop recording. You won&rsquo;t see the updated rendering until the record indicator is gone.</li>
+</ul>
+</li>
+<li><strong>K2</strong> will record <em>mono</em> to the current track, and if the track is the first of a stereo pair, <strong>K3</strong> will record <em>stereo</em>.
+<ul>
+<li><em>Note: if recording onto a stereo pair, you&rsquo;ll need to manually update the <code>overdub</code> for <strong>both</strong> tracks.</em> This allows for more flexibility in stereo recording.</li>
+<li>If already playing/recording, either key will stop the recording/playing.</li>
+</ul>
+</li>
+<li>On this display, <strong>E2</strong> and <strong>E3</strong> will still adjust the <code>slice</code> start and end times, respectively.</li>
+<li>If the current track is playing a slice, then either <strong>K2</strong> or <strong>K3</strong> on this page will stop the track from playing.<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup></li>
+</ul>
+<h2 id="delay-displays">delay displays<a class="anchor" href="#delay-displays">#</a></h2>
+<p>There is one display for <strong>sample</strong> delay, and another for <strong>tape</strong> delay.</p>
+<h3 id="sample-delay">sample delay<a class="anchor" href="#sample-delay">#</a></h3>
+<p>On the <strong>sample delay</strong> page, you can adjust the <code>delay feedback</code> and <code>delay time</code> using <strong>E2</strong> and <strong>E3</strong>, respectively.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_11.png">
+</figure>
+
+<h3 id="tape-delay">tape delay<a class="anchor" href="#tape-delay">#</a></h3>
+<p>Similarly, on the <strong>tape delay</strong> display, you can adjust the <code>delay feedback</code> and <code>delay time</code> for both left and right channels.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/screen_12.png">
+</figure>
+
+<ul>
+<li>Use <strong>K2</strong> <em>or</em> <strong>K3</strong> to swap between <code>feedback</code> and <code>time</code>.</li>
+<li>Then, use <strong>E2</strong> and <strong>E3</strong> to adjust the left and right channels of the delay, respectively.</li>
+<li>Hold <strong>K1</strong> and use <strong>E2</strong> <em>or</em> <strong>E3</strong> to adjust the overall delay level (at the bottom of the display).</li>
+</ul>
+<h1 id="parameters">parameters<a class="anchor" href="#parameters">#</a></h1>
+<p>Both functionalities share the following parameters:</p>
+<ul>
+<li>amplitude</li>
+<li>panning</li>
+<li>filter</li>
+<li>delay</li>
+<li>probability</li>
+<li>scale</li>
+<li>interval</li>
+</ul>
+<p>These are adjustable at both the track level and the step level. In addition to these, the <strong>sample</strong> functionality has an option to add <em>noise</em> to a sample, and the <strong>tape</strong> functionality has an option to set the <em>overdub</em> (or &ldquo;pre&rdquo;/&ldquo;preserve&rdquo;) level for recording, and loop-<em>crossfade</em> time for slices. These three parameters can be set only at the track level.</p>
+<p>Samples/Slices are triggered in a sequence by a pattern of selected steps. Further, each step can have its own set of parameter settings (for the 7 above parameters), so parameter values can can change from step to step.</p>
+<p>Lastly, when you make adjustments to the track level, you will also make proportional adjustments to each step based on a combination of the parameter pattern and the track level itself; we call this &ldquo;squelching&rdquo;. <em>Note: squelching does not apply to the <code>interval</code> parameter.</em></p>
+<h2 id="squelching">squelching<a class="anchor" href="#squelching">#</a></h2>
+<p>There are two basic kinds of squelching: unidirectional and bidirectional.</p>
+<h3 id="unidirectional">unidirectional<a class="anchor" href="#unidirectional">#</a></h3>
+<p>Unidirectional squelching is applied to <strong>amplitude</strong>, <strong>filter</strong>, <strong>delay</strong>, and <strong>probability</strong>. Essentially, the track value dictates the maximum value for a scale, and then the parameter pattern value dictates the value within the scale.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/squelch_1.svg">
+</figure>
+
+<p>For example, if the <code>track</code> level value for <strong>amplitude</strong> is set at 0.5 and the parameter pattern level is set to 0.8, then the final value for that step will be 80% of the way to 0.5, or 0.4.</p>
+<h3 id="bidirectional">bidirectional<a class="anchor" href="#bidirectional">#</a></h3>
+<p>Alternatively, bidirectional squelching is applied to <strong>panning</strong> and <strong>scale</strong>. In this kind of squelching, sample step values fall within a proportional distance from a new center.</p>
+<figure class="center-image-50"><img src="/docs/coding/movements/squelch_2.svg">
+</figure>
+
+<p>In other words, the <strong>track value</strong> becomes the new &ldquo;center&rdquo;, and the parameter pattern value translates to the new scale.</p>
+<h2 id="amplitude">amplitude<a class="anchor" href="#amplitude">#</a></h2>
+<p><code>amp</code> is the amplitude (volume) of the playing sample/slice. It&rsquo;s represented on the grid as filling from left-to-right on the <strong>config</strong> page, and from bottom to top on the <strong>levels</strong> page.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/param_amp.svg">
+</figure>
+
+<ul>
+<li>The bottom row (on the left side) will be <em>blank</em> for <code>amp</code>. From another parameter focus, <em>re</em>-select the pad to revert to the <code>amp</code> parameter.
+<ul>
+<li>The grid diagram in the panning section shows the other parameter options.</li>
+</ul>
+</li>
+<li>To set the amplitude to 0, <em>re</em>-select the currently set value. Otherwise, the pads correspond to the following levels (in decibels):
+<ul>
+<li><code>-28 | -18 | -12 | -6 | -3 | 0</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="panning">panning<a class="anchor" href="#panning">#</a></h2>
+<p>The <code>pan</code> value is bidirectional, and it&rsquo;s illustrated from left-to-right on the <strong>config</strong> page, and from bottom-to-top on the levels page (respectively).</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/param_pan.svg">
+</figure>
+
+<ul>
+<li>The values on the grid correspond to the following pan values:
+<ul>
+<li><code>-1 | -2/3 | -1/3 | 1/3 | 2/3 | 1</code></li>
+</ul>
+</li>
+<li>Selecting the &ldquo;currently set&rdquo; value will revert the panning back to 0.</li>
+<li>The squelch &ldquo;width&rdquo; for <code>pan</code> is 0.5 on either side. For example, if a <em>step</em> level is set to -1 and the <em>track</em> level is set to 0.5, then the final level at that step will be 0.</li>
+</ul>
+<h2 id="filter">filter<a class="anchor" href="#filter">#</a></h2>
+<p>The <code>filter</code> parameter is unidirectional, but it can be defined from &ldquo;bottom to top&rdquo; or from &ldquo;top to bottom&rdquo; depending on one of two filter types:</p>
+<ul>
+<li><code>&quot;Low Pass&quot;</code> (Default)</li>
+<li><code>&quot;High Pass&quot;</code></li>
+</ul>
+<figure class="center-image-85"><img src="/docs/coding/movements/param_filter.svg">
+</figure>
+
+<ul>
+<li>To swap between the two filter types, <em>re</em>-select the most extreme value. So, for track 2 in the example above, if we push the third pad from the left, this filter will change from high pass to low pass.
+<ul>
+<li>In the <strong>track parameter</strong> page in the UI, you can also press <strong>K2</strong> to swap between types.</li>
+</ul>
+</li>
+<li>The track&rsquo;s filter type determines the filter type for all steps. That is, if the track is set to one filter type, then all steps will be of the same type.
+<ul>
+<li>This is made apparent in the <strong>levels</strong> page(s), as the direction of the highlighted pads will always match the direction of the track</li>
+</ul>
+</li>
+<li>For both <strong>sample</strong> and <strong>tape</strong>, you can adjust the <code>filter_resonance</code> for each track in the <strong>PARAMS</strong> menu.</li>
+<li>As long as all pads are bright, then you are getting the full range. In this case, just be careful to remember which type you are dealing with when making adjustments on the fly.</li>
+<li>The values on the grid correspond to the following filter frequencies, in Hertz:
+<ul>
+<li><code>100 | 500 | 1000 | 5000 | 10000 | 20000</code></li>
+<li>When you switch from high pass to low pass (or vice versa), the track frequency level as well as all parameter pattern frequency levels will mirror themselves. E.g., <code>500</code> for low pass becomes <code>10000</code> for high pass.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>Good rule of thumb: If you plan on swapping track filter types, keep the filter parameter patterns at values closer to the middle.</p>
+<!-- raw HTML omitted -->
+<h2 id="delay-1">delay<a class="anchor" href="#delay-1">#</a></h2>
+<p>The <strong>sample</strong> and <strong>tape</strong> functionalities both have their own delay <em>bus</em>. The <strong>sample</strong> delay is mono, and the <strong>tape</strong> delay is stereo. Each track can be independently sent to a bus based on their <code>delay</code> parameter level. The <code>delay</code> parameter sets an independent send level for each track (and optionally, for each step).</p>
+<p>This is a unidirectional parameter, and it manifests on the grid in the same way <code>amp</code> does.</p>
+<ul>
+<li>By default, the <code>delay</code> for each track is set to 0, and new steps get a &ldquo;relative&rdquo; <code>delay</code> setting of 1.</li>
+<li>You can adjust the <code>delay time</code> and the <code>delay feedback</code> for each delay bus in the UI.</li>
+<li>For <strong>tape</strong> delay, you can adjust both time and feedback independently for the left and right channels.</li>
+<li>Both delay types have an overall level that needs to be set.</li>
+<li>All delay parameters can be set in the <strong>PARAMS</strong> menu, or on the corresponding <strong>tape delay display</strong>.</li>
+<li>The levels on the grid correspond to the same decibel levels as <code>amp</code>: these are essentially <strong>delay</strong> send levels.</li>
+</ul>
+<!-- raw HTML omitted -->
+<p><strong>To use delay, you&rsquo;ll need to increase the overall delay level in the UI.</strong> This is initialized as 0 (to avoid unwanted delay at the start), but once it&rsquo;s set, you should be good to go.</p>
+<!-- raw HTML omitted -->
+<h2 id="probability">probability<a class="anchor" href="#probability">#</a></h2>
+<p>The <code>probability</code> parameter determines how often a sample/slice is triggered. This is a unidirectional parameter, so the track level defines the maximum probability, and the parameter level pattern defines relative probabilities within this range.</p>
+<p>Again, this is a unidirectional parameter, so it manifests on the grid in the same way <code>amp</code> does. The levels on the grid correspond to the following probabilities:</p>
+<p><code>1/6 | 2/6 | 3/6 | 4/6 | 5/6 | 1</code></p>
+<h2 id="scale">scale<a class="anchor" href="#scale">#</a></h2>
+<p>The <code>scale</code> parameter determines the pitch and direction of a sample/slice. This is a bidirectional parameter that actually behaves similarly to <code>filter</code> on the grid.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/param_scale.svg">
+</figure>
+
+<ul>
+<li>When a sample/slice is to be played forward, the scale pads on the grid pads light up from left-to-right. When set to be played backward, the pads light up from right-to-left.</li>
+<li>To swap between being played forward or in reverse, tap the extreme-most pad selected. So, for track 4 in the example above, pushing the third pad would make that track play its slices in reverse.
+<ul>
+<li>In the <strong>track parameter</strong> page in the UI, you can also press <strong>K2</strong> to swap between types.</li>
+</ul>
+</li>
+<li>Like filter, the track direction defines the direction of all samples assigned to that track. This is also reflected in the <strong>levels</strong> pages for <strong>sample</strong> and <strong>tape</strong>.</li>
+<li>Scale is dependent on the <code>interval</code> parameter, which defines a note of the scale (e.g., &ldquo;5th&rdquo;, &ldquo;4th&rdquo;, &ldquo;7th&rdquo;, etc.). See the <a href="#interval">interval</a> section for more on this.
+<ul>
+<li>The default value for <code>interval</code> is a perfect 5th.</li>
+</ul>
+</li>
+<li>The values on the grid correspond to the following scale values, where &ldquo;<code>ova</code>&rdquo; means &ldquo;octave&rdquo;, and &ldquo;<code>interval</code>&rdquo; is an interval <em>above</em> the root note:
+<ul>
+<li>Forward: <code>-ova | -ova+interval | root | root+interval | +ova | +2ova</code></li>
+<li>Backward: <code>+2ova | +ova | root+interval | root | -ova+interval | -ova</code></li>
+<li>So, for example, track 5 in the example above would be played one interval <em>above</em> one octave below.</li>
+</ul>
+</li>
+<li>Again, this is a <em>bidirectional</em> parameter, where the &ldquo;middle&rdquo; value is the <code>root</code>. The sample/slice itself defines the &ldquo;root&rdquo; pitch.
+<ul>
+<li>The <code>track</code> value defines the middle value for squelching. The final value is within 2 increments of this value. So, if the <code>scale</code> value for a (forward) track is <code>+ova</code>, then the lowest parameter pattern value will correspond to <code>root+interval</code>.</li>
+</ul>
+</li>
+</ul>
+<!-- raw HTML omitted -->
+<p>Remember that parameter <em>pattern</em> levels are <em>relative</em>. They are meant to represent deviations from the <code>track</code> parameter level. So, if things start to get confusing, think about the bidirectional squelching diagram, above, or keep the track level at <code>root</code>.</p>
+<!-- raw HTML omitted -->
+<h2 id="interval">interval<a class="anchor" href="#interval">#</a></h2>
+<p>The <code>interval</code> parameter defines what note of the scale to play when <code>scale</code> is set to play at this interval.</p>
+<figure class="center-image-85"><img src="/docs/coding/movements/param_interval.svg">
+</figure>
+
+<ul>
+<li>The interval here corresponds to either a <code>major</code> or (natural) <code>minor</code> scale. This can be set in the <strong>PARAMS</strong> menu.</li>
+<li>The values on the grid start with the <code>2nd</code> note of the scale, and end with the <code>7th</code> note of the scale:
+<ul>
+<li><code>2nd | 3rd | 4th | 5th | 6th | 7th</code></li>
+</ul>
+</li>
+<li>Uniquely, <em>there is no squelching for the interval.</em> There are two ways the track level relates to each pattern step:
+<ul>
+<li>(Default) The track level defines all step values.</li>
+<li>The step value <em>overwrites</em> the track level</li>
+</ul>
+</li>
+<li>By default, each pattern level value for <code>interval</code> is empty (as seen in the <strong>levels</strong> page). In this case, the track <code>interval</code> defines the interval for each step.</li>
+<li>When you define a parameter pattern level on the <strong>levels</strong> page, you set that <code>interval</code> value for that step. This overwrites anything defined at the track level.</li>
+<li>To set the track level as the defining value on the <strong>levels</strong> page, select the current step value, and that will remove the selection. The step <code>interval</code> is then defined by the track level.</li>
+</ul>
+<h1 id="filenaming">filenaming<a class="anchor" href="#filenaming">#</a></h1>
+<!-- raw HTML omitted -->
+<p>Note: the following assumes you have a Mac or Linux, or you have Python installed on your computer.</p>
+<!-- raw HTML omitted -->
+<p>Download the <em>/lib/filenaming.py</em> file to rename Ableton clips in a way that&rsquo;s convenient for organizing in the <strong>sample</strong> banks. By default, this method assumes you want different instruments (or sample &ldquo;types&rdquo;) loaded by row or by column in the bank.</p>
+<ol>
+<li>Slice all the clips that you&rsquo;d like to crop in Ableton (in Arrangement View).</li>
+<li>Use <strong>Cmd + A</strong> to select up to 8 clips (to name &ldquo;by row&rdquo;), up to 4 clips (to name &ldquo;by column&rdquo;), or up to 32 clips (to name &ldquo;by bank&rdquo;), and use <strong>Cmd + R</strong> to give them all the same name. <em>Multiple clips in Ableton can have the same &ldquo;name&rdquo;.</em> Repeat this step for each row, column, or bank, as needed.</li>
+<li>Select all (up to 32) clips, and <strong>Crop</strong> them in Ableton using <strong>Cmd + Shift + J</strong>.</li>
+<li>Create a new folder to contain the renamed clips. Name it as you like.</li>
+<li>Find the <em>&lt;abletonproject&gt;/Samples/Processed/Crop</em> directory, and <strong>Copy</strong> the corresponding clips from this original <em>Crop</em> folder into your new folder (use the date/time as a guide &hellip;). Ableton needs the original files named as they are. <!-- raw HTML omitted -->Do not edit the &ldquo;Crop&rdquo; folder.<!-- raw HTML omitted --></li>
+<li>Navigate in your command line to the place where the <em>filenaming.py</em> file is stored.</li>
+<li>Run <code>python filenaming.py &lt;filepath&gt; [name_by] [filetype]</code> using the filepath in #4, where <code>name_by</code> is <code>row</code>, <code>col</code>, or <code>bank</code>. <!-- raw HTML omitted -->E.g., <code>python filenaming.py /Users/Me/My_Stuff/cropfolder row wav</code>, where <em>row</em> and <em>wav</em> are the default (so, I could omit them here, and it would behave the same way).<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
+<li>You&rsquo;ll be prompted to verify you want to change file names; I recommend waiting until you&rsquo;re absolutely sure it&rsquo;s correct :).</li>
+<li>You do not need the <em>.asd</em> files in the new folder, so you can delete them if you like.</li>
+</ol>
+<h3 id="a-few-notes-on-this">a few notes on this<a class="anchor" href="#a-few-notes-on-this">#</a></h3>
+<ul>
+<li><strong>For individual clips, it&rsquo;s best to just use &ldquo;Consolidate&rdquo; in Ableton.</strong> This makes a new Consolidate folder, and you can find them in there.</li>
+</ul>
+<h1 id="a-note-on-updates">a note on updates<a class="anchor" href="#a-note-on-updates">#</a></h1>
+<p><em>Right now, I have no intention of making major updates to the script.</em> The only changes I expect to make include minor UI adjustments, performance improvements, and bug fixes. I&rsquo;ll keep track of issues <a href="https://github.com/leontoddjohnson/movements/issues">here</a>.</p>
+<p>For most of the unimplemented ideas that came to mind, there was good a reason why I chose not to implement it (usually it came down to &ldquo;less is more&rdquo;). But, for the sake of sharing, here are a few features I could have included, but chose not to:</p>
+<ul>
+<li><strong>Incorporating LFOs.</strong> True, the Timber engine offers an LFO functionality for samples. But, this interferes with movements&rsquo; ability to adjust <strong>sample</strong> panning and amplitude levels in a pattern. In a sense, the LFO overcomplicates the automation that is already happening due to parameter patterns. The same point can be made for adding an LFO for the <strong>tape</strong> functionality.</li>
+<li><strong>Setting different sequence &ldquo;start&rdquo; locations</strong>. Again, the juice didn&rsquo;t seem worth the squeeze here. Even so, I think it&rsquo;s kind of nice to know that every sequence starts at the beginning of the same bar. At least, the &ldquo;island&rdquo; functionality provides a decent way of getting around this, though.</li>
+<li><strong>Sending MIDI</strong>. This was a tough decision, but it comes down to the purpose of this script: it is a sampler, so it should be used that way. There are myriad sequencer scripts out there that are great for controlling an outboard MIDI device, and many of their sequencer functions are better than movements anyway! So, I recommend looking into those for that purpose.</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>In total, the stereo softcut buffer is about 350 seconds long, and for this script, we use softcut for both the <strong>tape</strong> and the <strong>tape delay</strong> functionality. Since delay time is synced with the internal clock, the <strong>tape delay</strong> uses $6 \cdot s$ seconds of the buffer, where 6 is the highest <code>clock_fraction</code> value, and $s$ is the number of seconds per beat of the internal <strong>CLOCK/TEMPO</strong>. With a low end BPM of 12, this equates to $6 \cdot (60 / 12) = 30$ seconds, leaving the 320 seconds needed for the <strong>tape</strong> functionality.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>Fast encoder turns to update the <code>rec_threshold</code> parameter may seem to cause a minor lag on the norns. This is because each delta change to the parameter requires the script to run a &ldquo;check&rdquo; across all 19,200 samples of the <strong>tape</strong> buffer. Nothing is wrong, the value you want in the end will update accordingly. It is recommended, though, that you only update this parameter when nothing is playing to avoid any lagging.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3">
+<p>Note that <strong>tape</strong> slices are not separate audio clips existing in their own right, as they are on the <strong>sample</strong> side. When a slice is played, the associated track (i.e., softcut voice) playhead is moved to that position in the buffer, and it plays. <em>To stop playing a slice is to stop playing the track altogether.</em>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4">
+<p>On a Mac, you can drag and drop the folder onto the terminal itself to show the filepath.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex flex-wrap justify-between">
+
+<div>
+
+</div>
+
+<div>
+
+</div>
+
+</div>
+
+
+
+
+
+  
+  
+  
+  <div class="flex flex-wrap justify-between">
+    <span>
+    
+      <a href="/docs/coding/moments/" class="flex align-center">
+        <img src="/icons/backward.svg" class="book-icon" alt="Backward" />
+        <span>moments</span>
+      </a>
+    
+    </span>
+    <span>
+    
+      <a href="/docs/coding/swons/" class="flex align-center">
+        <span>swons</span>
+        <img src="/icons/forward.svg" class="book-icon" alt="Forward" />
+      </a>
+    
+    </span>
+  </div>
+  
+
+
+ 
+        
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+        
+        
+  
+ 
+        
+  
+  
+    <script>(function(){document.querySelectorAll("pre:has(code)").forEach(e=>{e.addEventListener("click",e.focus),e.addEventListener("copy",function(t){if(t.preventDefault(),navigator.clipboard){const t=window.getSelection().toString()||e.textContent;navigator.clipboard.writeText(t)}})})})()</script>
+  
+
+      </footer>
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+  
+  <aside class="book-toc">
+    <div class="book-toc-content">
+      
+  
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">overview</a></li>
+    <li><a href="#tldr-basic-setup">tldr; basic setup</a>
+      <ul>
+        <li><a href="#sample">sample</a></li>
+        <li><a href="#tape">tape</a></li>
+      </ul>
+    </li>
+    <li><a href="#sample-1">sample</a></li>
+    <li><a href="#tape-1">tape</a></li>
+    <li><a href="#delay">delay</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#navigation">navigation</a></li>
+    <li><a href="#sample-pages">sample pages</a>
+      <ul>
+        <li><a href="#sample-config">sample config</a></li>
+        <li><a href="#sample-sequence">sample sequence</a></li>
+        <li><a href="#sample-levels">sample levels</a></li>
+        <li><a href="#sample-time">sample time</a></li>
+      </ul>
+    </li>
+    <li><a href="#tape-pages">tape pages</a>
+      <ul>
+        <li><a href="#tape-config">tape config</a></li>
+        <li><a href="#tape-sequence">tape sequence</a></li>
+        <li><a href="#tape-levels">tape levels</a></li>
+        <li><a href="#tape-time">tape time</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#navigation-1">navigation</a></li>
+    <li><a href="#sample-displays">sample displays</a>
+      <ul>
+        <li><a href="#track-pool">track pool</a></li>
+        <li><a href="#track-params">track params</a></li>
+        <li><a href="#sample-waveform">sample waveform</a></li>
+        <li><a href="#sample-envelope">sample envelope</a></li>
+      </ul>
+    </li>
+    <li><a href="#tape-displays">tape displays</a>
+      <ul>
+        <li><a href="#track-pool-1">track pool</a></li>
+        <li><a href="#track-params-1">track params</a></li>
+        <li><a href="#track-waveform">track waveform</a></li>
+      </ul>
+    </li>
+    <li><a href="#delay-displays">delay displays</a>
+      <ul>
+        <li><a href="#sample-delay">sample delay</a></li>
+        <li><a href="#tape-delay">tape delay</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#squelching">squelching</a>
+      <ul>
+        <li><a href="#unidirectional">unidirectional</a></li>
+        <li><a href="#bidirectional">bidirectional</a></li>
+      </ul>
+    </li>
+    <li><a href="#amplitude">amplitude</a></li>
+    <li><a href="#panning">panning</a></li>
+    <li><a href="#filter">filter</a></li>
+    <li><a href="#delay-1">delay</a></li>
+    <li><a href="#probability">probability</a></li>
+    <li><a href="#scale">scale</a></li>
+    <li><a href="#interval">interval</a></li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#a-few-notes-on-this">a few notes on this</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+
+    </div>
+  </aside>
+  
+ 
+  </main>
+
+  
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
