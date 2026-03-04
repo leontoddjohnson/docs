@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>swons on My New Hugo Project</title>
+    <title>swons on ltj</title>
     <link>http://localhost:1313/docs/coding/swons/</link>
-    <description>Recent content in swons on My New Hugo Project</description>
+    <description>Recent content in swons on ltj</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="http://localhost:1313/docs/coding/swons/index.xml" rel="self" type="application/rss+xml" />

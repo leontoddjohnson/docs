@@ -15,7 +15,7 @@ peer instruction methodology# In this class, I use peer instruction for the seco
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/teaching/courses/h611/">
-  <meta property="og:site_name" content="My New Hugo Project">
+  <meta property="og:site_name" content="ltj">
   <meta property="og:title" content="math">
   <meta property="og:description" content="mathematics for data science# This was meant to be a “refresher” course for students who might not have had a math class in a while. That said, I teach this class as if students have only had a high school math education.
 [Link to course webpage in progress as IU migrates its online assets to an updated platform.]
@@ -29,17 +29,17 @@ peer instruction methodology# In this class, I use peer instruction for the seco
   <meta itemprop="description" content="mathematics for data science# This was meant to be a “refresher” course for students who might not have had a math class in a while. That said, I teach this class as if students have only had a high school math education.
 [Link to course webpage in progress as IU migrates its online assets to an updated platform.]
 peer instruction methodology# In this class, I use peer instruction for the second portion of the class, using TopHat. That is:">
-  <meta itemprop="wordCount" content="839">
+  <meta itemprop="wordCount" content="841">
 
-<title>math | My New Hugo Project</title>
-<link rel="icon" href="/favicon.png" >
+<title>math | ltj</title>
+<link rel="icon" href="/groovepaper.png" >
 <link rel="manifest" href="/manifest.json">
 <link rel="canonical" href="http://localhost:1313/docs/teaching/courses/h611/">
 <link rel="stylesheet" href="/book.min.cc2c524ed250aac81b23d1f4af87344917b325208841feca0968fe450f570575.css" integrity="sha256-zCxSTtJQqsgbI9H0r4c0SRezJSCIQf7KCWj&#43;RQ9XBXU=" crossorigin="anonymous">
 
 
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.5402e47af5d42550b31e255556496f54892a614c81435e57978d31bcb3ad98e8.js" integrity="sha256-VALkevXUJVCzHiVVVklvVIkqYUyBQ15Xl40xvLOtmOg=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.2bd73ac2f74ca60b96da9fd32b80e5d212e4634deb1f30de81a562bb25accc8b.js" integrity="sha256-K9c6wvdMpguW2p/TK4Dl0hLkY03rHzDegaViuyWszIs=" crossorigin="anonymous"></script>
 
 
 
@@ -55,7 +55,7 @@ peer instruction methodology# In this class, I use peer instruction for the seco
     
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>My New Hugo Project</span>
+  <a class="flex align-center" href="/"><span>ltj</span>
   </a>
 </h2>
 
@@ -391,19 +391,20 @@ peer instruction methodology# In this class, I use peer instruction for the seco
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#peer-instruction-methodology">peer instruction methodology</a></li>
-  </ul>
-
-  <ul>
-    <li>
+    <li><a href="#mathematics-for-data-science">mathematics for data science</a>
       <ul>
-        <li><a href="#background">background</a></li>
-        <li><a href="#intervention">intervention</a></li>
-        <li><a href="#outcomes">outcomes</a></li>
+        <li><a href="#peer-instruction-methodology">peer instruction methodology</a></li>
       </ul>
     </li>
-    <li><a href="#analysis">analysis</a></li>
-    <li><a href="#future-efforts-to-do">future efforts (to do)</a></li>
+    <li><a href="#interventions">interventions</a>
+      <ul>
+        <li></li>
+        <li><a href="#analysis">analysis</a></li>
+        <li><a href="#future-efforts-to-do">future efforts (to do)</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools">tools</a></li>
+    <li><a href="#references">references</a></li>
   </ul>
 </nav>
 
@@ -431,7 +432,7 @@ peer instruction methodology# In this class, I use peer instruction for the seco
 <h1 id="interventions">interventions<a class="anchor" href="#interventions">#</a></h1>
 <p>Below are interventions taken to improve this class over time. My hope is to keep track of what works and what doesn&rsquo;t.</p>
 <p>To assess these interventions, I analyze the results from <a href="../methods/ungrading">course assessments</a> at the end of the semester, and compare them to previous semesters. Since most assessment use in my courses are qualitative, I use our institution&rsquo;s NotebookLM instance to analyze the unstructured text responses. <em>I may also institute a solution of my own using my experience with natural language processing.</em></p>
-<!-- raw HTML omitted -->
+<details ><summary>Fall 2025</summary><div class="markdown-inner">
 <h3 id="background">background<a class="anchor" href="#background">#</a></h3>
 <p>Each week, students in my mathematics course are assigned 8 True/False questions in reference to a notebook like <a href="https://colab.research.google.com/drive/1D8YYES5Evd37m9DSz3Nsonmg0w7YmEEn?usp=sharing">this one</a>, and they are required to write up an explanation for their answer.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> These writeups are meant to give students the opportunity to apply what they learn from the (theoretical) lecture videos and slides each week. The issue is that <strong>this creates a &ldquo;gap between the theory and practice&rdquo;</strong>. In fact, this issue is prevalent in other aspects of our Applied Data Science master&rsquo;s program. Being able to apply mathematical theory is crucial to the field itself.</p>
 <p>Before introducing the intervention, I spent each class meeting reviewing topics <em>from lecture</em> (i.e., the theoretical part of class), trying to address the points that students called out in surveys on Canvas. Clearly, this only addressed one side of the gap (i.e., the theory part), and students reported that the application-based writeups were still unclear. I needed to change the way these class meetings worked on the whole.</p>
@@ -441,7 +442,7 @@ peer instruction methodology# In this class, I use peer instruction for the seco
 <h3 id="outcomes">outcomes<a class="anchor" href="#outcomes">#</a></h3>
 <p>So far, the greatest outcome has been student engagement. The peer instruction creates an environment where it becomes only natural for students to interact with one another, and since they&rsquo;re explaining their own answers, I find it evident that they <em>want</em> to participate. Further, this framework forces students to really think about what they&rsquo;re learning, and identify any gaps in their understanding.</p>
 <p>Otherwise, we can consider the quantitative (and qualitative) data outlined below, with the overarching question: <em>is there still a significant gap between theory and practice?</em> I also will ask about this directly in their course evaluation.</p>
-<!-- raw HTML omitted -->
+</div></details>
 <h2 id="analysis">analysis<a class="anchor" href="#analysis">#</a></h2>
 <p><strong>More analysis to come &hellip;</strong></p>
 <h2 id="future-efforts-to-do">future efforts (to do)<a class="anchor" href="#future-efforts-to-do">#</a></h2>
@@ -559,19 +560,20 @@ peer instruction methodology# In this class, I use peer instruction for the seco
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#peer-instruction-methodology">peer instruction methodology</a></li>
-  </ul>
-
-  <ul>
-    <li>
+    <li><a href="#mathematics-for-data-science">mathematics for data science</a>
       <ul>
-        <li><a href="#background">background</a></li>
-        <li><a href="#intervention">intervention</a></li>
-        <li><a href="#outcomes">outcomes</a></li>
+        <li><a href="#peer-instruction-methodology">peer instruction methodology</a></li>
       </ul>
     </li>
-    <li><a href="#analysis">analysis</a></li>
-    <li><a href="#future-efforts-to-do">future efforts (to do)</a></li>
+    <li><a href="#interventions">interventions</a>
+      <ul>
+        <li></li>
+        <li><a href="#analysis">analysis</a></li>
+        <li><a href="#future-efforts-to-do">future efforts (to do)</a></li>
+      </ul>
+    </li>
+    <li><a href="#tools">tools</a></li>
+    <li><a href="#references">references</a></li>
   </ul>
 </nav>
 

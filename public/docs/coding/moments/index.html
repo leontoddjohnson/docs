@@ -17,7 +17,7 @@ The voices will only move if the amplitude of the input goes above a threshold. 
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/coding/moments/">
-  <meta property="og:site_name" content="My New Hugo Project">
+  <meta property="og:site_name" content="ltj">
   <meta property="og:title" content="moments">
   <meta property="og:description" content="moments# moments that once were.
 set up# requirements
@@ -36,18 +36,18 @@ norns input (mono or stereo) grid (optional, but recommended) in maiden …
 The voices will only move if the amplitude of the input goes above a threshold. This creates a strange sort of lifelike feel. The random starting point for each voice is updated (randomly within the buffer) based on a fraction of the tempo set in PARAMS/CLOCK. Each voice has it’s own “move rate”. ui# The total loop length can be updated using either K2 or K3 Adjusting either E2 or E3 will update the loop length Here, the four dots represent the four voices. When the input_type is set to mono, the four voices read from the same buffer. Otherwise, when input_type is set to stereo, voices 1 and 2 (the top two dots) read from the left input, and voices 3 and 4 read from the right input.">
   <meta itemprop="wordCount" content="475">
 
-<title>moments | My New Hugo Project</title>
-<link rel="icon" href="/favicon.png" >
+<title>moments | ltj</title>
+<link rel="icon" href="/groovepaper.png" >
 <link rel="manifest" href="/manifest.json">
 <link rel="canonical" href="http://localhost:1313/docs/coding/moments/">
 <link rel="stylesheet" href="/book.min.cc2c524ed250aac81b23d1f4af87344917b325208841feca0968fe450f570575.css" integrity="sha256-zCxSTtJQqsgbI9H0r4c0SRezJSCIQf7KCWj&#43;RQ9XBXU=" crossorigin="anonymous">
 
 
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.5402e47af5d42550b31e255556496f54892a614c81435e57978d31bcb3ad98e8.js" integrity="sha256-VALkevXUJVCzHiVVVklvVIkqYUyBQ15Xl40xvLOtmOg=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.2bd73ac2f74ca60b96da9fd32b80e5d212e4634deb1f30de81a562bb25accc8b.js" integrity="sha256-K9c6wvdMpguW2p/TK4Dl0hLkY03rHzDegaViuyWszIs=" crossorigin="anonymous"></script>
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/coding/moments/index.xml" title="My New Hugo Project" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/coding/moments/index.xml" title="ltj" />
 
   
 </head>
@@ -61,7 +61,7 @@ The voices will only move if the amplitude of the input goes above a threshold. 
     
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>My New Hugo Project</span>
+  <a class="flex align-center" href="/"><span>ltj</span>
   </a>
 </h2>
 
@@ -397,8 +397,15 @@ The voices will only move if the amplitude of the input goes above a threshold. 
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#set-up">set up</a></li>
-    <li><a href="#basic-idea">basic idea</a></li>
+    <li><a href="#moments">moments</a>
+      <ul>
+        <li><a href="#set-up">set up</a></li>
+        <li><a href="#basic-idea">basic idea</a></li>
+      </ul>
+    </li>
+    <li><a href="#ui">ui</a></li>
+    <li><a href="#grid">grid</a></li>
+    <li><a href="#other-parameters">other parameters</a></li>
   </ul>
 </nav>
 
@@ -539,8 +546,15 @@ The voices will only move if the amplitude of the input goes above a threshold. 
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#set-up">set up</a></li>
-    <li><a href="#basic-idea">basic idea</a></li>
+    <li><a href="#moments">moments</a>
+      <ul>
+        <li><a href="#set-up">set up</a></li>
+        <li><a href="#basic-idea">basic idea</a></li>
+      </ul>
+    </li>
+    <li><a href="#ui">ui</a></li>
+    <li><a href="#grid">grid</a></li>
+    <li><a href="#other-parameters">other parameters</a></li>
   </ul>
 </nav>
 

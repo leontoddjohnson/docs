@@ -18,7 +18,6 @@ theme = 'hugo-book'
   BookTheme = 'light'
   BookFavicon = 'groovepaper.png'
   BookRepo = 'https://github.com/leontoddjohnson/etc'
-  math = false
 
 [markup.goldmark.renderer]
   unsafe = true

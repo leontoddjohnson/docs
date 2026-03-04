@@ -16,7 +16,7 @@ grid (128) audio files or sound source in maiden …
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/coding/movements/">
-  <meta property="og:site_name" content="My New Hugo Project">
+  <meta property="og:site_name" content="ltj">
   <meta property="og:title" content="movements">
   <meta property="og:description" content="movements# movements is a sequencer of samples from audio files or of slices from recorded input.
 requirements
@@ -31,20 +31,20 @@ grid (128) audio files or sound source in maiden …
 requirements
 grid (128) audio files or sound source in maiden …
 ;install https://github.com/leontoddjohnson/movementsoverview# This script was designed with flexible sequencing and independent track adjustment in mind. movements consists of 11 individual tracks, each with their own separate clock. Each track has its own set of parameters which can be individually adjusted, without affecting the other tracks. Also, each track allows you to sequence up to 128 steps.">
-  <meta itemprop="wordCount" content="7393">
+  <meta itemprop="wordCount" content="7395">
 
-<title>movements | My New Hugo Project</title>
-<link rel="icon" href="/favicon.png" >
+<title>movements | ltj</title>
+<link rel="icon" href="/groovepaper.png" >
 <link rel="manifest" href="/manifest.json">
 <link rel="canonical" href="http://localhost:1313/docs/coding/movements/">
 <link rel="stylesheet" href="/book.min.cc2c524ed250aac81b23d1f4af87344917b325208841feca0968fe450f570575.css" integrity="sha256-zCxSTtJQqsgbI9H0r4c0SRezJSCIQf7KCWj&#43;RQ9XBXU=" crossorigin="anonymous">
 
 
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.5402e47af5d42550b31e255556496f54892a614c81435e57978d31bcb3ad98e8.js" integrity="sha256-VALkevXUJVCzHiVVVklvVIkqYUyBQ15Xl40xvLOtmOg=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.2bd73ac2f74ca60b96da9fd32b80e5d212e4634deb1f30de81a562bb25accc8b.js" integrity="sha256-K9c6wvdMpguW2p/TK4Dl0hLkY03rHzDegaViuyWszIs=" crossorigin="anonymous"></script>
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/coding/movements/index.xml" title="My New Hugo Project" />
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/coding/movements/index.xml" title="ltj" />
 
   
 </head>
@@ -58,7 +58,7 @@ grid (128) audio files or sound source in maiden …
     
   <nav>
 <h2 class="book-brand">
-  <a class="flex align-center" href="/"><span>My New Hugo Project</span>
+  <a class="flex align-center" href="/"><span>ltj</span>
   </a>
 </h2>
 
@@ -394,85 +394,48 @@ grid (128) audio files or sound source in maiden …
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#overview">overview</a></li>
-    <li><a href="#tldr-basic-setup">tldr; basic setup</a>
+    <li><a href="#movements">movements</a>
       <ul>
-        <li><a href="#sample">sample</a></li>
-        <li><a href="#tape">tape</a></li>
+        <li><a href="#overview">overview</a></li>
+        <li><a href="#tldr-basic-setup">tldr; basic setup</a></li>
+        <li><a href="#sample-1">sample</a></li>
+        <li><a href="#tape-1">tape</a></li>
+        <li><a href="#delay">delay</a></li>
       </ul>
     </li>
-    <li><a href="#sample-1">sample</a></li>
-    <li><a href="#tape-1">tape</a></li>
-    <li><a href="#delay">delay</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#navigation">navigation</a></li>
-    <li><a href="#sample-pages">sample pages</a>
+    <li><a href="#grid">grid</a>
       <ul>
-        <li><a href="#sample-config">sample config</a></li>
-        <li><a href="#sample-sequence">sample sequence</a></li>
-        <li><a href="#sample-levels">sample levels</a></li>
-        <li><a href="#sample-time">sample time</a></li>
+        <li><a href="#navigation">navigation</a></li>
+        <li><a href="#sample-pages">sample pages</a></li>
+        <li><a href="#tape-pages">tape pages</a></li>
       </ul>
     </li>
-    <li><a href="#tape-pages">tape pages</a>
+    <li><a href="#ui">ui</a>
       <ul>
-        <li><a href="#tape-config">tape config</a></li>
-        <li><a href="#tape-sequence">tape sequence</a></li>
-        <li><a href="#tape-levels">tape levels</a></li>
-        <li><a href="#tape-time">tape time</a></li>
+        <li><a href="#navigation-1">navigation</a></li>
+        <li><a href="#sample-displays">sample displays</a></li>
+        <li><a href="#tape-displays">tape displays</a></li>
+        <li><a href="#delay-displays">delay displays</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#navigation-1">navigation</a></li>
-    <li><a href="#sample-displays">sample displays</a>
+    <li><a href="#parameters">parameters</a>
       <ul>
-        <li><a href="#track-pool">track pool</a></li>
-        <li><a href="#track-params">track params</a></li>
-        <li><a href="#sample-waveform">sample waveform</a></li>
-        <li><a href="#sample-envelope">sample envelope</a></li>
+        <li><a href="#squelching">squelching</a></li>
+        <li><a href="#amplitude">amplitude</a></li>
+        <li><a href="#panning">panning</a></li>
+        <li><a href="#filter">filter</a></li>
+        <li><a href="#delay-1">delay</a></li>
+        <li><a href="#probability">probability</a></li>
+        <li><a href="#scale">scale</a></li>
+        <li><a href="#interval">interval</a></li>
       </ul>
     </li>
-    <li><a href="#tape-displays">tape displays</a>
+    <li><a href="#filenaming">filenaming</a>
       <ul>
-        <li><a href="#track-pool-1">track pool</a></li>
-        <li><a href="#track-params-1">track params</a></li>
-        <li><a href="#track-waveform">track waveform</a></li>
+        <li></li>
       </ul>
     </li>
-    <li><a href="#delay-displays">delay displays</a>
-      <ul>
-        <li><a href="#sample-delay">sample delay</a></li>
-        <li><a href="#tape-delay">tape delay</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#squelching">squelching</a>
-      <ul>
-        <li><a href="#unidirectional">unidirectional</a></li>
-        <li><a href="#bidirectional">bidirectional</a></li>
-      </ul>
-    </li>
-    <li><a href="#amplitude">amplitude</a></li>
-    <li><a href="#panning">panning</a></li>
-    <li><a href="#filter">filter</a></li>
-    <li><a href="#delay-1">delay</a></li>
-    <li><a href="#probability">probability</a></li>
-    <li><a href="#scale">scale</a></li>
-    <li><a href="#interval">interval</a></li>
-  </ul>
-
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#a-few-notes-on-this">a few notes on this</a></li>
-      </ul>
-    </li>
+    <li><a href="#a-note-on-updates">a note on updates</a></li>
   </ul>
 </nav>
 
@@ -501,7 +464,7 @@ grid (128) audio files or sound source in maiden …
 <li><strong>tape</strong> (track 8-11): slices from recorded input (or loaded files)</li>
 </ul>
 <p>The idea is for all tracks (regardless of functionality) to share <em>roughly</em> the same attributes. I.e., if you can do it with <strong>sample</strong>, you can do it with <strong>tape</strong>, and vice versa. Thus, both share the same parameters, with a few caveats.</p>
-<!-- raw HTML omitted -->
+<details ><summary>some terminology</summary><div class="markdown-inner">
 <p><strong>vocabulary</strong></p>
 <p>Just a few terms that might otherwise be easily confused:</p>
 <table>
@@ -548,7 +511,7 @@ grid (128) audio files or sound source in maiden …
 <li><em>italics</em> indicates emphasis or some special term.</li>
 <li><code>monospace</code> indicates some <em>particular</em> value (or collection of values) which could be selected or adjusted.</li>
 </ul>
-<!-- raw HTML omitted -->
+</div></details>
 <h2 id="tldr-basic-setup">tldr; basic setup<a class="anchor" href="#tldr-basic-setup">#</a></h2>
 <h3 id="sample">sample<a class="anchor" href="#sample">#</a></h3>
 <p><em>Refer to the grid navigation bar and the <strong>sample config</strong> page, below.</em></p>
@@ -584,12 +547,12 @@ grid (128) audio files or sound source in maiden …
 <li><a href="https://llllllll.co/t/timber/21407">According to the Timber developer</a>, Timber is intended to play up to 7 voices at a time; this is why the <strong>sample</strong> functionality is limited to seven tracks.</li>
 <li>When playing a sequence, movements will stop playing the &ldquo;current&rdquo; step before starting to play the next step.</li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint info">
 <p>If an audio file is <em>over</em> 5 seconds stereo or over 10 seconds mono (at 48kHz), then Timber will stream it. Otherwise, shorter files will be loaded into the Timber buffer. Shorter audio files are more versatile in Timber, as streaming samples cannot be played backward, and they do not have the <code>Infinite Loop</code> option.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+</blockquote>
+<blockquote class="book-hint warning">
 <p>For the best playback performance, <strong>use audio files with a sample rate of 48kHz</strong>. Anything less than that may cause the playback to be warped a bit &hellip;</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h2 id="tape-1">tape<a class="anchor" href="#tape-1">#</a></h2>
 <p>The <strong>tape</strong> functionality is meant for playing, recording, and sequencing slices from a <code>partition</code> of the stereo <a href="https://monome.org/docs/norns/softcut/">softcut</a> buffer(s). There are <em>four</em> such partitions: each one is 80 seconds long<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, and each partition is divided into 32 slices. By default, these slices are evenly distributed, so they start at 2.5 seconds long, but the user can adjust the start/stop positions for each slice. There are 4 tracks, each one with access to the four partitions.</p>
 <ul>
@@ -606,9 +569,9 @@ grid (128) audio files or sound source in maiden …
 </ul>
 <h2 id="delay">delay<a class="anchor" href="#delay">#</a></h2>
 <p>Both <strong>sample</strong> and <strong>tape</strong> have their own independent delay functionalities. The <strong>sample</strong> side uses a SuperCollider delay bus in the Timber engine, and <strong>tape</strong> uses softcut. Both delay times are synced to the internal <strong>CLOCK</strong> using the same <code>clock_fraction</code> options as the <strong>sequence</strong>r (see below).</p>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint danger">
 <p>When using the <strong>tape delay</strong>, you should keep the internal tempo <em>over</em> 12 BPM; so 13 BPM at a minimum.<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h1 id="grid">grid<a class="anchor" href="#grid">#</a></h1>
 <h2 id="navigation">navigation<a class="anchor" href="#navigation">#</a></h2>
 <p>For <em>both</em> the <strong>sample</strong> and <strong>tape</strong> functionalities, there are four grid pages:</p>
@@ -634,9 +597,9 @@ grid (128) audio files or sound source in maiden …
 <li><strong>FOCUS MODE</strong> (not bright)</li>
 </ul>
 <p>The <strong>mode</strong> and <strong>ALT</strong> pads typically correspond to different functions within <strong>sample</strong> or <strong>tape</strong>.</p>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint info">
 <p>When you switch between <strong>sample</strong> and <strong>tape</strong> functionalities on the grid, the display will also update in turn (and vice versa).</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h2 id="sample-pages">sample pages<a class="anchor" href="#sample-pages">#</a></h2>
 <h3 id="sample-config">sample config<a class="anchor" href="#sample-config">#</a></h3>
 <p>For both <strong>sample</strong> and <strong>tape</strong>, the best place to start is often with the <strong>config</strong> page.</p>
@@ -772,9 +735,9 @@ grid (128) audio files or sound source in maiden …
 <li>The bottom navigation row remains the same as the rest of the grid pages.</li>
 <li>In <strong>PLAY MODE</strong>, the <strong>pattern bars</strong> becomes the <strong>track param selection</strong> region seen in the <a href="#sample-config">sample config</a> section above. In this mode, you can use that region to select the parameter to focus on.</li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint warning">
 <p>Keep in mind, the <strong>levels</strong> page reflects <strong>relative</strong> values based on the track level. The &ldquo;final&rdquo; step value will depend on these levels and the <code>track</code> level. For more on this, see the <a href="#squelching">squelching</a> section.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h3 id="sample-time">sample time<a class="anchor" href="#sample-time">#</a></h3>
 <p>Each track proceeds on its own independent transport. These transports move from one step to the next based on either (a) a fraction of a <em>beat</em> (from the tempo set in <strong>PARAMS/CLOCK</strong>), or (b) a fraction of a <em>second</em>. For <strong>sample</strong>, these <code>clock_fraction</code>s can be adjusted on the <strong>sample time</strong> page.</p>
 <figure class="center-image-85"><img src="/docs/coding/movements/sample_time.svg">
@@ -819,18 +782,18 @@ grid (128) audio files or sound source in maiden …
 <li>A track can only trigger <em>one</em> bank, and only one bank can be triggered at a time.</li>
 <li>Re-selecting any &ldquo;triggered&rdquo; track or bank (no need to hold anything) will undo the trigger.</li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint warning">
 <p>Note: clock fractions and track-level parameters will remain the same when switching from bank to bank. You might need to get creative here: e.g., use the pattern bars to &ldquo;slow/speed up&rdquo; the time, use the parameter patterns to control parameters between banks.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h2 id="tape-pages">tape pages<a class="anchor" href="#tape-pages">#</a></h2>
 <p>For the most part, <strong>tape</strong> pages and <strong>sample</strong> grid pages look and function the same way, with two main differences:</p>
 <ul>
 <li><strong>tape</strong> only deals with four tracks while <strong>sample</strong> deals with 7 tracks.</li>
 <li><strong>tape</strong> incorporates buffer and recording management.</li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint info">
 <p>The script was written with <strong>tape</strong> tracks being tracks 8-11. But, you can safely think of them as &ldquo;tape 1-4&rdquo;. In this documentation, we&rsquo;ll use the 8-11 notation.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h3 id="tape-config">tape config<a class="anchor" href="#tape-config">#</a></h3>
 <p>The <strong>tape config</strong> page is very similar to the <strong>sample config</strong> page.</p>
 <figure class="center-image-85"><img src="/docs/coding/movements/tape_config.svg">
@@ -855,9 +818,9 @@ grid (128) audio files or sound source in maiden …
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint warning">
 <p>You&rsquo;ll notice it&rsquo;s not easy to use the <strong>slice locator</strong> to &ldquo;move&rdquo; a slice anywhere in the partition. I.e., the slice start/end times can only be adjusted &ldquo;in the vicinity&rdquo; of the current slice. This is to keep slices in positions that <em>for the most part</em> divide the partition up, in order.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h3 id="tape-sequence">tape sequence<a class="anchor" href="#tape-sequence">#</a></h3>
 <p>The <strong>tape seq</strong> page takes the <strong>sample seq</strong> and adds the ability to arm recording <em>at</em> a step.</p>
 <figure class="center-image-85"><img src="/docs/coding/movements/tape_seq.svg">
@@ -953,9 +916,9 @@ grid (128) audio files or sound source in maiden …
 <li>Use <strong>K2</strong> to swap between adjusting <code>attack</code> and <code>delay</code> (the top two) or adjusting <code>sustain</code> and <code>release</code> (the bottom two).</li>
 <li><strong>E2</strong> and <strong>E3</strong> will make the adjustments accordingly.</li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint info">
 <p>Note that the sample envelope parameters are tied to the <em>sample itself</em>. So, no matter what track pool the sample is assigned to, or how the other parameters are updated, the enveloping set here will remain the same.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h2 id="tape-displays">tape displays<a class="anchor" href="#tape-displays">#</a></h2>
 <p>For all <strong>tape</strong> displays, the top navigation bar indicates the following:</p>
 <p><code>TRACK • BANK • SLICE_start - SLICE_end</code></p>
@@ -1123,9 +1086,9 @@ grid (128) audio files or sound source in maiden …
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint info">
 <p>Good rule of thumb: If you plan on swapping track filter types, keep the filter parameter patterns at values closer to the middle.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h2 id="delay-1">delay<a class="anchor" href="#delay-1">#</a></h2>
 <p>The <strong>sample</strong> and <strong>tape</strong> functionalities both have their own delay <em>bus</em>. The <strong>sample</strong> delay is mono, and the <strong>tape</strong> delay is stereo. Each track can be independently sent to a bus based on their <code>delay</code> parameter level. The <code>delay</code> parameter sets an independent send level for each track (and optionally, for each step).</p>
 <p>This is a unidirectional parameter, and it manifests on the grid in the same way <code>amp</code> does.</p>
@@ -1137,9 +1100,9 @@ grid (128) audio files or sound source in maiden …
 <li>All delay parameters can be set in the <strong>PARAMS</strong> menu, or on the corresponding <strong>tape delay display</strong>.</li>
 <li>The levels on the grid correspond to the same decibel levels as <code>amp</code>: these are essentially <strong>delay</strong> send levels.</li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint warning">
 <p><strong>To use delay, you&rsquo;ll need to increase the overall delay level in the UI.</strong> This is initialized as 0 (to avoid unwanted delay at the start), but once it&rsquo;s set, you should be good to go.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h2 id="probability">probability<a class="anchor" href="#probability">#</a></h2>
 <p>The <code>probability</code> parameter determines how often a sample/slice is triggered. This is a unidirectional parameter, so the track level defines the maximum probability, and the parameter level pattern defines relative probabilities within this range.</p>
 <p>Again, this is a unidirectional parameter, so it manifests on the grid in the same way <code>amp</code> does. The levels on the grid correspond to the following probabilities:</p>
@@ -1175,9 +1138,9 @@ grid (128) audio files or sound source in maiden …
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint warning">
 <p>Remember that parameter <em>pattern</em> levels are <em>relative</em>. They are meant to represent deviations from the <code>track</code> parameter level. So, if things start to get confusing, think about the bidirectional squelching diagram, above, or keep the track level at <code>root</code>.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <h2 id="interval">interval<a class="anchor" href="#interval">#</a></h2>
 <p>The <code>interval</code> parameter defines what note of the scale to play when <code>scale</code> is set to play at this interval.</p>
 <figure class="center-image-85"><img src="/docs/coding/movements/param_interval.svg">
@@ -1201,18 +1164,18 @@ grid (128) audio files or sound source in maiden …
 <li>To set the track level as the defining value on the <strong>levels</strong> page, select the current step value, and that will remove the selection. The step <code>interval</code> is then defined by the track level.</li>
 </ul>
 <h1 id="filenaming">filenaming<a class="anchor" href="#filenaming">#</a></h1>
-<!-- raw HTML omitted -->
+<blockquote class="book-hint info">
 <p>Note: the following assumes you have a Mac or Linux, or you have Python installed on your computer.</p>
-<!-- raw HTML omitted -->
+</blockquote>
 <p>Download the <em>/lib/filenaming.py</em> file to rename Ableton clips in a way that&rsquo;s convenient for organizing in the <strong>sample</strong> banks. By default, this method assumes you want different instruments (or sample &ldquo;types&rdquo;) loaded by row or by column in the bank.</p>
 <ol>
 <li>Slice all the clips that you&rsquo;d like to crop in Ableton (in Arrangement View).</li>
 <li>Use <strong>Cmd + A</strong> to select up to 8 clips (to name &ldquo;by row&rdquo;), up to 4 clips (to name &ldquo;by column&rdquo;), or up to 32 clips (to name &ldquo;by bank&rdquo;), and use <strong>Cmd + R</strong> to give them all the same name. <em>Multiple clips in Ableton can have the same &ldquo;name&rdquo;.</em> Repeat this step for each row, column, or bank, as needed.</li>
 <li>Select all (up to 32) clips, and <strong>Crop</strong> them in Ableton using <strong>Cmd + Shift + J</strong>.</li>
 <li>Create a new folder to contain the renamed clips. Name it as you like.</li>
-<li>Find the <em>&lt;abletonproject&gt;/Samples/Processed/Crop</em> directory, and <strong>Copy</strong> the corresponding clips from this original <em>Crop</em> folder into your new folder (use the date/time as a guide &hellip;). Ableton needs the original files named as they are. <!-- raw HTML omitted -->Do not edit the &ldquo;Crop&rdquo; folder.<!-- raw HTML omitted --></li>
+<li>Find the <em>&lt;abletonproject&gt;/Samples/Processed/Crop</em> directory, and <strong>Copy</strong> the corresponding clips from this original <em>Crop</em> folder into your new folder (use the date/time as a guide &hellip;). Ableton needs the original files named as they are. <font color='orange'>Do not edit the &ldquo;Crop&rdquo; folder.</font></li>
 <li>Navigate in your command line to the place where the <em>filenaming.py</em> file is stored.</li>
-<li>Run <code>python filenaming.py &lt;filepath&gt; [name_by] [filetype]</code> using the filepath in #4, where <code>name_by</code> is <code>row</code>, <code>col</code>, or <code>bank</code>. <!-- raw HTML omitted -->E.g., <code>python filenaming.py /Users/Me/My_Stuff/cropfolder row wav</code>, where <em>row</em> and <em>wav</em> are the default (so, I could omit them here, and it would behave the same way).<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
+<li>Run <code>python filenaming.py &lt;filepath&gt; [name_by] [filetype]</code> using the filepath in #4, where <code>name_by</code> is <code>row</code>, <code>col</code>, or <code>bank</code>. <br>E.g., <code>python filenaming.py /Users/Me/My_Stuff/cropfolder row wav</code>, where <em>row</em> and <em>wav</em> are the default (so, I could omit them here, and it would behave the same way).<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
 <li>You&rsquo;ll be prompted to verify you want to change file names; I recommend waiting until you&rsquo;re absolutely sure it&rsquo;s correct :).</li>
 <li>You do not need the <em>.asd</em> files in the new folder, so you can delete them if you like.</li>
 </ol>
@@ -1322,85 +1285,48 @@ grid (128) audio files or sound source in maiden …
   
 <nav id="TableOfContents">
   <ul>
-    <li><a href="#overview">overview</a></li>
-    <li><a href="#tldr-basic-setup">tldr; basic setup</a>
+    <li><a href="#movements">movements</a>
       <ul>
-        <li><a href="#sample">sample</a></li>
-        <li><a href="#tape">tape</a></li>
+        <li><a href="#overview">overview</a></li>
+        <li><a href="#tldr-basic-setup">tldr; basic setup</a></li>
+        <li><a href="#sample-1">sample</a></li>
+        <li><a href="#tape-1">tape</a></li>
+        <li><a href="#delay">delay</a></li>
       </ul>
     </li>
-    <li><a href="#sample-1">sample</a></li>
-    <li><a href="#tape-1">tape</a></li>
-    <li><a href="#delay">delay</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#navigation">navigation</a></li>
-    <li><a href="#sample-pages">sample pages</a>
+    <li><a href="#grid">grid</a>
       <ul>
-        <li><a href="#sample-config">sample config</a></li>
-        <li><a href="#sample-sequence">sample sequence</a></li>
-        <li><a href="#sample-levels">sample levels</a></li>
-        <li><a href="#sample-time">sample time</a></li>
+        <li><a href="#navigation">navigation</a></li>
+        <li><a href="#sample-pages">sample pages</a></li>
+        <li><a href="#tape-pages">tape pages</a></li>
       </ul>
     </li>
-    <li><a href="#tape-pages">tape pages</a>
+    <li><a href="#ui">ui</a>
       <ul>
-        <li><a href="#tape-config">tape config</a></li>
-        <li><a href="#tape-sequence">tape sequence</a></li>
-        <li><a href="#tape-levels">tape levels</a></li>
-        <li><a href="#tape-time">tape time</a></li>
+        <li><a href="#navigation-1">navigation</a></li>
+        <li><a href="#sample-displays">sample displays</a></li>
+        <li><a href="#tape-displays">tape displays</a></li>
+        <li><a href="#delay-displays">delay displays</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#navigation-1">navigation</a></li>
-    <li><a href="#sample-displays">sample displays</a>
+    <li><a href="#parameters">parameters</a>
       <ul>
-        <li><a href="#track-pool">track pool</a></li>
-        <li><a href="#track-params">track params</a></li>
-        <li><a href="#sample-waveform">sample waveform</a></li>
-        <li><a href="#sample-envelope">sample envelope</a></li>
+        <li><a href="#squelching">squelching</a></li>
+        <li><a href="#amplitude">amplitude</a></li>
+        <li><a href="#panning">panning</a></li>
+        <li><a href="#filter">filter</a></li>
+        <li><a href="#delay-1">delay</a></li>
+        <li><a href="#probability">probability</a></li>
+        <li><a href="#scale">scale</a></li>
+        <li><a href="#interval">interval</a></li>
       </ul>
     </li>
-    <li><a href="#tape-displays">tape displays</a>
+    <li><a href="#filenaming">filenaming</a>
       <ul>
-        <li><a href="#track-pool-1">track pool</a></li>
-        <li><a href="#track-params-1">track params</a></li>
-        <li><a href="#track-waveform">track waveform</a></li>
+        <li></li>
       </ul>
     </li>
-    <li><a href="#delay-displays">delay displays</a>
-      <ul>
-        <li><a href="#sample-delay">sample delay</a></li>
-        <li><a href="#tape-delay">tape delay</a></li>
-      </ul>
-    </li>
-  </ul>
-
-  <ul>
-    <li><a href="#squelching">squelching</a>
-      <ul>
-        <li><a href="#unidirectional">unidirectional</a></li>
-        <li><a href="#bidirectional">bidirectional</a></li>
-      </ul>
-    </li>
-    <li><a href="#amplitude">amplitude</a></li>
-    <li><a href="#panning">panning</a></li>
-    <li><a href="#filter">filter</a></li>
-    <li><a href="#delay-1">delay</a></li>
-    <li><a href="#probability">probability</a></li>
-    <li><a href="#scale">scale</a></li>
-    <li><a href="#interval">interval</a></li>
-  </ul>
-
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#a-few-notes-on-this">a few notes on this</a></li>
-      </ul>
-    </li>
+    <li><a href="#a-note-on-updates">a note on updates</a></li>
   </ul>
 </nav>
 
