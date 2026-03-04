@@ -1,4 +1,28 @@
-baseURL = 'https://example.org/'
+# run with `hugo server -D`
+
+# COPY parameters from themes/hugo-book/exampleSite/hugo.toml
+# use drafts/ for more on header tags
+# DOCS: https://themes.gohugo.io/themes/hugo-book/
+# EXAMPLE: https://hugo-book-demo.netlify.app/docs/example/
+# ALL SHORTCODES: https://gohugo.io/content-management/shortcodes/
+
+# when you're ready, publish: 
+# https://gohugo.io/hosting-and-deployment/hosting-on-github/
+
+baseURL = 'http://leontoddjohnson.online'
 languageCode = 'en-us'
-title = 'My New Hugo Project'
+title = 'ltj'
 theme = 'hugo-book'
+
+[params]
+  BookTheme = 'light'
+  BookFavicon = 'groovepaper.png'
+  BookRepo = 'https://github.com/leontoddjohnson/etc'
+  math = false
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[markup.tableOfContents]
+  startLevel = 1
+  endLevel = 2
