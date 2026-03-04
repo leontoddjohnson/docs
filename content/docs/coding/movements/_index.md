@@ -1,8 +1,9 @@
 ---
 title: movements
 bookCollapseSection: false
-math : true
 ---
+
+{{< katex />}}
 
 # movements
 

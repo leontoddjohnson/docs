@@ -1,8 +1,9 @@
 ---
 title: moments
 bookCollapseSection: false
-math : true
 ---
+
+{{< katex />}}
 
 # moments
 
