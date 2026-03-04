@@ -3,8 +3,6 @@ title: moments
 bookCollapseSection: false
 ---
 
-{{< katex />}}
-
 # moments
 
 moments that once were.
@@ -63,3 +61,5 @@ This script is compatible with either 128-pad monome grids, or the 64-pad Launch
 # other parameters
 
 See `PARAMS` for more parameters. Play around with them; see what happens! :)
+
+{{< katex />}}

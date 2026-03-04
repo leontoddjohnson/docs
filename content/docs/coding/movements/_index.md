@@ -3,8 +3,6 @@ title: movements
 bookCollapseSection: false
 ---
 
-{{< katex />}}
-
 # movements
 
 movements is a sequencer of samples from audio files or of slices from recorded input.
@@ -686,3 +684,5 @@ For most of the unimplemented ideas that came to mind, there was good a reason w
 - **Incorporating LFOs.** True, the Timber engine offers an LFO functionality for samples. But, this interferes with movements' ability to adjust **sample** panning and amplitude levels in a pattern. In a sense, the LFO overcomplicates the automation that is already happening due to parameter patterns. The same point can be made for adding an LFO for the **tape** functionality.
 - **Setting different sequence "start" locations**. Again, the juice didn't seem worth the squeeze here. Even so, I think it's kind of nice to know that every sequence starts at the beginning of the same bar. At least, the "island" functionality provides a decent way of getting around this, though.
 - **Sending MIDI**. This was a tough decision, but it comes down to the purpose of this script: it is a sampler, so it should be used that way. There are myriad sequencer scripts out there that are great for controlling an outboard MIDI device, and many of their sequencer functions are better than movements anyway! So, I recommend looking into those for that purpose.
+
+{{< katex />}}
