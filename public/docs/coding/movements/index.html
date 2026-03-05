@@ -577,7 +577,7 @@ grid (128) audio files or sound source in maiden …
 <h2 id="delay">delay<a class="anchor" href="#delay">#</a></h2>
 <p>Both <strong>sample</strong> and <strong>tape</strong> have their own independent delay functionalities. The <strong>sample</strong> side uses a SuperCollider delay bus in the Timber engine, and <strong>tape</strong> uses softcut. Both delay times are synced to the internal <strong>CLOCK</strong> using the same <code>clock_fraction</code> options as the <strong>sequence</strong>r (see below).</p>
 <blockquote class="book-hint danger">
-<p>When using the <strong>tape delay</strong>, you should keep the internal tempo <em>over</em> 12 BPM; so 13 BPM at a minimum.<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>When using the <strong>tape delay</strong>, you should keep the internal tempo <em>over</em> 12 BPM; so 13 BPM at a minimum.</p>
 </blockquote>
 <h1 id="grid">grid<a class="anchor" href="#grid">#</a></h1>
 <h2 id="navigation">navigation<a class="anchor" href="#navigation">#</a></h2>
@@ -1203,7 +1203,7 @@ grid (128) audio files or sound source in maiden …
 <hr>
 <ol>
 <li id="fn:1">
-<p>In total, the stereo softcut buffer is about 350 seconds long, and for this script, we use softcut for both the <strong>tape</strong> and the <strong>tape delay</strong> functionality. Since delay time is synced with the internal clock, the <strong>tape delay</strong> uses $6 \cdot s$ seconds of the buffer, where 6 is the highest <code>clock_fraction</code> value, and $s$ is the number of seconds per beat of the internal <strong>CLOCK/TEMPO</strong>. With a low end BPM of 12, this equates to $6 \cdot (60 / 12) = 30$ seconds, leaving the 320 seconds needed for the <strong>tape</strong> functionality.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>In total, the stereo softcut buffer is about 350 seconds long, and for this script, we use softcut for both the <strong>tape</strong> and the <strong>tape delay</strong> functionality. Since delay time is synced with the internal clock, the <strong>tape delay</strong> uses 6 x <strong>s</strong> seconds of the buffer, where 6 is the highest <code>clock_fraction</code> value, and <strong>s</strong> is the number of seconds per beat of the internal <strong>CLOCK/TEMPO</strong>. With a low end BPM of 12, this equates to 6 x (60 / 12) = 30 seconds, leaving the 320 seconds needed for the <strong>tape</strong> functionality.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2">
 <p>Fast encoder turns to update the <code>rec_threshold</code> parameter may seem to cause a minor lag on the norns. This is because each delta change to the parameter requires the script to run a &ldquo;check&rdquo; across all 19,200 samples of the <strong>tape</strong> buffer. Nothing is wrong, the value you want in the end will update accordingly. It is recommended, though, that you only update this parameter when nothing is playing to avoid any lagging.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>

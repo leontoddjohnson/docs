@@ -101,7 +101,7 @@ For the best playback performance, **use audio files with a sample rate of 48kHz
 
 The **tape** functionality is meant for playing, recording, and sequencing slices from a `partition` of the stereo [softcut](https://monome.org/docs/norns/softcut/) buffer(s). There are *four* such partitions: each one is 80 seconds long[^fn:softcut], and each partition is divided into 32 slices. By default, these slices are evenly distributed, so they start at 2.5 seconds long, but the user can adjust the start/stop positions for each slice. There are 4 tracks, each one with access to the four partitions.
 
-[^fn:softcut]: In total, the stereo softcut buffer is about 350 seconds long, and for this script, we use softcut for both the **tape** and the **tape delay** functionality. Since delay time is synced with the internal clock, the **tape delay** uses $6 \cdot s$ seconds of the buffer, where 6 is the highest `clock_fraction` value, and $s$ is the number of seconds per beat of the internal **CLOCK/TEMPO**. With a low end BPM of 12, this equates to $6 \cdot (60 / 12) = 30$ seconds, leaving the 320 seconds needed for the **tape** functionality.
+[^fn:softcut]: In total, the stereo softcut buffer is about 350 seconds long, and for this script, we use softcut for both the **tape** and the **tape delay** functionality. Since delay time is synced with the internal clock, the **tape delay** uses 6 x **s** seconds of the buffer, where 6 is the highest `clock_fraction` value, and **s** is the number of seconds per beat of the internal **CLOCK/TEMPO**. With a low end BPM of 12, this equates to 6 x (60 / 12) = 30 seconds, leaving the 320 seconds needed for the **tape** functionality.
 
 - The `track_pool` and `track_pool_cue` for **tape** behave the same as they do for the **sample** functionality, above. Just swap out the word "sample" with "slice", and "bank" with "partition".
 - Each `partition` consists of two `buffer`s, which can be thought of as either a *single* stereo buffer or *two* separate mono buffers to swap between. You can assign tracks to record/play as mono from either buffer, or as stereo from both.
@@ -116,7 +116,7 @@ The **tape** functionality is meant for playing, recording, and sequencing slice
 Both **sample** and **tape** have their own independent delay functionalities. The **sample** side uses a SuperCollider delay bus in the Timber engine, and **tape** uses softcut. Both delay times are synced to the internal **CLOCK** using the same `clock_fraction` options as the **sequence**r (see below).
 
 {{% hint danger %}}
-When using the **tape delay**, you should keep the internal tempo *over* 12 BPM; so 13 BPM at a minimum.[^fn:softcut]
+When using the **tape delay**, you should keep the internal tempo *over* 12 BPM; so 13 BPM at a minimum.
 {{% /hint %}}
 
 # grid
