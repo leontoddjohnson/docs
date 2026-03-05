@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ltj</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://docs.leontoddjohnson.com/tags/</link>
     <description>Recent content in Tags on ltj</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docs.leontoddjohnson.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Teaching</title>
-      <link>http://localhost:1313/tags/teaching/</link>
+      <link>https://docs.leontoddjohnson.com/tags/teaching/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/teaching/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/teaching/</guid>
       <description></description>
     </item>
     <item>
       <title>Thought</title>
-      <link>http://localhost:1313/tags/thought/</link>
+      <link>https://docs.leontoddjohnson.com/tags/thought/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/thought/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/thought/</guid>
       <description></description>
     </item>
     <item>
       <title>Music</title>
-      <link>http://localhost:1313/tags/music/</link>
+      <link>https://docs.leontoddjohnson.com/tags/music/</link>
       <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/music/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/music/</guid>
       <description></description>
     </item>
     <item>
       <title>AI</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://docs.leontoddjohnson.com/tags/ai/</link>
       <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/ai/</guid>
       <description></description>
     </item>
     <item>
       <title>Ethics</title>
-      <link>http://localhost:1313/tags/ethics/</link>
+      <link>https://docs.leontoddjohnson.com/tags/ethics/</link>
       <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ethics/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/ethics/</guid>
       <description></description>
     </item>
     <item>
       <title>Deontology</title>
-      <link>http://localhost:1313/tags/deontology/</link>
+      <link>https://docs.leontoddjohnson.com/tags/deontology/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/deontology/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/deontology/</guid>
       <description></description>
     </item>
     <item>
       <title>Epistemology</title>
-      <link>http://localhost:1313/tags/epistemology/</link>
+      <link>https://docs.leontoddjohnson.com/tags/epistemology/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/epistemology/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/epistemology/</guid>
       <description></description>
     </item>
     <item>
       <title>Linguistics</title>
-      <link>http://localhost:1313/tags/linguistics/</link>
+      <link>https://docs.leontoddjohnson.com/tags/linguistics/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linguistics/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/linguistics/</guid>
       <description></description>
     </item>
     <item>
       <title>Recommender Systems</title>
-      <link>http://localhost:1313/tags/recommender-systems/</link>
+      <link>https://docs.leontoddjohnson.com/tags/recommender-systems/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/recommender-systems/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/recommender-systems/</guid>
       <description></description>
     </item>
     <item>
       <title>Society</title>
-      <link>http://localhost:1313/tags/society/</link>
+      <link>https://docs.leontoddjohnson.com/tags/society/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/society/</guid>
+      <guid>https://docs.leontoddjohnson.com/tags/society/</guid>
       <description></description>
     </item>
   </channel>

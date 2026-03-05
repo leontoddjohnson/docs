@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<head>
   
 <!--
 Made with Book Theme
@@ -16,7 +16,7 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
-<meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/coding/swons/">
+<meta name="color-scheme" content="light dark"><meta property="og:url" content="https://docs.leontoddjohnson.com/docs/coding/swons/">
   <meta property="og:site_name" content="ltj">
   <meta property="og:title" content="swons">
   <meta property="og:description" content="swons# An extension of @tehn’s snows.
@@ -37,15 +37,15 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
 <title>swons | ltj</title>
 <link rel="icon" href="/favicon.png" >
 <link rel="manifest" href="/manifest.json">
-<link rel="canonical" href="http://localhost:1313/docs/coding/swons/">
+<link rel="canonical" href="https://docs.leontoddjohnson.com/docs/coding/swons/">
 <link rel="stylesheet" href="/book.min.19098447125e468f07004f4f2151866f2cf83e2b79b8b76091bc7839d18eef46.css" integrity="sha256-GQmERxJeRo8HAE9PIVGGbyz4Pit5uLdgkbx4OdGO70Y=" crossorigin="anonymous">
 
 
   <script defer src="/fuse.min.js"></script>
-  <script defer src="/en.search.min.ebccbe61d7e4323d11779a6231fc340427e4b0fe5e73c998e14026d52050c86c.js" integrity="sha256-68y&#43;YdfkMj0Rd5piMfw0BCfksP5ec8mY4UAm1SBQyGw=" crossorigin="anonymous"></script>
+  <script defer src="/en.search.min.d5037e8acd0e67b143eff49e8841056feb8112134907249877aa8a37c23e4397.js" integrity="sha256-1QN&#43;is0OZ7FD7/SeiEEFb&#43;uBEhNJBySYd6qKN8I&#43;Q5c=" crossorigin="anonymous"></script>
 
 
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/docs/coding/swons/index.xml" title="ltj" />
+<link rel="alternate" type="application/rss+xml" href="https://docs.leontoddjohnson.com/docs/coding/swons/index.xml" title="ltj" />
 
 
 <link
@@ -130,8 +130,8 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
   
 
   
-    <input type="checkbox" id="section-033e8ad9e3ec129de3841067534968a8" class="toggle"  />
-    <label for="section-033e8ad9e3ec129de3841067534968a8" class="flex">
+    <input type="checkbox" id="section-c5e4b8a490f771d7e5cc9ce9468f143b" class="toggle"  />
+    <label for="section-c5e4b8a490f771d7e5cc9ce9468f143b" class="flex">
       <a href="/docs/teaching/courses/" class="">
         courses</a>
       <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
@@ -209,8 +209,8 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
   
 
   
-    <input type="checkbox" id="section-0a79b16f28754ae72bab9db4dd21f8ef" class="toggle"  />
-    <label for="section-0a79b16f28754ae72bab9db4dd21f8ef" class="flex">
+    <input type="checkbox" id="section-f1a2c546be0ed11b34412b89bd6a8c57" class="toggle"  />
+    <label for="section-f1a2c546be0ed11b34412b89bd6a8c57" class="flex">
       <a href="/docs/teaching/methods/" class="">
         methods</a>
       <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
@@ -438,7 +438,7 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
 <li><strong>ENC 4</strong>: modulate the scale down or up by an in-scale interval<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
 </ul>
 <p>You can add up to 28 scales to the top of the Lua file. Scales are defined by a sequence of semitone intervals <em>whose sum is equal to 12</em> (e.g., <code>{2, 2, 1, 2, 2, 2, 1}</code> represents a major scale). You can use the following function in Maiden to build these:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>music <span style="color:#f92672">=</span> require <span style="color:#e6db74">&#39;musicutil&#39;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>music <span style="color:#f92672">=</span> require <span style="color:#e6db74">&#39;musicutil&#39;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">scale_intervals</span>(scale)
 </span></span><span style="display:flex;"><span>  scale <span style="color:#f92672">=</span> music.generate_scale(<span style="color:#ae81ff">1</span>, scale, <span style="color:#ae81ff">1</span>) <span style="color:#f92672">or</span> {}

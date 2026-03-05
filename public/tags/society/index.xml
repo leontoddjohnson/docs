@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Society on ltj</title>
-    <link>http://localhost:1313/tags/society/</link>
+    <link>https://docs.leontoddjohnson.com/tags/society/</link>
     <description>Recent content in Society on ltj</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Oct 2020 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/society/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docs.leontoddjohnson.com/tags/society/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>prometheus and google</title>
-      <link>http://localhost:1313/posts/20201001/</link>
+      <link>https://docs.leontoddjohnson.com/posts/20201001/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/20201001/</guid>
+      <guid>https://docs.leontoddjohnson.com/posts/20201001/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;In creating media based on myths, symbols, and idols, we may lose the value and meaning of the original if recommender systems and search algorithms do not find a harmonic balance between meaning and object. The burden lies on the recommender to recognize the difference between the &amp;ldquo;common&amp;rdquo; media definition and some other potentially more pure definition or connotation. Whether the former is any more appropriate than the latter is also investigated, along with a generalized form of this phenomenon, comparing words as they exist on common search/recommendation engines, and the same words when they connote other (prior or &amp;ldquo;purer&amp;rdquo;) concepts.&lt;/p&gt;</description>
     </item>
   </channel>

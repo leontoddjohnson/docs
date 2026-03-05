@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>teaching on ltj</title>
-    <link>http://localhost:1313/docs/teaching/</link>
+    <link>https://docs.leontoddjohnson.com/docs/teaching/</link>
     <description>Recent content in teaching on ltj</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/docs/teaching/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://docs.leontoddjohnson.com/docs/teaching/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>philosophy</title>
-      <link>http://localhost:1313/docs/teaching/philosophy/</link>
+      <link>https://docs.leontoddjohnson.com/docs/teaching/philosophy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/docs/teaching/philosophy/</guid>
+      <guid>https://docs.leontoddjohnson.com/docs/teaching/philosophy/</guid>
       <description>&lt;h1 id=&#34;teaching-philosophy&#34;&gt;teaching philosophy&lt;a class=&#34;anchor&#34; href=&#34;#teaching-philosophy&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;A la &lt;a href=&#34;https://podnetwork.org/content/uploads/V9-N3-Chism.pdf&#34;&gt;Nancy Chism&lt;/a&gt;, I&amp;rsquo;ll use this teaching philosophy to define &amp;ldquo;learning&amp;rdquo; and &amp;ldquo;teaching&amp;rdquo;, lay out goals for my students, describe how I implement and assess my methods, and relay ways in which my teaching develops over time.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-learning&#34;&gt;what is learning?&lt;a class=&#34;anchor&#34; href=&#34;#what-is-learning&#34;&gt;#&lt;/a&gt;&lt;/h2&gt;&#xA;&lt;p&gt;My teaching philosophy is rooted in the idea that &lt;strong&gt;&lt;em&gt;effective&lt;/em&gt; learning is intrinsically motivated and internally manifested&lt;/strong&gt; (&lt;a href=&#34;https://journals.physiology.org/doi/full/10.1152/advan.00072.2016&#34;&gt;Augustyniak et al., 2016&lt;/a&gt;). In other words, learning is not effective unless it is (a) actively sought out by the student, and (b) inextricably tied to the student&amp;rsquo;s inner experience. In my classes, students aren&amp;rsquo;t “receiving” outside knowledge about concepts, but they are discovering it in themselves. For this reason, I aim to give students every opportunity to find &amp;ldquo;their way of understanding&amp;rdquo; concepts. Indeed, the learning process is a way for students to exert their inner self, and who they are as a person should play a critical part in their learning — this should ultimately make the experience interesting, worthwhile, and especially fulfilling for them.&lt;/p&gt;</description>
     </item>
   </channel>
