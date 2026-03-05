@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deontology on ltj</title>
-    <link>https://docs.leontoddjohnson.com/tags/deontology/</link>
+    <link>http://localhost:1313/tags/deontology/</link>
     <description>Recent content in Deontology on ltj</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 04 Feb 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://docs.leontoddjohnson.com/tags/deontology/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/deontology/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>on hume’s deontological response to scepticism</title>
-      <link>https://docs.leontoddjohnson.com/posts/20210204/</link>
+      <link>http://localhost:1313/posts/20210204/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/posts/20210204/</guid>
+      <guid>http://localhost:1313/posts/20210204/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;In &lt;em&gt;Hume’s Deontological Response to Scepticism&lt;/em&gt; (HDRS), Hsueh Qu from the National University of Singapore provides a novel interpretation of Hume’s take on the sceptical system of philosophy.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; At the end of Part IV of &lt;em&gt;A Treatise of Human Nature, Book I&lt;/em&gt; (THN 1.4), Hume illustrates the Dangerous Dilemma bound to befall anyone deeply considering a sceptical outlook on their world: if we are to remain sceptical of all things, we must be sceptical of (and may condemn) all reasoning, which is devastative, and if we then avoid scepticism altogether, we are reduced to credulity, of which we should only be ashamed — in his words, we have “no choice left but betwixt a false reason and none at all”.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; In his paper, Qu takes this dilemma as something less a paradoxical quagmire, and instead a false dichotomy between two deontological extremes. Though Hume is often interpreted as a virtue ethicist,&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; Qu claims that his discussion on scepticism indeed provides the basis for a deontological framework which is bookended by two extremes: the duty to incessantly reflect, and the absolute lack of duty to reflect whatsoever.&lt;/p&gt;</description>
     </item>
   </channel>

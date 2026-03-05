@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>journal on ltj</title>
-    <link>https://docs.leontoddjohnson.com/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in journal on ltj</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 17 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://docs.leontoddjohnson.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>defining ai</title>
-      <link>https://docs.leontoddjohnson.com/posts/20201212/</link>
+      <link>http://localhost:1313/posts/20201212/</link>
       <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/posts/20201212/</guid>
+      <guid>http://localhost:1313/posts/20201212/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;In the summer of 1956, Dartmouth College held its first Summer Research Project on Artificial Intelligence to discuss developments in a new field called (and there coined) “artificial intelligence.” But, the idea of thinking mechanical agents was made clear in earlier texts such as Alan Turing’s seminal work Computing Machinery and Intelligence (1950), and even as early as 1637, when Descartes implied a requirement for some test by which we may distinguish between humans and machines that act human-like.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Even further, Rabbi Daniel Nevins&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; illustrates how the ancient folkloric notion of a golem can be interpreted as a theoretical creature with some sort of artificial (limited) intelligence. Ostensibly, AI is an old compelling idea, and it goes by many names and forms, so pinning down a useful comprehensive definition is an increasingly difficult task.&lt;/p&gt;</description>
     </item>
     <item>
       <title>what is a successful teaching career</title>
-      <link>https://docs.leontoddjohnson.com/posts/20250217/</link>
+      <link>http://localhost:1313/posts/20250217/</link>
       <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/posts/20250217/</guid>
+      <guid>http://localhost:1313/posts/20250217/</guid>
       <description>&lt;h1 id=&#34;successful-teaching&#34;&gt;successful teaching&lt;a class=&#34;anchor&#34; href=&#34;#successful-teaching&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;I think a rewarding teaching career must be defined by my relationships with students. If I go through my whole career without significantly impacting my students (i.e., their lives are virtually unchanged by our time together), then I think I’ve missed something. Though, if after 30 years of teaching, I am contacted by other students (or, I see evidence of students) who share how their time with me has significantly helped them in their lives, then I think I’ve had a rewarding teaching career. I would feel rewarded extrinsically and intrinsically.&lt;/p&gt;</description>
     </item>
     <item>
       <title>music gestation</title>
-      <link>https://docs.leontoddjohnson.com/posts/20241217/</link>
+      <link>http://localhost:1313/posts/20241217/</link>
       <pubDate>Tue, 17 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/posts/20241217/</guid>
+      <guid>http://localhost:1313/posts/20241217/</guid>
       <description>&lt;h1 id=&#34;the-basic-idea&#34;&gt;the basic idea&lt;a class=&#34;anchor&#34; href=&#34;#the-basic-idea&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;We think in language. True, we can experience our senses mentally, e.g., when we &amp;ldquo;see images&amp;rdquo; or &amp;ldquo;hear sounds&amp;rdquo; in our mind, but each of these mental concepts can be thought of as symbols, codifying their own language. In short, words and symbols form the fundamental basis for all our thoughts, and by extension, they shape the way we perceive our environment. Again, we think in language. This sentence is not a difficult pill to swallow. But, what about the claim &amp;ldquo;we feel in language&amp;rdquo;? This is a strange sentence, and it seems a bit disquieting when we say it. Sure, we can &lt;em&gt;attempt&lt;/em&gt; to express our feelings through language, but the inadequacy of the phrase suggests we can feel things which cannot be expressed by language. So, we ask&lt;/p&gt;</description>
     </item>
     <item>
       <title>anthropomorphization of algorithms</title>
-      <link>https://docs.leontoddjohnson.com/posts/20210613/</link>
+      <link>http://localhost:1313/posts/20210613/</link>
       <pubDate>Sun, 13 Jun 2021 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/posts/20210613/</guid>
+      <guid>http://localhost:1313/posts/20210613/</guid>
       <description>&lt;h1 id=&#34;motivation&#34;&gt;motivation&lt;a class=&#34;anchor&#34; href=&#34;#motivation&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;Daily human life is becoming increasingly intertwined with algorithms. The people who develop these algorithms (and, to a lesser extent, the implicit users of these algorithms — the general public) can only use their native languages to describe algorithmic nature and activity. E.g., &amp;ldquo;Netflix is recommending this movie to me&amp;rdquo;, &amp;ldquo;my Tesla is looking ahead to find obstructions blocking our path&amp;rdquo;, or &amp;ldquo;the software loading wheel indicates the computer is thinking&amp;rdquo;.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; Though, I wonder about the difference between a Netflix algorithm making a &lt;em&gt;recommendation&lt;/em&gt; and a human doing the same. When a Tesla car &lt;em&gt;looks&lt;/em&gt;, is it doing the same thing a human would do when they &lt;em&gt;look&lt;/em&gt;? More importantly, what are the consequences of conflating algorithm activity with human activity?&lt;/p&gt;</description>
     </item>
     <item>
       <title>on hume’s deontological response to scepticism</title>
-      <link>https://docs.leontoddjohnson.com/posts/20210204/</link>
+      <link>http://localhost:1313/posts/20210204/</link>
       <pubDate>Thu, 04 Feb 2021 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/posts/20210204/</guid>
+      <guid>http://localhost:1313/posts/20210204/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;In &lt;em&gt;Hume’s Deontological Response to Scepticism&lt;/em&gt; (HDRS), Hsueh Qu from the National University of Singapore provides a novel interpretation of Hume’s take on the sceptical system of philosophy.&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; At the end of Part IV of &lt;em&gt;A Treatise of Human Nature, Book I&lt;/em&gt; (THN 1.4), Hume illustrates the Dangerous Dilemma bound to befall anyone deeply considering a sceptical outlook on their world: if we are to remain sceptical of all things, we must be sceptical of (and may condemn) all reasoning, which is devastative, and if we then avoid scepticism altogether, we are reduced to credulity, of which we should only be ashamed — in his words, we have “no choice left but betwixt a false reason and none at all”.&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; In his paper, Qu takes this dilemma as something less a paradoxical quagmire, and instead a false dichotomy between two deontological extremes. Though Hume is often interpreted as a virtue ethicist,&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt; Qu claims that his discussion on scepticism indeed provides the basis for a deontological framework which is bookended by two extremes: the duty to incessantly reflect, and the absolute lack of duty to reflect whatsoever.&lt;/p&gt;</description>
     </item>
     <item>
       <title>reinforcement learning and ethics</title>
-      <link>https://docs.leontoddjohnson.com/posts/20201220/</link>
+      <link>http://localhost:1313/posts/20201220/</link>
       <pubDate>Sun, 20 Dec 2020 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/posts/20201220/</guid>
+      <guid>http://localhost:1313/posts/20201220/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;In the short film &lt;em&gt;Perfectly Natural&lt;/em&gt;, we see a young couple, their new baby, and a simulated reality where the baby interacts with her artificially programmed parents. Over the course of this film’s fourteen minutes, we see a familiar thread of theoretical interactions between humans and their artificially intelligent counterparts. First, there is an apparent excitement from experiencing something new and fantastic, then a series of routine correspondence, and finally a hint of mortal obsoletion. Now, if we replace the human parents in this film with humans in the real world, and the simulated reality with colloquial “artificial intelligence”, these three interactions are not a far cry from what we have observed since the idea of AI was born. That is, the human creates some thing new and fantastic, exploits the utility of said thing via regular correspondence (or use), and is potentially overtaken by the same. What does this say about our place in the evolution of “thinking machines,” and what are some ethical concerns therein?&lt;/p&gt;</description>
     </item>
     <item>
       <title>prometheus and google</title>
-      <link>https://docs.leontoddjohnson.com/posts/20201001/</link>
+      <link>http://localhost:1313/posts/20201001/</link>
       <pubDate>Thu, 01 Oct 2020 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/posts/20201001/</guid>
+      <guid>http://localhost:1313/posts/20201001/</guid>
       <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;a class=&#34;anchor&#34; href=&#34;#introduction&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;In creating media based on myths, symbols, and idols, we may lose the value and meaning of the original if recommender systems and search algorithms do not find a harmonic balance between meaning and object. The burden lies on the recommender to recognize the difference between the &amp;ldquo;common&amp;rdquo; media definition and some other potentially more pure definition or connotation. Whether the former is any more appropriate than the latter is also investigated, along with a generalized form of this phenomenon, comparing words as they exist on common search/recommendation engines, and the same words when they connote other (prior or &amp;ldquo;purer&amp;rdquo;) concepts.&lt;/p&gt;</description>
     </item>
   </channel>

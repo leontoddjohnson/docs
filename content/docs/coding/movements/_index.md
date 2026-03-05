@@ -89,13 +89,11 @@ The **sample** functionality is meant for loading, playing, and sequencing audio
 - [According to the Timber developer](https://llllllll.co/t/timber/21407), Timber is intended to play up to 7 voices at a time; this is why the **sample** functionality is limited to seven tracks.
 - When playing a sequence, movements will stop playing the "current" step before starting to play the next step.
 
-{{% hint info %}}
-If an audio file is *over* 5 seconds stereo or over 10 seconds mono (at 48kHz), then Timber will stream it. Otherwise, shorter files will be loaded into the Timber buffer. Shorter audio files are more versatile in Timber, as streaming samples cannot be played backward, and they do not have the `Infinite Loop` option.
-{{% /hint %}}
+> [!NOTE]
+> If an audio file is *over* 5 seconds stereo or over 10 seconds mono (at 48kHz), then Timber will stream it. Otherwise, shorter files will be loaded into the Timber buffer. Shorter audio files are more versatile in Timber, as streaming samples cannot be played backward, and they do not have the `Infinite Loop` option.
 
-{{% hint warning %}}
-For the best playback performance, **use audio files with a sample rate of 48kHz**. Anything less than that may cause the playback to be warped a bit ...
-{{% /hint %}}
+> [!WARNING]
+> For the best playback performance, **use audio files with a sample rate of 48kHz**. Anything less than that may cause the playback to be warped a bit ...
 
 ## tape
 
@@ -115,9 +113,8 @@ The **tape** functionality is meant for playing, recording, and sequencing slice
 
 Both **sample** and **tape** have their own independent delay functionalities. The **sample** side uses a SuperCollider delay bus in the Timber engine, and **tape** uses softcut. Both delay times are synced to the internal **CLOCK** using the same `clock_fraction` options as the **sequence**r (see below).
 
-{{% hint danger %}}
-When using the **tape delay**, you should keep the internal tempo *over* 12 BPM; so 13 BPM at a minimum.
-{{% /hint %}}
+> [!CAUTION]
+> When using the **tape delay**, you should keep the internal tempo *over* 12 BPM; so 13 BPM at a minimum.
 
 # grid
 
@@ -147,9 +144,8 @@ The **mode** pad toggles between the following modes:
 
 The **mode** and **ALT** pads typically correspond to different functions within **sample** or **tape**.
 
-{{% hint info %}}
-When you switch between **sample** and **tape** functionalities on the grid, the display will also update in turn (and vice versa).
-{{% /hint %}}
+> [!NOTE]
+> When you switch between **sample** and **tape** functionalities on the grid, the display will also update in turn (and vice versa).
 
 ## sample pages
 
@@ -256,9 +252,8 @@ Parameter levels for each **sample** step can be adjusted in the **sample levels
 - The bottom navigation row remains the same as the rest of the grid pages.
 - In **PLAY MODE**, the **pattern bars** becomes the **track param selection** region seen in the [sample config](#sample-config) section above. In this mode, you can use that region to select the parameter to focus on.
 
-{{% hint warning %}}
-Keep in mind, the **levels** page reflects **relative** values based on the track level. The "final" step value will depend on these levels and the `track` level. For more on this, see the [squelching](#squelching) section.
-{{% /hint %}}
+> [!WARNING]
+> Keep in mind, the **levels** page reflects **relative** values based on the track level. The "final" step value will depend on these levels and the `track` level. For more on this, see the [squelching](#squelching) section.
 
 ### sample time
 
@@ -297,9 +292,8 @@ Hold a pad in the *third* column to define track `i` as a "play trigger", then s
 - A track can only trigger *one* bank, and only one bank can be triggered at a time.
 - Re-selecting any "triggered" track or bank (no need to hold anything) will undo the trigger.
 
-{{% hint warning %}}
-Note: clock fractions and track-level parameters will remain the same when switching from bank to bank. You might need to get creative here: e.g., use the pattern bars to "slow/speed up" the time, use the parameter patterns to control parameters between banks.
-{{% /hint %}}
+> [!WARNING]
+> Note: clock fractions and track-level parameters will remain the same when switching from bank to bank. You might need to get creative here: e.g., use the pattern bars to "slow/speed up" the time, use the parameter patterns to control parameters between banks.
 
 ## tape pages
 
@@ -308,9 +302,8 @@ For the most part, **tape** pages and **sample** grid pages look and function th
 - **tape** only deals with four tracks while **sample** deals with 7 tracks.
 - **tape** incorporates buffer and recording management.
 
-{{% hint info %}}
-The script was written with **tape** tracks being tracks 8-11. But, you can safely think of them as "tape 1-4". In this documentation, we'll use the 8-11 notation.
-{{% /hint %}}
+> [!NOTE]
+> The script was written with **tape** tracks being tracks 8-11. But, you can safely think of them as "tape 1-4". In this documentation, we'll use the 8-11 notation.
 
 ### tape config
 
@@ -330,9 +323,8 @@ The **tape config** page is very similar to the **sample config** page.
   - To assign a pair a stereo, set the panning for the two tracks as hard left, and hard right, respectively. Also, make sure that the buffers are set accordingly (lower to the left, and higher to the right).
   - The *left* track is the one that "drives" the stereo pair. E.g., if you want to sequence the `8-9` stereo pair, you would set the tracks as described above, and *only* adjust/sequence `track 8`. In this way, movements can only accommodate two stereo tracks.
 
-{{% hint warning %}}
-You'll notice it's not easy to use the **slice locator** to "move" a slice anywhere in the partition. I.e., the slice start/end times can only be adjusted "in the vicinity" of the current slice. This is to keep slices in positions that *for the most part* divide the partition up, in order.
-{{% /hint %}}
+> [!WARNING]
+> You'll notice it's not easy to use the **slice locator** to "move" a slice anywhere in the partition. I.e., the slice start/end times can only be adjusted "in the vicinity" of the current slice. This is to keep slices in positions that *for the most part* divide the partition up, in order.
 
 ### tape sequence
 
@@ -424,9 +416,8 @@ When the **play mode** is set to `"Gated"` or `"1-Shot"`, then you can adjust th
 - Use **K2** to swap between adjusting `attack` and `delay` (the top two) or adjusting `sustain` and `release` (the bottom two).
 - **E2** and **E3** will make the adjustments accordingly.
 
-{{% hint info %}}
-Note that the sample envelope parameters are tied to the *sample itself*. So, no matter what track pool the sample is assigned to, or how the other parameters are updated, the enveloping set here will remain the same.
-{{% /hint %}}
+> [!NOTE]
+> Note that the sample envelope parameters are tied to the *sample itself*. So, no matter what track pool the sample is assigned to, or how the other parameters are updated, the enveloping set here will remain the same.
 
 ## tape displays
 
@@ -583,9 +574,8 @@ The `filter` parameter is unidirectional, but it can be defined from "bottom to 
   - `100 | 500 | 1000 | 5000 | 10000 | 20000`
   - When you switch from high pass to low pass (or vice versa), the track frequency level as well as all parameter pattern frequency levels will mirror themselves. E.g., `500` for low pass becomes `10000` for high pass.
 
-{{% hint info %}}
-Good rule of thumb: If you plan on swapping track filter types, keep the filter parameter patterns at values closer to the middle.
-{{% /hint %}}
+> [!NOTE]
+> Good rule of thumb: If you plan on swapping track filter types, keep the filter parameter patterns at values closer to the middle.
 
 ## delay
 
@@ -600,9 +590,8 @@ This is a unidirectional parameter, and it manifests on the grid in the same way
 - All delay parameters can be set in the **PARAMS** menu, or on the corresponding **tape delay display**.
 - The levels on the grid correspond to the same decibel levels as `amp`: these are essentially **delay** send levels.
 
-{{% hint warning %}}
-**To use delay, you'll need to increase the overall delay level in the UI.** This is initialized as 0 (to avoid unwanted delay at the start), but once it's set, you should be good to go.
-{{% /hint %}}
+> [!WARNING]
+> **To use delay, you'll need to increase the overall delay level in the UI.** This is initialized as 0 (to avoid unwanted delay at the start), but once it's set, you should be good to go.
 
 ## probability
 
@@ -631,9 +620,8 @@ The `scale` parameter determines the pitch and direction of a sample/slice. This
 - Again, this is a *bidirectional* parameter, where the "middle" value is the `root`. The sample/slice itself defines the "root" pitch.
   - The `track` value defines the middle value for squelching. The final value is within 2 increments of this value. So, if the `scale` value for a (forward) track is `+ova`, then the lowest parameter pattern value will correspond to `root+interval`.
 
-{{% hint warning %}}
-Remember that parameter *pattern* levels are *relative*. They are meant to represent deviations from the `track` parameter level. So, if things start to get confusing, think about the bidirectional squelching diagram, above, or keep the track level at `root`.
-{{% /hint %}}
+> [!WARNING]
+> Remember that parameter *pattern* levels are *relative*. They are meant to represent deviations from the `track` parameter level. So, if things start to get confusing, think about the bidirectional squelching diagram, above, or keep the track level at `root`.
 
 ## interval
 
@@ -653,9 +641,8 @@ The `interval` parameter defines what note of the scale to play when `scale` is 
 
 # filenaming
 
-{{% hint info %}}
-Note: the following assumes you have a Mac or Linux, or you have Python installed on your computer.
-{{% /hint %}}
+> [!NOTE]
+> Note: the following assumes you have a Mac or Linux, or you have Python installed on your computer.
 
 Download the */lib/filenaming.py* file to rename Ableton clips in a way that's convenient for organizing in the **sample** banks. By default, this method assumes you want different instruments (or sample "types") loaded by row or by column in the bank.
 

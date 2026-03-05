@@ -45,9 +45,8 @@ Of course, if their submission is marked with an "R", or "Revision Needed", then
 
 {{% /details %}}
 
-{{% hint info %}}
-These should be presented to students in Canvas as a **graded survey**, where each question is worth a point. These surveys should always contain a final question where students can submit their "main" weekly assignment *to* the survey.
-{{% /hint %}}
+> [!NOTE]
+> These should be presented to students in Canvas as a **graded survey**, where each question is worth a point. These surveys should always contain a final question where students can submit their "main" weekly assignment *to* the survey.
 
 ## metacognitive self-reflections
 

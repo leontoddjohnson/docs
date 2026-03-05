@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>methods on ltj</title>
-    <link>https://docs.leontoddjohnson.com/docs/teaching/methods/</link>
+    <link>http://localhost:1313/docs/teaching/methods/</link>
     <description>Recent content in methods on ltj</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://docs.leontoddjohnson.com/docs/teaching/methods/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/teaching/methods/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>metacognition</title>
-      <link>https://docs.leontoddjohnson.com/docs/teaching/methods/metacognition/</link>
+      <link>http://localhost:1313/docs/teaching/methods/metacognition/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/docs/teaching/methods/metacognition/</guid>
+      <guid>http://localhost:1313/docs/teaching/methods/metacognition/</guid>
       <description>&lt;h1 id=&#34;metacognition&#34;&gt;metacognition&lt;a class=&#34;anchor&#34; href=&#34;#metacognition&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;In my classes, I do not grade students in the traditional sense. Instead, I use feedback as a means to communicate areas of improvement for each student. This means that a crucial element of my classes needs to be the importance I place on students&amp;rsquo; &lt;a href=&#34;https://en.wikipedia.org/wiki/Metacognition&#34;&gt;metacognition&lt;/a&gt;, or their &lt;em&gt;ability to monitor and regulate their own learning&lt;/em&gt;. In particular, I use two such tools:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;weekly metacognitive reports&lt;/li&gt;&#xA;&lt;li&gt;three metacognitive reflections (per term)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Both of these are equally valuable for both myself and the student, and together, they cover the &lt;em&gt;planning&lt;/em&gt;, &lt;em&gt;monitoring&lt;/em&gt;, and &lt;em&gt;evaluating&lt;/em&gt; stages of the metacognitive cycle, &lt;a href=&#34;https://lsa.umich.edu/content/dam/sweetland-assets/sweetland-documents/teachingresources/CultivatingReflectionandMetacognition/Metacognition.pdf&#34;&gt;as described by&lt;/a&gt; the Sweetland Center for Writing at the University of Michigan. Further, and maybe more importantly, they help to integrate each student&amp;rsquo;s learning experience with their sense of Self (Lin 2001); something that is integral to my teaching philosophy.&lt;/p&gt;</description>
     </item>
     <item>
       <title>assignments</title>
-      <link>https://docs.leontoddjohnson.com/docs/teaching/methods/assignments/</link>
+      <link>http://localhost:1313/docs/teaching/methods/assignments/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/docs/teaching/methods/assignments/</guid>
+      <guid>http://localhost:1313/docs/teaching/methods/assignments/</guid>
       <description>&lt;h1 id=&#34;assignments&#34;&gt;assignments&lt;a class=&#34;anchor&#34; href=&#34;#assignments&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;I define an &amp;ldquo;assignment&amp;rdquo; as &lt;em&gt;anything a student is asked to submit in Canvas&lt;/em&gt;. In my classes, this includes class activities, course projects, and weekly exercises, labs, and write-ups. Here, I&amp;rsquo;ll discuss the following approaches I use for these assignments, along with some examples:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Transparency in Learning and Teaching (TiLT)&lt;/li&gt;&#xA;&lt;li&gt;Peer instruction&lt;/li&gt;&#xA;&lt;li&gt;Project-based learning&lt;/li&gt;&#xA;&lt;li&gt;Using A.I.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;em&gt;Note: the examples below should also illustrate how I keep assignments practical, and informed by work that students should expect to do in a job setting.&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>ungrading</title>
-      <link>https://docs.leontoddjohnson.com/docs/teaching/methods/ungrading/</link>
+      <link>http://localhost:1313/docs/teaching/methods/ungrading/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://docs.leontoddjohnson.com/docs/teaching/methods/ungrading/</guid>
+      <guid>http://localhost:1313/docs/teaching/methods/ungrading/</guid>
       <description>&lt;h1 id=&#34;ungrading&#34;&gt;ungrading&lt;a class=&#34;anchor&#34; href=&#34;#ungrading&#34;&gt;#&lt;/a&gt;&lt;/h1&gt;&#xA;&lt;p&gt;The traditional letter grading (A-F) system is a relatively new practice that began &lt;em&gt;in America&lt;/em&gt; in the late 19th century (Schneider &amp;amp; Hutt, 2014). Importantly, its roots are not in measuring student learning in such a way that benefits the student. On the contrary, grades are, by design, a way to rank or &lt;em&gt;grade&lt;/em&gt; students (McNutt, 2022) as if it their knowledge should be &lt;a href=&#34;https://www.youtube.com/watch?v=BeTRp73gtp4&#34;&gt;treated as a commodity&lt;/a&gt;&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Among many other disservices (Kohn, 2011), this sort of thing undermines the student&amp;rsquo;s individuality and their self worth. As a result, grades are explicitly in conflict with students&amp;rsquo; development of their &amp;ldquo;self-as-learner&amp;rdquo; that is pivotal to my teaching philosophy.&lt;/p&gt;</description>
     </item>
   </channel>

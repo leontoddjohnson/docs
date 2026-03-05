@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>movements on ltj</title>
-    <link>https://docs.leontoddjohnson.com/docs/coding/movements/</link>
+    <link>http://localhost:1313/docs/coding/movements/</link>
     <description>Recent content in movements on ltj</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://docs.leontoddjohnson.com/docs/coding/movements/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/coding/movements/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

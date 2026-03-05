@@ -21,11 +21,8 @@ Note sequence "sprockets" through at the top of the ring each time the moving po
 
 [^fn:stop]: Any dial adjustment will do.
 
-{{% hint info %}}
-By default, the triggering on swons will continue to play up to 3 notes at a time per arc. You can update this by changing the `RETRIGGER` values in the Lua file.
-
-If you do not have “sustain” capability on your audio device, this makes things a bit easier. :)
-{{% /hint %}}
+> [!NOTE]
+> By default, the triggering on swons will continue to play up to 3 notes at a time per arc. You can update this by changing the `RETRIGGER` values in the Lua file. If you do not have “sustain” capability on your audio device, this makes things a bit easier. :)
 
 ## notes
 
