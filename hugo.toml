@@ -16,7 +16,6 @@ theme = 'hugo-book'
 
 [params]
   BookTheme = 'light'
-  BookFavicon = 'groovepaper.png'
   BookRepo = 'https://github.com/leontoddjohnson/etc'
 
 [markup.goldmark.renderer]
