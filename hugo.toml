@@ -9,14 +9,14 @@
 # when you're ready, publish: 
 # https://gohugo.io/hosting-and-deployment/hosting-on-github/
 
-baseURL = 'http://leontoddjohnson.online'
+baseURL = 'https://docs.leontoddjohnson.com'
 languageCode = 'en-us'
 title = 'ltj'
 theme = 'hugo-book'
 
 [params]
   BookTheme = 'dark'
-  BookRepo = 'https://github.com/leontoddjohnson/etc'
+  BookRepo = 'https://github.com/leontoddjohnson/docs'
 
 [markup.goldmark.renderer]
   unsafe = true
