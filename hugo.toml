@@ -15,7 +15,7 @@ title = 'ltj'
 theme = 'hugo-book'
 
 [params]
-  BookTheme = 'light'
+  BookTheme = 'dark'
   BookRepo = 'https://github.com/leontoddjohnson/etc'
 
 [markup.goldmark.renderer]
