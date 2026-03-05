@@ -1,0 +1,37 @@
+<!-- COPY/PASTE FROM THEME **START** -->
+<div class="flex flex-wrap justify-between">
+  <div>
+  {{ with .NextInSection }}
+    <a href="{{ .RelPermalink }}" class="flex align-center">
+      <img src="{{ partial "docs/icon" "backward" }}" class="book-icon" alt="{{ partial "docs/text/i18n" "Backward" }}" />
+      <span>{{ partial "docs/title" . }}</span>
+    </a>
+  {{ end }}
+  </div>
+  <div>
+  {{ with .PrevInSection }}
+    <a href="{{ .RelPermalink }}" class="flex align-center">
+      <span>{{ partial "docs/title" . }}</span>
+      <img src="{{ partial "docs/icon" "forward" }}" class="book-icon" alt="{{ partial "docs/text/i18n" "Forward" }}" />
+    </a>
+  {{ end }}
+  </div>
+</div>
+<!-- COPY/PASTE FROM THEME **END** -->
+
+<script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot({
+    buttonTemplate: '<button \
+                    aria-label="Footnote <% number %>" \
+                    class="littlefoot__button" \
+                    id="<% reference %>" \
+                    title="See Footnote <% number %>" \
+                    /> \
+                    <% number %> \
+                    </button>'
+    }) // Pass any littlefoot settings here.
+</script>

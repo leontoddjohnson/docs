@@ -497,7 +497,8 @@ https://github.com/alex-shpak/hugo-book
 
       <footer class="book-footer">
         
-  <div class="flex flex-wrap justify-between">
+  
+<div class="flex flex-wrap justify-between">
   <div>
   
   </div>
@@ -510,6 +511,24 @@ https://github.com/alex-shpak/hugo-book
   
   </div>
 </div>
+
+
+<script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot({
+    buttonTemplate: '<button \
+                    aria-label="Footnote <% number %>" \
+                    class="littlefoot__button" \
+                    id="<% reference %>" \
+                    title="See Footnote <% number %>" \
+                    /> \
+                    <% number %> \
+                    </button>'
+    }) 
+</script>
  
         
   

@@ -520,7 +520,8 @@ S. (Ed.), <em>The Blackwell Guide to Hume’s Treatise</em> (276–295). Blackwe
 
       <footer class="book-footer">
         
-  <div class="flex flex-wrap justify-between">
+  
+<div class="flex flex-wrap justify-between">
   <div>
   
     <a href="/posts/20210613/" class="flex align-center">
@@ -538,6 +539,24 @@ S. (Ed.), <em>The Blackwell Guide to Hume’s Treatise</em> (276–295). Blackwe
   
   </div>
 </div>
+
+
+<script
+  src="https://unpkg.com/littlefoot/dist/littlefoot.js"
+  type="application/javascript"
+></script>
+<script type="application/javascript">
+  littlefoot.littlefoot({
+    buttonTemplate: '<button \
+                    aria-label="Footnote <% number %>" \
+                    class="littlefoot__button" \
+                    id="<% reference %>" \
+                    title="See Footnote <% number %>" \
+                    /> \
+                    <% number %> \
+                    </button>'
+    }) 
+</script>
  
         
   
