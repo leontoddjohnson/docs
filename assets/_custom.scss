@@ -1,3 +1,4 @@
+// hugo-book customizations
 :root {
   --font-size: 19px;
   --font-size-smaller: 0.875rem;
@@ -32,6 +33,44 @@
   @include accent("info", #4486dd);
   @include accent("success", #3bad3b);
   @include accent("danger", #d84747);
+}
+
+// general CSS
+
+.center-image-85 {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%
+  }
+}
+
+.center-image-75 {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%
+  }
+}
+
+.center-image-50 {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
+
+.center-image-25 {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%
+  }
 }
 
 // littlefoot tooltips
