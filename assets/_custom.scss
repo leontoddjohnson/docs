@@ -73,6 +73,11 @@
   }
 }
 
+.markdown blockquote {
+    border-radius: 0;
+    border-width: 2px;
+  }
+
 // littlefoot tooltips
 // see https://littlefoot.js.org/ for more
 // NO LATEX SUPPORT; Do not use math in tooltips
@@ -92,7 +97,7 @@
   aside {
     --popover-background-color: #353535;
     --popover-font-family: "Satoshi";
-    --popover-font-weight: 300;
+    --popover-font-weight: 400;
     --popover-font-size: 0.85em;
     --popover-text-color: #e9ecef;
 
