@@ -8,7 +8,7 @@
 }
 
 @mixin theme-dark {
-  --body-background: #353535;
+  --body-background: #333333;
   --body-background-tint: none;
 
   --body-font-color: #e9ecef;
@@ -91,11 +91,11 @@
     font-weight: 400; 
     font-size: .6em;
     background-color: #747474;
-    --button-active-background-color: #353535;
+    --button-active-background-color: #333333;
   }
 
   aside {
-    --popover-background-color: #353535;
+    --popover-background-color: #333333;
     --popover-font-family: "Satoshi";
     --popover-font-weight: 400;
     --popover-font-size: 0.85em;
