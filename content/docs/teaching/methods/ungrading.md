@@ -26,19 +26,13 @@ Ungrading and metacognition are inextricably linked. Indeed, our goal here is to
 
 Each of these can provide the student with a kind of gauge they can use to self-evaluate, but they also give me (the instructor) a self-check for whether my teaching methods are working; i.e., they help me determine whether students are learning *as a result of* my course offering.
 
-### evidence
-
-*In progress ...*
-
-*As of April 2025, I'm still wrapping up my first semester implementing these processes. I'm also working on a computational solution that will present these measures into a web app using the Canvas API.*
-
 ## giving feedback
 
-When students are given a "grade", it feels final. It is as if we are saying "this is how I would rate *you*, and that's just the way it is". It doesn't give the student a growth-informed feeling of "I am always improving, and this is helpful", which is more meaningful to a student's self-efficacy. So, instead of giving students a grade or a score for their assignments, I'll use the following process for each submission with help from teaching assistants (TAs)
+When students are given a "grade", it feels final. It is as if we are saying "this is how I would rate *you*, and that's just the way it is". It doesn't give the student a growth-informed feeling of "I am always improving, and this is helpful", which is more meaningful to a student's self-efficacy. So, instead of giving students a grade or a score for their assignments, I'll use the following process for each submission with help from teaching assistants (TAs):
 
-1. Mark the submission with an E, M, R, or N based on the [EMRN rubric](https://docs.google.com/presentation/d/e/2PACX-1vTDNNNryzNZi1-VI_pRqLDla_T1X78lhcRKXqb85MEmYaV-XRdGPuJWRNsECi5ZVfxMFRV1JdJtzUA_/pub?start=false&loop=false&delayms=3000).
-2. Give the student *detailed* feedback, providing suggestions for improvement, guidance, as well as recognizing jobs well done.\*
-3. Allow the student to make adjustments and resubmit their work (within a reasonable time frame).\*
+1. Mark the submission as "Complete" or "Incomplete" based on given criteria.
+2. If "Incomplete", give the student *detailed* feedback, providing suggestions for improvement, guidance, as well as recognizing jobs well done.\*
+3. Allow the student to make adjustments and resubmit their work.\*
 4. Repeat steps 1-3 until the student decides not to resubmit again.
 
 *\* For steps 2-3, students will also share a metacognitive report.*
@@ -51,7 +45,7 @@ Of course, the best way to evaluate (and guide) student learning is to meet with
 
 ### peer review
 
-In addition to timely feedback from the instructor and TAs, it's been shown that peer review can be just as valuable a measure of self-assessment for both the student *and* the peer reviewer (Yan & and Carless, 2022). So, for the comprehensive course-wide projects, I require students to review, mark (using the EMRN rubric), and provide feedback on at least one other students' work. Not only does this give the student another perspective on their learning outcomes, but it also forces students to *use* what they learn when evaluating the work of another student.
+In addition to timely feedback from the instructor and TAs, it's been shown that peer review can be just as valuable a measure of self-assessment for both the student *and* the peer reviewer (Yan & and Carless, 2022). So, for the comprehensive course-wide projects, I require students to review, mark, and provide feedback on at least one other students' work. Not only does this give the student another perspective on their learning outcomes, but it also forces students to *use* what they learn when evaluating the work of another student.
 
 Again, **projects do not have a final score/grade**. Rather, just like every other assignment, they are a mechanism by which students can practice what they learn, get feedback, and improve. The only difference with projects is that they are more involved and tend to be more in-depth.
 

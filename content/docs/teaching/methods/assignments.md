@@ -53,7 +53,7 @@ For each of the above tasks, you must explain to the reader what insight was gat
 
 **Criteria:**
 
-Refer to the EMRN Rubric. The above task dictates the "expectations".
+The above task dictates the "expectations".
 
 {{% /details %}}
 
