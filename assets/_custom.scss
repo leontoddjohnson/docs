@@ -73,10 +73,17 @@
   }
 }
 
-.markdown blockquote {
+.markdown {
+  blockquote {
     border-radius: 0;
-    border-width: 3px;
+    border-width: 2.5px;
   }
+
+  code, pre {
+    border: 0;
+  }
+}
+  
 
 // littlefoot tooltips
 // see https://littlefoot.js.org/ for more

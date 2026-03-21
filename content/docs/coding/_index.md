@@ -7,8 +7,9 @@ booktoc: false
 
 # coding
 
-This section contains documentation for scripts I've written for [monome](https://monome.org) objects. Right now, I am doing my best to upkeep three scripts:
+This section contains documentation for scripts I've written for [monome](https://monome.org) objects. Right now, I am doing my best to upkeep the following scripts:
 
 - moments: a sort of dancing delay (for norns)
 - movements: a sequencer and sampler (for norns and grid)
 - swons: an extension to @tehn's [snows](https://monome.org/docs/iii/library/snows/) (for [iii](https://monome.org/docs/iii/))
+- tutti: an extension to @infinitedigits's [mx.samples](https://llllllll.co/t/mx-samples/41400) to play multiple instruments

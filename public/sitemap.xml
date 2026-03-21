@@ -95,5 +95,7 @@
     <loc>http://localhost:1313/docs/coding/movements/</loc>
   </url><url>
     <loc>http://localhost:1313/docs/coding/swons/</loc>
+  </url><url>
+    <loc>http://localhost:1313/docs/coding/tutti/</loc>
   </url>
 </urlset>
