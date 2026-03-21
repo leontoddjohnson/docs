@@ -6,7 +6,25 @@ booktoc: false
 
 # tutti
 
-> An extension to @infinitedigits's [mx.samples](https://llllllll.co/t/mx-samples/41400).
+all together.
+
+## set up
+
+**requirements**
+
+- norns
+- mx.samples (see below)
+- midi controller(s)
+
+**in maiden ...**
+
+```
+;install https://github.com/leontoddjohnson/tutti
+```
+
+## there's not much to it
+
+> This script is an extension to @infinitedigits's [mx.samples](https://llllllll.co/t/mx-samples/41400).
 
 Right now, this script is completely relegated to the `PARAMS` page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.
 
