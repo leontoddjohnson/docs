@@ -13,8 +13,8 @@ https://github.com/alex-shpak/hugo-book
 set up# requirements
 norns mx.samples (see below) midi controller(s) in maiden …
 ;install https://github.com/leontoddjohnson/tuttithere’s not much to it# This script is an extension to @infinitedigits’s mx.samples.
+tutti simply allows you to run mx.samples for multiple instruments at once. For example, you could simultaneously play instrument A through one MIDI channel (or device) and instrument B through a different MIDI channel (or device). That’s all. It’s fun!1
 Right now, this script is completely relegated to the PARAMS page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.
-Note: parameters only update prior to note play. So, adjusting the amp (velocity) or panning on a note that is already playing will not do anything.
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
 <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#343a40">
@@ -25,8 +25,8 @@ Note: parameters only update prior to note play. So, adjusting the amp (velocity
 set up# requirements
 norns mx.samples (see below) midi controller(s) in maiden …
 ;install https://github.com/leontoddjohnson/tuttithere’s not much to it# This script is an extension to @infinitedigits’s mx.samples.
-Right now, this script is completely relegated to the PARAMS page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.
-Note: parameters only update prior to note play. So, adjusting the amp (velocity) or panning on a note that is already playing will not do anything.">
+tutti simply allows you to run mx.samples for multiple instruments at once. For example, you could simultaneously play instrument A through one MIDI channel (or device) and instrument B through a different MIDI channel (or device). That’s all. It’s fun!1
+Right now, this script is completely relegated to the PARAMS page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
@@ -36,9 +36,9 @@ Note: parameters only update prior to note play. So, adjusting the amp (velocity
 set up# requirements
 norns mx.samples (see below) midi controller(s) in maiden …
 ;install https://github.com/leontoddjohnson/tuttithere’s not much to it# This script is an extension to @infinitedigits’s mx.samples.
-Right now, this script is completely relegated to the PARAMS page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.
-Note: parameters only update prior to note play. So, adjusting the amp (velocity) or panning on a note that is already playing will not do anything.">
-  <meta itemprop="wordCount" content="147">
+tutti simply allows you to run mx.samples for multiple instruments at once. For example, you could simultaneously play instrument A through one MIDI channel (or device) and instrument B through a different MIDI channel (or device). That’s all. It’s fun!1
+Right now, this script is completely relegated to the PARAMS page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.">
+  <meta itemprop="wordCount" content="200">
 
 <title>tutti | ltj</title>
 <link rel="icon" href="/favicon.png" >
@@ -437,11 +437,21 @@ Note: parameters only update prior to note play. So, adjusting the amp (velocity
 <pre tabindex="0"><code>;install https://github.com/leontoddjohnson/tutti</code></pre><h2 id="theres-not-much-to-it">there&rsquo;s not much to it<a class="anchor" href="#theres-not-much-to-it">#</a></h2>
 <blockquote class='book-hint '>
 <p>This script is an extension to @infinitedigits&rsquo;s <a href="https://llllllll.co/t/mx-samples/41400">mx.samples</a>.</p>
-</blockquote><p>Right now, this script is completely relegated to the <code>PARAMS</code> page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.</p>
+</blockquote><p>tutti simply allows you to run mx.samples for multiple instruments at once. For example, you could simultaneously play <em>instrument A</em> through one MIDI channel (or device) and <em>instrument B</em> through a different MIDI channel (or device). That&rsquo;s all. It&rsquo;s fun!<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></p>
+<p>Right now, this script is completely relegated to the <code>PARAMS</code> page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.</p>
+<h2 id="updating-parameters">updating parameters<a class="anchor" href="#updating-parameters">#</a></h2>
 <p><strong>Note: parameters only update prior to note play.</strong> So, adjusting the amp (velocity) or panning on a note that is already playing will not do anything.</p>
 <p>By default, you can select up to <strong>four</strong> instruments, but you can change this by updating the <code>N_INSTRUMENTS</code> variable in the script.</p>
 <blockquote class='book-hint caution'>
-<p>Right now, this script uses a noise parameter that was added to <a href="https://github.com/leontoddjohnson/mx.samples/tree/main">my fork of the mx.samples repository</a>. Until <a href="https://github.com/schollz/mx.samples/pull/13">the pull request</a> is merged, you&rsquo;ll need to either (a) clone the fork, or (b) remove the noise parameter <a href="https://github.com/leontoddjohnson/tutti/blob/6c3fa899667d4a76458568f9eab888756e34262e/tutti.lua#L143">here</a> and <a href="https://github.com/leontoddjohnson/tutti/blob/6c3fa899667d4a76458568f9eab888756e34262e/tutti.lua#L201">here</a>.</p></blockquote></article>
+<p>Right now, this script uses a noise parameter that was added to <a href="https://github.com/leontoddjohnson/mx.samples/tree/main">my fork of the mx.samples repository</a>. Until <a href="https://github.com/schollz/mx.samples/pull/13">the pull request</a> is merged, you&rsquo;ll need to either (a) clone the fork, or (b) remove the noise parameter <a href="https://github.com/leontoddjohnson/tutti/blob/6c3fa899667d4a76458568f9eab888756e34262e/tutti.lua#L143">here</a> and <a href="https://github.com/leontoddjohnson/tutti/blob/6c3fa899667d4a76458568f9eab888756e34262e/tutti.lua#L201">here</a>.</p></blockquote><div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Shameless plug, this script is fun to use along with <a href="../swons">swons</a>!&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+</article>
  
       
 

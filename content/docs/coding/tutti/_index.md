@@ -26,7 +26,13 @@ all together.
 
 > This script is an extension to @infinitedigits's [mx.samples](https://llllllll.co/t/mx-samples/41400).
 
+tutti simply allows you to run mx.samples for multiple instruments at once. For example, you could simultaneously play *instrument A* through one MIDI channel (or device) and *instrument B* through a different MIDI channel (or device). That's all. It's fun![^fn:arc]
+
+[^fn:arc]: Shameless plug, this script is fun to use along with [swons](../swons)!
+
 Right now, this script is completely relegated to the `PARAMS` page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.
+
+## updating parameters
 
 **Note: parameters only update prior to note play.** So, adjusting the amp (velocity) or panning on a note that is already playing will not do anything.
 
