@@ -85,8 +85,10 @@ In my data science programming course, I divide the class into groups of 3-4 stu
   - branching
 - standup meetings (a la agile project management)
 - environments (using pip)
-- environment variables (with *.env* files)
-- an introduction to the idea of Docker
+- environment variables (e.g., with *.env* files)
+- _an introduction to the idea of Docker*_
+
+_*This is in progress ..._
 
 Students will choose their own dataset (based on shared interest), and they meet each week to talk about their contribution to the project. They use what we learn in class to improve on their project, and (at least) the second half of every class period is devoted to project work with their group. I use [GitHub Classrooms](https://classroom.github.com/videos) for students to practice their Python skills on weekly exercises, and apply what they've learned to their project.
 
@@ -138,21 +140,11 @@ In the future, I'd like to incorporate more examples of the following kind of as
 
 This sort of thing creates a "manager-assistant" relationship between the student and the AI that is likely to be mirrored in the workplace in the near future. Also, it *encourages* students to use the tools in an educationally healthy way.
 
-# the EMRN rubric
+# ~~the EMRN rubric~~
 
-Aside from class activities, all assignments are evaluated using the following EMRN rubric, which is my adaptation of [Dr. Robert Talbert's version](https://rtalbert.org/emrn/) of the [EMRF rubric](https://miss-serwy.weebly.com/uploads/1/2/1/6/12161802/emrf_rubric_1.pdf) by R. Stutzman and K. Race.
-
-<p align="center">
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTDNNNryzNZi1-VI_pRqLDla_T1X78lhcRKXqb85MEmYaV-XRdGPuJWRNsECi5ZVfxMFRV1JdJtzUA_/embed?start=false&loop=false&delayms=3000" frameborder="0" width="100%" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-</iframe>
-</p>
-
-One of the main changes I made here was to the definition of "E". Instead of "Exemplary" or "Excellent", I believe "Exceeds Expectations" to be a bit more explicit. That is, we have expectations defined in the criteria/task of each assignment. If a submission goes above and beyond those expectations, showing a clear indication of individualized and *volunteered* creativity, then it "exceeds expectations", and is marked with an "E".
+> [!NOTE]
+> I used to evaluate *all* assignments using a rubric very similar to [this one](https://rtalbert.org/emrn), but it proved to be too much like normal grading. E.g., high achieving students consistently asked how to "get an 'E'", and others often seemed dissatisfied with 'R's. I now only use complete/incomplete.
 
 # references
 
 Mazur, E. (1997). Peer instruction: A user’s manual. Prentice Hall.
-
-Stutzman, R. Y., & Race, K. H. (2004). *EMRF: Everyday Rubric Grading.* The Mathematics Teacher, 97(1), 34–39. https://doi.org/10.5951/MT.97.1.0034
-
-Talbert, R. (2025). *The EMRN Rubric*. Robert Talbert, Ph.D. https://rtalbert.org/emrn/

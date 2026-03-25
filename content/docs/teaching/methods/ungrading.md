@@ -35,7 +35,7 @@ When students are given a "grade", it feels final. It is as if we are saying "th
 3. Allow the student to make adjustments and resubmit their work.\*
 4. Repeat steps 1-3 until the student decides not to resubmit again.
 
-*\* For steps 2-3, students will also share a metacognitive report.*
+*\* For steps 2-3, students will share an explanation for how they improved.*
 
 This approach, inspired by specifications grading (Nilson, 2014), empowers students with the opportunity to grow their knowledge base with every revision, and it also grants them ownership over their learning. I.e., they are not just given a "complete" designation for their submissions, they *earn* it. 
 

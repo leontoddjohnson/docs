@@ -16,7 +16,7 @@ Both of these are equally valuable for both myself and the student, and together
 
 The main purpose of the metacognitive report is to give students a regular "check-in" with their learning as it pertains to the topics of the week. The idea is: by requiring students to complete these surveys, (a) students are forced to think about their learning in a metacognitive way, each week, and (b) I can collect data on *how* students are faring on a regular basis.
 
-Below are the questions I'll use for weekly metacognitive reports. Students respond to these every time they submit their "main" weekly assignment. 
+Below are questions I'll use for weekly metacognitive reports. Students respond to these every time they submit their "main" weekly assignment.
 
 {{% details "Survey" %}}
 
@@ -45,8 +45,8 @@ Of course, if their submission is marked with an "R", or "Revision Needed", then
 
 {{% /details %}}
 
-> [!NOTE]
-> These should be presented to students in Canvas as a **graded survey**, where each question is worth a point. These surveys should always contain a final question where students can submit their "main" weekly assignment *to* the survey.
+> [!WARNING]
+> This section will see some updates, as I plan to remove the EMRN rubric (see the [assignments](../assignments) page), and I'm working on streamlining these weekly reports. Stay tuned ...
 
 ## metacognitive self-reflections
 
