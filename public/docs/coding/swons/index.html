@@ -9,9 +9,11 @@ https://github.com/alex-shpak/hugo-book
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="swons# An extension of @tehn’s snows.
-snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.
-Find the Lua file here. Use single KEY presses to cycle between the following modes:
+<meta name="description" content="swons# An extension of @tehn’s snows, with scales.
+set up# requirements
+arc (2025&#43;) iii version 1.1.x installation
+Download the swons Lua file. Use diii to upload the script to arc. overview# snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.
+Use single KEY presses to cycle between the following modes:
 rings# Note sequence “sprockets” through at the top of the ring each time the moving point hits 12 o’clock. Dimly lit notes are passed or to come, and the next note is always brightly lit at the 12 o’clock position.
 ">
 <meta name="theme-color" media="(prefers-color-scheme: light)" content="#ffffff">
@@ -19,20 +21,24 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
 <meta name="color-scheme" content="light dark"><meta property="og:url" content="http://localhost:1313/docs/coding/swons/">
   <meta property="og:site_name" content="ltj">
   <meta property="og:title" content="swons">
-  <meta property="og:description" content="swons# An extension of @tehn’s snows.
-snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.
-Find the Lua file here. Use single KEY presses to cycle between the following modes:
+  <meta property="og:description" content="swons# An extension of @tehn’s snows, with scales.
+set up# requirements
+arc (2025&#43;) iii version 1.1.x installation
+Download the swons Lua file. Use diii to upload the script to arc. overview# snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.
+Use single KEY presses to cycle between the following modes:
 rings# Note sequence “sprockets” through at the top of the ring each time the moving point hits 12 o’clock. Dimly lit notes are passed or to come, and the next note is always brightly lit at the 12 o’clock position.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="website">
 
 
   <meta itemprop="name" content="swons">
-  <meta itemprop="description" content="swons# An extension of @tehn’s snows.
-snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.
-Find the Lua file here. Use single KEY presses to cycle between the following modes:
+  <meta itemprop="description" content="swons# An extension of @tehn’s snows, with scales.
+set up# requirements
+arc (2025&#43;) iii version 1.1.x installation
+Download the swons Lua file. Use diii to upload the script to arc. overview# snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.
+Use single KEY presses to cycle between the following modes:
 rings# Note sequence “sprockets” through at the top of the ring each time the moving point hits 12 o’clock. Dimly lit notes are passed or to come, and the next note is always brightly lit at the 12 o’clock position.">
-  <meta itemprop="wordCount" content="624">
+  <meta itemprop="wordCount" content="644">
 
 <title>swons | ltj</title>
 <link rel="icon" href="/favicon.png" >
@@ -130,8 +136,8 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
   
 
   
-    <input type="checkbox" id="section-033e8ad9e3ec129de3841067534968a8" class="toggle"  />
-    <label for="section-033e8ad9e3ec129de3841067534968a8" class="flex">
+    <input type="checkbox" id="section-c5e4b8a490f771d7e5cc9ce9468f143b" class="toggle"  />
+    <label for="section-c5e4b8a490f771d7e5cc9ce9468f143b" class="flex">
       <a href="/docs/teaching/courses/" class="">
         courses</a>
       <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
@@ -209,8 +215,8 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
   
 
   
-    <input type="checkbox" id="section-0a79b16f28754ae72bab9db4dd21f8ef" class="toggle"  />
-    <label for="section-0a79b16f28754ae72bab9db4dd21f8ef" class="flex">
+    <input type="checkbox" id="section-f1a2c546be0ed11b34412b89bd6a8c57" class="toggle"  />
+    <label for="section-f1a2c546be0ed11b34412b89bd6a8c57" class="flex">
       <a href="/docs/teaching/methods/" class="">
         methods</a>
       <img src="/icons/chevron-right.svg" class="book-icon" alt="Expand" />
@@ -420,9 +426,21 @@ rings# Note sequence “sprockets” through at the top of the ring each time th
       
   <article class="markdown book-article"><h1 id="swons">swons<a class="anchor" href="#swons">#</a></h1>
 <blockquote class='book-hint '>
-<p>An extension of @tehn&rsquo;s <em><a href="https://monome.org/docs/iii/library/snows/">snows</a></em>.</p>
-</blockquote><p>snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.</p>
-<p>Find the Lua file <a href="https://raw.githubusercontent.com/leontoddjohnson/iii/refs/heads/main/swons.lua">here</a>. Use single <strong>KEY</strong> presses to cycle between the following modes:</p>
+<p>An extension of @tehn&rsquo;s <em><a href="https://monome.org/docs/iii/library/snows/">snows</a></em>, with scales.</p>
+</blockquote><h2 id="set-up">set up<a class="anchor" href="#set-up">#</a></h2>
+<p><strong>requirements</strong></p>
+<ul>
+<li>arc (2025+)</li>
+<li>iii version 1.1.x</li>
+</ul>
+<p><strong>installation</strong></p>
+<ol>
+<li>Download the <a href="https://raw.githubusercontent.com/leontoddjohnson/iii/refs/heads/main/swons.lua">swons Lua file</a>.</li>
+<li>Use <a href="https://monome.org/docs/iii/diii/">diii</a> to <a href="https://monome.org/docs/iii/diii/#uploading-a-script">upload</a> the script to arc.</li>
+</ol>
+<h2 id="overview">overview<a class="anchor" href="#overview">#</a></h2>
+<p>snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.</p>
+<p>Use single <strong>KEY</strong> presses to cycle between the following modes:</p>
 <h2 id="rings">rings<a class="anchor" href="#rings">#</a></h2>
 <p>Note sequence &ldquo;sprockets&rdquo; through at the top of the ring each time the moving point hits 12 o&rsquo;clock. Dimly lit notes are passed or to come, and the <em>next</em> note is always brightly lit at the 12 o&rsquo;clock position.</p>
 <ul>

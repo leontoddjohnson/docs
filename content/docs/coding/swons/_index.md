@@ -6,11 +6,25 @@ booktoc: false
 
 # swons
 
-> An extension of @tehn's *[snows](https://monome.org/docs/iii/library/snows/)*.
+> An extension of @tehn's *[snows](https://monome.org/docs/iii/library/snows/)*, with scales.
+
+## set up
+
+**requirements**
+
+- arc (2025+)
+- iii version 1.1.x
+
+**installation**
+
+1. Download the [swons Lua file](https://raw.githubusercontent.com/leontoddjohnson/iii/refs/heads/main/swons.lua).
+2. Use [diii](https://monome.org/docs/iii/diii/) to [upload](https://monome.org/docs/iii/diii/#uploading-a-script) the script to arc.
+
+## overview
 
 snows provides the foundational function for this script, but swons adds the ability to set sequences of notes within a scale which you can modulate on the fly.
 
-Find the Lua file [here](https://raw.githubusercontent.com/leontoddjohnson/iii/refs/heads/main/swons.lua). Use single **KEY** presses to cycle between the following modes:
+Use single **KEY** presses to cycle between the following modes:
 
 ## rings
 

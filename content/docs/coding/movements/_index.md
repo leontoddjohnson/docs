@@ -7,6 +7,8 @@ bookCollapseSection: false
 
 movements is a sequencer of samples from audio files or of slices from recorded input.
 
+## set up
+
 **requirements**
 
 - grid (128)
