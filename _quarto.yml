@@ -46,11 +46,13 @@ format:
     grid:
       margin-width: 350px
     footnotes-hover: true
-    citations-hover: true
+    citations-hover: false
     html-math-method:
       method: mathjax
       url: "https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
 
+callout-icon: false
 code-annotations: hover
 reference-location: document
+citation-location: margin
 bibliography: references.bib

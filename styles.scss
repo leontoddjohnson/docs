@@ -15,6 +15,14 @@ $code-block-bg: $body-bg;
 $body-color: #e9ecef;
 $link-color: #deb887;
 $code-color: $body-color;
+$callout-color-note: #4486dd;
+$callout-color-tip: #3bad3b;
+$callout-color-important: gold;
+$callout-color-warning: #f59e42;
+$callout-color-caution: #d84747;
+
+$callout-border-scale: 20%;
+$callout-border-width: 5px;
 
 $font-family-sans-serif: "Satoshi";
 $font-family-monospace: "Roboto Mono";
@@ -29,6 +37,15 @@ pre {
   background-color: $code-bg !important;
   padding: 0.5rem;
   color: $body-color;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.listing-category, .quarto-category {
+  margin: 0.3rem;
+  color: $link-color !important;
 }
 
 // div.sourceCode {
