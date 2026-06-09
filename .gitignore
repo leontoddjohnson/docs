@@ -1,0 +1,22 @@
+# local
+data
+_drafts
+
+# Quarto: renders
+/.quarto/
+/_site/
+
+# Quarto: temp
+**/*.quarto_ipynb
+*_cache/
+
+# environments
+/.venv/
+/env/
+
+# R/RStudio files
+.Rproj.user
+.Rhistory
+
+# System files
+.DS_Store

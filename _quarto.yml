@@ -1,0 +1,56 @@
+project:
+  type: website
+
+website:
+  title: "ltj"
+  favicon: assets/favicon.png
+  navbar:
+    search: true
+    right:
+      - text: "teaching"
+        href: content/teaching.qmd
+      - text: "coding"
+        href: content/coding.qmd
+      - text: "journal"
+        href: content/posts.qmd
+
+  sidebar:
+    - title: "coding"
+      contents:
+      - content/coding.qmd
+      - auto: content/coding/norns
+      - auto: content/coding/iii
+      collapse-level: 1
+    - title: "teaching"
+      contents:
+      - content/teaching.qmd
+      - content/teaching/philosophy.md
+      - auto: content/teaching/courses
+      - auto: content/teaching/methods
+      collapse-level: 1
+
+# only using ObservableJS cells
+execute: 
+  eval: true
+  echo: false
+
+engine: markdown
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles.scss
+    toc: true
+    toc-title: 'on this page'
+    grid:
+      margin-width: 350px
+    footnotes-hover: true
+    citations-hover: true
+    html-math-method:
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+
+code-annotations: hover
+reference-location: document
+bibliography: references.bib

@@ -1,0 +1,29 @@
+---
+title: "gravityharp"
+sidebar: coding
+---
+
+# gravityharp
+
+pendulums.
+
+## set up
+
+**requirements**
+
+- norns
+- midi output (optional)
+- arc (optional)
+
+**in maiden ...**
+
+```
+;install https://github.com/leontoddjohnson/gravityharp
+```
+
+## basic idea
+
+
+## arc
+
+### 

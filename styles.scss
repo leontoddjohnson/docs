@@ -1,0 +1,37 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi?styles=135009,135004,135002,135003');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+/*-- scss:defaults --*/
+$headings-font-weight: 400 !default;
+$font-size-root: 20px;
+
+$body-bg: #333333;
+$input-bg: $body-bg;
+$navbar-bg: $body-bg;
+$popover-bg: $body-bg;
+$code-bg: #494e54;
+$code-block-bg: $body-bg;
+
+$body-color: #e9ecef;
+$link-color: #deb887;
+$code-color: $body-color;
+
+$font-family-sans-serif: "Satoshi";
+$font-family-monospace: "Roboto Mono";
+
+/*-- scss:rules --*/
+code, pre {
+  border: none;
+  border-radius: 0.25rem;
+}
+
+pre {
+  background-color: $code-bg !important;
+  padding: 0.5rem;
+  color: $body-color;
+}
+
+// div.sourceCode {
+//   border: none;
+//   background-color: $body-bg;
+// }
