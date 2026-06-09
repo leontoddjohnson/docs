@@ -17,8 +17,8 @@ The main purpose of the metacognitive report is to give students a regular "chec
 
 Below are questions I'll use for weekly metacognitive reports. Students respond to these every time they submit their "main" weekly assignment.
 
-{{% details "Survey" %}}
-
+::: {.callout-note collapse="true"}
+## survey example
 1. Explain what learning method worked best for you this week, and give an example for evidence of this. Share the concept you were learning, what you were doing, and explain what finally made it click. *Think about moments where you might have thought to yourself "Ah hah!" or "Eureka, I've got it!".*
 2. Think about the learning activities you did this week (e.g., taking notes while watching lecture, working through an exercise in a certain way, listening to music while you work, etc.). Give an example of a specific learning activity that was LEAST helpful in improving your knowledge. What other [learning strategies](https://learnanywhere.opened.ca/learning-strategies/)[^fn:learning] might work better for this in the future? What could you do differently?
 3. Upload a drawing or diagram that illustrates connections between concepts you've learned this week to concepts you learned in previous weeks (or even before this class!). *[Lucidchart](https://www.lucidchart.com/pages/landing/concept-map-software) provides some ideas for [how to think about a concept map](https://www.lucidchart.com/pages/concept-map), but please feel free to make this your own! It's important that this map makes sense to you.*[^fn:map]
@@ -42,10 +42,12 @@ Of course, if their submission is marked with an "R", or "Revision Needed", then
 
 [^fn:fa25]: Inspired by [this](https://www.carleton.edu/ltc/ltc-blog/news/using-metacognitive-activities-to-help-students-do-the-learning/) metacognitive example (Drew, 2020).
 
-{{% /details %}}
+:::
 
-> [!WARNING]
-> This section will see some updates, as I plan to remove the EMRN rubric (see the [assignments](../assignments) page), and I'm working on streamlining these weekly reports. Stay tuned ...
+::: {.callout-warning}
+## warning: updates
+This section will see some updates, as I plan to remove the EMRN rubric (see the [assignments](../assignments) page), and I'm working on streamlining these weekly reports. Stay tuned ...
+:::
 
 ## metacognitive self-reflections
 
@@ -129,7 +131,7 @@ Also unlike the metacognitive reports, **I will read all the self-reflections**.
 
 That said, like the metacognitive reports, I will share an (anonymized) summary of the responses. For example, here is a chart I shared with my statistics class in Spring 2025, outlining the topics that were apparently most *exciting* and *challenging* to students:
 
-{{< figure src="../summary.png" class="center-image-75" >}}
+![summary](summary.png)
 
 With this, students can decide how *their* "challenging" compares to the rest of the class.
 
