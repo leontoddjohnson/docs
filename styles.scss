@@ -48,6 +48,18 @@ h2 {
   color: $link-color !important;
 }
 
+.blockquote {
+  border-left-width: 2px;
+  border-color: darkgray;
+  margin: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+nav.quarto-secondary-nav {
+  border-bottom: none;
+}
+
 // div.sourceCode {
 //   border: none;
 //   background-color: $body-bg;

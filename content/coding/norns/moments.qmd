@@ -29,7 +29,7 @@ Constantly record the last `loop length` seconds of input, and allow four voices
 
 # ui
 
-{{< figure src="moments_example.png" class="center-image-75">}}
+![](moments/moments_example.png){width=75% fig-align="center"}
 
 - The total loop length can be updated using either **K2** or **K3**
 - Adjusting either **E2** or **E3** will update the loop length
@@ -42,14 +42,14 @@ This script is compatible with either 128-pad monome grids, or the 64-pad Launch
 
 **left section**
 
-{{< figure src="page_1.svg" class="center-image-50">}}
+![](moments/page_1.svg){width=50% fig-align="center"}
 
 - **level**. With level, the lowest is on the left, highest on the right. If you push the currently selected level (i.e., the highest bright pad), the level will revert to 0, and all pads in that row will dim. Once you select a new level, that will be set.
 - **pan**. The pan pads are in increments of 0.25, where hard left is -1 and hard right is 1. So, shown here, the second voice is at (left) -0.5. Select the bright pad to revert back to center panning (0).
 
 **right section**
 
-{{< figure src="page_2.svg" class="center-image-50">}}
+![](moments/page_2.svg){width=50% fig-align="center"}
 
 - **dot move time**. The time between dot moves is determined by a fraction of the `CLOCK` tempo. The 8 pads correspond to $\displaystyle \frac{1}{k}$ of a beat for $k = 8, 7, ..., 1$. I.e., faster movements are on the left, and slower less frequent movements are on the right.
 - **rate**. The rate of a voice can be forward or reverse. To toggle between the two, select the bright (selected) pad. These pads divide the rate in the following increments, where `ova` is "octave", `5th` is a "perfect 5th" transposition of the sample, and `root` is a rate of 1.0:
@@ -60,5 +60,3 @@ This script is compatible with either 128-pad monome grids, or the 64-pad Launch
 # other parameters
 
 See `PARAMS` for more parameters. Play around with them; see what happens! :)
-
-{{< katex />}}

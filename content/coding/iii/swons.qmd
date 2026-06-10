@@ -2,9 +2,7 @@
 title: swons
 ---
 
-# swons
-
-> An extension of @tehn's *[snows](https://monome.org/docs/iii/library/snows/)*, with scales.
+> This is an extension of @tehn's *[snows](https://monome.org/docs/iii/library/snows/)*, with scales.
 
 ## set up
 

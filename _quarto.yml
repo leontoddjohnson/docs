@@ -45,14 +45,15 @@ format:
     toc-title: 'on this page'
     grid:
       margin-width: 350px
-    footnotes-hover: true
-    citations-hover: false
+    footnotes-hover: false
+    citations-hover: true
     html-math-method:
       method: mathjax
       url: "https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"
+    title-block-style: plain
 
 callout-icon: false
 code-annotations: hover
-reference-location: document
-citation-location: margin
+reference-location: margin
+citation-location: document
 bibliography: references.bib
