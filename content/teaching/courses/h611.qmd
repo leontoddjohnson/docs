@@ -39,7 +39,7 @@ Before introducing the intervention, I spent each class meeting reviewing topics
 
 ### intervention
 
-To address this gap, I decided to organize our class meetings around peer instruction (Mazur, 1997) such that students get the opportunity to practice applying their knowledge through repeated *verbal* explanation, in class. The aim of this solution is to remove the stress that comes from quiz/writeup "grading" (see my Teaching Philosophy for more on this), and give students a safe place to learn with others.
+To address this gap, I decided to organize our class meetings around peer instruction [@Mazur1997] such that students get the opportunity to practice applying their knowledge through repeated *verbal* explanation, in class. The aim of this solution is to remove the stress that comes from quiz/writeup "grading" (see my Teaching Philosophy for more on this), and give students a safe place to learn with others.
 
 In particular, after a lecture or review period taking up the first portion of class, I will release the weekly quiz on TopHat. We then run through the steps of peer instruction together (see above). This provides the scaffolding that students will need to connect theory with practice, and write their own writeups more confidently.
 
@@ -69,7 +69,3 @@ Tool | Note
 [HackMD](https://hackmd.io/) | Students use this to learn how to share their mathematical explanations using LaTeX. It also gives them a great introduction to Markdown syntax, which they'll be using a lot in the future. Lastly, it has a nice commenting feature which makes feedback easy for TAs and I.
 [Google Colab](https://colab.research.google.com/) | I use Colab to host Python code that implements the weekly content into something practical. There are usually visualizations students can use to see what's going on.
 : {tbl-colwidths="[20, 80]"}
-
-# references
-
-Mazur, E. (1997). Peer instruction: A user’s manual. Prentice Hall.

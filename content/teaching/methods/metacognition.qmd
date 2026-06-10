@@ -1,15 +1,19 @@
 ---
 title: metacognition
+footnotes-hover: true
+reference-location: document
 ---
 
-# metacognition
+::: {.callout-warning}
+Note: This page will see some updates. For example, I plan to remove the EMRN rubric, I now use self-assessment rubrics instead of full metacognitive surveys, I use hypothes.is for collaborative note-taking, and mindmup for student concept maps.
+:::
 
 In my classes, I do not grade students in the traditional sense. Instead, I use feedback as a means to communicate areas of improvement for each student. This means that a crucial element of my classes needs to be the importance I place on students' [metacognition](https://en.wikipedia.org/wiki/Metacognition), or their *ability to monitor and regulate their own learning*. In particular, I use two such tools:
 
 - weekly metacognitive reports
 - three metacognitive reflections (per term)
 
-Both of these are equally valuable for both myself and the student, and together, they cover the *planning*, *monitoring*, and *evaluating* stages of the metacognitive cycle, [as described by](https://lsa.umich.edu/content/dam/sweetland-assets/sweetland-documents/teachingresources/CultivatingReflectionandMetacognition/Metacognition.pdf) the Sweetland Center for Writing at the University of Michigan. Further, and maybe more importantly, they help to integrate each student's learning experience with their sense of Self (Lin 2001); something that is integral to my teaching philosophy.
+Both of these are equally valuable for both myself and the student, and together, they cover the *planning*, *monitoring*, and *evaluating* stages of the metacognitive cycle, [as described by](https://lsa.umich.edu/content/dam/sweetland-assets/sweetland-documents/teachingresources/CultivatingReflectionandMetacognition/Metacognition.pdf) the Sweetland Center for Writing at the University of Michigan. Further, and maybe more importantly, they help to integrate each student's learning experience with their sense of Self [@Lin2001]; something that is integral to my teaching philosophy.
 
 ## metacognitive reports
 
@@ -17,8 +21,6 @@ The main purpose of the metacognitive report is to give students a regular "chec
 
 Below are questions I'll use for weekly metacognitive reports. Students respond to these every time they submit their "main" weekly assignment.
 
-::: {.callout-note collapse="true"}
-## survey example
 1. Explain what learning method worked best for you this week, and give an example for evidence of this. Share the concept you were learning, what you were doing, and explain what finally made it click. *Think about moments where you might have thought to yourself "Ah hah!" or "Eureka, I've got it!".*
 2. Think about the learning activities you did this week (e.g., taking notes while watching lecture, working through an exercise in a certain way, listening to music while you work, etc.). Give an example of a specific learning activity that was LEAST helpful in improving your knowledge. What other [learning strategies](https://learnanywhere.opened.ca/learning-strategies/)[^fn:learning] might work better for this in the future? What could you do differently?
 3. Upload a drawing or diagram that illustrates connections between concepts you've learned this week to concepts you learned in previous weeks (or even before this class!). *[Lucidchart](https://www.lucidchart.com/pages/landing/concept-map-software) provides some ideas for [how to think about a concept map](https://www.lucidchart.com/pages/concept-map), but please feel free to make this your own! It's important that this map makes sense to you.*[^fn:map]
@@ -36,18 +38,11 @@ Of course, if their submission is marked with an "R", or "Revision Needed", then
 1. Explain what changed in your understanding that merits a new letter evaluation. For example, explain what you got wrong **and why** you believe you got it wrong.
 2. What part of this revision was *most* beneficial for your learning, and why do you feel that way?[^fn:fa25]
 
-[^fn:map]: A crucial element of metacognitive thinking is identifying the connections between current knowledge and past knowledge. **This needs only to make sense to the student**, as their mind is different from everyone else's. Concept mapping has been shown to be a valuable tool to accomplish this (Joshi et al., 2022). I only recommend Lucidchart as an option for students, but their own personal drawings are just as good.
+[^fn:map]: A crucial element of metacognitive thinking is identifying the connections between current knowledge and past knowledge. **This needs only to make sense to the student**, as their mind is different from everyone else's. Concept mapping has been shown to be a valuable tool to accomplish this [@Joshi2022]. I only recommend Lucidchart as an option for students, but their own personal drawings are just as good.
 
 [^fn:learning]: The hope is that by providing these learning strategies, students might "take the hint" and try some out on their own!
 
-[^fn:fa25]: Inspired by [this](https://www.carleton.edu/ltc/ltc-blog/news/using-metacognitive-activities-to-help-students-do-the-learning/) metacognitive example (Drew, 2020).
-
-:::
-
-::: {.callout-warning}
-## warning: updates
-This section will see some updates, as I plan to remove the EMRN rubric (see the [assignments](../assignments) page), and I'm working on streamlining these weekly reports. Stay tuned ...
-:::
+[^fn:fa25]: Inspired by [this](https://www.carleton.edu/ltc/ltc-blog/news/using-metacognitive-activities-to-help-students-do-the-learning/) metacognitive example [@Drew2020].
 
 ## metacognitive self-reflections
 
@@ -58,8 +53,6 @@ If the metacognitive reports are meant to check in with student learning as it p
 ### Initial Self-Reflection:
 
 The initial self-reflection is meant to set a benchmark for student understanding at the beginning of the course. Comparing the other two self-reflections to this one provides a bit of insight into what was gained "so far". This is also administered as a **graded survey** in Canvas, and it includes the following questions:
-
-{{% details "Survey" %}}
 
 1. For which of the following learning goals do you feel confident enough to explain to a novice in a creative way?[^fn:los]
 2. What are you most excited to learn in this class, and why?
@@ -72,15 +65,11 @@ The initial self-reflection is meant to set a benchmark for student understandin
 
 [^fn:los]: This then lists the learning objectives for the class in multiple selection boxes.
 
-[^fn:supportive]: Something nice about this question is it shows the importance I place on the balance between life and learning. It also helps to create the kind of supportive social environment suggested by Lin, 2001.
-
-{{% /details %}}
+[^fn:supportive]: Something nice about this question is it shows the importance I place on the balance between life and learning. It also helps to create the kind of supportive social environment suggested by @Lin2001.
 
 ### Midterm Self-Reflection:
 
 The main purpose of the midterm self-reflection is to check in with students on how they are feeling about their learning as a whole so far in the class. It also forces students to take stock of what they've learned, how they've learned it, and what they need to focus on before the semester is through. This survey consists of the following questions:
-
-{{% details "Survey" %}}
 
 1. For which of the following learning goals do you feel confident enough to explain to a novice in a creative way?[^fn:los2]
 2. What have been the MOST EXCITING (or rewarding) learning experiences you've had so far in this class? Please give at least one example.
@@ -93,13 +82,9 @@ The main purpose of the midterm self-reflection is to check in with students on 
 [^fn:grade-mc]: Of course, this is a multiple choice question, presenting the typical +/- letter grades.
 [^fn:grade-explain]: This is such an important question. It forces the students to measure their learning as dictated by their grading system.
 
-{{% /details %}}
-
 ### Final Self-Reflection:
 
 The final self-reflection is the *very* last thing students will do in my class. It is meant to document a culmination in their learning the subject matter of the course. Students will propose their final grade in the class, and they will also take stock of their progress since the initial self-reflection. This survey contains the following questions:
-
-{{% details "Survey" %}}
 
 1. Reflect on all the work you did in this class: weekly assignments and their feedback, lecture discussion, your final project, the feedback you gave a peer on their project, and your metacognitive reports. What stands out to you as work that you are especially proud of? In other words, what did you learn that you would feel excited to share with others? Feel free to share links to work as you like.
 2. Reflect on the more challenging aspects of this class, and consider the topics you were particularly interested in learning this semester. What gaps are there in your understanding? That is, what could you revisit in the future to improve your knowledge? *Note: you should reference your weekly assignment submissions and your project. Consider the times you were asked to Revise your work.*
@@ -109,8 +94,6 @@ The final self-reflection is the *very* last thing students will do in my class.
 
 [^fn:pass-on]: This question is a result of a suggestion from a colleague, and I really like the idea. Not only does it force students to think back on the class, and evaluate what they benefit from when it comes to their learning, but it also gives the next cohort some friendly peer advice!
 
-{{% /details %}}
-
 # responding
 
 Of course, an important part of the metacognitive process is closing the loop with the students. That is, they share their thoughts, and I need to respond to those thoughts. I do so using weekly reports and self-reflection review.
@@ -119,9 +102,11 @@ Of course, an important part of the metacognitive process is closing the loop wi
 
 **I do not respond to every metacognitive report**. These are weekly, and there are a lot of students, so of course, responding to every one would be a pretty cumbersome task. Instead, I ask teaching assistants (TAs) to *review* these, and let me know if they see anything egregious (e.g., a student who is especially struggling). In these cases, the metacognitive report acts as an indicator of students who need extra help.
 
-Tools like ChatGPT are helpful for summarizing the responses each week, and the results can be shared with students. Sharing a summary of the weekly metacognitive reports can give students an idea for what sorts of misconceptions are common, and they can guide students toward concepts that might be worth reviewing (Drew, 2020).
+Tools like ChatGPT are helpful for summarizing the responses each week, and the results can be shared with students. Sharing a summary of the weekly metacognitive reports can give students an idea for what sorts of misconceptions are common, and they can guide students toward concepts that might be worth reviewing [@Drew2020].
 
-> *Note: I am currently putting together a locally hosted text summarization tool especially tailored for this purpose that does not require uploading student responses to the internet.*
+::: {.callout-note}
+I am currently putting together a locally hosted text summarization tool especially tailored for this purpose that does not require uploading student responses to the internet.
+:::
 
 ## self-reflection review
 
@@ -140,12 +125,3 @@ With this, students can decide how *their* "challenging" compares to the rest of
 For the most part, metacognitive thinking is pretty new to students. So, it's important to orient them to the idea, giving them a sort of "training" on how to do it. At the beginning of the semester, I'll walk through the above surveys, giving them examples for what might be a decent response to each question. I believe that the more they do these reports and reflections, the more accustomed to the idea they will be.
 
 I'll also note that for the first survey submissions, TAs and I often provide feedback to students, suggesting improved ways they could respond.
-
-# references
-
-Drew, Mary. (2020, May 1). Using metacognitive activities to help students learn—Carleton College. Retrieved April 6, 2025, from https://www.carleton.edu/ltc/ltc-blog
-
-Joshi, R., Hadley, D., Nuthikattu, S., Fok, S., Goldbloom-Helzner, L., & Curtis, M. (2022). Concept Mapping as a Metacognition Tool in a Problem-Solving-Based BME Course During In-Person and Online Instruction. Biomedical Engineering Education, 2(2), 281–303. https://doi.org/10.1007/s43683-022-00066-3
-
-Lin, X. (2001). Designing metacognitive activities. Educational Technology Research and Development, 49(2), 23–40. https://doi.org/10.1007/BF02504926
-

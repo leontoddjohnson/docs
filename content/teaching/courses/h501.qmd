@@ -1,5 +1,7 @@
 ---
 title: python
+reference-location: document
+footnotes-hover: true
 ---
 
 *Intro to Data Science Programming*

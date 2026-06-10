@@ -27,8 +27,8 @@ In practice though, 2 and 3 tend to be combined in the same section. That is, th
 
 As an example, below is the Week 4 assignment for my statistics class. Each week, the statistics students are asked to investigate their data using what they learned that week — this is a "data dive". Below is the assignment for Week 4.
 
-{{% details "Week 4 Data Dive" %}}
-
+::: {.callout-tip collapse="true"}
+## data dive example
 **Purpose:**
 
 The purpose of this week's data dive is for you to think critically about what might go wrong when it comes time to make conclusions about your data.
@@ -53,12 +53,11 @@ For each of the above tasks, you must explain to the reader what insight was gat
 **Criteria:**
 
 The above task dictates the "expectations".
-
-{{% /details %}}
+:::
 
 ## peer instruction
 
-In my statistics class, I've incorporated peer instruction (Mazur, 1997) into the class meeting using the [TopHat](https://tophat.com/) Canvas integration. After putting together several True/False questions, I would:
+In my statistics class, I've incorporated peer instruction [@Mazur1997] into the class meeting using the [TopHat](https://tophat.com/) Canvas integration. After putting together several True/False questions, I would:
 
 1. Present the question to the class, ask them to give their answer *individually*, and close their laptop.
 2. They'll discuss with a pair partner what their answer was, and what their reasoning was.
@@ -69,9 +68,12 @@ Apparently students really enjoyed this method, as evidenced by positive feedbac
 
 ### example: practical mathematics
 
-Each week, students in my mathematics course are assigned 8 True/False questions (on Canvas) in reference to a notebook like [this one](https://colab.research.google.com/drive/1D8YYES5Evd37m9DSz3Nsonmg0w7YmEEn?usp=sharing).[^fn:example_q] These questions are meant to apply what they learn from the (theoretical) lecture videos and slides seen before class meetings.
+Each week, students in my mathematics course are assigned 8 True/False questions (on Canvas) in reference to a [notebook](https://colab.research.google.com/drive/1D8YYES5Evd37m9DSz3Nsonmg0w7YmEEn?usp=sharing). These questions are meant to apply what they learn from the (theoretical) lecture videos and slides seen before class meetings.
 
-[^fn:example_q]: An example question could be *Refer to Situation 1. This matrix also represents an invertible linear transformation. That is, it does NOT "squash" a 4-dimensional vector into a 3-dimensional space.*
+::: {.callout-tip collapse="true"}
+## example question
+An example question could be *Refer to Situation 1. This matrix also represents an invertible linear transformation. That is, it does NOT "squash" a 4-dimensional vector into a 3-dimensional space.*
+:::
 
 This creates a "gap between the theory and practice". To address this gap, I select a number of these quiz questions to work through *in class* each week using the peer instruction method, above. We would go through these after an in-class review of the lecture slides.
 
@@ -85,9 +87,6 @@ In my data science programming course, I divide the class into groups of 3-4 stu
 - standup meetings (a la agile project management)
 - environments (using pip)
 - environment variables (e.g., with *.env* files)
-- _an introduction to the idea of Docker*_
-
-_*This is in progress ..._
 
 Students will choose their own dataset (based on shared interest), and they meet each week to talk about their contribution to the project. They use what we learn in class to improve on their project, and (at least) the second half of every class period is devoted to project work with their group. I use [GitHub Classrooms](https://classroom.github.com/videos) for students to practice their Python skills on weekly exercises, and apply what they've learned to their project.
 
@@ -97,7 +96,8 @@ In my experience, students tend to be excited about using what they learn in a t
 
 As an example of how industry standards (e.g., agile project management) can be integrated into the project-based learning environment, here is what students in the above class are expected to do for their weekly standup reports:
 
-{{% details "Standup Report" %}}
+::: {.callout-tip collapse="true"}
+## standup report example
 
 **Discussion Reply #1** (*before* lecture)
 
@@ -123,7 +123,7 @@ In a discussion post, please provide your group with a short report of your prog
 
 Keep in mind, the instructor or a TA may reach out to you separately to discuss your progress one-on-one.
 
-{{% /details %}}
+:::
 
 ## using ai
 
@@ -141,9 +141,4 @@ This sort of thing creates a "manager-assistant" relationship between the studen
 
 # ~~the EMRN rubric~~
 
-> [!NOTE]
-> I used to evaluate *all* assignments using a rubric very similar to [this one](https://rtalbert.org/emrn), but it proved to be too much like normal grading. E.g., high achieving students consistently asked how to "get an 'E'", and others often seemed dissatisfied with 'R's. I now only use complete/incomplete.
-
-# references
-
-Mazur, E. (1997). Peer instruction: A user’s manual. Prentice Hall.
+I used to evaluate *all* assignments using a rubric very similar to [this one](https://rtalbert.org/emrn), but it proved to be too much like normal grading. E.g., high achieving students consistently asked how to "get an 'E'", and others often seemed dissatisfied with 'R's. I now only use complete/incomplete.
