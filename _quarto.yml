@@ -15,18 +15,18 @@ website:
         href: content/posts.qmd
 
   sidebar:
-    - title: "coding"
-      contents:
-      - content/coding.qmd
-      - auto: content/coding/norns
-      - auto: content/coding/iii
-      collapse-level: 1
     - title: "teaching"
       contents:
       - content/teaching.qmd
       - content/teaching/philosophy.qmd
       - auto: content/teaching/courses
       - auto: content/teaching/methods
+      collapse-level: 1
+    - title: "coding"
+      contents:
+      - content/coding.qmd
+      - auto: content/coding/norns
+      - auto: content/coding/iii
       collapse-level: 1
 
 # only using ObservableJS cells
