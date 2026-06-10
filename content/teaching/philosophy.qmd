@@ -2,7 +2,7 @@
 title: philosophy
 ---
 
-# teaching philosophy
+*(my teaching philosophy)*
 
 A la [Nancy Chism](https://podnetwork.org/content/uploads/V9-N3-Chism.pdf), I'll use this teaching philosophy to define "learning" and "teaching", lay out goals for my students, describe how I implement and assess my methods, and relay ways in which my teaching develops over time.
 
@@ -80,11 +80,11 @@ That said, I recognize that there are aspects of my instruction that could use s
 
 # a note on trust
 
-AI is here.[^fn:ai] And, with it, comes the opportunity for students to offload their coursework to models which can "do it for them". This threatens their ability to learn while in school, and I can see why many educators take it upon themselves to try and maintain a strict grasp on how students use AI (if at all), ensuring a class of students who are learning more genuinely. The  first issue with this attitude is it takes away a student's freedom to use these models in a novel way that allows them (specifically) to learn in *their* own unique way. That is, if I say *"you can only use AI \<like this\>"*, but the best way for student X to learn turns out to be using it \<like that\>, then I have done them a disservice by depriving them of a valuable learning tool. The second issue is that it presupposes students will act dishonestly, without giving them the opportunity to prove themselves otherwise. This violates the mutual respect *for students* that should be held on the side of the educator.
+Until recently, I've eschewed the term "Artificial Intelligence" or "AI" to describe extant models such as Large Language Models (LLMs), Generative Pre-trained Transformers (GPTs), and other generative models, and in a way, I still do. I believed the term reflects an unrealistic, etherial ideal that can only be idealized in the media through science-fiction, etc. In truth, these models are nothing short of applied statistics and linear algebra on a colossal scale. However, the more I reflect on the matter, the more I realize that our society has *chosen* this sort of modeling as the defining basis for what we know of as "AI". So, though I may have held out hope for something better, alas, this is where we stand ...
+
+In any case, **AI is here**. And, with it, comes the opportunity for students to offload their coursework to models which can "do it for them". This threatens their ability to learn while in school, and I can see why many educators take it upon themselves to try and maintain a strict grasp on how students use AI (if at all), ensuring a class of students who are learning more genuinely. The  first issue with this attitude is it takes away a student's freedom to use these models in a novel way that allows them (specifically) to learn in *their* own unique way. That is, if I say *"you can only use AI \<like this\>"*, but the best way for student X to learn turns out to be using it \<like that\>, then I have done them a disservice by depriving them of a valuable learning tool. The second issue is that it presupposes students will act dishonestly, without giving them the opportunity to prove themselves otherwise. This violates the mutual respect *for students* that should be held on the side of the educator.
 
 **I, personally, will *always* give the student the benefit of any doubt.** Maybe it's just my personality, but I typically don't care to investigate whether a student is lying to me, about anything — I just care about what they show me, and how I can help. If something seems fishy, there is likely a good reason, and I will approach the student with this mentality when I ask about it. My thinking is that I cannot take it upon myself to teach ethical behavior *and* teach them some subject; I can only do my best with the latter, and with the time I have, I need to be a good example, and allow for some risk and flexibility with the former.
-
-[^fn:ai]: Until recently, I've eschewed the term "Artificial Intelligence" or "AI" to describe extant models such as Large Language Models (LLMs), Generative Pre-trained Transformers (GPTs), and other generative models, and in a way, I still do. I believed the term reflects an unrealistic, etherial ideal that can only be idealized in the media through science-fiction, etc. In truth, these models are nothing short of applied statistics and linear algebra on a colossal scale. However, the more I reflect on the matter, the more I realize that our society has *chosen* this sort of modeling as the defining basis for what we know of as "AI". So, though I may have held out hope for something better, alas, this is where we stand.
 
 # references
 

@@ -1,6 +1,7 @@
 ---
 title: "gravityharp"
 sidebar: coding
+draft: true
 ---
 
 pendulums.

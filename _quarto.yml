@@ -24,7 +24,7 @@ website:
     - title: "teaching"
       contents:
       - content/teaching.qmd
-      - content/teaching/philosophy.md
+      - content/teaching/philosophy.qmd
       - auto: content/teaching/courses
       - auto: content/teaching/methods
       collapse-level: 1
