@@ -2,8 +2,6 @@
 title: moments
 ---
 
-# moments
-
 moments that once were.
 
 ## set up
