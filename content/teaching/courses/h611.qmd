@@ -1,8 +1,10 @@
 ---
 title: math
+reference-location: document
+footnotes-hover: true
 ---
 
-# mathematics for data science
+*Mathematics for Data Science*
 
 This was meant to be a "refresher" course for students who might not have had a math class in a while. That said, I teach this class as if students have only had a high school math education.
 
@@ -24,7 +26,8 @@ Below are interventions taken to improve this class over time. My hope is to kee
 
 To assess these interventions, I analyze the results from [course assessments](../methods/ungrading) at the end of the semester, and compare them to previous semesters. Since most assessment use in my courses are qualitative, I use our institution's NotebookLM instance to analyze the unstructured text responses. *I may also institute a solution of my own using my experience with natural language processing.*
 
-{{% details title="Fall 2025" open=false %}}
+::: {.callout-tip collapse="true"}
+## peer instruction
 
 ### background
 
@@ -46,7 +49,7 @@ So far, the greatest outcome has been student engagement. The peer instruction c
 
 Otherwise, we can consider the quantitative (and qualitative) data outlined below, with the overarching question: *is there still a significant gap between theory and practice?* I also will ask about this directly in their course evaluation.
 
-{{% /details %}}
+:::
 
 ## analysis
 
@@ -61,10 +64,11 @@ Otherwise, we can consider the quantitative (and qualitative) data outlined belo
 Below is a running list of tools I use in this class.
 
 Tool | Note
--- | --
+--- | ---
 [PlayPosit](https://go.playposit.com/) | Host lecture videos, but also to allow for in-lecture checks for understanding. I use these checks to guide our class meeting review sessions.
 [HackMD](https://hackmd.io/) | Students use this to learn how to share their mathematical explanations using LaTeX. It also gives them a great introduction to Markdown syntax, which they'll be using a lot in the future. Lastly, it has a nice commenting feature which makes feedback easy for TAs and I.
 [Google Colab](https://colab.research.google.com/) | I use Colab to host Python code that implements the weekly content into something practical. There are usually visualizations students can use to see what's going on.
+: {tbl-colwidths="[20, 80]"}
 
 # references
 

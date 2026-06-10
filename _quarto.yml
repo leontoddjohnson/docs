@@ -44,7 +44,7 @@ format:
     toc: true
     toc-title: 'on this page'
     grid:
-      margin-width: 350px
+      margin-width: 300px
     footnotes-hover: false
     citations-hover: true
     html-math-method:
