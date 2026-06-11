@@ -4,7 +4,7 @@ sidebar: coding
 draft: true
 ---
 
-pendulums.
+This script is an adaptation of Rob Funkhouser's Gravity Harp instrument.
 
 ## set up
 

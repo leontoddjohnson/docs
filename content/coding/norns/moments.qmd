@@ -57,4 +57,4 @@ This script is compatible with either 128-pad monome grids, or the 64-pad Launch
 
 # other parameters
 
-See `PARAMS` for more parameters. Play around with them; see what happens! :)
+See `PARAMS` for more parameters. Play around with them, turn them up, turn them down, see what happens, tell your friends.

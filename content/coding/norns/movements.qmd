@@ -1,9 +1,8 @@
 ---
 title: movements
-bookCollapseSection: false
+footnotes-hover: true
+reference-location: document
 ---
-
-# movements
 
 movements is a sequencer of samples from audio files or of slices from recorded input.
 
@@ -31,7 +30,7 @@ The 11 tracks are divided into two different "functionalities":
 
 The idea is for all tracks (regardless of functionality) to share *roughly* the same attributes. I.e., if you can do it with **sample**, you can do it with **tape**, and vice versa. Thus, both share the same parameters, with a few caveats.
 
-{{% details title="some terminology" open=false %}}
+::: {.callout-tip title="some terminology" collapse="true"}
 
 **vocabulary**
 
@@ -46,6 +45,7 @@ transport | the mechanism moving a sequence from step to step
 `bar` | one of eight partitions of 16 steps
 `sample` | an audio file loaded into a **sample** bank
 `slice` | a small section of the **tape** partition
+: {tbl-colwidths="[20, 80]"}
 
 **notation**
 
@@ -53,7 +53,7 @@ transport | the mechanism moving a sequence from step to step
 - *italics* indicates emphasis or some special term.
 - `monospace` indicates some *particular* value (or collection of values) which could be selected or adjusted.
 
-{{% /details %}}
+:::
 
 ## tldr; basic setup
 
@@ -91,11 +91,13 @@ The **sample** functionality is meant for loading, playing, and sequencing audio
 - [According to the Timber developer](https://llllllll.co/t/timber/21407), Timber is intended to play up to 7 voices at a time; this is why the **sample** functionality is limited to seven tracks.
 - When playing a sequence, movements will stop playing the "current" step before starting to play the next step.
 
-> [!NOTE]
-> If an audio file is *over* 5 seconds stereo or over 10 seconds mono (at 48kHz), then Timber will stream it. Otherwise, shorter files will be loaded into the Timber buffer. Shorter audio files are more versatile in Timber, as streaming samples cannot be played backward, and they do not have the `Infinite Loop` option.
+::: {.callout-note}
+If an audio file is *over* 5 seconds stereo or over 10 seconds mono (at 48kHz), then Timber will stream it. Otherwise, shorter files will be loaded into the Timber buffer. Shorter audio files are more versatile in Timber, as streaming samples cannot be played backward, and they do not have the `Infinite Loop` option.
+:::
 
-> [!WARNING]
-> For the best playback performance, **use audio files with a sample rate of 48kHz**. Anything less than that may cause the playback to be warped a bit ...
+::: {.callout-warning}
+For the best playback performance, **use audio files with a sample rate of 48kHz**. Anything less than that may cause the playback to be warped a bit ...
+:::
 
 ## tape
 
@@ -115,8 +117,9 @@ The **tape** functionality is meant for playing, recording, and sequencing slice
 
 Both **sample** and **tape** have their own independent delay functionalities. The **sample** side uses a SuperCollider delay bus in the Timber engine, and **tape** uses softcut. Both delay times are synced to the internal **CLOCK** using the same `clock_fraction` options as the **sequence**r (see below).
 
-> [!CAUTION]
-> When using the **tape delay**, you should keep the internal tempo *over* 12 BPM; so 13 BPM at a minimum.
+::: {.callout-caution}
+When using the **tape delay**, you should keep the internal tempo *over* 12 BPM; so 13 BPM at a minimum.
+:::
 
 # grid
 
@@ -131,13 +134,13 @@ For *both* the **sample** and **tape** functionalities, there are four grid page
 
 For the most part, these pages are the same for both functionalities, with small deviations for **tape**. *All* grid pages will share the same navigation bar on the lower right (with **mode** and **ALT** pads included).
 
-{{< figure src="main_grid.svg" class="center-image-75">}}
+![main grid](movements/main_grid.svg)
 
 Here, **S** corresponds to **sample** and **T** corresponds to **tape**. For each of these, you have the following:
 
-- **_1:** toggle between the **sequence** and **levels** page
-- **_2:** the **time** page
-- **_3:** the **config** page
+- **1:** toggle between the **sequence** and **levels** page
+- **2:** the **time** page
+- **3:** the **config** page
 
 The **mode** pad toggles between the following modes:
 
@@ -146,8 +149,9 @@ The **mode** pad toggles between the following modes:
 
 The **mode** and **ALT** pads typically correspond to different functions within **sample** or **tape**.
 
-> [!NOTE]
-> When you switch between **sample** and **tape** functionalities on the grid, the display will also update in turn (and vice versa).
+::: {.callout-note}
+When you switch between **sample** and **tape** functionalities on the grid, the display will also update in turn (and vice versa).
+:::
 
 ## sample pages
 
@@ -155,7 +159,7 @@ The **mode** and **ALT** pads typically correspond to different functions within
 
 For both **sample** and **tape**, the best place to start is often with the **config** page.
 
-{{< figure src="sample_config_1.svg" class="center-image-85">}}
+![sample config](movements/sample_config_1.svg)
 
 #### track parameters
 
@@ -214,7 +218,7 @@ For both **sample** and **tape**, the best place to start is often with the **co
 
 The **sample seq** page is an interface for the transports for the 7 **sample** tracks.
 
-{{< figure src="sample_seq.svg" class="center-image-85">}}
+![sample sequence](movements/sample_seq.svg)
 
 #### track rows
 
@@ -246,7 +250,7 @@ The **sample seq** page is an interface for the transports for the 7 **sample** 
 
 Parameter levels for each **sample** step can be adjusted in the **sample levels** page.
 
-{{< figure src="sample_levels.svg" class="center-image-85">}}
+![sample levels](movements/sample_levels.svg)
 
 - The top row shows the sequence for the selected track, and it can be adjusted in the same way as any row in the **sample sequence** page.
 - When you add a new step to the sequence, the parameter value will default to the track value.
@@ -254,14 +258,15 @@ Parameter levels for each **sample** step can be adjusted in the **sample levels
 - The bottom navigation row remains the same as the rest of the grid pages.
 - In **PLAY MODE**, the **pattern bars** becomes the **track param selection** region seen in the [sample config](#sample-config) section above. In this mode, you can use that region to select the parameter to focus on.
 
-> [!WARNING]
-> Keep in mind, the **levels** page reflects **relative** values based on the track level. The "final" step value will depend on these levels and the `track` level. For more on this, see the [squelching](#squelching) section.
+::: {.callout-warning}
+Keep in mind, the **levels** page reflects **relative** values based on the track level. The "final" step value will depend on these levels and the `track` level. For more on this, see the [squelching](#squelching) section.
+:::
 
 ### sample time
 
 Each track proceeds on its own independent transport. These transports move from one step to the next based on either (a) a fraction of a *beat* (from the tempo set in **PARAMS/CLOCK**), or (b) a fraction of a *second*. For **sample**, these `clock_fraction`s can be adjusted on the **sample time** page.
 
-{{< figure src="sample_time.svg" class="center-image-85">}}
+![sample time](movements/sample_time.svg)
 
 - Each of the first 7 rows correspond to a **sample** track.
 - The first column toggles between playing and not playing a track sequence.
@@ -294,8 +299,9 @@ Hold a pad in the *third* column to define track `i` as a "play trigger", then s
 - A track can only trigger *one* bank, and only one bank can be triggered at a time.
 - Re-selecting any "triggered" track or bank (no need to hold anything) will undo the trigger.
 
-> [!WARNING]
-> Note: clock fractions and track-level parameters will remain the same when switching from bank to bank. You might need to get creative here: e.g., use the pattern bars to "slow/speed up" the time, use the parameter patterns to control parameters between banks.
+::: {.callout-warning}
+Note: clock fractions and track-level parameters will remain the same when switching from bank to bank. You might need to get creative here: e.g., use the pattern bars to "slow/speed up" the time, use the parameter patterns to control parameters between banks.
+:::
 
 ## tape pages
 
@@ -304,14 +310,15 @@ For the most part, **tape** pages and **sample** grid pages look and function th
 - **tape** only deals with four tracks while **sample** deals with 7 tracks.
 - **tape** incorporates buffer and recording management.
 
-> [!NOTE]
-> The script was written with **tape** tracks being tracks 8-11. But, you can safely think of them as "tape 1-4". In this documentation, we'll use the 8-11 notation.
+::: {.callout-note}
+The script was written with **tape** tracks being tracks 8-11. But, you can safely think of them as "tape 1-4". In this documentation, we'll use the 8-11 notation.
+:::
 
 ### tape config
 
 The **tape config** page is very similar to the **sample config** page.
 
-{{< figure src="tape_config.svg" class="center-image-85">}}
+![tape config](movements/tape_config.svg)
 
 - The **track param adjustment**, **track param selection**, and **track selection** regions function the same way as their complements on the **sample** side.
 - **PLAY MODE** also functions the same way.
@@ -325,14 +332,15 @@ The **tape config** page is very similar to the **sample config** page.
   - To assign a pair a stereo, set the panning for the two tracks as hard left, and hard right, respectively. Also, make sure that the buffers are set accordingly (lower to the left, and higher to the right).
   - The *left* track is the one that "drives" the stereo pair. E.g., if you want to sequence the `8-9` stereo pair, you would set the tracks as described above, and *only* adjust/sequence `track 8`. In this way, movements can only accommodate two stereo tracks.
 
-> [!WARNING]
-> You'll notice it's not easy to use the **slice locator** to "move" a slice anywhere in the partition. I.e., the slice start/end times can only be adjusted "in the vicinity" of the current slice. This is to keep slices in positions that *for the most part* divide the partition up, in order.
+::: {.callout-warning}
+You'll notice it's not easy to use the **slice locator** to "move" a slice anywhere in the partition. I.e., the slice start/end times can only be adjusted "in the vicinity" of the current slice. This is to keep slices in positions that *for the most part* divide the partition up, in order.
+:::
 
 ### tape sequence
 
 The **tape seq** page takes the **sample seq** and adds the ability to arm recording *at* a step.
 
-{{< figure src="tape_seq.svg" class="center-image-85">}}
+![tape seq](movements/tape_seq.svg)
 
 - The first four rows correspond to the four **tape** tracks. These behave the same way as the rows in the **sample seq** page.
 - Select a step in the 6th row to arm recording *at* that step. As long as the step corresponds to a step in the *focused* track, movements will record to the slice corresponding to that track.
@@ -373,13 +381,14 @@ Use **E1** on its own to scroll through the following displays.
 
 The first **sample** display is the **track pool** display. On the right side is the list of audio files corresponding to samples in the `track_pool_cue`. These are "on deck" to be added to the `track_pool`, whose audio files are listed in brighter text on the left side.
 
-{{< figure src="screen_1.png" class="center-image-50">}}
+![track pool 1](movements/screen_1.png){width=50%}
+
 
 - **K2** on this page will enter the file selection, where you can pick a folder to load into the current bank for the focussed track.
   - After a folder is loaded, the folder name will show up at the bottom of this page (specifically for the selected bank).
 - The order of the audio files on this page correspond to the order of the `sample`s in the `track_pool` (and `track_pool_cue`). To ensure a particular order, make sure to select (or deselect) samples on the grid accordingly.
 
-{{< figure src="screen_2.png" class="center-image-50">}}
+![track pool 2](movements/screen_2.png){width=50%}
 
 - Use **E2** to scroll through the `track_pool`, and **E3** to scroll through the `track_pool_cue`.
 
@@ -387,7 +396,7 @@ The first **sample** display is the **track pool** display. On the right side is
 
 For the **sample** functionality, the **track params** display shows the current track parameter on the left, and the `noise` level on the right.
 
-{{< figure src="screen_3.png" class="center-image-50">}}
+![track params](movements/screen_3.png){width=50%}
 
 - **E2** will adjust the track parameter level (in this case, `amp`), and **E3** will adjust the `noise` level.
 - For `filter` and `scale` parameters, **K2** swaps between types (i.e., between low pass / high pass, and forward / reverse).
@@ -397,12 +406,12 @@ For the **sample** functionality, the **track params** display shows the current
 
 The **sample waveform** display can show the waveform for the selected sample. By default, Timber will only render the sample waveform when requested. 
 
-{{< figure src="screen_4.png" class="center-image-50">}}
+![waveform 1](movements/screen_4.png){width=50%}
 
 - Use **K3** to render the waveform.
 - Use **E2** to adjust the start frame, and **E3** to adjust the end frame.
 
-{{< figure src="screen_5.png" class="center-image-50">}}
+![waveform 2](movements/screen_5.png){width=50%}
 
 - When the **play mode** (on the grid) is set to `"Loop"` or `"Inf. Loop"`, this display will show the `start` and `stop` positions (vertical lines) *as well as* the `loop_start` and `loop_stop` positions (brackets).
   - To switch between setting these, use **K2**. Then, **E2** and **E3** work as expected.
@@ -413,13 +422,14 @@ The **sample waveform** display can show the waveform for the selected sample. B
 
 When the **play mode** is set to `"Gated"` or `"1-Shot"`, then you can adjust the amplitude envelope *for the sample*. This is done on the **sample envelope** page.
 
-{{< figure src="screen_6.png" class="center-image-50">}}
+![sample envelope](movements/screen_6.png){width=50%}
 
 - Use **K2** to swap between adjusting `attack` and `delay` (the top two) or adjusting `sustain` and `release` (the bottom two).
 - **E2** and **E3** will make the adjustments accordingly.
 
-> [!NOTE]
-> Note that the sample envelope parameters are tied to the *sample itself*. So, no matter what track pool the sample is assigned to, or how the other parameters are updated, the enveloping set here will remain the same.
+::: {.callout-note}
+Note that the sample envelope parameters are tied to the *sample itself*. So, no matter what track pool the sample is assigned to, or how the other parameters are updated, the enveloping set here will remain the same.
+:::
 
 ## tape displays
 
@@ -433,7 +443,7 @@ Again, use **E1** on its own to scroll through the following displays.
 
 The **track pool** display for **tape** shows the two buffers of the currently selected `partition`, and the slices assigned to the `track_pool` and `track_pool_cue`. Use **E2** to adjust the `slice` start time and **E3** to adjust the `slice` end time for the currently selected `slice`.
 
-{{< figure src="screen_7.png" class="center-image-50">}}
+![track pool 1](movements/screen_7.png){width=50%}
 
 - The bright bar closest to the buffers indicates the range of the currently selected sample.
 - The bright-ish bars in the middle region represent the slices assigned to the current `track_pool`.
@@ -443,7 +453,7 @@ The **track pool** display for **tape** shows the two buffers of the currently s
   - The file will start at the beginning of the current `slice`, but movements will cut it off at the end of the `partition`.
   - Set the `overdub` level in the **track params** display to preserve that amount of audio "under" the audio file. I.e., if `overdub == 0`, then the audio file will overwrite everything in that range.
 
-{{< figure src="screen_8.png" class="center-image-50">}}
+![track pool 2](movements/screen_8.png){width=50%}
 
 - The top two horizontal lines indicate the left and right buffers, respectively. In the regions where these are bright, there is audio.
   - The `rec_threshold` parameter in **PARAMS** sets the minimum level required for audio to be shown here.[^fn:recthresh] E.g., increasing this parameter will make the "audio regions" seem more sparse.
@@ -457,7 +467,7 @@ The **track pool** display for **tape** shows the two buffers of the currently s
 
 This display functions the same as the **track params** display for **sample**. The only difference is that the "extra" parameter here is `overdub` level.
 
-{{< figure src="screen_9.png" class="center-image-50">}}
+![track params](movements/screen_9.png){width=50%}
 
 - On this display, **E2** and **E3** will still adjust the `slice` start and end times, respectively.
 
@@ -465,7 +475,7 @@ This display functions the same as the **track params** display for **sample**. 
 
 The **track waveform** display for **tape** is very similar to the same for **sample**.
 
-{{< figure src="screen_10.png" class="center-image-50">}}
+![track waveform](movements/screen_10.png){width=50%}
 
 - The waveform on this page will render *after* a recording is complete. While softcut is recording, you'll see a little circle show up on the bottom of the display.
   - This includes loop recording. You won't see the updated rendering until the record indicator is gone.
@@ -485,13 +495,13 @@ There is one display for **sample** delay, and another for **tape** delay.
 
 On the **sample delay** page, you can adjust the `delay feedback` and `delay time` using **E2** and **E3**, respectively.
 
-{{< figure src="screen_11.png" class="center-image-50">}}
+![sample delay](movements/screen_11.png){width=50%}
 
 ### tape delay
 
 Similarly, on the **tape delay** display, you can adjust the `delay feedback` and `delay time` for both left and right channels.
 
-{{< figure src="screen_12.png" class="center-image-50">}}
+![tape delay](movements/screen_12.png){width=50%}
 
 - Use **K2** *or* **K3** to swap between `feedback` and `time`.
 - Then, use **E2** and **E3** to adjust the left and right channels of the delay, respectively.
@@ -523,7 +533,7 @@ There are two basic kinds of squelching: unidirectional and bidirectional.
 
 Unidirectional squelching is applied to **amplitude**, **filter**, **delay**, and **probability**. Essentially, the track value dictates the maximum value for a scale, and then the parameter pattern value dictates the value within the scale.
 
-{{< figure src="squelch_1.svg" class="center-image-50">}}
+![unidirectionality](movements/squelch_1.svg){width=50%}
 
 For example, if the `track` level value for **amplitude** is set at 0.5 and the parameter pattern level is set to 0.8, then the final value for that step will be 80% of the way to 0.5, or 0.4.
 
@@ -531,7 +541,7 @@ For example, if the `track` level value for **amplitude** is set at 0.5 and the 
 
 Alternatively, bidirectional squelching is applied to **panning** and **scale**. In this kind of squelching, sample step values fall within a proportional distance from a new center.
 
-{{< figure src="squelch_2.svg" class="center-image-50">}}
+![bidirectionality](movements/squelch_2.svg){width=50%}
 
 In other words, the **track value** becomes the new "center", and the parameter pattern value translates to the new scale.
 
@@ -539,7 +549,7 @@ In other words, the **track value** becomes the new "center", and the parameter 
 
 `amp` is the amplitude (volume) of the playing sample/slice. It's represented on the grid as filling from left-to-right on the **config** page, and from bottom to top on the **levels** page.
 
-{{< figure src="param_amp.svg" class="center-image-85">}}
+![amplitude](movements/param_amp.svg)
 
 - The bottom row (on the left side) will be *blank* for `amp`. From another parameter focus, *re*-select the pad to revert to the `amp` parameter.
   - The grid diagram in the panning section shows the other parameter options.
@@ -550,7 +560,7 @@ In other words, the **track value** becomes the new "center", and the parameter 
 
 The `pan` value is bidirectional, and it's illustrated from left-to-right on the **config** page, and from bottom-to-top on the levels page (respectively).
 
-{{< figure src="param_pan.svg" class="center-image-85">}}
+![panning](movements/param_pan.svg)
 
 - The values on the grid correspond to the following pan values:
   - `-1 | -2/3 | -1/3 | 1/3 | 2/3 | 1`
@@ -564,7 +574,7 @@ The `filter` parameter is unidirectional, but it can be defined from "bottom to 
 - `"Low Pass"` (Default)
 - `"High Pass"`
 
-{{< figure src="param_filter.svg" class="center-image-85">}}
+![filtering](movements/param_filter.svg)
 
 - To swap between the two filter types, *re*-select the most extreme value. So, for track 2 in the example above, if we push the third pad from the left, this filter will change from high pass to low pass.
   - In the **track parameter** page in the UI, you can also press **K2** to swap between types.
@@ -576,8 +586,9 @@ The `filter` parameter is unidirectional, but it can be defined from "bottom to 
   - `100 | 500 | 1000 | 5000 | 10000 | 20000`
   - When you switch from high pass to low pass (or vice versa), the track frequency level as well as all parameter pattern frequency levels will mirror themselves. E.g., `500` for low pass becomes `10000` for high pass.
 
-> [!NOTE]
-> Good rule of thumb: If you plan on swapping track filter types, keep the filter parameter patterns at values closer to the middle.
+::: {.callout-note}
+Good rule of thumb: If you plan on swapping track filter types, keep the filter parameter patterns at values closer to the middle.
+:::
 
 ## delay
 
@@ -592,8 +603,9 @@ This is a unidirectional parameter, and it manifests on the grid in the same way
 - All delay parameters can be set in the **PARAMS** menu, or on the corresponding **tape delay display**.
 - The levels on the grid correspond to the same decibel levels as `amp`: these are essentially **delay** send levels.
 
-> [!WARNING]
-> **To use delay, you'll need to increase the overall delay level in the UI.** This is initialized as 0 (to avoid unwanted delay at the start), but once it's set, you should be good to go.
+::: {.callout-warning}
+**To use delay, you'll need to increase the overall delay level in the UI.** This is initialized as 0 (to avoid unwanted delay at the start), but once it's set, you should be good to go.
+:::
 
 ## probability
 
@@ -607,7 +619,7 @@ Again, this is a unidirectional parameter, so it manifests on the grid in the sa
 
 The `scale` parameter determines the pitch and direction of a sample/slice. This is a bidirectional parameter that actually behaves similarly to `filter` on the grid.
 
-{{< figure src="param_scale.svg" class="center-image-85">}}
+![scale](movements/param_scale.svg)
 
 - When a sample/slice is to be played forward, the scale pads on the grid pads light up from left-to-right. When set to be played backward, the pads light up from right-to-left.
 - To swap between being played forward or in reverse, tap the extreme-most pad selected. So, for track 4 in the example above, pushing the third pad would make that track play its slices in reverse.
@@ -622,14 +634,15 @@ The `scale` parameter determines the pitch and direction of a sample/slice. This
 - Again, this is a *bidirectional* parameter, where the "middle" value is the `root`. The sample/slice itself defines the "root" pitch.
   - The `track` value defines the middle value for squelching. The final value is within 2 increments of this value. So, if the `scale` value for a (forward) track is `+ova`, then the lowest parameter pattern value will correspond to `root+interval`.
 
-> [!WARNING]
-> Remember that parameter *pattern* levels are *relative*. They are meant to represent deviations from the `track` parameter level. So, if things start to get confusing, think about the bidirectional squelching diagram, above, or keep the track level at `root`.
+::: {.callout-warning}
+Remember that parameter *pattern* levels are *relative*. They are meant to represent deviations from the `track` parameter level. So, if things start to get confusing, think about the bidirectional squelching diagram, above, or keep the track level at `root`.
+:::
 
 ## interval
 
 The `interval` parameter defines what note of the scale to play when `scale` is set to play at this interval.
 
-{{< figure src="param_interval.svg" class="center-image-85">}}
+![interval](movements/param_interval.svg)
 
 - The interval here corresponds to either a `major` or (natural) `minor` scale. This can be set in the **PARAMS** menu.
 - The values on the grid start with the `2nd` note of the scale, and end with the `7th` note of the scale:
@@ -643,8 +656,9 @@ The `interval` parameter defines what note of the scale to play when `scale` is 
 
 # filenaming
 
-> [!NOTE]
-> Note: the following assumes you have a Mac or Linux, or you have Python installed on your computer.
+::: {.callout-note}
+The following assumes you have a Mac or Linux, or you have Python installed on your computer.
+:::
 
 Download the */lib/filenaming.py* file to rename Ableton clips in a way that's convenient for organizing in the **sample** banks. By default, this method assumes you want different instruments (or sample "types") loaded by row or by column in the bank.
 
@@ -671,7 +685,5 @@ Download the */lib/filenaming.py* file to rename Ableton clips in a way that's c
 For most of the unimplemented ideas that came to mind, there was good a reason why I chose not to implement it (usually it came down to "less is more"). But, for the sake of sharing, here are a few features I could have included, but chose not to:
 
 - **Incorporating LFOs.** True, the Timber engine offers an LFO functionality for samples. But, this interferes with movements' ability to adjust **sample** panning and amplitude levels in a pattern. In a sense, the LFO overcomplicates the automation that is already happening due to parameter patterns. The same point can be made for adding an LFO for the **tape** functionality.
-- **Setting different sequence "start" locations**. Again, the juice didn't seem worth the squeeze here. Even so, I think it's kind of nice to know that every sequence starts at the beginning of the same bar. At least, the "island" functionality provides a decent way of getting around this, though.
+- **Setting different sequence "start" locations** (other than the first bar of the grid). Again, the juice didn't seem worth the squeeze here. Even so, I think it's kind of nice to know that every sequence starts at the beginning of the same bar. At least, the "island" functionality provides a decent way of getting around this, though.
 - **Sending MIDI**. This was a tough decision, but it comes down to the purpose of this script: it is a sampler, so it should be used that way. There are myriad sequencer scripts out there that are great for controlling an outboard MIDI device, and many of their sequencer functions are better than movements anyway! So, I recommend looking into those for that purpose.
-
-{{< katex />}}

@@ -2,9 +2,9 @@
 title: tutti
 ---
 
-# tutti
-
 all together.
+
+This script is an extension to \@infinitedigits's [mx.samples](https://llllllll.co/t/mx-samples/41400).
 
 ## set up
 
@@ -22,11 +22,9 @@ all together.
 
 ## there's not much to it
 
-> This script is an extension to @infinitedigits's [mx.samples](https://llllllll.co/t/mx-samples/41400).
-
 tutti simply allows you to run mx.samples for multiple instruments at once. For example, you could simultaneously play *instrument A* through one MIDI channel (or device) and *instrument B* through a different MIDI channel (or device). That's all. It's fun![^fn:arc]
 
-[^fn:arc]: Shameless plug, this script is fun to use along with [swons](../swons)!
+[^fn:arc]: Shameless plug, this script is fun to use along with [swons](../iii/swons.html)!
 
 Right now, this script is completely relegated to the `PARAMS` page. Select instruments, MIDI sources, and channels. Then, adjust parameters for each instrument as you would normally for mx.samples.
 
@@ -36,5 +34,6 @@ Right now, this script is completely relegated to the `PARAMS` page. Select inst
 
 By default, you can select up to **four** instruments, but you can change this by updating the `N_INSTRUMENTS` variable in the script.
 
-> [!CAUTION]
-> Right now, this script uses a noise parameter that was added to [my fork of the mx.samples repository](https://github.com/leontoddjohnson/mx.samples/tree/main). Until [the pull request](https://github.com/schollz/mx.samples/pull/13) is merged, you'll need to either (a) clone the fork, or (b) remove the noise parameter [here](https://github.com/leontoddjohnson/tutti/blob/6c3fa899667d4a76458568f9eab888756e34262e/tutti.lua#L143) and [here](https://github.com/leontoddjohnson/tutti/blob/6c3fa899667d4a76458568f9eab888756e34262e/tutti.lua#L201).
+::: {.callout-caution}
+Right now, this script uses a noise parameter that was added to [my fork of the mx.samples repository](https://github.com/leontoddjohnson/mx.samples/tree/main). Until [the pull request](https://github.com/schollz/mx.samples/pull/13) is merged, you'll need to either (a) clone the fork, or (b) remove the noise parameter [here](https://github.com/leontoddjohnson/tutti/blob/6c3fa899667d4a76458568f9eab888756e34262e/tutti.lua#L143) and [here](https://github.com/leontoddjohnson/tutti/blob/6c3fa899667d4a76458568f9eab888756e34262e/tutti.lua#L201).
+:::
