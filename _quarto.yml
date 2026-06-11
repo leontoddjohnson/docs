@@ -41,6 +41,7 @@ format:
     theme:
       - cosmo
       - styles.scss
+    syntax-highlighting: github
     toc: true
     toc-title: 'on this page'
     grid:
