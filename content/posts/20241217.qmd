@@ -3,6 +3,8 @@ title: music gestation
 date: 2024-12-17
 categories:
 - music
+footnotes-hover: true
+reference-location: document
 ---
 
 # the basic idea

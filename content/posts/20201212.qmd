@@ -5,23 +5,21 @@ categories:
 - AI
 ---
 
+::: {.callout-note}
+It's worth noting that in this article, "AI" takes on its generalized form, not to be confused with "LLM", or agents such as Claude Code, etc.
+:::
+
 # introduction
 
-In the summer of 1956, Dartmouth College held its first Summer Research Project on Artificial Intelligence to discuss developments in a new field called (and there coined) “artificial intelligence.” But, the idea of thinking mechanical agents was made clear in earlier texts such as Alan Turing’s seminal work Computing Machinery and Intelligence (1950), and even as early as 1637, when Descartes implied a requirement for some test by which we may distinguish between humans and machines that act human-like.[^fn:sep_ai] Even further, Rabbi Daniel Nevins[^fn:nevins] illustrates how the ancient folkloric notion of a golem can be interpreted as a theoretical creature with some sort of artificial (limited) intelligence. Ostensibly, AI is an old compelling idea, and it goes by many names and forms, so pinning down a useful comprehensive definition is an increasingly difficult task.
-
-[^fn:sep_ai]: Bringsjord, S. & Govindarajulu, N. Artificial Intelligence. Stanford Encyclopedia of Philosophy. 2018.
-
-[^fn:nevins]: Nevins, Daniel. Halakhic Responses to Artificial Intelligence and Autonomous Machines. 2019.
+In the summer of 1956, Dartmouth College held its first Summer Research Project on Artificial Intelligence to discuss developments in a new field called (and there coined) “artificial intelligence.” But, the idea of thinking mechanical agents was made clear in earlier texts such as Alan Turing’s seminal work Computing Machinery and Intelligence (1950), and even as early as 1637, when Descartes implied a requirement for some test by which we may distinguish between humans and machines that act human-like [@bringsjord2018ai]. Even further, [@nevins2019ai] illustrates how the ancient folkloric notion of a golem can be interpreted as a theoretical creature with some sort of artificial (limited) intelligence. Ostensibly, AI is an old compelling idea, and it goes by many names and forms, so pinning down a useful comprehensive definition is an increasingly difficult task.
 
 # colloquially
 
-Today, the phrase “artificial intelligence” (AI) is used in so many ways that it is all but rendered meaningless. It is used to describe image recognition algorithms, text generation, chat-bots, linear regression, artificial neural networks, topic models, etc. Russell & Norvig use a goal-based definition,[^fn:aima] implying AI is the "field that aims at building" systems which think (or act) like humans, or systems which think (or act) rationally. Often, the tech and robotics industries use the term to inculcate in their users a sense that their product is accomplishing something technologically sexy. But, I for one am not convinced we are ready to define artificial intelligence any more than we are equipped to define intelligence itself. What is intelligence?[^fn:melanie] Is intelligence a purely human trait, or is it universal? Is limited intelligence (e.g., stupidity) still intelligence? When an ant makes a left turn, does the ant behind it make an intelligent decision to follow suit? Or when it rains, is a tree intelligent in its choice to flip over its leaves? These kinds of questions must be answered before we are ready to pin down a useful definition of the term "artificial intelligence".
+Today, the phrase “artificial intelligence” (AI) is used in so many ways that it is all but rendered meaningless. It is used to describe image recognition algorithms, text generation, chat-bots, linear regression, artificial neural networks, topic models, etc. Russell & Norvig use a goal-based definition [@russell2020aima], implying AI is the "field that aims at building" systems which think (or act) like humans, or systems which think (or act) rationally. Often, the tech and robotics industries use the term to inculcate in their users a sense that their product is accomplishing something technologically sexy. But, I for one am not convinced we are ready to define artificial intelligence any more than we are equipped to define intelligence itself. What is intelligence?[^fn:melanie] Is intelligence a purely human trait, or is it universal? Is limited intelligence (e.g., stupidity) still intelligence? When an ant makes a left turn, does the ant behind it make an intelligent decision to follow suit? Or when it rains, is a tree intelligent in its choice to flip over its leaves? These kinds of questions must be answered before we are ready to pin down a useful definition of the term "artificial intelligence".
 
 [^fn:melanie]: In [Why AI is Harder Than We Think](https://arxiv.org/pdf/2104.12871.pdf), Melanie Mitchell from The Santa Fe Institute provides an outstanding analysis of this question from the perspective of the shortcomings of "AI". Of note is one particular observation she cites by Hans Moravec that even human *reason* (and, in turn, I assert, our confidence in logic) is dependent on purely biological, genetic, evolutionary knowledge about how to survive on earth.
 
 The Humian exposé of our misled cause-and-effect model of reality could be extended to bare a dubious interpretation of intelligence as “the thing which happens in between the cause and effect". Though, the acclaimed linear premise itself is already questionable. It seems to me there’s more to intelligence than what meets the eye — the solipsist nature of the concept makes it a tough nut to crack.
-
-[^fn:aima]: Russell, S. and Norvig, P. Artificial Intelligence: A Modern Approach (4th Edition). Pearson, 2020.
 
 # some conjecture
 
@@ -43,7 +41,7 @@ As it stands, we are not quite at a place technologically where these kinds of q
 
 Instead of keeping things discrete, where the meaning of "thinks like" or "acts like" may be met with conflicting interpretations, I propose we use a continuous scale. Consider the axes below:
 
-![fig](ai_def.svg){width=50%}
+![AI axes](ai_def.svg){width=50%}
 
 Simply, I'd redefine AI to be *"the field which aims to build systems whose nature can be represented as a point somewhere on this coordinate plane"*.[^fn:bostrom] Or, for a travel-size version:
 

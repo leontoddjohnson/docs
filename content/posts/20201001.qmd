@@ -5,6 +5,8 @@ categories:
 - society
 - linguistics
 - recommender systems
+footnotes-hover: true
+reference-location: document
 ---
 
 # introduction
