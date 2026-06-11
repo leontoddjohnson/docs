@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>metacognition – ltj</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d6c07edd3d23bd2380ab709eca864cd.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-a405c485f01f3dc5ee0e34b642a39a9f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">ltj</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../content/teaching.html" aria-current="page"> 
+<span class="menu-text">teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../content/coding.html"> 
+<span class="menu-text">coding</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../content/posts.html"> 
+<span class="menu-text">journal</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/teaching/methods/index.html">methods</a></li><li class="breadcrumb-item"><a href="../../../content/teaching/methods/metacognition.html">metacognition</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching/philosophy.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">philosophy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../content/teaching/courses/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">courses</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching/courses/h501.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching/courses/h510.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">stats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching/courses/h517.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">data vis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching/courses/h611.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">math</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../content/teaching/methods/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">methods</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching/methods/assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">assignments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching/methods/metacognition.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">metacognition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/teaching/methods/ungrading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ungrading</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">on this page</h2>
+   
+  <ul>
+  <li><a href="#metacognitive-reports" id="toc-metacognitive-reports" class="nav-link active" data-scroll-target="#metacognitive-reports">metacognitive reports</a></li>
+  <li><a href="#metacognitive-self-reflections" id="toc-metacognitive-self-reflections" class="nav-link" data-scroll-target="#metacognitive-self-reflections">metacognitive self-reflections</a>
+  <ul class="collapse">
+  <li><a href="#initial-self-reflection" id="toc-initial-self-reflection" class="nav-link" data-scroll-target="#initial-self-reflection">Initial Self-Reflection:</a></li>
+  <li><a href="#midterm-self-reflection" id="toc-midterm-self-reflection" class="nav-link" data-scroll-target="#midterm-self-reflection">Midterm Self-Reflection:</a></li>
+  <li><a href="#final-self-reflection" id="toc-final-self-reflection" class="nav-link" data-scroll-target="#final-self-reflection">Final Self-Reflection:</a></li>
+  </ul></li>
+  <li><a href="#responding" id="toc-responding" class="nav-link" data-scroll-target="#responding">responding</a>
+  <ul class="collapse">
+  <li><a href="#weekly-reports" id="toc-weekly-reports" class="nav-link" data-scroll-target="#weekly-reports">weekly reports</a></li>
+  <li><a href="#self-reflection-review" id="toc-self-reflection-review" class="nav-link" data-scroll-target="#self-reflection-review">self-reflection review</a></li>
+  </ul></li>
+  <li><a href="#orientation" id="toc-orientation" class="nav-link" data-scroll-target="#orientation">orientation</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/teaching/methods/index.html">methods</a></li><li class="breadcrumb-item"><a href="../../../content/teaching/methods/metacognition.html">metacognition</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">metacognition</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note: This page will see some updates. For example, I plan to remove the EMRN rubric, I now use self-assessment rubrics instead of full metacognitive surveys, I use hypothes.is for collaborative note-taking, and mindmup for student concept maps.</p>
+</div>
+</div>
+<p>In my classes, I do not grade students in the traditional sense. Instead, I use feedback as a means to communicate areas of improvement for each student. This means that a crucial element of my classes needs to be the importance I place on students’ <a href="https://en.wikipedia.org/wiki/Metacognition">metacognition</a>, or their <em>ability to monitor and regulate their own learning</em>. In particular, I use two such tools:</p>
+<ul>
+<li>weekly metacognitive reports</li>
+<li>three metacognitive reflections (per term)</li>
+</ul>
+<p>Both of these are equally valuable for both myself and the student, and together, they cover the <em>planning</em>, <em>monitoring</em>, and <em>evaluating</em> stages of the metacognitive cycle, <a href="https://lsa.umich.edu/content/dam/sweetland-assets/sweetland-documents/teachingresources/CultivatingReflectionandMetacognition/Metacognition.pdf">as described by</a> the Sweetland Center for Writing at the University of Michigan. Further, and maybe more importantly, they help to integrate each student’s learning experience with their sense of Self <span class="citation" data-cites="Lin2001">(<a href="#ref-Lin2001" role="doc-biblioref">Lin 2001</a>)</span>; something that is integral to my teaching philosophy.</p>
+<section id="metacognitive-reports" class="level2">
+<h2 class="anchored" data-anchor-id="metacognitive-reports">metacognitive reports</h2>
+<p>The main purpose of the metacognitive report is to give students a regular “check-in” with their learning as it pertains to the topics of the week. The idea is: by requiring students to complete these surveys, (a) students are forced to think about their learning in a metacognitive way, each week, and (b) I can collect data on <em>how</em> students are faring on a regular basis.</p>
+<p>Below are questions I’ll use for weekly metacognitive reports. Students respond to these every time they submit their “main” weekly assignment.</p>
+<ol type="1">
+<li>Explain what learning method worked best for you this week, and give an example for evidence of this. Share the concept you were learning, what you were doing, and explain what finally made it click. <em>Think about moments where you might have thought to yourself “Ah hah!” or “Eureka, I’ve got it!”.</em></li>
+<li>Think about the learning activities you did this week (e.g., taking notes while watching lecture, working through an exercise in a certain way, listening to music while you work, etc.). Give an example of a specific learning activity that was LEAST helpful in improving your knowledge. What other <a href="https://learnanywhere.opened.ca/learning-strategies/">learning strategies</a><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> might work better for this in the future? What could you do differently?</li>
+<li>Upload a drawing or diagram that illustrates connections between concepts you’ve learned this week to concepts you learned in previous weeks (or even before this class!). <em><a href="https://www.lucidchart.com/pages/landing/concept-map-software">Lucidchart</a> provides some ideas for <a href="https://www.lucidchart.com/pages/concept-map">how to think about a concept map</a>, but please feel free to make this your own! It’s important that this map makes sense to you.</em><a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></li>
+<li>Refer to the <a href="https://docs.google.com/presentation/d/e/2PACX-1vTDNNNryzNZi1-VI_pRqLDla_T1X78lhcRKXqb85MEmYaV-XRdGPuJWRNsECi5ZVfxMFRV1JdJtzUA_/pub?start=false&amp;loop=false&amp;delayms=3000">EMRN rubric</a>. What letter would you assign your most recent submission? <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li>Explain why you chose the letter evaluation you did.</li>
+<li>How would you say your learning is progressing this week?
+<ul>
+<li>red = completely lost</li>
+<li>yellow = recognizable gaps in my understanding</li>
+<li>green = confident enough to help another student</li>
+</ul></li>
+</ol>
+<p>Of course, if their submission is marked with an “R”, or “Revision Needed”, then they’ll be given an opportunity for resubmission. For resubmissions, they respond to the following questions:</p>
+<ol type="1">
+<li>Explain what changed in your understanding that merits a new letter evaluation. For example, explain what you got wrong <strong>and why</strong> you believe you got it wrong.</li>
+<li>What part of this revision was <em>most</em> beneficial for your learning, and why do you feel that way?<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
+</ol>
+</section>
+<section id="metacognitive-self-reflections" class="level2">
+<h2 class="anchored" data-anchor-id="metacognitive-self-reflections">metacognitive self-reflections</h2>
+<p>If the metacognitive reports are meant to check in with student learning as it pertains to weekly material, the self-reflections are meant to document how learning has progressed throughout the course. In particular, the metacognitive self-reflections are the main mechanism used to determine what a student’s final grade<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> will be.</p>
+<section id="initial-self-reflection" class="level3">
+<h3 class="anchored" data-anchor-id="initial-self-reflection">Initial Self-Reflection:</h3>
+<p>The initial self-reflection is meant to set a benchmark for student understanding at the beginning of the course. Comparing the other two self-reflections to this one provides a bit of insight into what was gained “so far”. This is also administered as a <strong>graded survey</strong> in Canvas, and it includes the following questions:</p>
+<ol type="1">
+<li>For which of the following learning goals do you feel confident enough to explain to a novice in a creative way?<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></li>
+<li>What are you most excited to learn in this class, and why?</li>
+<li>What about this class do you think will pose the greatest challenge for you? What are you concerned about Please be specific, and give examples if you can.</li>
+<li>Describe what it should mean for you to earn a final grade of A, A-, B+, B, or B-.
+<ul>
+<li>You must at least define the grades A and B, but you can include others as you like. Your final grade for the class will be determined using the grade definitions you provide.</li>
+<li>These definitions must be reasonable. If a definition does not relate directly to your learning, you may be asked to rewrite it.</li>
+<li><em>Keep in mind that we do not have point values in this class. Refer to the syllabus for more on this …</em></li>
+</ul></li>
+<li>Is there anything you think the instructor should know about your life or your learning before we start the semester?<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></li>
+</ol>
+</section>
+<section id="midterm-self-reflection" class="level3">
+<h3 class="anchored" data-anchor-id="midterm-self-reflection">Midterm Self-Reflection:</h3>
+<p>The main purpose of the midterm self-reflection is to check in with students on how they are feeling about their learning as a whole so far in the class. It also forces students to take stock of what they’ve learned, how they’ve learned it, and what they need to focus on before the semester is through. This survey consists of the following questions:</p>
+<ol type="1">
+<li>For which of the following learning goals do you feel confident enough to explain to a novice in a creative way?<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></li>
+<li>What have been the MOST EXCITING (or rewarding) learning experiences you’ve had so far in this class? Please give at least one example.</li>
+<li>What have been the MOST CHALLENGING learning experiences you’ve had so far in this class? Please give at least one example.</li>
+<li>Based on your definition of final grades in your Initial Self-reflection, what grade would you give yourself in the class thus far?<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></li>
+<li>Explain how are you are meeting the corresponding grade criteria from your Initial Self-Reflection; use examples. <em>Note: You’ll need to cite/quote the definition(s) from your Initial Self-Reflection here …</em><a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a></li>
+<li>Is there anything you think the instructor should know about your life or your learning before we continue with the rest of the semester? Feel free to ask questions about your work, share concerns, or request a 1-1 meeting with the instructor if needed.</li>
+</ol>
+</section>
+<section id="final-self-reflection" class="level3">
+<h3 class="anchored" data-anchor-id="final-self-reflection">Final Self-Reflection:</h3>
+<p>The final self-reflection is the <em>very</em> last thing students will do in my class. It is meant to document a culmination in their learning the subject matter of the course. Students will propose their final grade in the class, and they will also take stock of their progress since the initial self-reflection. This survey contains the following questions:</p>
+<ol type="1">
+<li>Reflect on all the work you did in this class: weekly assignments and their feedback, lecture discussion, your final project, the feedback you gave a peer on their project, and your metacognitive reports. What stands out to you as work that you are especially proud of? In other words, what did you learn that you would feel excited to share with others? Feel free to share links to work as you like.</li>
+<li>Reflect on the more challenging aspects of this class, and consider the topics you were particularly interested in learning this semester. What gaps are there in your understanding? That is, what could you revisit in the future to improve your knowledge? <em>Note: you should reference your weekly assignment submissions and your project. Consider the times you were asked to Revise your work.</em></li>
+<li>Based on your definition of final grades in your Initial Self-reflection, what would you like to give yourself as a final grade in the class?</li>
+<li>Explain how you met the corresponding grade criteria from your Initial Self-Reflection; use examples. <em>Note: You’ll need to cite/quote the definition(s) from your Initial Self-Reflection here …</em></li>
+<li>What advice would you like to share with next semester’s students in this class? <em>E.g., think about what you wish you knew, or what you think would be helpful for them.</em><a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></li>
+</ol>
+</section>
+</section>
+<section id="responding" class="level1">
+<h1>responding</h1>
+<p>Of course, an important part of the metacognitive process is closing the loop with the students. That is, they share their thoughts, and I need to respond to those thoughts. I do so using weekly reports and self-reflection review.</p>
+<section id="weekly-reports" class="level2">
+<h2 class="anchored" data-anchor-id="weekly-reports">weekly reports</h2>
+<p><strong>I do not respond to every metacognitive report</strong>. These are weekly, and there are a lot of students, so of course, responding to every one would be a pretty cumbersome task. Instead, I ask teaching assistants (TAs) to <em>review</em> these, and let me know if they see anything egregious (e.g., a student who is especially struggling). In these cases, the metacognitive report acts as an indicator of students who need extra help.</p>
+<p>Tools like ChatGPT are helpful for summarizing the responses each week, and the results can be shared with students. Sharing a summary of the weekly metacognitive reports can give students an idea for what sorts of misconceptions are common, and they can guide students toward concepts that might be worth reviewing <span class="citation" data-cites="Drew2020">(<a href="#ref-Drew2020" role="doc-biblioref">Drew 2020</a>)</span>.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>I am currently putting together a locally hosted text summarization tool especially tailored for this purpose that does not require uploading student responses to the internet.</p>
+</div>
+</div>
+</section>
+<section id="self-reflection-review" class="level2">
+<h2 class="anchored" data-anchor-id="self-reflection-review">self-reflection review</h2>
+<p>Also unlike the metacognitive reports, <strong>I will read all the self-reflections</strong>. Self-reflections are essentially the analogue for the course grade, and they are an important opportunity for me to interface with each student. At the beginning, I get an idea for what is important for each student, and I’ll call this out in my response. In the middle of the semester, I can help a student course-correct, if needed. And, at the end, I will use what the student writes to assign a final grade in the university system. If I disagree with a student’s final evaluation, I will reach out to them, and we’ll discuss via a one-on-one meeting.</p>
+<blockquote class="blockquote">
+<p>Similarly, the tool mentioned above should apply to metacognitive self-reflections as well.</p>
+</blockquote>
+<p>That said, like the metacognitive reports, I will share an (anonymized) summary of the responses. For example, here is a chart I shared with my statistics class in Spring 2025, outlining the topics that were apparently most <em>exciting</em> and <em>challenging</em> to students:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="summary.png" class="img-fluid figure-img"></p>
+<figcaption>summary</figcaption>
+</figure>
+</div>
+<p>With this, students can decide how <em>their</em> “challenging” compares to the rest of the class.</p>
+</section>
+</section>
+<section id="orientation" class="level1">
+<h1>orientation</h1>
+<p>For the most part, metacognitive thinking is pretty new to students. So, it’s important to orient them to the idea, giving them a sort of “training” on how to do it. At the beginning of the semester, I’ll walk through the above surveys, giving them examples for what might be a decent response to each question. I believe that the more they do these reports and reflections, the more accustomed to the idea they will be.</p>
+<p>I’ll also note that for the first survey submissions, TAs and I often provide feedback to students, suggesting improved ways they could respond.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Drew2020" class="csl-entry" role="listitem">
+Drew, Mary. 2020. <em>Using Metacognitive Activities to Help Students Learn</em>. <a href="https://www.carleton.edu/ltc/ltc-blog" class="uri">Https://www.carleton.edu/ltc/ltc-blog</a>.
+</div>
+<div id="ref-Joshi2022" class="csl-entry" role="listitem">
+Joshi, R., D. Hadley, S. Nuthikattu, S. Fok, L. Goldbloom-Helzner, and M. Curtis. 2022. <span>“Concept Mapping as a Metacognition Tool in a Problem-Solving-Based BME Course During in-Person and Online Instruction.”</span> <em>Biomedical Engineering Education</em> 2 (2): 281–303. <a href="https://doi.org/10.1007/s43683-022-00066-3">https://doi.org/10.1007/s43683-022-00066-3</a>.
+</div>
+<div id="ref-Lin2001" class="csl-entry" role="listitem">
+Lin, Xiaodong. 2001. <span>“Designing Metacognitive Activities.”</span> <em>Educational Technology Research and Development</em> 49 (2): 23–40. <a href="https://doi.org/10.1007/BF02504926">https://doi.org/10.1007/BF02504926</a>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The hope is that by providing these learning strategies, students might “take the hint” and try some out on their own!<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>A crucial element of metacognitive thinking is identifying the connections between current knowledge and past knowledge. <strong>This needs only to make sense to the student</strong>, as their mind is different from everyone else’s. Concept mapping has been shown to be a valuable tool to accomplish this <span class="citation" data-cites="Joshi2022">(<a href="#ref-Joshi2022" role="doc-biblioref">Joshi et al. 2022</a>)</span>. I only recommend Lucidchart as an option for students, but their own personal drawings are just as good.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Note: this should be a multiple choice question; it makes it easier to analyze later.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Inspired by <a href="https://www.carleton.edu/ltc/ltc-blog/news/using-metacognitive-activities-to-help-students-do-the-learning/">this</a> metacognitive example <span class="citation" data-cites="Drew2020">(<a href="#ref-Drew2020" role="doc-biblioref">Drew 2020</a>)</span>.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>To be clear, this grade only encodes a student’s performance in the class insofar as their own personal evaluation deems it to. I do not assign grades based on assignment scores, rather, I allow the student to choose their grade based on their own evaluation of their work. For more on this, see the <a href="../ungrading">ungrading</a> section.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>This then lists the learning objectives for the class in multiple selection boxes.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Something nice about this question is it shows the importance I place on the balance between life and learning. It also helps to create the kind of supportive social environment suggested by <span class="citation" data-cites="Lin2001">Lin (<a href="#ref-Lin2001" role="doc-biblioref">2001</a>)</span>.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>Again, the course learning objectives are listed here. When compared to the responses from the initial self-reflection, students (and the instructor) can see their progress!<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>Of course, this is a multiple choice question, presenting the typical +/- letter grades.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>This is such an important question. It forces the students to measure their learning as dictated by their grading system.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11"><p>This question is a result of a suggestion from a colleague, and I really like the idea. Not only does it force students to think back on the class, and evaluate what they benefit from when it comes to their learning, but it also gives the next cohort some friendly peer advice!<a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+        for (let i=0; i<annoteTargets.length; i++) {
+          const annoteTarget = annoteTargets[i];
+          const targetCell = annoteTarget.getAttribute("data-target-cell");
+          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+          const contentFn = () => {
+            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            if (content) {
+              const tipContent = content.cloneNode(true);
+              tipContent.classList.add("code-annotation-tip-content");
+              return tipContent.outerHTML;
+            }
+          }
+          const config = {
+            allowHTML: true,
+            content: contentFn,
+            onShow: (instance) => {
+              selectCodeLines(instance.reference);
+              instance.reference.classList.add('code-annotation-active');
+              window.tippy.hideAll();
+            },
+            onHide: (instance) => {
+              unselectCodeLines();
+              instance.reference.classList.remove('code-annotation-active');
+            },
+            maxWidth: 300,
+            delay: [50, 0],
+            duration: [200, 0],
+            offset: [5, 10],
+            arrow: true,
+            appendTo: function(el) {
+              return el.parentElement.parentElement.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'quarto',
+            placement: 'right',
+            popperOptions: {
+              modifiers: [
+              {
+                name: 'flip',
+                options: {
+                  flipVariations: false, // true by default
+                  allowedAutoPlacements: ['right'],
+                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                },
+              },
+              {
+                name: 'preventOverflow',
+                options: {
+                  mainAxis: false,
+                  altAxis: false
+                }
+              }
+              ]        
+            }      
+          };
+          window.tippy(annoteTarget, config); 
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

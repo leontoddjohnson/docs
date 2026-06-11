@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2025-04-04">
+
+<title>philosophy – ltj</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d6c07edd3d23bd2380ab709eca864cd.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a405c485f01f3dc5ee0e34b642a39a9f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">ltj</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../content/teaching.html" aria-current="page"> 
+<span class="menu-text">teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/coding.html"> 
+<span class="menu-text">coding</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/posts.html"> 
+<span class="menu-text">journal</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../content/teaching/philosophy.html">philosophy</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">teaching</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching/philosophy.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">philosophy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/teaching/courses/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">courses</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching/courses/h501.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">python</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching/courses/h510.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">stats</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching/courses/h517.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">data vis</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching/courses/h611.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">math</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../content/teaching/methods/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">methods</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching/methods/assignments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">assignments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching/methods/metacognition.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">metacognition</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../content/teaching/methods/ungrading.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ungrading</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">on this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-learning" id="toc-what-is-learning" class="nav-link active" data-scroll-target="#what-is-learning">what is learning?</a></li>
+  <li><a href="#what-is-teaching" id="toc-what-is-teaching" class="nav-link" data-scroll-target="#what-is-teaching">what is teaching?</a></li>
+  <li><a href="#goals-for-students" id="toc-goals-for-students" class="nav-link" data-scroll-target="#goals-for-students">goals for students</a></li>
+  <li><a href="#implementation-and-assessment" id="toc-implementation-and-assessment" class="nav-link" data-scroll-target="#implementation-and-assessment">implementation and assessment</a></li>
+  <li><a href="#ongoing-progress" id="toc-ongoing-progress" class="nav-link" data-scroll-target="#ongoing-progress">ongoing progress</a></li>
+  <li><a href="#a-note-on-trust" id="toc-a-note-on-trust" class="nav-link" data-scroll-target="#a-note-on-trust">a note on trust</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">philosophy</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 4, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><em>(my teaching philosophy)</em></p>
+<p>A la <a href="https://podnetwork.org/content/uploads/V9-N3-Chism.pdf">Nancy Chism</a>, I’ll use this teaching philosophy to define “learning” and “teaching”, lay out goals for my students, describe how I implement and assess my methods, and relay ways in which my teaching develops over time.</p>
+<section id="what-is-learning" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-learning">what is learning?</h2>
+<p>My teaching philosophy is rooted in the idea that <strong><em>effective</em> learning is intrinsically motivated and internally manifested</strong> <span class="citation" data-cites="Augustyniak2016">(<a href="#ref-Augustyniak2016" role="doc-biblioref">Augustyniak et al. 2016</a>)</span>. In other words, learning is not effective unless it is (a) actively sought out by the student, and (b) inextricably tied to the student’s inner experience. In my classes, students aren’t “receiving” outside knowledge about concepts, but they are discovering it in themselves. For this reason, I aim to give students every opportunity to find “their way of understanding” concepts. Indeed, the learning process is a way for students to exert their inner self, and who they are as a person should play a critical part in their learning — this should ultimately make the experience interesting, worthwhile, and especially fulfilling for them.</p>
+<p>As an example, I had a struggling student in my math class explain a particular calculus concept by comparing it to the relationship between an airplane’s airspeed and its ground speed. Not only was their analogy unique, I had <em>never</em> heard it used to describe the concept before in my life. Further, the description he gave was accurate! This kind of interpretation of a lesson that is completely unique to a students’ own personal experience is strong evidence of the <em>deep processing</em> <span class="citation" data-cites="DinsmoreAlexander2012">(<a href="#ref-DinsmoreAlexander2012" role="doc-biblioref">Dinsmore and Alexander 2012</a>)</span> I hope students gain in my courses.</p>
+</section>
+<section id="what-is-teaching" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-teaching">what is teaching?</h2>
+<p>For this kind of effective learning to happen, <strong>an instructor must equip and empower students to challenge <em>themselves</em> in their learning.</strong> I.e., it is the student who is “challenging” themself, not anyone else. As an instructor, it is my job to create an environment where this sort of thing will naturally occur. So, I use my experience in the areas which I teach to provide the following:</p>
+<ul>
+<li>enticing self-challenging mechanisms (assignments)</li>
+<li>tools for self-evaluating learning (metacognitive surveys)</li>
+<li>a practice-feedback loop to stimulate the self-challenging (feedback)</li>
+</ul>
+<p>In this way, I am a <em>proctor</em> or <em>guide</em> in the students’ learning experience, and students are encouraged to used me as a resource.</p>
+<p>Of course, every student is different, and their diverse learning styles imply that students grasp concepts in various ways at varying speeds. Another part of teaching is nurturing this diversity, being flexible, and encouraging creativity in the classroom; when students are allowed to be creative, and explore ideas in ways that align with their natural way of being, they are more engaged and confident learners. When I do my job correctly, students embrace the fact that their way of understanding/learning can and will be different from their peers, <em>and</em> it can also be perfectly valid. Adapting this way fosters a healthy, inclusive educational environment.</p>
+<p>Finally, it is worth mentioning that I make it a point to humble myself as an instructor. I do my best to show students my excitement and passion for the material (I hope this rubs off onto students), but I also hope students see in me another life-long learner who just happens to have a bit more experience with the topic at hand. In short, there is a mutual respect that needs to happen between teacher and student that must be reciprocated in <em>both</em> directions.</p>
+</section>
+<section id="goals-for-students" class="level2">
+<h2 class="anchored" data-anchor-id="goals-for-students">goals for students</h2>
+<p>I teach students in our graduate data science program with an overall goal to develop students who <em>“have the know-how to make effective decisions based on data”</em>. To this end, I focus on equipping students with</p>
+<ul>
+<li>the theoretical knowledge needed to <em>explain</em> their decisions (be it math, statistics, coding, etc.)</li>
+<li>the technical proficiency needed to gather, manipulate, and interpret data.</li>
+</ul>
+<p>Most importantly though, I aim to do this in such a way that students <strong>cultivate a <em>personal</em> appreciation for curiosity and skepticism</strong>. Too often, students treat data science as a purely objective discipline—assuming that if a model performs well, it must be valid. This leads to a tendency to offload critical thinking to (and sometimes over-rely on) possibly flawed performance metrics, bypassing a deeper understanding of what their models are actually doing. To combat this, I challenge students to <strong>embrace the subjectivity of data science.</strong> Students should understand that these models they create are among many <em>options</em> someone could use as tools—not ultimate truths—and context should always be taken into consideration.</p>
+<p>Lastly, I want students to carry a mindset that challenges the perceived authority of models. In professional settings, they will often be surrounded by peers or stakeholders who may not question results as rigorously. In these cases, I hope to <strong>give students the confidence to recognize they are the expert</strong>. They should feel empowered to question assumptions, challenge modeling decisions, and advocate for more thoughtful applications of data science. Ultimately, I want them to be not just skilled technicians but reflective data practitioners who understand their responsibility in shaping how data-driven decisions are made.</p>
+</section>
+<section id="implementation-and-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-and-assessment">implementation and assessment</h2>
+<p>Since I believe learning (and teaching, in a way) happens almost exclusively at the behest of the learner, I believe evaluation should follow suit. So, I choose not to use “grading” in the traditional way. For the most part, <strong>“grading” is completely replaced with “feedback”</strong>, and <strong>students are given the power to self-evaluate.</strong> In my courses, I employ flipped classrooms, which allows students to ingest course materials at their own pace, <em>Ungrading</em> <span class="citation" data-cites="Blum2020">(<a href="#ref-Blum2020" role="doc-biblioref">Blum 2020</a>)</span>, which prioritizes iterative feedback and continual growth/improvement, and <a href="https://www.youtube.com/watch?v=n_A6BZOUOts">metacognitive reflection</a>, which trains students to assess and improve on their personal learning process. Thus, instead of scores and grades, we have a framework where students are given multiple attempts to improve their work based on feedback from the instructor.</p>
+<p>In the classroom, traditional “lecture” typically takes up the least amount of time. Using a flipped classroom model, students are expected to read through/watch weekly readings/videos on their own time before showing up to class. This gives us time for various learning activities depending on the class, such as peer instruction <span class="citation" data-cites="Mazur1997">(<a href="#ref-Mazur1997" role="doc-biblioref">Mazur 1997</a>)</span> or in-class project group work. In classes where projects are more stimulating for students, I find that groups of 3-4 work just fine; otherwise, I tend to stick to pair groups. Not only does this improve student engagement with the course materials, it gives students the opportunity to interact with, teach, and learn from one another.</p>
+<p>Every week, or after each assignment, students fill out a metacognitive report which allows them to share what they’ve learned, how they’ve learned, and what they’ve gotten wrong (and why). These help students improve on their learning strategies, but they are also great qualitative assessments for how I’m doing as an instructor; they help me understand if the material they’re getting is helping, and why (or why not). For example, a student pointed out one week that there was no aspect of the lecture, reading, or lab that helped them understand a particular topic in the homework assignment. So, I needed to reach out to them <em>and</em> create a new document for them. Though this was a successful intervention, it revealed an issue with the course content that needed to be improved.</p>
+<p>I give students complete control over their final grades (within reason) through summative self-assessment <span class="citation" data-cites="Nieminen2022">(<a href="#ref-Nieminen2022" role="doc-biblioref">Nieminen 2022</a>)</span>. For this to work, I have students fill out three self-reflections (a la <span class="citation" data-cites="Stommel2020">Stommel (<a href="#ref-Stommel2020" role="doc-biblioref">2020</a>)</span>) at the beginning, middle, and end of the semester. These are notably more extensive than the weekly reports, and they serve a few primary purposes:</p>
+<ul>
+<li>In the <strong>Initial Self-Reflection</strong>, students describe <em>in detail</em> what it means to be an A-student, a B-student, etc., in the context of the class. At the end of the term, they evaluate their work, and make a determination based on these definitions. This initial self-reflection is also meant for students to document their prior understanding of the topics presented in the class, so they can see how they’ve improved at the end.
+<ul>
+<li>As an example, I have already had a student ask for an “A”, even though they neglected to turn in several assignments. Their initial self-reflection described a <em>much</em> more diligent “A-student”, so it was clear they could not “give themself an A” for reasons of their own making!</li>
+</ul></li>
+<li>At the <strong>Midterm Self-Reflection</strong>, I ask students to evaluate their learning thus far, and share what about the course has been especially exciting or challenging for them. I summarize the results of the survey with the class. These reports can be helpful for students to “place” themselves within the class, giving them a sort of comparative measurement for how they’re doing so far.
+<ul>
+<li>Depending on their response to the midterm self-reflection survey, I may require a one-on-one meeting with me to readjust course expectations for the remainder of the semester.</li>
+</ul></li>
+<li>Finally, in the <strong>Final Self-Reflection</strong>, I hear from students about their learning experience in the class, and how their work lives up to the grade definitions they gave at the beginning of the term. Not only does this reflection determine their final grade, but it gives students power over what they <em>earned</em>.
+<ul>
+<li>I also use this as an opportunity to have students give advice to the next cohort of students. This helps me learn what I can improve, but it also gives the next group of students useful advice from a true peer!</li>
+</ul></li>
+</ul>
+<p>To measure student performance on assignments, I use <a href="https://docs.google.com/presentation/d/e/2PACX-1vTDNNNryzNZi1-VI_pRqLDla_T1X78lhcRKXqb85MEmYaV-XRdGPuJWRNsECi5ZVfxMFRV1JdJtzUA_/pub?start=false&amp;loop=false&amp;delayms=3000">an adaptation</a> of the EMRF rubric <span class="citation" data-cites="StutzmanRace2004 Talbert2021">(<a href="#ref-StutzmanRace2004" role="doc-biblioref">Stutzman and Race 2004</a>; and <a href="#ref-Talbert2021" role="doc-biblioref">Talbert 2021</a>)</span>, and employ a version of specifications grading <span class="citation" data-cites="NilsonStanny2023">(<a href="#ref-NilsonStanny2023" role="doc-biblioref">Nilson and Stanny 2023</a>)</span> that deems submissions complete or incomplete, with the opportunity to make adjustments based on feedback, and resubmit. This is formative assessment mechanism that students can use to correct themselves week-to-week. In addition to this, students give themselves a self-evaluation of their work, and compare it to the one given by a TA/instructor with the aim of validating their learning. For course projects, these self-evaluations will also be compared to peer evaluations <span class="citation" data-cites="YanCarless2022">(<a href="#ref-YanCarless2022" role="doc-biblioref">Yan and Carless 2022</a>)</span>. When I share the rubric, I also share the following statement: “<em>You make the changes you want to — we’re just here to give our advice, and to help where we can. After all, you help decide your grade at the end of the term.”</em> In this way, they see that they will receive feedback on their work, but they should choose to take in our input as they like; this should support their <strong>intrinsic motivation for learning</strong>. It should also nurture students’ abilities to self-evaluate their own learning as life-long learners.</p>
+<p><em>All</em> assignments and projects I give students involve an aspect of “explaining in your own words”. This requires students to channel their inner experience in their work, and it challenges them to understand the material well enough to do so. To help this along, any time a project involves a dataset, students are expected to choose a data set (which meets certain requirements) that they are passionate about. I express to students that their passion is what will drive them to work harder and learn more effectively.</p>
+<p>Lastly, when students are struggling (in such a way that they might not be able to catch up), I need to meet with them individually, and allow them to speak freely. In my experience, the vast majority of these cases arise when a student is having personal issues outside of the class. Once we identify the issue, I might forward them to resources on campus, or talk about alternative ways for them to complete the class based on their situation. In the most extreme cases, I will assign the student an Incomplete grade with the time to rectify their missing work after the semester is through (i.e., more time, less stress).</p>
+</section>
+<section id="ongoing-progress" class="level2">
+<h2 class="anchored" data-anchor-id="ongoing-progress">ongoing progress</h2>
+<p>Since my first semester at Indiana University – Indianapolis, my teaching has seen a number of significant improvements. To name a few:</p>
+<ul>
+<li>A more even (and reasonable) course grade distributions</li>
+<li>Better implementation of research-backed pedagogical techniques</li>
+<li>Improved course materials that allow for a flipped classroom model</li>
+<li>(For my math class) practical applications of mathematics that students can interact with each week</li>
+<li>“Grading” policies that better align with empowering students</li>
+</ul>
+<p>That said, I recognize that there are aspects of my instruction that could use some improvement.</p>
+<ul>
+<li>Right now, the best evidence I have of my instruction comes from the creative products that students contribute to their assignments. To provide a more <em>quantitative</em> measure of student learning I will …
+<ul>
+<li>incorporate a red-yellow-green indicator in the weekly metacognitive reports to measure student comfort with the material. Watching this over time should indicate how well students are adjusting to the concepts they’re learning.</li>
+<li>build a small pre/post “exam” for students to complete before and after courses. This should give me a gauge for what is working, and what is not.</li>
+</ul></li>
+<li>In general, weekly assignments are submitted separately from the weekly metacognitive report. To improve these week-to-week self-evaluations, I’ll make the assignment tied to the metacognitive report in the <em>same</em> “assignment” in Canvas (our LMS). This way, each resubmission will be more explicitly tied to a report response.</li>
+<li>As a very long term goal, I’d like to overhaul most of my course assignments to better integrate AI models. For example, I might ask students to <em>“Use an LLM to &lt;do something&gt;. Share your prompt, what model you used, and improve on the result. Explain what you improved and why.”</em> (this particular idea inspired by <span class="citation" data-cites="BowenWatson2024">Bowen and Watson (<a href="#ref-BowenWatson2024" role="doc-biblioref">2024</a>)</span>).</li>
+</ul>
+</section>
+<section id="a-note-on-trust" class="level1">
+<h1>a note on trust</h1>
+<p>Until recently, I’ve eschewed the term “Artificial Intelligence” or “AI” to describe extant models such as Large Language Models (LLMs), Generative Pre-trained Transformers (GPTs), and other generative models, and in a way, I still do. I believed the term reflects an unrealistic, etherial ideal that can only be idealized in the media through science-fiction, etc. In truth, these models are nothing short of applied statistics and linear algebra on a colossal scale. However, the more I reflect on the matter, the more I realize that our society has <em>chosen</em> this sort of modeling as the defining basis for what we know of as “AI”. So, though I may have held out hope for something better, alas, this is where we stand …</p>
+<p>In any case, <strong>AI is here</strong>. And, with it, comes the opportunity for students to offload their coursework to models which can “do it for them”. This threatens their ability to learn while in school, and I can see why many educators take it upon themselves to try and maintain a strict grasp on how students use AI (if at all), ensuring a class of students who are learning more genuinely. The first issue with this attitude is it takes away a student’s freedom to use these models in a novel way that allows them (specifically) to learn in <em>their</em> own unique way. That is, if I say <em>“you can only use AI &lt;like this&gt;”</em>, but the best way for student X to learn turns out to be using it &lt;like that&gt;, then I have done them a disservice by depriving them of a valuable learning tool. The second issue is that it presupposes students will act dishonestly, without giving them the opportunity to prove themselves otherwise. This violates the mutual respect <em>for students</em> that should be held on the side of the educator.</p>
+<p><strong>I, personally, will <em>always</em> give the student the benefit of any doubt.</strong> Maybe it’s just my personality, but I typically don’t care to investigate whether a student is lying to me, about anything — I just care about what they show me, and how I can help. If something seems fishy, there is likely a good reason, and I will approach the student with this mentality when I ask about it. My thinking is that I cannot take it upon myself to teach ethical behavior <em>and</em> teach them some subject; I can only do my best with the latter, and with the time I have, I need to be a good example, and allow for some risk and flexibility with the former.</p>
+
+
+
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-Augustyniak2016" class="csl-entry" role="listitem">
+Augustyniak, Robert A., Ann Z. Ables, Paula Guilford, Heidi L. Lujan, Ronald N. Cortright, and Stephen E. DiCarlo. 2016. <span>“Intrinsic Motivation: An Overlooked Component for Student Success.”</span> <em>Advances in Physiology Education</em> 40 (4): 465–66. <a href="https://doi.org/10.1152/advan.00072.2016">https://doi.org/10.1152/advan.00072.2016</a>.
+</div>
+<div id="ref-Blum2020" class="csl-entry" role="listitem">
+Blum, Susan D. 2020. <em>Ungrading: Why Rating Students Undermines Learning (and What to Do Instead)</em>. First. West Virginia University Press.
+</div>
+<div id="ref-BowenWatson2024" class="csl-entry" role="listitem">
+Bowen, José Antonio, and C. Edward Watson. 2024. <em>Teaching with AI: A Practical Guide to a New Era of Human Learning</em>. Johns Hopkins University Press.
+</div>
+<div id="ref-DinsmoreAlexander2012" class="csl-entry" role="listitem">
+Dinsmore, Daniel L., and Patricia A. Alexander. 2012. <span>“A Critical Discussion of Deep and Surface Processing: What It Means, How It Is Measured, the Role of Context, and Model Specification.”</span> <em>Educational Psychology Review</em> 24 (4): 499–567. <a href="https://doi.org/10.1007/s10648-012-9198-7">https://doi.org/10.1007/s10648-012-9198-7</a>.
+</div>
+<div id="ref-Mazur1997" class="csl-entry" role="listitem">
+Mazur, Eric. 1997. <em>Peer Instruction: A User’s Manual</em>. Prentice Hall.
+</div>
+<div id="ref-Nieminen2022" class="csl-entry" role="listitem">
+Nieminen, Juuso Henrik. 2022. <span>“Disrupting the Power Relations of Grading in Higher Education Through Summative Self-Assessment.”</span> <em>Teaching in Higher Education</em> 27 (7): 892–907. <a href="https://doi.org/10.1080/13562517.2020.1753687">https://doi.org/10.1080/13562517.2020.1753687</a>.
+</div>
+<div id="ref-NilsonStanny2023" class="csl-entry" role="listitem">
+Nilson, Linda B., and Cynthia J. Stanny. 2023. <em>Specifications Grading: Restoring Rigor, Motivating Students, and Saving Faculty Time</em>. 2nd ed. Routledge. <a href="https://doi.org/10.4324/9781003447061">https://doi.org/10.4324/9781003447061</a>.
+</div>
+<div id="ref-Stommel2020" class="csl-entry" role="listitem">
+Stommel, Jesse. 2020. <span>“Ungrading: An FAQ.”</span> February 6. <a href="https://www.jessestommel.com/ungrading-an-faq/">https://www.jessestommel.com/ungrading-an-faq/</a>.
+</div>
+<div id="ref-StutzmanRace2004" class="csl-entry" role="listitem">
+Stutzman, Rebecca Y., and Karen H. Race. 2004. <span>“EMRF: Everyday Rubric Grading.”</span> <em>The Mathematics Teacher</em> 97 (1): 34–39. <a href="https://doi.org/10.5951/MT.97.1.0034">https://doi.org/10.5951/MT.97.1.0034</a>.
+</div>
+<div id="ref-Talbert2021" class="csl-entry" role="listitem">
+Talbert, Robert. 2021. <span>“EMRN: A Framework for Giving Feedback on Student Work.”</span> January 11. <a href="https://rtalbert.org/emrn/">https://rtalbert.org/emrn/</a>.
+</div>
+<div id="ref-YanCarless2022" class="csl-entry" role="listitem">
+Yan, Zhihui, and David Carless. 2022. <span>“Self-Assessment Is about More Than Self: The Enabling Role of Feedback Literacy.”</span> <em>Assessment &amp; Evaluation in Higher Education</em> 47 (7): 1116–28. <a href="https://doi.org/10.1080/02602938.2021.2001431">https://doi.org/10.1080/02602938.2021.2001431</a>.
+</div>
+</div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+        for (let i=0; i<annoteTargets.length; i++) {
+          const annoteTarget = annoteTargets[i];
+          const targetCell = annoteTarget.getAttribute("data-target-cell");
+          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+          const contentFn = () => {
+            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            if (content) {
+              const tipContent = content.cloneNode(true);
+              tipContent.classList.add("code-annotation-tip-content");
+              return tipContent.outerHTML;
+            }
+          }
+          const config = {
+            allowHTML: true,
+            content: contentFn,
+            onShow: (instance) => {
+              selectCodeLines(instance.reference);
+              instance.reference.classList.add('code-annotation-active');
+              window.tippy.hideAll();
+            },
+            onHide: (instance) => {
+              unselectCodeLines();
+              instance.reference.classList.remove('code-annotation-active');
+            },
+            maxWidth: 300,
+            delay: [50, 0],
+            duration: [200, 0],
+            offset: [5, 10],
+            arrow: true,
+            appendTo: function(el) {
+              return el.parentElement.parentElement.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'quarto',
+            placement: 'right',
+            popperOptions: {
+              modifiers: [
+              {
+                name: 'flip',
+                options: {
+                  flipVariations: false, // true by default
+                  allowedAutoPlacements: ['right'],
+                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                },
+              },
+              {
+                name: 'preventOverflow',
+                options: {
+                  mainAxis: false,
+                  altAxis: false
+                }
+              }
+              ]        
+            }      
+          };
+          window.tippy(annoteTarget, config); 
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

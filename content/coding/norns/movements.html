@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>movements – ltj</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d6c07edd3d23bd2380ab709eca864cd.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-a405c485f01f3dc5ee0e34b642a39a9f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../../index.html">
+    <span class="navbar-title">ltj</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../../content/teaching.html"> 
+<span class="menu-text">teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../../content/coding.html" aria-current="page"> 
+<span class="menu-text">coding</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../../content/posts.html"> 
+<span class="menu-text">journal</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/coding/norns/gravityharp.html">norns</a></li><li class="breadcrumb-item"><a href="../../../content/coding/norns/movements.html">movements</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/coding.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">coding</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">norns</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/coding/norns/moments.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">moments</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/coding/norns/movements.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">movements</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/coding/norns/tutti.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">tutti</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false">
+ <span class="menu-text">iii</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../content/coding/iii/swons.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">swons</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">on this page</h2>
+   
+  <ul>
+  <li><a href="#set-up" id="toc-set-up" class="nav-link active" data-scroll-target="#set-up">set up</a></li>
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">overview</a></li>
+  <li><a href="#tldr-basic-setup" id="toc-tldr-basic-setup" class="nav-link" data-scroll-target="#tldr-basic-setup">tldr; basic setup</a>
+  <ul class="collapse">
+  <li><a href="#sample" id="toc-sample" class="nav-link" data-scroll-target="#sample">sample</a></li>
+  <li><a href="#tape" id="toc-tape" class="nav-link" data-scroll-target="#tape">tape</a></li>
+  </ul></li>
+  <li><a href="#sample-1" id="toc-sample-1" class="nav-link" data-scroll-target="#sample-1">sample</a></li>
+  <li><a href="#tape-1" id="toc-tape-1" class="nav-link" data-scroll-target="#tape-1">tape</a></li>
+  <li><a href="#delay" id="toc-delay" class="nav-link" data-scroll-target="#delay">delay</a></li>
+  <li><a href="#grid" id="toc-grid" class="nav-link" data-scroll-target="#grid">grid</a>
+  <ul class="collapse">
+  <li><a href="#navigation" id="toc-navigation" class="nav-link" data-scroll-target="#navigation">navigation</a></li>
+  <li><a href="#sample-pages" id="toc-sample-pages" class="nav-link" data-scroll-target="#sample-pages">sample pages</a>
+  <ul class="collapse">
+  <li><a href="#sample-config" id="toc-sample-config" class="nav-link" data-scroll-target="#sample-config">sample config</a></li>
+  <li><a href="#sample-sequence" id="toc-sample-sequence" class="nav-link" data-scroll-target="#sample-sequence">sample sequence</a></li>
+  <li><a href="#sample-levels" id="toc-sample-levels" class="nav-link" data-scroll-target="#sample-levels">sample levels</a></li>
+  <li><a href="#sample-time" id="toc-sample-time" class="nav-link" data-scroll-target="#sample-time">sample time</a></li>
+  </ul></li>
+  <li><a href="#tape-pages" id="toc-tape-pages" class="nav-link" data-scroll-target="#tape-pages">tape pages</a>
+  <ul class="collapse">
+  <li><a href="#tape-config" id="toc-tape-config" class="nav-link" data-scroll-target="#tape-config">tape config</a></li>
+  <li><a href="#tape-sequence" id="toc-tape-sequence" class="nav-link" data-scroll-target="#tape-sequence">tape sequence</a></li>
+  <li><a href="#tape-levels" id="toc-tape-levels" class="nav-link" data-scroll-target="#tape-levels">tape levels</a></li>
+  <li><a href="#tape-time" id="toc-tape-time" class="nav-link" data-scroll-target="#tape-time">tape time</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#ui" id="toc-ui" class="nav-link" data-scroll-target="#ui">ui</a>
+  <ul class="collapse">
+  <li><a href="#navigation-1" id="toc-navigation-1" class="nav-link" data-scroll-target="#navigation-1">navigation</a></li>
+  <li><a href="#sample-displays" id="toc-sample-displays" class="nav-link" data-scroll-target="#sample-displays">sample displays</a>
+  <ul class="collapse">
+  <li><a href="#track-pool" id="toc-track-pool" class="nav-link" data-scroll-target="#track-pool">track pool</a></li>
+  <li><a href="#track-params" id="toc-track-params" class="nav-link" data-scroll-target="#track-params">track params</a></li>
+  <li><a href="#sample-waveform" id="toc-sample-waveform" class="nav-link" data-scroll-target="#sample-waveform">sample waveform</a></li>
+  <li><a href="#sample-envelope" id="toc-sample-envelope" class="nav-link" data-scroll-target="#sample-envelope">sample envelope</a></li>
+  </ul></li>
+  <li><a href="#tape-displays" id="toc-tape-displays" class="nav-link" data-scroll-target="#tape-displays">tape displays</a>
+  <ul class="collapse">
+  <li><a href="#track-pool-1" id="toc-track-pool-1" class="nav-link" data-scroll-target="#track-pool-1">track pool</a></li>
+  <li><a href="#track-params-1" id="toc-track-params-1" class="nav-link" data-scroll-target="#track-params-1">track params</a></li>
+  <li><a href="#track-waveform" id="toc-track-waveform" class="nav-link" data-scroll-target="#track-waveform">track waveform</a></li>
+  </ul></li>
+  <li><a href="#delay-displays" id="toc-delay-displays" class="nav-link" data-scroll-target="#delay-displays">delay displays</a>
+  <ul class="collapse">
+  <li><a href="#sample-delay" id="toc-sample-delay" class="nav-link" data-scroll-target="#sample-delay">sample delay</a></li>
+  <li><a href="#tape-delay" id="toc-tape-delay" class="nav-link" data-scroll-target="#tape-delay">tape delay</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#parameters" id="toc-parameters" class="nav-link" data-scroll-target="#parameters">parameters</a>
+  <ul class="collapse">
+  <li><a href="#squelching" id="toc-squelching" class="nav-link" data-scroll-target="#squelching">squelching</a>
+  <ul class="collapse">
+  <li><a href="#unidirectional" id="toc-unidirectional" class="nav-link" data-scroll-target="#unidirectional">unidirectional</a></li>
+  <li><a href="#bidirectional" id="toc-bidirectional" class="nav-link" data-scroll-target="#bidirectional">bidirectional</a></li>
+  </ul></li>
+  <li><a href="#amplitude" id="toc-amplitude" class="nav-link" data-scroll-target="#amplitude">amplitude</a></li>
+  <li><a href="#panning" id="toc-panning" class="nav-link" data-scroll-target="#panning">panning</a></li>
+  <li><a href="#filter" id="toc-filter" class="nav-link" data-scroll-target="#filter">filter</a></li>
+  <li><a href="#delay-1" id="toc-delay-1" class="nav-link" data-scroll-target="#delay-1">delay</a></li>
+  <li><a href="#probability" id="toc-probability" class="nav-link" data-scroll-target="#probability">probability</a></li>
+  <li><a href="#scale" id="toc-scale" class="nav-link" data-scroll-target="#scale">scale</a></li>
+  <li><a href="#interval" id="toc-interval" class="nav-link" data-scroll-target="#interval">interval</a></li>
+  </ul></li>
+  <li><a href="#filenaming" id="toc-filenaming" class="nav-link" data-scroll-target="#filenaming">filenaming</a>
+  <ul class="collapse">
+  <li><a href="#a-few-notes-on-this" id="toc-a-few-notes-on-this" class="nav-link" data-scroll-target="#a-few-notes-on-this">a few notes on this</a></li>
+  </ul></li>
+  <li><a href="#a-note-on-updates" id="toc-a-note-on-updates" class="nav-link" data-scroll-target="#a-note-on-updates">a note on updates</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../content/coding/norns/gravityharp.html">norns</a></li><li class="breadcrumb-item"><a href="../../../content/coding/norns/movements.html">movements</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">movements</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>movements is a sequencer of samples from audio files or of slices from recorded input.</p>
+<section id="set-up" class="level2">
+<h2 class="anchored" data-anchor-id="set-up">set up</h2>
+<p><strong>requirements</strong></p>
+<ul>
+<li>grid (128)</li>
+<li>audio files <em>or</em> sound source</li>
+</ul>
+<p><strong>in maiden …</strong></p>
+<pre><code>;install https://github.com/leontoddjohnson/movements</code></pre>
+</section>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">overview</h2>
+<p>This script was designed with flexible sequencing and independent track adjustment in mind. movements consists of 11 individual tracks, each with their own separate clock. Each track has its own set of parameters which can be individually adjusted, without affecting the other tracks. Also, each track allows you to sequence up to 128 steps.</p>
+<p>The 11 tracks are divided into two different “functionalities”:</p>
+<ul>
+<li><strong>sample</strong> (tracks 1-7): pre-loaded audio files</li>
+<li><strong>tape</strong> (track 8-11): slices from recorded input (or loaded files)</li>
+</ul>
+<p>The idea is for all tracks (regardless of functionality) to share <em>roughly</em> the same attributes. I.e., if you can do it with <strong>sample</strong>, you can do it with <strong>tape</strong>, and vice versa. Thus, both share the same parameters, with a few caveats.</p>
+<div class="callout callout-style-default callout-tip no-icon callout-titled" title="some terminology">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>some terminology
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>vocabulary</strong></p>
+<p>Just a few terms that might otherwise be easily confused:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 80%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">term</th>
+<th style="text-align: left;">definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">page</td>
+<td style="text-align: left;">a <em>grid</em> page, navigable by the 6 nav keys on the lower right corner of the grid</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">display</td>
+<td style="text-align: left;">a display on the norns <em>screen</em></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">transport</td>
+<td style="text-align: left;">the mechanism moving a sequence from step to step</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>pattern</code></td>
+<td style="text-align: left;">a collection of steps for triggering or defining parameters</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>bar</code></td>
+<td style="text-align: left;">one of eight partitions of 16 steps</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><code>sample</code></td>
+<td style="text-align: left;">an audio file loaded into a <strong>sample</strong> bank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><code>slice</code></td>
+<td style="text-align: left;">a small section of the <strong>tape</strong> partition</td>
+</tr>
+</tbody>
+</table>
+<p><strong>notation</strong></p>
+<ul>
+<li><strong>bold</strong> text indicates (1) a functionality (either sample or tape), or (2) a user interface item (e.g., a key or encoder on your norns, a pad on the grid, or a specific page or display).</li>
+<li><em>italics</em> indicates emphasis or some special term.</li>
+<li><code>monospace</code> indicates some <em>particular</em> value (or collection of values) which could be selected or adjusted.</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="tldr-basic-setup" class="level2">
+<h2 class="anchored" data-anchor-id="tldr-basic-setup">tldr; basic setup</h2>
+<section id="sample" class="level3">
+<h3 class="anchored" data-anchor-id="sample">sample</h3>
+<p><em>Refer to the grid navigation bar and the <strong>sample config</strong> page, below.</em></p>
+<ol type="1">
+<li>Load some samples from a folder into a bank with <strong>K2</strong> on the <strong>track pool</strong> display.</li>
+<li>On the <strong>sample config</strong> (grid) page, load samples onto the selected track <em>cue</em> by holding <strong>ALT</strong> + the sample pad.</li>
+<li>Once you have samples you’d like to load onto a track, hold <strong>ALT</strong> + the track pad. When this track’s sequence is played, it will cycle through these samples.</li>
+<li>Add some steps on the <strong>sample seq</strong> page. Maybe adjust some levels on the <strong>sample levels</strong> page (select the <strong>S1</strong> pad twice).</li>
+<li>Play with the clock time for each track on the <strong>sample time</strong> page, and control track levels on the <strong>sample config</strong> page or the <strong>sample params</strong> display.</li>
+<li>Navigate to the <strong>sample delay</strong> display section with <strong>K1 + E1</strong>, and adjust the <strong>sample</strong> delay on the corresponding display.</li>
+</ol>
+</section>
+<section id="tape" class="level3">
+<h3 class="anchored" data-anchor-id="tape">tape</h3>
+<p><em>Refer to the grid navigation bar and the <strong>tape config</strong> page, below.</em></p>
+<ol type="1">
+<li>Choose a buffer with load some audio into a partition:
+<ul>
+<li>Option 1: Load a file at the current slice with <strong>K2</strong> on the <strong>slice pool</strong> display.</li>
+<li>Option 2: Record into the current slice with <strong>K2</strong> on the <strong>tape waveform</strong> display.</li>
+</ul></li>
+<li>On the <strong>tape config</strong> (grid) page, load slices onto the selected track <em>cue</em> by holding <strong>ALT</strong> + the slice pad.</li>
+<li>Once you have slices you’d like to load onto a track, hold <strong>ALT</strong> + the track pad. When this track’s sequence is played, it will cycle through these slices.</li>
+<li>Add some steps on the <strong>tape seq</strong> page. Maybe adjust some levels on the <strong>tape levels</strong> page (select the <strong>T1</strong> pad twice).</li>
+<li>Play with the clock time for each track on the corresponding <strong>tape time</strong> page, and control track levels on the <strong>tape config</strong> page or the <strong>tape params</strong> display.</li>
+<li>Navigate to the <strong>tape delay</strong> display section with <strong>K1 + E1</strong>, and adjust the <strong>tape</strong> delay on the corresponding display.</li>
+</ol>
+</section>
+</section>
+<section id="sample-1" class="level2">
+<h2 class="anchored" data-anchor-id="sample-1">sample</h2>
+<p>The <strong>sample</strong> functionality is meant for loading, playing, and sequencing audio files from a <code>bank</code>. There are 4 banks of up to 32 possible samples each, and there are 7 sample tracks with independent clocks. The <strong>sample</strong> functionality in this script uses an adaptation of the <a href="https://github.com/markwheeler/timber/tree/master">Timber</a> engine.</p>
+<ul>
+<li>Each track has a <code>track_pool</code> of samples that the sequencer will rotate through. You can adjust <em>how</em> (forward, backward, or random) with the <code>play_order</code> parameter in the <strong>PARAMS</strong> menu.</li>
+<li>Once a sample is assigned to a <code>track_pool</code>, it cannot be assigned to any other track. So, you cannot have a sample “shared” between tracks.</li>
+<li>A <code>track_pool</code> can only contain samples from <em>one</em> bank. That said, each track can have a separate <code>track_pool_cue</code> for each bank, and any of these can replace the <code>track_pool</code> on the fly using the grid interface (see the <a href="#grid">grid</a> section below, as well as the <a href="#ui">ui</a> section).</li>
+<li><a href="https://llllllll.co/t/timber/21407">According to the Timber developer</a>, Timber is intended to play up to 7 voices at a time; this is why the <strong>sample</strong> functionality is limited to seven tracks.</li>
+<li>When playing a sequence, movements will stop playing the “current” step before starting to play the next step.</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If an audio file is <em>over</em> 5 seconds stereo or over 10 seconds mono (at 48kHz), then Timber will stream it. Otherwise, shorter files will be loaded into the Timber buffer. Shorter audio files are more versatile in Timber, as streaming samples cannot be played backward, and they do not have the <code>Infinite Loop</code> option.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>For the best playback performance, <strong>use audio files with a sample rate of 48kHz</strong>. Anything less than that may cause the playback to be warped a bit …</p>
+</div>
+</div>
+</section>
+<section id="tape-1" class="level2">
+<h2 class="anchored" data-anchor-id="tape-1">tape</h2>
+<p>The <strong>tape</strong> functionality is meant for playing, recording, and sequencing slices from a <code>partition</code> of the stereo <a href="https://monome.org/docs/norns/softcut/">softcut</a> buffer(s). There are <em>four</em> such partitions: each one is 80 seconds long<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and each partition is divided into 32 slices. By default, these slices are evenly distributed, so they start at 2.5 seconds long, but the user can adjust the start/stop positions for each slice. There are 4 tracks, each one with access to the four partitions.</p>
+<ul>
+<li>The <code>track_pool</code> and <code>track_pool_cue</code> for <strong>tape</strong> behave the same as they do for the <strong>sample</strong> functionality, above. Just swap out the word “sample” with “slice”, and “bank” with “partition”.</li>
+<li>Each <code>partition</code> consists of two <code>buffer</code>s, which can be thought of as either a <em>single</em> stereo buffer or <em>two</em> separate mono buffers to swap between. You can assign tracks to record/play as mono from either buffer, or as stereo from both.</li>
+<li>A recording can only be made to a <code>slice</code>, which can only exist within a <code>partition</code>. (Of course, the beginning and end of any slice can be adjusted, within the bounds of the partition.)</li>
+<li><strong>tape</strong> can record from the Norns input, or the <strong>sample</strong> functionality, or both. You can set this by adjusting the <code>tape_audio_in</code> parameter.</li>
+<li>You can record to a slice in two ways:
+<ul>
+<li>“on demand” using the <strong>slice waveform</strong> display</li>
+<li>“in time” with the sequence using the <strong>tape seq</strong> grid page.</li>
+</ul></li>
+</ul>
+</section>
+<section id="delay" class="level2">
+<h2 class="anchored" data-anchor-id="delay">delay</h2>
+<p>Both <strong>sample</strong> and <strong>tape</strong> have their own independent delay functionalities. The <strong>sample</strong> side uses a SuperCollider delay bus in the Timber engine, and <strong>tape</strong> uses softcut. Both delay times are synced to the internal <strong>CLOCK</strong> using the same <code>clock_fraction</code> options as the <strong>sequence</strong>r (see below).</p>
+<div class="callout callout-style-default callout-caution no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Caution
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When using the <strong>tape delay</strong>, you should keep the internal tempo <em>over</em> 12 BPM; so 13 BPM at a minimum.</p>
+</div>
+</div>
+</section>
+<section id="grid" class="level1">
+<h1>grid</h1>
+<section id="navigation" class="level2">
+<h2 class="anchored" data-anchor-id="navigation">navigation</h2>
+<p>For <em>both</em> the <strong>sample</strong> and <strong>tape</strong> functionalities, there are four grid pages:</p>
+<ul>
+<li>sequence</li>
+<li>levels</li>
+<li>time</li>
+<li>config</li>
+</ul>
+<p>For the most part, these pages are the same for both functionalities, with small deviations for <strong>tape</strong>. <em>All</em> grid pages will share the same navigation bar on the lower right (with <strong>mode</strong> and <strong>ALT</strong> pads included).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/main_grid.svg" class="img-fluid figure-img"></p>
+<figcaption>main grid</figcaption>
+</figure>
+</div>
+<p>Here, <strong>S</strong> corresponds to <strong>sample</strong> and <strong>T</strong> corresponds to <strong>tape</strong>. For each of these, you have the following:</p>
+<ul>
+<li><strong>1:</strong> toggle between the <strong>sequence</strong> and <strong>levels</strong> page</li>
+<li><strong>2:</strong> the <strong>time</strong> page</li>
+<li><strong>3:</strong> the <strong>config</strong> page</li>
+</ul>
+<p>The <strong>mode</strong> pad toggles between the following modes:</p>
+<ul>
+<li><strong>PLAY MODE</strong> (bright)</li>
+<li><strong>FOCUS MODE</strong> (not bright)</li>
+</ul>
+<p>The <strong>mode</strong> and <strong>ALT</strong> pads typically correspond to different functions within <strong>sample</strong> or <strong>tape</strong>.</p>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>When you switch between <strong>sample</strong> and <strong>tape</strong> functionalities on the grid, the display will also update in turn (and vice versa).</p>
+</div>
+</div>
+</section>
+<section id="sample-pages" class="level2">
+<h2 class="anchored" data-anchor-id="sample-pages">sample pages</h2>
+<section id="sample-config" class="level3">
+<h3 class="anchored" data-anchor-id="sample-config">sample config</h3>
+<p>For both <strong>sample</strong> and <strong>tape</strong>, the best place to start is often with the <strong>config</strong> page.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/sample_config_1.svg" class="img-fluid figure-img"></p>
+<figcaption>sample config</figcaption>
+</figure>
+</div>
+<section id="track-parameters" class="level4">
+<h4 class="anchored" data-anchor-id="track-parameters">track parameters</h4>
+<ul>
+<li>Each row in the <strong>track param adjustment</strong> region corresponds to a track. Making adjustments here will affect a parameter for the whole track. Select a parameter to adjust/focus on with the <strong>track param selection</strong>. For more on these, see the <a href="#parameters">parameters</a> section, below.
+<ul>
+<li>The focused parameter will be shared across functionalities and pages.</li>
+</ul></li>
+<li>Hold <strong>ALT</strong> and select the pad in the <em>seventh</em> column (between the highest parameter value and the track selection) <em>for the current track</em> to randomize the current parameter pattern for that track-bank. <em>Note: this will only work for the currently selected track.</em></li>
+</ul>
+</section>
+<section id="track-selection" class="level4">
+<h4 class="anchored" data-anchor-id="track-selection">track selection</h4>
+<ul>
+<li>Select a track in the <strong>track selection</strong> region. This really just sets the display and grid to “focus” on that track.</li>
+</ul>
+</section>
+<section id="bank" class="level4">
+<h4 class="anchored" data-anchor-id="bank">bank</h4>
+<ul>
+<li>Select samples in the <strong>bank</strong> region. The currently selected pad will light up when you hold the currently selected <code>bank</code> pad in the <strong>bank selection</strong> region.</li>
+<li>There are 4+1 levels of brightness here:
+<ol type="1">
+<li>(Only when you hold the current <code>bank</code> pad) The selected sample will be brightest.</li>
+<li>When a sample is part of the current <code>track_pool_cue</code> (not yet loaded), it will be slightly less bright.</li>
+<li>When it is loaded into the current <code>track_pool</code>, it will be slightly less bright.</li>
+<li>When a sample is loaded into some other track, it will be slightly less bright.</li>
+<li>Lastly, if there is an audio file loaded into that sample, it will be most dim.</li>
+</ol></li>
+<li>If you hold the pad for a sample that is loaded into another track, that track pad will light up in the <strong>track selection</strong> region. In these cases, that sample is “used up”, and can’t be assigned elsewhere until it’s relieved from the <code>track_pool</code> with <strong>ALT</strong> + <code>sample</code> <strong>pad</strong>.</li>
+<li>You can dictate the row/column for audio files in a bank by using a <code>&lt;row&gt;&lt;col&gt;*...</code> naming convention, where <code>*</code> is <code>" "</code>, <code>"-"</code> or <code>"_"</code>. For example, the file with the name <em>23_sound.wav</em> would be loaded into the second row and the third column.
+<ul>
+<li>Duplicate or invalid indices will be <em>overwritten</em> by the latest related filename.</li>
+<li>If you are NOT using “row-column” indexing and you are numbering files, use a 3-digit syntax <code>###_...</code>, or start <em>all files in the folder</em> with some character other than a 1, 2, 3, or 4.</li>
+<li>Folders with more than 32 files will stop loading at file #32.</li>
+</ul></li>
+<li>In <strong>PLAY</strong> mode …
+<ul>
+<li>pushing a pad will play (or stop) the sample loaded into that pad.</li>
+<li>“currently” playing samples will be indicated with a bright pad.</li>
+</ul></li>
+<li>Hold <strong>ALT</strong> + <code>a sample pad</code> to load a sample into the current <code>track_pool_cue</code>.</li>
+<li>When you’re ready, load the cue into the <code>track_pool</code> with <strong>ALT</strong> + <code>the track selection</code>.
+<ul>
+<li>This will only work if you are already focused on the track to be loaded (i.e., you are pushing an already lit <code>track selection</code> pad).</li>
+</ul></li>
+</ul>
+</section>
+<section id="play-mode" class="level4">
+<h4 class="anchored" data-anchor-id="play-mode">play mode</h4>
+<ul>
+<li>For a sample (or slice), the <strong>play mode</strong> is different from <strong>PLAY MODE</strong>. It represents the way a sample/slice will be played.</li>
+<li>For a selected <code>sample</code>, we have two sets of <strong>play mode</strong> options
+<ul>
+<li>Streaming Samples: <code>"Loop"  "Loop"  "1-Shot"  "Gated"</code> (defaults to <em>Gated</em>)</li>
+<li>Buffer Samples: <code>"Loop"  "Inf. Loop"  "1-Shot"  "Gated"</code> (defaults to <em>1-Shot</em>)</li>
+</ul></li>
+<li>Hold <strong>ALT</strong> and select a play mode to apply that play mode to all samples/slices in the current <code>track_pool_cue</code>.</li>
+</ul>
+</section>
+<section id="bank-selection" class="level4">
+<h4 class="anchored" data-anchor-id="bank-selection">bank selection</h4>
+<ul>
+<li>Select one of the four banks here.</li>
+<li>If a <code>bank</code> has audio files loaded into it, it will be slightly brighter than the rest.</li>
+<li>Each bank has its own patterns (<strong>sample</strong> trigger patterns and parameter patterns). You can copy <em>all</em> pattern steps and parameter pattern values of the current <code>track</code> from one bank to another bank by holding <strong>ALT + the “from” bank + the “to” bank</strong>.
+<ul>
+<li>This only copies pattern steps, not sample selections.</li>
+<li>This will overwrite the pattern(s) on the “to bank”</li>
+</ul></li>
+</ul>
+</section>
+<section id="sample-range" class="level4">
+<h4 class="anchored" data-anchor-id="sample-range">sample range</h4>
+<ul>
+<li>The <strong>sample range</strong> shows the range of the slice that is played. It makes more sense when seen in conjunction with the <strong>sample waveform</strong> display.</li>
+<li>Selecting a pad in this range dictates the <code>start</code> time for the playable range of the sample.</li>
+<li>Hold <strong>ALT</strong> while selecting a pad to choose the <code>end</code> time for the playable range.</li>
+</ul>
+</section>
+</section>
+<section id="sample-sequence" class="level3">
+<h3 class="anchored" data-anchor-id="sample-sequence">sample sequence</h3>
+<p>The <strong>sample seq</strong> page is an interface for the transports for the 7 <strong>sample</strong> tracks.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/sample_seq.svg" class="img-fluid figure-img"></p>
+<figcaption>sample sequence</figcaption>
+</figure>
+</div>
+<section id="track-rows" class="level4">
+<h4 class="anchored" data-anchor-id="track-rows">track rows</h4>
+<ul>
+<li>The first 7 rows correspond to the 7 sample <code>track</code>s. When a transport is playing, movements will cycle through the samples loaded in the <code>track_pool</code> as long as a <code>step</code> is active.</li>
+<li>There are 4 brightness levels here:
+<ol type="1">
+<li>The current <code>step</code> will be the brightest in a row.</li>
+<li>Slightly less bright are inactive/“loaded” steps. (Of course, unlit pads are “skipped”)</li>
+<li>Slightly less than that are pads to indicate an “island”. The transport in an island will only loop within that range until the island is removed.</li>
+<li>The dimmest pads indicate the selected row/selected <code>track</code>.</li>
+</ol></li>
+<li>To select a track, hold <strong>ALT</strong> and push a pad in that row. The selected track spans across the 4 <strong>sample</strong> pages.</li>
+<li>To create an island, hold the first step of the island, and then the last step of the island.
+<ul>
+<li>To remove this, reselect the same bounds.</li>
+</ul></li>
+<li>In <strong>PLAY MODE</strong>:
+<ul>
+<li>selecting a pad forces the transport to that step.</li>
+<li>hold <strong>ALT</strong> and a pad to force all <strong>sample</strong> transports to that step.</li>
+</ul></li>
+</ul>
+</section>
+<section id="pattern-bars" class="level4">
+<h4 class="anchored" data-anchor-id="pattern-bars">pattern bars</h4>
+<ul>
+<li>The sequencer for each track is completely independent of the rest. It can have a different length and a different time between steps.</li>
+<li>Each sequence is a series of 1-8 pattern <code>bar</code>s, where a <code>bar</code> is 16 steps. If a pattern <code>bar</code> has a step loaded into it, then that bar <em>and the ones before it</em> contribute to the sequence. So, if I activate step 10 and step 36, then that track will have a sequence of length <span class="math inline">\(3 \cdot 16 = 48\)</span> steps.</li>
+<li>There are 3 brightness levels for the pattern bars:
+<ol type="1">
+<li>The current <code>bar</code> is the brightest.</li>
+<li>If the current track transport is in a pattern bar, that bar will be slightly less bright.</li>
+<li>In <strong>FOCUS MODE</strong>, the dimmest pads have active steps between them for the selected track. In <strong>PLAY MODE</strong> the dimmest pads have active steps between them for at least one track.</li>
+</ol></li>
+<li>In <strong>PLAY MODE</strong>, the page will “follow” the transport for the current track.</li>
+<li>You can copy a pattern (along with the parameter patterns) from one bar to another bar by holding <strong>ALT + the “copy” bar + the “paste” bar</strong>.</li>
+</ul>
+</section>
+</section>
+<section id="sample-levels" class="level3">
+<h3 class="anchored" data-anchor-id="sample-levels">sample levels</h3>
+<p>Parameter levels for each <strong>sample</strong> step can be adjusted in the <strong>sample levels</strong> page.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/sample_levels.svg" class="img-fluid figure-img"></p>
+<figcaption>sample levels</figcaption>
+</figure>
+</div>
+<ul>
+<li>The top row shows the sequence for the selected track, and it can be adjusted in the same way as any row in the <strong>sample sequence</strong> page.</li>
+<li>When you add a new step to the sequence, the parameter value will default to the track value.</li>
+<li>The middle region allows for parameter adjustment for each step. More on parameter adjustment in the <a href="#parameters">parameter</a> section, below.</li>
+<li>The bottom navigation row remains the same as the rest of the grid pages.</li>
+<li>In <strong>PLAY MODE</strong>, the <strong>pattern bars</strong> becomes the <strong>track param selection</strong> region seen in the <a href="#sample-config">sample config</a> section above. In this mode, you can use that region to select the parameter to focus on.</li>
+</ul>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Keep in mind, the <strong>levels</strong> page reflects <strong>relative</strong> values based on the track level. The “final” step value will depend on these levels and the <code>track</code> level. For more on this, see the <a href="#squelching">squelching</a> section.</p>
+</div>
+</div>
+</section>
+<section id="sample-time" class="level3">
+<h3 class="anchored" data-anchor-id="sample-time">sample time</h3>
+<p>Each track proceeds on its own independent transport. These transports move from one step to the next based on either (a) a fraction of a <em>beat</em> (from the tempo set in <strong>PARAMS/CLOCK</strong>), or (b) a fraction of a <em>second</em>. For <strong>sample</strong>, these <code>clock_fraction</code>s can be adjusted on the <strong>sample time</strong> page.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/sample_time.svg" class="img-fluid figure-img"></p>
+<figcaption>sample time</figcaption>
+</figure>
+</div>
+<ul>
+<li>Each of the first 7 rows correspond to a <strong>sample</strong> track.</li>
+<li>The first column toggles between playing and not playing a track sequence.
+<ul>
+<li>Hold <strong>ALT</strong> and select a lit pad to <em>stop</em> all transports</li>
+<li>Hold <strong>ALT</strong> and select an unlit pad to <em>play</em> all transports</li>
+</ul></li>
+<li>The second column dictates whether the sequence time is based on the beat or based on seconds.</li>
+<li>Columns 4-16 indicate the <code>clock_fraction</code>, or the fraction of a beat or second to exist between steps:
+<ul>
+<li><code>1/8, 1/7, 1/6, 1/5, 1/4, 1/3, 1/2, 1, 2, 3, 4, 5, 6</code></li>
+</ul></li>
+<li>Hold one pad, and select another one in the same row, and you’ll create a <code>clock_fraction_pool</code>. The time between steps will be <em>randomly</em> chosen from this range, for each step.
+<ul>
+<li>Select any other pad in the row to clear the pool.</li>
+</ul></li>
+<li>The dimly highlighted column indicate “compatible” fractions. If all your <code>clock_fraction</code> selections are in one of these columns, you’ll find the syncopation to be relatively agreeable.
+<ul>
+<li>The fractions <code>1/8, 1/4, 1/2, 1, 2, 4</code> are highlighted upon entering the page. These complement the typical <span class="math inline">\(4/4\)</span>-type time.</li>
+<li>Hold <strong>ALT</strong>, and you’ll find that the fractions <code>1/6, 1/3, 1, 3, 6</code> are highlighted. These complement a sort of <span class="math inline">\(3/4\)</span>-type time.</li>
+</ul></li>
+<li>In the bottom row, the 6th and 7th pads act as a metronome, flashing based on the last selected clock fraction. The time type of the last pressed clock fraction (<em>beat</em>s or <em>second</em>s) will reflect here as well.</li>
+</ul>
+<section id="play-triggers" class="level4">
+<h4 class="anchored" data-anchor-id="play-triggers">play triggers</h4>
+<p><strong>track cue</strong></p>
+<p>Hold a pad in the <em>third</em> column to define track <code>i</code> as a “play trigger”, then select an <em>unlit</em> pad in the first column to assign the play trigger to track <code>j</code>. Track <code>j</code> will start at step 1 when track <code>i</code> reaches the end of its current pattern bar (i.e., they will sync up at the first step of a sequence bar). For this to work, track <code>i</code> (the trigger) must only have a <em>singular</em> <code>clock_fraction</code> (no clock range).</p>
+<p>If you hold a pad in the third column and select a <em>lit</em> pad <em>in the same row</em> (i.e., a playing track), then that track will STOP at the end of its current pattern bar.</p>
+<p><strong>bank cue</strong></p>
+<p>Hold a pad in the <em>third</em> column to define track <code>i</code> as a “play trigger”, then select one of the four pads in the bottom row (at the lower left) to assign the trigger to bank <code>j</code>. Once track <code>i</code> reaches the end of its current pattern bar, <em>all</em> tracks will switch to bank <code>j</code> and continue playing (even if there are no samples or patterns loaded on that bank).</p>
+<ul>
+<li>If you hold a pad in the third column, you’ll be shown the tracks or bank triggered by that track.</li>
+<li>A track can trigger multiple other tracks.</li>
+<li>A track can only trigger <em>one</em> bank, and only one bank can be triggered at a time.</li>
+<li>Re-selecting any “triggered” track or bank (no need to hold anything) will undo the trigger.</li>
+</ul>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note: clock fractions and track-level parameters will remain the same when switching from bank to bank. You might need to get creative here: e.g., use the pattern bars to “slow/speed up” the time, use the parameter patterns to control parameters between banks.</p>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="tape-pages" class="level2">
+<h2 class="anchored" data-anchor-id="tape-pages">tape pages</h2>
+<p>For the most part, <strong>tape</strong> pages and <strong>sample</strong> grid pages look and function the same way, with two main differences:</p>
+<ul>
+<li><strong>tape</strong> only deals with four tracks while <strong>sample</strong> deals with 7 tracks.</li>
+<li><strong>tape</strong> incorporates buffer and recording management.</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The script was written with <strong>tape</strong> tracks being tracks 8-11. But, you can safely think of them as “tape 1-4”. In this documentation, we’ll use the 8-11 notation.</p>
+</div>
+</div>
+<section id="tape-config" class="level3">
+<h3 class="anchored" data-anchor-id="tape-config">tape config</h3>
+<p>The <strong>tape config</strong> page is very similar to the <strong>sample config</strong> page.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/tape_config.svg" class="img-fluid figure-img"></p>
+<figcaption>tape config</figcaption>
+</figure>
+</div>
+<ul>
+<li>The <strong>track param adjustment</strong>, <strong>track param selection</strong>, and <strong>track selection</strong> regions function the same way as their complements on the <strong>sample</strong> side.</li>
+<li><strong>PLAY MODE</strong> also functions the same way.</li>
+<li>Instead of <code>banks</code> (of audio files), the <strong>tape</strong> functionality offers four <code>partitions</code> of the stereo buffer. Each partition is divided into 32 <code>slices</code>. In the same way you can select <code>samples</code> in the <strong>sample</strong> functionality, you select <code>slices</code> with the <strong>tape</strong>.</li>
+<li><strong>play mode</strong> and <strong>partition selection</strong> function the same way as their complements on the <strong>sample side</strong>. The default play mode for <strong>tape</strong> is <em>1-Shot</em>.</li>
+<li>The <strong>slice locator</strong> indicates where in the partition the selected <code>slice</code> exists. You can use this locator in the same way you might use the <strong>sample range</strong> on the <strong>sample config</strong> page.
+<ul>
+<li>That is, you can choose where the slice starts and stops (using <strong>ALT</strong> for the latter).</li>
+</ul></li>
+<li>The <strong>buffer selection</strong> region dictates whether a track is assigned to the left buffer (<em>bright</em>) or the right buffer (<em>dim</em>). <em>Note: <code>INPUT 1</code> on the Norns always corresponds to the first buffer, and <code>INPUT 2</code> on the Norns always corresponds to the second buffer.</em></li>
+<li>You can assign <code>stereo tracks</code> by assigning buffers and <code>pan</code> accordingly:
+<ul>
+<li>The only possible stereo pairs are <strong>tape</strong> tracks <code>8-9</code> and tracks <code>10-11</code>, where the lower track number is <em>LEFT</em>.</li>
+<li>To assign a pair a stereo, set the panning for the two tracks as hard left, and hard right, respectively. Also, make sure that the buffers are set accordingly (lower to the left, and higher to the right).</li>
+<li>The <em>left</em> track is the one that “drives” the stereo pair. E.g., if you want to sequence the <code>8-9</code> stereo pair, you would set the tracks as described above, and <em>only</em> adjust/sequence <code>track 8</code>. In this way, movements can only accommodate two stereo tracks.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You’ll notice it’s not easy to use the <strong>slice locator</strong> to “move” a slice anywhere in the partition. I.e., the slice start/end times can only be adjusted “in the vicinity” of the current slice. This is to keep slices in positions that <em>for the most part</em> divide the partition up, in order.</p>
+</div>
+</div>
+</section>
+<section id="tape-sequence" class="level3">
+<h3 class="anchored" data-anchor-id="tape-sequence">tape sequence</h3>
+<p>The <strong>tape seq</strong> page takes the <strong>sample seq</strong> and adds the ability to arm recording <em>at</em> a step.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/tape_seq.svg" class="img-fluid figure-img"></p>
+<figcaption>tape seq</figcaption>
+</figure>
+</div>
+<ul>
+<li>The first four rows correspond to the four <strong>tape</strong> tracks. These behave the same way as the rows in the <strong>sample seq</strong> page.</li>
+<li>Select a step in the 6th row to arm recording <em>at</em> that step. As long as the step corresponds to a step in the <em>focused</em> track, movements will record to the slice corresponding to that track.
+<ul>
+<li>This applies to stereo track pairs as well.</li>
+<li>When recording, you’ll hear the sound of the slice being overdubbed based on the <code>pre</code> level set for that track. For more on this, see the <a href="#parameters">parameters</a> section.</li>
+<li>The 7th row shows recording progress for the slice (it is also indicated in the <strong>slice waveform</strong> display).</li>
+</ul></li>
+<li><em>Recording takes precedence.</em> So, if a track is recording, it will not play any step until the recording is through.</li>
+</ul>
+</section>
+<section id="tape-levels" class="level3">
+<h3 class="anchored" data-anchor-id="tape-levels">tape levels</h3>
+<p>The <strong>tape levels</strong> page functions the same way as the <strong><a href="#sample-levels">sample levels</a></strong> page.</p>
+</section>
+<section id="tape-time" class="level3">
+<h3 class="anchored" data-anchor-id="tape-time">tape time</h3>
+<p>The <strong>tape time</strong> page functions the same way as the <strong><a href="#sample-time">sample time</a></strong> page. The only difference with <strong>tape</strong> is there are only four rows for the four tracks.</p>
+</section>
+</section>
+</section>
+<section id="ui" class="level1">
+<h1>ui</h1>
+<section id="navigation-1" class="level2">
+<h2 class="anchored" data-anchor-id="navigation-1">navigation</h2>
+<p>The UI for movements is divided into three display “sections”:</p>
+<ol type="1">
+<li><strong>sample</strong></li>
+<li><strong>tape</strong></li>
+<li><strong>delay</strong></li>
+</ol>
+<p>At the top left of the Norns screen for every section are three vertical bars, the brightest of which indicates which section is active. To navigate between sections, use <strong>K1 + E1</strong> (hold the key, turn the knob). The change in section will reflect on the grid.</p>
+</section>
+<section id="sample-displays" class="level2">
+<h2 class="anchored" data-anchor-id="sample-displays">sample displays</h2>
+<p>For all <strong>sample</strong> displays, the top navigation bar indicates the following:</p>
+<p><code>TRACK • BANK • filename of currently selected SAMPLE</code></p>
+<p>Use <strong>E1</strong> on its own to scroll through the following displays.</p>
+<section id="track-pool" class="level3">
+<h3 class="anchored" data-anchor-id="track-pool">track pool</h3>
+<p>The first <strong>sample</strong> display is the <strong>track pool</strong> display. On the right side is the list of audio files corresponding to samples in the <code>track_pool_cue</code>. These are “on deck” to be added to the <code>track_pool</code>, whose audio files are listed in brighter text on the left side.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_1.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>track pool 1</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>K2</strong> on this page will enter the file selection, where you can pick a folder to load into the current bank for the focussed track.
+<ul>
+<li>After a folder is loaded, the folder name will show up at the bottom of this page (specifically for the selected bank).</li>
+</ul></li>
+<li>The order of the audio files on this page correspond to the order of the <code>sample</code>s in the <code>track_pool</code> (and <code>track_pool_cue</code>). To ensure a particular order, make sure to select (or deselect) samples on the grid accordingly.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_2.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>track pool 2</figcaption>
+</figure>
+</div>
+<ul>
+<li>Use <strong>E2</strong> to scroll through the <code>track_pool</code>, and <strong>E3</strong> to scroll through the <code>track_pool_cue</code>.</li>
+</ul>
+</section>
+<section id="track-params" class="level3">
+<h3 class="anchored" data-anchor-id="track-params">track params</h3>
+<p>For the <strong>sample</strong> functionality, the <strong>track params</strong> display shows the current track parameter on the left, and the <code>noise</code> level on the right.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_3.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>track params</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>E2</strong> will adjust the track parameter level (in this case, <code>amp</code>), and <strong>E3</strong> will adjust the <code>noise</code> level.</li>
+<li>For <code>filter</code> and <code>scale</code> parameters, <strong>K2</strong> swaps between types (i.e., between low pass / high pass, and forward / reverse).</li>
+<li>The track parameter will update with your selection on the grid.</li>
+</ul>
+</section>
+<section id="sample-waveform" class="level3">
+<h3 class="anchored" data-anchor-id="sample-waveform">sample waveform</h3>
+<p>The <strong>sample waveform</strong> display can show the waveform for the selected sample. By default, Timber will only render the sample waveform when requested.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_4.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>waveform 1</figcaption>
+</figure>
+</div>
+<ul>
+<li>Use <strong>K3</strong> to render the waveform.</li>
+<li>Use <strong>E2</strong> to adjust the start frame, and <strong>E3</strong> to adjust the end frame.</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_5.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>waveform 2</figcaption>
+</figure>
+</div>
+<ul>
+<li>When the <strong>play mode</strong> (on the grid) is set to <code>"Loop"</code> or <code>"Inf. Loop"</code>, this display will show the <code>start</code> and <code>stop</code> positions (vertical lines) <em>as well as</em> the <code>loop_start</code> and <code>loop_stop</code> positions (brackets).
+<ul>
+<li>To switch between setting these, use <strong>K2</strong>. Then, <strong>E2</strong> and <strong>E3</strong> work as expected.</li>
+</ul></li>
+<li>The play mode and the sample information will show above the waveform.
+<ul>
+<li>Along with the associated grid pads, you can use <strong>K3</strong> to swap between <strong>sample</strong> play modes on this page (after the waveform is rendered).</li>
+</ul></li>
+</ul>
+</section>
+<section id="sample-envelope" class="level3">
+<h3 class="anchored" data-anchor-id="sample-envelope">sample envelope</h3>
+<p>When the <strong>play mode</strong> is set to <code>"Gated"</code> or <code>"1-Shot"</code>, then you can adjust the amplitude envelope <em>for the sample</em>. This is done on the <strong>sample envelope</strong> page.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_6.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>sample envelope</figcaption>
+</figure>
+</div>
+<ul>
+<li>Use <strong>K2</strong> to swap between adjusting <code>attack</code> and <code>delay</code> (the top two) or adjusting <code>sustain</code> and <code>release</code> (the bottom two).</li>
+<li><strong>E2</strong> and <strong>E3</strong> will make the adjustments accordingly.</li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Note that the sample envelope parameters are tied to the <em>sample itself</em>. So, no matter what track pool the sample is assigned to, or how the other parameters are updated, the enveloping set here will remain the same.</p>
+</div>
+</div>
+</section>
+</section>
+<section id="tape-displays" class="level2">
+<h2 class="anchored" data-anchor-id="tape-displays">tape displays</h2>
+<p>For all <strong>tape</strong> displays, the top navigation bar indicates the following:</p>
+<p><code>TRACK • BANK • SLICE_start - SLICE_end</code></p>
+<p>Again, use <strong>E1</strong> on its own to scroll through the following displays.</p>
+<section id="track-pool-1" class="level3">
+<h3 class="anchored" data-anchor-id="track-pool-1">track pool</h3>
+<p>The <strong>track pool</strong> display for <strong>tape</strong> shows the two buffers of the currently selected <code>partition</code>, and the slices assigned to the <code>track_pool</code> and <code>track_pool_cue</code>. Use <strong>E2</strong> to adjust the <code>slice</code> start time and <strong>E3</strong> to adjust the <code>slice</code> end time for the currently selected <code>slice</code>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_7.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>track pool 1</figcaption>
+</figure>
+</div>
+<ul>
+<li>The bright bar closest to the buffers indicates the range of the currently selected sample.</li>
+<li>The bright-ish bars in the middle region represent the slices assigned to the current <code>track_pool</code>.</li>
+<li>The dimmer bars in the lower region represent the slices assigned to the current <code>track_pool_cue</code>.</li>
+<li>Use <strong>K2</strong> to load an audio file starting at the beginning of the current <code>slice</code>.
+<ul>
+<li>The file will only load into the buffer assigned to the current track. If the track is a stereo pair, and you are calling <strong>K2</strong> from the <em>left</em> track, this will load in stereo.</li>
+<li>The file will start at the beginning of the current <code>slice</code>, but movements will cut it off at the end of the <code>partition</code>.</li>
+<li>Set the <code>overdub</code> level in the <strong>track params</strong> display to preserve that amount of audio “under” the audio file. I.e., if <code>overdub == 0</code>, then the audio file will overwrite everything in that range.</li>
+</ul></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_8.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>track pool 2</figcaption>
+</figure>
+</div>
+<ul>
+<li>The top two horizontal lines indicate the left and right buffers, respectively. In the regions where these are bright, there is audio.
+<ul>
+<li>The <code>rec_threshold</code> parameter in <strong>PARAMS</strong> sets the minimum level required for audio to be shown here.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> E.g., increasing this parameter will make the “audio regions” seem more sparse.</li>
+<li>Adjusting <code>rec_threshold</code> will also determine which <em>grid</em> pads in the <strong>partition</strong> indicate audio.</li>
+</ul></li>
+<li>If your selected <code>slice</code> contains a region in which a file loaded into the buffer, the text at the bottom of the screen will show the name of the <em>latest</em> file loaded in that range.</li>
+<li>Use <strong>K1 + K3</strong> to clear the audio in a selected slice range. Again, the <code>track_buffer</code> (and whether the track represents a stereo pair) will dictate which buffer(s) are cleared.</li>
+</ul>
+</section>
+<section id="track-params-1" class="level3">
+<h3 class="anchored" data-anchor-id="track-params-1">track params</h3>
+<p>This display functions the same as the <strong>track params</strong> display for <strong>sample</strong>. The only difference is that the “extra” parameter here is <code>overdub</code> level.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_9.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>track params</figcaption>
+</figure>
+</div>
+<ul>
+<li>On this display, <strong>E2</strong> and <strong>E3</strong> will still adjust the <code>slice</code> start and end times, respectively.</li>
+</ul>
+</section>
+<section id="track-waveform" class="level3">
+<h3 class="anchored" data-anchor-id="track-waveform">track waveform</h3>
+<p>The <strong>track waveform</strong> display for <strong>tape</strong> is very similar to the same for <strong>sample</strong>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_10.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>track waveform</figcaption>
+</figure>
+</div>
+<ul>
+<li>The waveform on this page will render <em>after</em> a recording is complete. While softcut is recording, you’ll see a little circle show up on the bottom of the display.
+<ul>
+<li>This includes loop recording. You won’t see the updated rendering until the record indicator is gone.</li>
+</ul></li>
+<li><strong>K2</strong> will record <em>mono</em> to the current track, and if the track is the first of a stereo pair, <strong>K3</strong> will record <em>stereo</em>.
+<ul>
+<li><em>Note: if recording onto a stereo pair, you’ll need to manually update the <code>overdub</code> for <strong>both</strong> tracks.</em> This allows for more flexibility in stereo recording.</li>
+<li>If already playing/recording, either key will stop the recording/playing.</li>
+</ul></li>
+<li>On this display, <strong>E2</strong> and <strong>E3</strong> will still adjust the <code>slice</code> start and end times, respectively.</li>
+<li>If the current track is playing a slice, then either <strong>K2</strong> or <strong>K3</strong> on this page will stop the track from playing.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+</ul>
+</section>
+</section>
+<section id="delay-displays" class="level2">
+<h2 class="anchored" data-anchor-id="delay-displays">delay displays</h2>
+<p>There is one display for <strong>sample</strong> delay, and another for <strong>tape</strong> delay.</p>
+<section id="sample-delay" class="level3">
+<h3 class="anchored" data-anchor-id="sample-delay">sample delay</h3>
+<p>On the <strong>sample delay</strong> page, you can adjust the <code>delay feedback</code> and <code>delay time</code> using <strong>E2</strong> and <strong>E3</strong>, respectively.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_11.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>sample delay</figcaption>
+</figure>
+</div>
+</section>
+<section id="tape-delay" class="level3">
+<h3 class="anchored" data-anchor-id="tape-delay">tape delay</h3>
+<p>Similarly, on the <strong>tape delay</strong> display, you can adjust the <code>delay feedback</code> and <code>delay time</code> for both left and right channels.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/screen_12.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>tape delay</figcaption>
+</figure>
+</div>
+<ul>
+<li>Use <strong>K2</strong> <em>or</em> <strong>K3</strong> to swap between <code>feedback</code> and <code>time</code>.</li>
+<li>Then, use <strong>E2</strong> and <strong>E3</strong> to adjust the left and right channels of the delay, respectively.</li>
+<li>Hold <strong>K1</strong> and use <strong>E2</strong> <em>or</em> <strong>E3</strong> to adjust the overall delay level (at the bottom of the display).</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="parameters" class="level1">
+<h1>parameters</h1>
+<p>Both functionalities share the following parameters:</p>
+<ul>
+<li>amplitude</li>
+<li>panning</li>
+<li>filter</li>
+<li>delay</li>
+<li>probability</li>
+<li>scale</li>
+<li>interval</li>
+</ul>
+<p>These are adjustable at both the track level and the step level. In addition to these, the <strong>sample</strong> functionality has an option to add <em>noise</em> to a sample, and the <strong>tape</strong> functionality has an option to set the <em>overdub</em> (or “pre”/“preserve”) level for recording, and loop-<em>crossfade</em> time for slices. These three parameters can be set only at the track level.</p>
+<p>Samples/Slices are triggered in a sequence by a pattern of selected steps. Further, each step can have its own set of parameter settings (for the 7 above parameters), so parameter values can can change from step to step.</p>
+<p>Lastly, when you make adjustments to the track level, you will also make proportional adjustments to each step based on a combination of the parameter pattern and the track level itself; we call this “squelching”. <em>Note: squelching does not apply to the <code>interval</code> parameter.</em></p>
+<section id="squelching" class="level2">
+<h2 class="anchored" data-anchor-id="squelching">squelching</h2>
+<p>There are two basic kinds of squelching: unidirectional and bidirectional.</p>
+<section id="unidirectional" class="level3">
+<h3 class="anchored" data-anchor-id="unidirectional">unidirectional</h3>
+<p>Unidirectional squelching is applied to <strong>amplitude</strong>, <strong>filter</strong>, <strong>delay</strong>, and <strong>probability</strong>. Essentially, the track value dictates the maximum value for a scale, and then the parameter pattern value dictates the value within the scale.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/squelch_1.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>unidirectionality</figcaption>
+</figure>
+</div>
+<p>For example, if the <code>track</code> level value for <strong>amplitude</strong> is set at 0.5 and the parameter pattern level is set to 0.8, then the final value for that step will be 80% of the way to 0.5, or 0.4.</p>
+</section>
+<section id="bidirectional" class="level3">
+<h3 class="anchored" data-anchor-id="bidirectional">bidirectional</h3>
+<p>Alternatively, bidirectional squelching is applied to <strong>panning</strong> and <strong>scale</strong>. In this kind of squelching, sample step values fall within a proportional distance from a new center.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/squelch_2.svg" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>bidirectionality</figcaption>
+</figure>
+</div>
+<p>In other words, the <strong>track value</strong> becomes the new “center”, and the parameter pattern value translates to the new scale.</p>
+</section>
+</section>
+<section id="amplitude" class="level2">
+<h2 class="anchored" data-anchor-id="amplitude">amplitude</h2>
+<p><code>amp</code> is the amplitude (volume) of the playing sample/slice. It’s represented on the grid as filling from left-to-right on the <strong>config</strong> page, and from bottom to top on the <strong>levels</strong> page.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/param_amp.svg" class="img-fluid figure-img"></p>
+<figcaption>amplitude</figcaption>
+</figure>
+</div>
+<ul>
+<li>The bottom row (on the left side) will be <em>blank</em> for <code>amp</code>. From another parameter focus, <em>re</em>-select the pad to revert to the <code>amp</code> parameter.
+<ul>
+<li>The grid diagram in the panning section shows the other parameter options.</li>
+</ul></li>
+<li>To set the amplitude to 0, <em>re</em>-select the currently set value. Otherwise, the pads correspond to the following levels (in decibels):
+<ul>
+<li><code>-28 | -18 | -12 | -6 | -3 | 0</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="panning" class="level2">
+<h2 class="anchored" data-anchor-id="panning">panning</h2>
+<p>The <code>pan</code> value is bidirectional, and it’s illustrated from left-to-right on the <strong>config</strong> page, and from bottom-to-top on the levels page (respectively).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/param_pan.svg" class="img-fluid figure-img"></p>
+<figcaption>panning</figcaption>
+</figure>
+</div>
+<ul>
+<li>The values on the grid correspond to the following pan values:
+<ul>
+<li><code>-1 | -2/3 | -1/3 | 1/3 | 2/3 | 1</code></li>
+</ul></li>
+<li>Selecting the “currently set” value will revert the panning back to 0.</li>
+<li>The squelch “width” for <code>pan</code> is 0.5 on either side. For example, if a <em>step</em> level is set to -1 and the <em>track</em> level is set to 0.5, then the final level at that step will be 0.</li>
+</ul>
+</section>
+<section id="filter" class="level2">
+<h2 class="anchored" data-anchor-id="filter">filter</h2>
+<p>The <code>filter</code> parameter is unidirectional, but it can be defined from “bottom to top” or from “top to bottom” depending on one of two filter types:</p>
+<ul>
+<li><code>"Low Pass"</code> (Default)</li>
+<li><code>"High Pass"</code></li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/param_filter.svg" class="img-fluid figure-img"></p>
+<figcaption>filtering</figcaption>
+</figure>
+</div>
+<ul>
+<li>To swap between the two filter types, <em>re</em>-select the most extreme value. So, for track 2 in the example above, if we push the third pad from the left, this filter will change from high pass to low pass.
+<ul>
+<li>In the <strong>track parameter</strong> page in the UI, you can also press <strong>K2</strong> to swap between types.</li>
+</ul></li>
+<li>The track’s filter type determines the filter type for all steps. That is, if the track is set to one filter type, then all steps will be of the same type.
+<ul>
+<li>This is made apparent in the <strong>levels</strong> page(s), as the direction of the highlighted pads will always match the direction of the track</li>
+</ul></li>
+<li>For both <strong>sample</strong> and <strong>tape</strong>, you can adjust the <code>filter_resonance</code> for each track in the <strong>PARAMS</strong> menu.</li>
+<li>As long as all pads are bright, then you are getting the full range. In this case, just be careful to remember which type you are dealing with when making adjustments on the fly.</li>
+<li>The values on the grid correspond to the following filter frequencies, in Hertz:
+<ul>
+<li><code>100 | 500 | 1000 | 5000 | 10000 | 20000</code></li>
+<li>When you switch from high pass to low pass (or vice versa), the track frequency level as well as all parameter pattern frequency levels will mirror themselves. E.g., <code>500</code> for low pass becomes <code>10000</code> for high pass.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Good rule of thumb: If you plan on swapping track filter types, keep the filter parameter patterns at values closer to the middle.</p>
+</div>
+</div>
+</section>
+<section id="delay-1" class="level2">
+<h2 class="anchored" data-anchor-id="delay-1">delay</h2>
+<p>The <strong>sample</strong> and <strong>tape</strong> functionalities both have their own delay <em>bus</em>. The <strong>sample</strong> delay is mono, and the <strong>tape</strong> delay is stereo. Each track can be independently sent to a bus based on their <code>delay</code> parameter level. The <code>delay</code> parameter sets an independent send level for each track (and optionally, for each step).</p>
+<p>This is a unidirectional parameter, and it manifests on the grid in the same way <code>amp</code> does.</p>
+<ul>
+<li>By default, the <code>delay</code> for each track is set to 0, and new steps get a “relative” <code>delay</code> setting of 1.</li>
+<li>You can adjust the <code>delay time</code> and the <code>delay feedback</code> for each delay bus in the UI.</li>
+<li>For <strong>tape</strong> delay, you can adjust both time and feedback independently for the left and right channels.</li>
+<li>Both delay types have an overall level that needs to be set.</li>
+<li>All delay parameters can be set in the <strong>PARAMS</strong> menu, or on the corresponding <strong>tape delay display</strong>.</li>
+<li>The levels on the grid correspond to the same decibel levels as <code>amp</code>: these are essentially <strong>delay</strong> send levels.</li>
+</ul>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>To use delay, you’ll need to increase the overall delay level in the UI.</strong> This is initialized as 0 (to avoid unwanted delay at the start), but once it’s set, you should be good to go.</p>
+</div>
+</div>
+</section>
+<section id="probability" class="level2">
+<h2 class="anchored" data-anchor-id="probability">probability</h2>
+<p>The <code>probability</code> parameter determines how often a sample/slice is triggered. This is a unidirectional parameter, so the track level defines the maximum probability, and the parameter level pattern defines relative probabilities within this range.</p>
+<p>Again, this is a unidirectional parameter, so it manifests on the grid in the same way <code>amp</code> does. The levels on the grid correspond to the following probabilities:</p>
+<p><code>1/6 | 2/6 | 3/6 | 4/6 | 5/6 | 1</code></p>
+</section>
+<section id="scale" class="level2">
+<h2 class="anchored" data-anchor-id="scale">scale</h2>
+<p>The <code>scale</code> parameter determines the pitch and direction of a sample/slice. This is a bidirectional parameter that actually behaves similarly to <code>filter</code> on the grid.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/param_scale.svg" class="img-fluid figure-img"></p>
+<figcaption>scale</figcaption>
+</figure>
+</div>
+<ul>
+<li>When a sample/slice is to be played forward, the scale pads on the grid pads light up from left-to-right. When set to be played backward, the pads light up from right-to-left.</li>
+<li>To swap between being played forward or in reverse, tap the extreme-most pad selected. So, for track 4 in the example above, pushing the third pad would make that track play its slices in reverse.
+<ul>
+<li>In the <strong>track parameter</strong> page in the UI, you can also press <strong>K2</strong> to swap between types.</li>
+</ul></li>
+<li>Like filter, the track direction defines the direction of all samples assigned to that track. This is also reflected in the <strong>levels</strong> pages for <strong>sample</strong> and <strong>tape</strong>.</li>
+<li>Scale is dependent on the <code>interval</code> parameter, which defines a note of the scale (e.g., “5th”, “4th”, “7th”, etc.). See the <a href="#interval">interval</a> section for more on this.
+<ul>
+<li>The default value for <code>interval</code> is a perfect 5th.</li>
+</ul></li>
+<li>The values on the grid correspond to the following scale values, where “<code>ova</code>” means “octave”, and “<code>interval</code>” is an interval <em>above</em> the root note:
+<ul>
+<li>Forward: <code>-ova | -ova+interval | root | root+interval | +ova | +2ova</code></li>
+<li>Backward: <code>+2ova | +ova | root+interval | root | -ova+interval | -ova</code></li>
+<li>So, for example, track 5 in the example above would be played one interval <em>above</em> one octave below.</li>
+</ul></li>
+<li>Again, this is a <em>bidirectional</em> parameter, where the “middle” value is the <code>root</code>. The sample/slice itself defines the “root” pitch.
+<ul>
+<li>The <code>track</code> value defines the middle value for squelching. The final value is within 2 increments of this value. So, if the <code>scale</code> value for a (forward) track is <code>+ova</code>, then the lowest parameter pattern value will correspond to <code>root+interval</code>.</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-warning no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remember that parameter <em>pattern</em> levels are <em>relative</em>. They are meant to represent deviations from the <code>track</code> parameter level. So, if things start to get confusing, think about the bidirectional squelching diagram, above, or keep the track level at <code>root</code>.</p>
+</div>
+</div>
+</section>
+<section id="interval" class="level2">
+<h2 class="anchored" data-anchor-id="interval">interval</h2>
+<p>The <code>interval</code> parameter defines what note of the scale to play when <code>scale</code> is set to play at this interval.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="movements/param_interval.svg" class="img-fluid figure-img"></p>
+<figcaption>interval</figcaption>
+</figure>
+</div>
+<ul>
+<li>The interval here corresponds to either a <code>major</code> or (natural) <code>minor</code> scale. This can be set in the <strong>PARAMS</strong> menu.</li>
+<li>The values on the grid start with the <code>2nd</code> note of the scale, and end with the <code>7th</code> note of the scale:
+<ul>
+<li><code>2nd | 3rd | 4th | 5th | 6th | 7th</code></li>
+</ul></li>
+<li>Uniquely, <em>there is no squelching for the interval.</em> There are two ways the track level relates to each pattern step:
+<ul>
+<li>(Default) The track level defines all step values.</li>
+<li>The step value <em>overwrites</em> the track level</li>
+</ul></li>
+<li>By default, each pattern level value for <code>interval</code> is empty (as seen in the <strong>levels</strong> page). In this case, the track <code>interval</code> defines the interval for each step.</li>
+<li>When you define a parameter pattern level on the <strong>levels</strong> page, you set that <code>interval</code> value for that step. This overwrites anything defined at the track level.</li>
+<li>To set the track level as the defining value on the <strong>levels</strong> page, select the current step value, and that will remove the selection. The step <code>interval</code> is then defined by the track level.</li>
+</ul>
+</section>
+</section>
+<section id="filenaming" class="level1">
+<h1>filenaming</h1>
+<div class="callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The following assumes you have a Mac or Linux, or you have Python installed on your computer.</p>
+</div>
+</div>
+<p>Download the <em>/lib/filenaming.py</em> file to rename Ableton clips in a way that’s convenient for organizing in the <strong>sample</strong> banks. By default, this method assumes you want different instruments (or sample “types”) loaded by row or by column in the bank.</p>
+<ol type="1">
+<li>Slice all the clips that you’d like to crop in Ableton (in Arrangement View).</li>
+<li>Use <strong>Cmd + A</strong> to select up to 8 clips (to name “by row”), up to 4 clips (to name “by column”), or up to 32 clips (to name “by bank”), and use <strong>Cmd + R</strong> to give them all the same name. <em>Multiple clips in Ableton can have the same “name”.</em> Repeat this step for each row, column, or bank, as needed.</li>
+<li>Select all (up to 32) clips, and <strong>Crop</strong> them in Ableton using <strong>Cmd + Shift + J</strong>.</li>
+<li>Create a new folder to contain the renamed clips. Name it as you like.</li>
+<li>Find the <em>&lt;abletonproject&gt;/Samples/Processed/Crop</em> directory, and <strong>Copy</strong> the corresponding clips from this original <em>Crop</em> folder into your new folder (use the date/time as a guide …). Ableton needs the original files named as they are. <font color="orange">Do not edit the “Crop” folder.</font></li>
+<li>Navigate in your command line to the place where the <em>filenaming.py</em> file is stored.</li>
+<li>Run <code>python filenaming.py &lt;filepath&gt; [name_by] [filetype]</code> using the filepath in #4, where <code>name_by</code> is <code>row</code>, <code>col</code>, or <code>bank</code>. <br>E.g., <code>python filenaming.py /Users/Me/My_Stuff/cropfolder row wav</code>, where <em>row</em> and <em>wav</em> are the default (so, I could omit them here, and it would behave the same way).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
+<li>You’ll be prompted to verify you want to change file names; I recommend waiting until you’re absolutely sure it’s correct :).</li>
+<li>You do not need the <em>.asd</em> files in the new folder, so you can delete them if you like.</li>
+</ol>
+<section id="a-few-notes-on-this" class="level3">
+<h3 class="anchored" data-anchor-id="a-few-notes-on-this">a few notes on this</h3>
+<ul>
+<li><strong>For individual clips, it’s best to just use “Consolidate” in Ableton.</strong> This makes a new Consolidate folder, and you can find them in there.</li>
+</ul>
+</section>
+</section>
+<section id="a-note-on-updates" class="level1">
+<h1>a note on updates</h1>
+<p><em>Right now, I have no intention of making major updates to the script.</em> The only changes I expect to make include minor UI adjustments, performance improvements, and bug fixes. I’ll keep track of issues <a href="https://github.com/leontoddjohnson/movements/issues">here</a>.</p>
+<p>For most of the unimplemented ideas that came to mind, there was good a reason why I chose not to implement it (usually it came down to “less is more”). But, for the sake of sharing, here are a few features I could have included, but chose not to:</p>
+<ul>
+<li><strong>Incorporating LFOs.</strong> True, the Timber engine offers an LFO functionality for samples. But, this interferes with movements’ ability to adjust <strong>sample</strong> panning and amplitude levels in a pattern. In a sense, the LFO overcomplicates the automation that is already happening due to parameter patterns. The same point can be made for adding an LFO for the <strong>tape</strong> functionality.</li>
+<li><strong>Setting different sequence “start” locations</strong> (other than the first bar of the grid). Again, the juice didn’t seem worth the squeeze here. Even so, I think it’s kind of nice to know that every sequence starts at the beginning of the same bar. At least, the “island” functionality provides a decent way of getting around this, though.</li>
+<li><strong>Sending MIDI</strong>. This was a tough decision, but it comes down to the purpose of this script: it is a sampler, so it should be used that way. There are myriad sequencer scripts out there that are great for controlling an outboard MIDI device, and many of their sequencer functions are better than movements anyway! So, I recommend looking into those for that purpose.</li>
+</ul>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>In total, the stereo softcut buffer is about 350 seconds long, and for this script, we use softcut for both the <strong>tape</strong> and the <strong>tape delay</strong> functionality. Since delay time is synced with the internal clock, the <strong>tape delay</strong> uses 6 x <strong>s</strong> seconds of the buffer, where 6 is the highest <code>clock_fraction</code> value, and <strong>s</strong> is the number of seconds per beat of the internal <strong>CLOCK/TEMPO</strong>. With a low end BPM of 12, this equates to 6 x (60 / 12) = 30 seconds, leaving the 320 seconds needed for the <strong>tape</strong> functionality.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Fast encoder turns to update the <code>rec_threshold</code> parameter may seem to cause a minor lag on the norns. This is because each delta change to the parameter requires the script to run a “check” across all 19,200 samples of the <strong>tape</strong> buffer. Nothing is wrong, the value you want in the end will update accordingly. It is recommended, though, that you only update this parameter when nothing is playing to avoid any lagging.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Note that <strong>tape</strong> slices are not separate audio clips existing in their own right, as they are on the <strong>sample</strong> side. When a slice is played, the associated track (i.e., softcut voice) playhead is moved to that position in the buffer, and it plays. <em>To stop playing a slice is to stop playing the track altogether.</em><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>On a Mac, you can drag and drop the folder onto the terminal itself to show the filepath.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+        for (let i=0; i<annoteTargets.length; i++) {
+          const annoteTarget = annoteTargets[i];
+          const targetCell = annoteTarget.getAttribute("data-target-cell");
+          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+          const contentFn = () => {
+            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            if (content) {
+              const tipContent = content.cloneNode(true);
+              tipContent.classList.add("code-annotation-tip-content");
+              return tipContent.outerHTML;
+            }
+          }
+          const config = {
+            allowHTML: true,
+            content: contentFn,
+            onShow: (instance) => {
+              selectCodeLines(instance.reference);
+              instance.reference.classList.add('code-annotation-active');
+              window.tippy.hideAll();
+            },
+            onHide: (instance) => {
+              unselectCodeLines();
+              instance.reference.classList.remove('code-annotation-active');
+            },
+            maxWidth: 300,
+            delay: [50, 0],
+            duration: [200, 0],
+            offset: [5, 10],
+            arrow: true,
+            appendTo: function(el) {
+              return el.parentElement.parentElement.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'quarto',
+            placement: 'right',
+            popperOptions: {
+              modifiers: [
+              {
+                name: 'flip',
+                options: {
+                  flipVariations: false, // true by default
+                  allowedAutoPlacements: ['right'],
+                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                },
+              },
+              {
+                name: 'preventOverflow',
+                options: {
+                  mainAxis: false,
+                  altAxis: false
+                }
+              }
+              ]        
+            }      
+          };
+          window.tippy(annoteTarget, config); 
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

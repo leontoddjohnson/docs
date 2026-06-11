@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2021-06-13">
+
+<title>anthropomorphization of algorithms – ltj</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d6c07edd3d23bd2380ab709eca864cd.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a405c485f01f3dc5ee0e34b642a39a9f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">ltj</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/teaching.html"> 
+<span class="menu-text">teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/coding.html"> 
+<span class="menu-text">coding</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/posts.html"> 
+<span class="menu-text">journal</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">on this page</h2>
+   
+  <ul>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation">motivation</a></li>
+  <li><a href="#the-words-we-use" id="toc-the-words-we-use" class="nav-link" data-scroll-target="#the-words-we-use">the words we use</a>
+  <ul class="collapse">
+  <li><a href="#listening" id="toc-listening" class="nav-link" data-scroll-target="#listening">listening</a></li>
+  <li><a href="#recommending" id="toc-recommending" class="nav-link" data-scroll-target="#recommending">recommending</a></li>
+  <li><a href="#looking" id="toc-looking" class="nav-link" data-scroll-target="#looking">looking</a></li>
+  </ul></li>
+  <li><a href="#whats-the-harm-in-it" id="toc-whats-the-harm-in-it" class="nav-link" data-scroll-target="#whats-the-harm-in-it">what’s the harm in it?</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">anthropomorphization of algorithms</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">ethics</div>
+    <div class="quarto-category">AI</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">June 13, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="motivation" class="level1">
+<h1>motivation</h1>
+<p>Daily human life is becoming increasingly intertwined with algorithms. The people who develop these algorithms (and, to a lesser extent, the implicit users of these algorithms — the general public) can only use their native languages to describe algorithmic nature and activity. E.g., “Netflix is recommending this movie to me”, “my Tesla is looking ahead to find obstructions blocking our path”, or “the software loading wheel indicates the computer is thinking”.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> Though, I wonder about the difference between a Netflix algorithm making a <em>recommendation</em> and a human doing the same. When a Tesla car <em>looks</em>, is it doing the same thing a human would do when they <em>look</em>? More importantly, what are the consequences of conflating algorithm activity with human activity?</p>
+<p>In <a href="https://arxiv.org/pdf/2104.12871.pdf"><em>Why AI is Harder Than We Think</em></a>, Melanie Mitchell cites computer scientist Drew McDermott (<a href="http://www.cs.yorku.ca/~jarek/courses/ai/F11/naturalstupidity.pdf">1976</a>) as credited with coining the phrase “wishful mnemonic” to describe the common use of words like “understand” or “goal” when talking about purely algorithmic processes such as loops. I think the following quote of McDermott sums up the question we ask here quite well:</p>
+<blockquote class="blockquote">
+<p>“A major source of simple-mindedness in AI programs is the use of mnemonics like “UNDERSTAND” or “GOAL” to refer to programs and data structures. […] If a researcher […] calls the main loop of his program “UNDERSTAND,” he is (until proven innocent) merely begging the question. He may mislead a lot of people, most prominently himself. […] What he should do instead is refer to this main loop as “G0034,” and see if he can convince himself or anyone else that G0034 implements some part of understanding. […] Many instructive examples of wishful mnemonics by AI researchers come to mind once you see the point.”</p>
+</blockquote>
+<p>Think of this as an extension to the discussion Mitchell provides in the “Fallacy 3” section of the aforementioned paper. Here, I will shy away from using the term “wishful”, preferring a more “anthropomorphic” standpoint, since I think these terms are “wishful” precisely <em>because</em> they are anthropomorphizing. These terms are each purposed for a very <em>human</em> thing, and when applied elsewhere, they become wishful until the burden of proof is satisfied by the user that the application is appropriate. We conflate human things with non-human things, and that is the concern of this essay.</p>
+<p>Though a call for perfectly distinct terms is farfetched to say the least, being conscious of the issue and being selective in our word choice may lead us to use terms which are more appropriate than others. As Mitchell says so well in her paper: “Indeed, the way we talk about machine abilities influences our conceptions of how general those abilities really are.”</p>
+</section>
+<section id="the-words-we-use" class="level1">
+<h1>the words we use</h1>
+<p>It is hard to talk about (let alone imagine) an algorithm doing something very animal without using anthropomorphizing language. But, it does not follow that this is appropriate. Further, until there is an explicit and linguistically represented difference between animal and algorithm,<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> we will continue to conflate the actions of one with those of the other in our words, e.g., a dog “reasoning”, though different, will be described in the same way as an algorithm “reasoning”. This conflation may set ourselves up for particular consequences related to misinterpretation or misattribution.</p>
+<p>I offer a few potentially familiar phrases for conversation:</p>
+<ol type="1">
+<li>Your iPhone is <em>listening</em> to your conversation</li>
+<li>Facebook is <em>recommending</em> a product to you</li>
+<li>Computer vision models are <em>looking</em> for specific objects in images</li>
+</ol>
+<p>In any of these cases, we could have (and, as we’ll see later, should have) used less anthropomorphic language: your iPhone is <em>recording</em> your conversation, Facebook <em>assigns</em> a product to everyone, whereby any assignment can be interpreted as a recommendation, and computer vision models <em>scan</em> the pixels of images, and the patterns are processed during modeling. True, even with these less anthropomorphic translations we may still succumb to human-esque imagery, but it will be to a lesser extent than their analogous counterparts. By being selective about word choice, we can do a better job of distinguishing between a human doing a thing and an algorithm doing the same thing in a different way.</p>
+<p>The words we use are a representation of how we perceive the world, and conversely, our perceived reality is necessarily defined in terms of language. Therefore, using phrases like the ones above must indicate how we view things like iPhones, Facebook, and machine learning models. In the same way we like to attribute human traits and actions to non-human (animal) beings (e.g., “my dog is <em>talking</em> to me”, or “this cat <em>loves</em> you”), we are led to do the same for algorithmic processes. But, animals and algorithms seem different enough to merit a discussion on the appropriateness of this language. In the coming sections, I’ll use the three above phrases as devices to understand our intentions, our interpretations, and some potential consequences thereof, when it comes to anthropomorphizing algorithms.</p>
+<section id="listening" class="level2">
+<h2 class="anchored" data-anchor-id="listening">listening</h2>
+<p><em>Listening</em> seems like a relatively active thing, especially compared to its more passive analog, <em>hearing</em>. With listening comes the connotation of internalization, and some kind of personal association. For example, when I listen to someone telling me a story, I picture in my mind’s eye the characters of the story, and create for them a personalized version of what I think they ought to be. Or, when I listen to the sounds of the outdoors, I pick out particular attributes of what I’m hearing (e.g., the leaves, the highest pitched bird tweet) and transiently place an emotional value to each of these. If there’s a sound (or part of a story) that I find to be annoying or unsettling, there will be a feeling associated with that thing, and my overall interpretation of what I’m listening to will be affected. Thereafter, if I’m asked to describe that sound (or that story), my description will be necessarily biased by my history, my character, and my essential/existential being. Now, when we use the term <em>listening</em> to describe algorithmic activity, how can we be sure the attribution of characteristics similar to those above are consistent?</p>
+<p>The first phrase in the preceding section is</p>
+<blockquote class="blockquote">
+<p>“Your iPhone is <em>listening</em> to your conversation”</p>
+</blockquote>
+<p>I am not privy to the exact mechanics of the Apple voice recognition process, but I am confident that it involves a set of algorithms, and it is not <em>solely</em> a human listening to and acting on vocal input. So, what does it mean for the algorithm to be listening? And, what is so wrong with us saying that an algorithm is “listening”, as we do? The answer to the first question must be dependent on the algorithm, and requires an understanding of the audio processing methods used, as well as the modeling pipeline through which this processed audio percolates. I.e., we define “listening” to be <code>whatever the algorithm is doing</code> during that time. A reasoning through this sort of thing is provided a few sections later. As for the second question, I’ll present a thought experiment as a tool for us to better understand what is going on.</p>
+<p>For the sake of convenience and familiarity, suppose we all carry an electronic handheld device. Freely, we can interact with this device, and it will in turn, execute some corresponding reaction. E.g., we can speak in close proximity to this device and verbalize a question or a statement, and the device will then play (or stream) words in some familiar language.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> Now, imagine that for every device, exactly one of two scenarios is true: either <span class="math inline">\(a\)</span>, the device is assigned to a human being somewhere, listening to the audio coming through, managing the non-verbal digital cues initiated, and every reaction made by the device is purely the doing of this human at the other end (it is essentially a smartphone with “desktop sharing” capability), or <span class="math inline">\(b\)</span>, the user is the only human involved in the interchange, and any reaction made by the device is purely the result of algorithmic causes (e.g., prerecorded audio is selected and played via machine learning models based on the input). Finally, suppose the user of the device has no way of telling whether it is an <span class="math inline">\(a\)</span> device or <span class="math inline">\(b\)</span> device.</p>
+<p>If there is no difference in our experience between <span class="math inline">\(a\)</span> or <span class="math inline">\(b\)</span>, then there should be no difference in the language we use to describe it. Put in another context, if two patients in a hospital present exactly the same symptoms, it would not be a farfetched conclusion to attest they are suffering the same ailment. In a way, we are inclined to believe that similar effects imply similar causes, but this is a fallacy. In the same way, we can be easily fooled into thinking <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span> are the same device when the only real difference between the two (i.e., their source) lay behind a Veil of Perception. Consequentially, there comes a point where the language we use requires a more refined sense of precision.</p>
+<p>Suppose I notice my device randomly taking pictures of me, and I say “this device is spying on me.” The act of spying is more than the interaction between the spy and the spied. A photographer can take candid pictures of me, and I’ll have no problem with it, as long as the cause is just and we agreed upon the interaction ahead of time. I’d even be fine with having my photos taken due to a computer glitch. But, if the pictures are <em>intentionally</em> taken against my will, there must be a subversive cause which precedes the action. To “spy”, then, requires a subversive intention which occurs at the end of the agent behind the device, absconded from the user. In other words, for us to be able to properly use the word “spy” to describe an action made by our device, it must be an <span class="math inline">\(a\)</span> device. If it were a <span class="math inline">\(b\)</span> device, we’d imply that <em>intention</em> can be achieved by a set of algorithms. Today, there is no reason to believe this is possible, but if this changes in the future, then maybe our analysis of appropriate terminology will change in turn.</p>
+<p>In general, we must think about the causal faculties involved in and required for certain activities before we attribute them to an agent. We should get into the habit of determining whether a word requires strictly human faculties before we attribute it to a non-human. This could mean asking questions like, “is it scanning the page, or is it analyzing the page?”, or “is it listening to our conversation, or is it recording our conversation?” Some anthropomorphizing words (e.g., “jump”) do not require strictly human faculties. A human can <em>love</em> and they can <em>touch</em>, but a machine (at least, as of yet) is only capable of the latter. In short:</p>
+<blockquote class="blockquote">
+<p><strong>Proposition A:</strong> When describing algorithmic processes, use words which imply faculties attainable, but do not require faculties unattainable by the algorithm.</p>
+</blockquote>
+<p>This evaluation can be calibrated to match the apparent capability of algorithmic progress.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></p>
+</section>
+<section id="recommending" class="level2">
+<h2 class="anchored" data-anchor-id="recommending">recommending</h2>
+<p>It <em>may</em> be that the faculties required to make a recommendation are not strictly human. Namely, taking stock of a person’s preferences and using (say) a well-suited probabilistic function to offer up something similar could be interpreted as a recommendation. Or, conversely, for a recommender to make a recommendation, we only require that it highlight an option which is especially catered to the user; this doesn’t seem strictly human. So, a set of algorithms seems perfectly capable of <em>recommendation</em> without misattribution to the word. Though, even after we follow this reasoning to establish that a word like <em>recommendation</em> can be safely applied to a set of algorithms in deed, the question still remains how this attribution manifests post hoc.</p>
+<p>In an attempt to understand the post hoc reaction to word attribution, suppose you’re driving in a two-car caravan, and your GPS recommends an alternate route. Say you take this detour, but your friend in the other car does not, and your friend arrives first. (Call this scenario <span class="math inline">\(g\)</span>.) What is your reaction? Now, take the same scenario, but this time it is a human passenger in your car who recommends the same alternate route, your friend stays the course, and again arrives first. (Call this scenario <span class="math inline">\(h\)</span>.) What is your reaction now? It seems to me that at the very least, our feelings will be different between the two scenarios. For example, when I imagine this thought experiment, I feel a sense of wanting to assign blame for both hypotheticals, but they manifest in different ways. Namely, when I have a human to blame, I will do just that: in scenario <span class="math inline">\(g\)</span>, I will tend to blame myself before the GPS, and in <span class="math inline">\(h\)</span>, I will blame the passenger before myself. In short, the way we feel about a recommendation from a human is different from the way we feel about the same recommendation from a non-human. Implicitly now, in the same way we may feel differently about a recommendation from a lawyer than from a liar, the use of the word “recommendation” in the preceding sentence seems appropriate: an action through differing mediums may be called the same thing. <em>A rose by any other name would smell as sweet</em>, and thus, Proposition A still maintains its sufficiency for our use of anthropomorphizing terms.</p>
+<p>Even though it is possible that some terminology can be appropriately interchangeable between human and non-human agents,<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> the point still stands that our feelings about any action will differ depending on the actor. For example, when a human is behind the wheel of a vehicle, we say that the human is driving the vehicle. Suppose after some analysis, we allow by Proposition A that when there is no human behind the wheel of an autonomous car, the algorithm set is then said to be driving the car. If this car commits a hit-and-run (maybe hitting a human, and driving off), who is to blame? When we refer back to the event, and use the same terminology to describe the experience, we feel led to ask first “who/what was in control of the car at the time?”, or “who/what was driving the car at the time?” And in this way, post hoc, we assign some element of <em>conscious intent</em> to the word “driving” which might not have been there upon initial analysis. This calls into question the viability of simply relying on Proposition A, or something like it.</p>
+<p>In <a href="https://www.abc15.com/news/region-southeast-valley/tempe/tempe-police-investigating-self-driving-uber-car-involved-in-crash-overnight">2018</a>, a self-driving Uber vehicle struck and killed a woman. Two years later, it was <a href="https://www.theguardian.com/us-news/2020/sep/16/uber-self-driving-car-death-safety-driver-charged">reported</a> that any criminal consequences for this action should fall on the vehicle’s “backup” driver who was “responsible for monitoring the car’s movements.” Was the backup driver <em>driving</em>, or were they <em>monitoring</em> while the car was driving? Does the burden of responsibility fall on the monitor or the driver? When a student driver <a href="https://abcnews.go.com/US/teen-taking-drivers-exam-crashes-test-office/story?id=53998272">drove</a> into a building during their driver’s license exam, actually injuring the person administering the test (the “monitor” in this case), no files were charged. This illustrates a crucial, albeit subtle, difference between an algorithm “driving” and a human “driving”. Namely, with driving comes some legal responsibility which must be attributable to the driver. If that legal responsibility is a faculty which cannot be attainable by an algorithmic entity, then Proposition A does not hold, and the word is not appropriate.<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> Since this phenomenon only revealed itself post hoc, we are best to caveat Proposition A:</p>
+<blockquote class="blockquote">
+<p><strong>Proposition B</strong>: A term passing Proposition A may be rendered not appropriate if the algorithm cannot maintain the appropriate legal responsibility assigned to that term.</p>
+</blockquote>
+</section>
+<section id="looking" class="level2">
+<h2 class="anchored" data-anchor-id="looking">looking</h2>
+<p>Of course, until now, I have implicitly asked the reader to take Proposition A at face value, similarly accepting Proposition B as a relatively “simple fix” to one particular issue with the former. On the contrary, what it means for a faculty to be attainable is an extremely difficult question. For example, what do we require for some entity to be able to “look”? First, we may think the word implies some sort of visual processing, or pattern recognition, but then it is easy to associate the word with interpreting, or even <a href="https://www.nature.com/articles/d41586-021-00868-5">evaluating</a> visual cues. In this way the string of faculties required of a word might never end,<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a> but some will seem more crucial than others, e.g., to look, we could categorize pattern recognition as more crucial (or more common) than emotional evaluation of images. In this essay, we concern ourselves with the more crucial faculties, and for this section, we will investigate the intersection between these faculties and their potentially associated algorithmic activity.</p>
+<p>I recently had a student who built an artificial “neural network” model,<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a> and for her purposes it performed quite well. The idea was to classify animals in field photographs of the African savannah; so, given some field image, determine what animal is featured. Most of these images were blurry, or of low quality, so it took a human a slight bit of work to discern what animal was in the image. As it turns out, the model was able to correctly classify the vast majority of animals in these blurry images, but interestingly, it suffered greatly when it came to classifying animals in images of much clearer, high quality. In other words, the algorithm outperformed humans on a difficult task, but grossly underperformed humans on a much “simpler” version of the same task.<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a> Just this fact alone should be enough for us to question the amount to which we can imbue algorithmic activity with a human likeness. Of course, there are many ways the student could have improved her model to generalize to higher fidelity images, but this is not the point of the matter. In short, human-like behavior in a non-human entity (e.g., identifying blurry images using “neural” connections) might only be an illusion, obfuscating strictly non-human behavior (e.g., whatever makes clear images harder to classify than blurry images).</p>
+<p>So, what is there to be done? As much as we may see ourselves in the behavior of these algorithmic creations, it may be that our linguistic projection is actually misguided. Try as we might to design algorithmic processes such that we can describe them using human-based terms, our description may simply be a stranger to some latent, unintended phenomenon lurking in the algorithm, which could cause (yet unseen) non-human consequences, rendering our description bunk. <a href="https://export.arxiv.org/pdf/2004.07780">Shortcut learning</a> is one such cause, likely responsible for the events described above, where deep learning (i.e., neural network) models will be overly sensitive<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a> to particular patterns in “training” data (roughly speaking, “experience”), which are not applicable in general —&nbsp;an especially non-human consequence in that humans are masters of generalization. So, as much as we may like to use terms like “neural”, or “look”, or “find”, etc., to describe human-like behaviors, phenomena like shortcut learning (whether we are aware of them or not) may eventually cause us to question the appropriateness of our word choice.</p>
+<p>As I investigate this question of anthropomorphisation of algorithms, I can’t help but wonder if it is possible to create a one-to-one mapping from the simplest most atomic mathematical process (e.g., addition or some set of numbers) to the simplest most atomic human behavior. Maybe this way, we could walk our way back from this proposed map to a perfect equivalence between human and algorithmic terminology. But, in thinking this way, I find myself in a black hole of uncertainty. <em>What is the simplest most atomic human behavior?</em> If Heidegger’s Uncertainty Principle applies here at all (which, I believe it does), there must be no hope at all of such a map. If smaller and smaller measurements imply larger and larger errors, then we can never know what exactly is the simplest atomic human behavior, and the map is impossible to create. We can use probability, randomness, bootstrapping, parametric equations, etc., to <em>approximate</em> human attribute and action, but it can be only just. So too, our anthropomorphisation of any algorithm may only ever be an approximation.</p>
+</section>
+</section>
+<section id="whats-the-harm-in-it" class="level1">
+<h1>what’s the harm in it?</h1>
+<p>Here’s the thing. It is not at all apparent that this anthropomorphisation may cause any immediate (or even future) detriment to the well-being of humans. We can say things like “my computer is thinking”, or “my personalized recommendation algorithm understands me”, and apparently no harm is done. We then go about our days, the sun rises and sets, the moon waxes and wanes, and life goes on. So, what’s the big deal? Well, I hope it is not a surprise that in recent history, it was a common practice for some groups of people to <em>talk</em> colloquially about some other groups of people as if they were non-human. This talk, and the words that were used, greatly affected the way the former group <em>thought</em> of the latter, and we all know the rest of that story.</p>
+<p>To be clear, slavery is a very different phenomenon from the question I ask in this essay. Indeed, it is almost the opposite. But, the image might help inform the sorts of questions we’d need to ask in a world where it is natural to think of and treat non-humans as, essentially, humans. So, imagine they become one and the same. What sorts of societal or legal consequences may ensue from this conflation? Is this a world we want to be a part of? Maybe so, and maybe the alternative is actually less desireable (as slavery was many years go), but at least we should be cognizant this future is a likely consequence of using (or not using) anthropomorphizing language to describe non-human entities. If we talk about algorithms like they are humans, we will think of them as humans, and any difference between the two will be obscured and eventually disappear. If that is the world we want to live in, we should prepare our society, our legal system, and our minds to accommodate this reality. If it is not the world we want to live in, I believe we are still held to this same charge. In short, we write our own future with the language we use, so we are best to speak with intention and not ignorance.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>conclusion</h1>
+<p>Humans have a natural proclivity to assign human-like terms to non-human (e.g., algorithmic) activity. The tendency presents as an immediate reflex, and becomes an unconscious inclination which often goes completely unchecked. The unsupervised nature of our linguistic choice here is reasonably concerning. With Propositions A and B, above, we illustrate a rough initial model which can be used to keep our word choice in check; something which might prevent dangerous and legally knotted misattribution.</p>
+<p>Make no mistake, this is a notoriously hard problem, and we need to be comfortable with the possibility that we may never have a great answer. The difference between what we see in algorithmic behavior and what we know about human behavior is not comprehensive, but it is the best tool we have to distinguish between the two. We may never be able to draw a perfect map between a human action and its algorithmic counterpart, but we can at least be cognizant of the issue and make a concerted effort to be careful with our words. The framework briefly discussed in this paper could be a start.</p>
+<p>To be fair, it is likely that most AI practitioners will confidently attest that algorithms do not actually do the actions their anthropomorphized descriptions purport, and that there is a need for some separation between the two. However, there should be special weight placed on the fact that the general public will perceive the nature of the field of AI based on the words those experts use. Recursively, these words may, in turn, shape or even distort the whole field of AI due to this fact.</p>
+<p>Maybe this thing is just too hard — everything we do is from our own flawed perspective. Maybe there’s nothing we can do. Our common language is already cemented, and our future is already written. But, we cannot forget that we are still far from understanding the true nature of algorithmic behavior. In <em>Mind Children: The Future of Robot and Human Intelligence</em>, I think Hans Moravec says it best:</p>
+<blockquote class="blockquote">
+<p>“Encoded in the large, highly evolved sensory and motor portions of the human brain is a billion years of experience about the nature of the world and how to survive in it. The deliberate process we call reasoning is, I believe, the thinnest veneer of human thought, effective only because it is supported by this much older and much more powerful, though usually unconscious, sensorimotor knowledge. We are all prodigious Olympians in perceptual and motor areas, so good that we make the difficult look easy.”</p>
+</blockquote>
+<p>We must tread lightly on this path we pave. We don’t know what’s ahead, and there’s no going back.</p>
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>The question of <em>whether</em> an algorithm is “thinking” or making a “recommendation” is not only a notoriously fraught topic, addressed many times already, but it is notably different from the question I aim to address later in this essay. Namely, asking whether an algorithm is thinking is different from asking whether we should say that it is. In other words, analyzing the action is different from analyzing the word. It will suffice for my purposes to present the questions themselves as examples of our usage of the word(s).<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>It is not difficult to imagine a context in which an animal is considered an algorithm, or vice versa. An animal’s biology and chemistry could be interpreted as algorithmic processes which define them — quite a deterministic perspective — whereas algorithms have the apparent capacity to almost perfectly mimic animal behavior. The intuitive agreeableness of these conclusions may be the culprit in the event we reach a decision standstill, though the reality behind them is yet unclear.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>It’s worth noting I made a concerted effort to write this sentence such that it did not assign (interesting, now we are talking about words in a human-like way) human-specific words to the device; it does not <em>answer</em> a question, nor do I speak <em>to</em> it. It is also worth noting that this attempt was especially challenging. Should it be?<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>This framework is generalizable, such that when the difference between human and machine is sufficiently obscured, we can still choose our words thusly.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Even within the non-human category, we can find examples where non-algorithmic agents may have attributed to them an action like recommendation. E.g., when a seeing-eye dog guides its companion to walk in a particular direction, the use of the word “recommendation” seems relatively appropriate.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6"><p>This way of thinking could be a consequence of our inclination to think about algorithm behavior as human-like, if anything. Or, rather, their ability is typically compared to human ability. AI ethicist (and lawyer) Kate Darling at MIT Media Lab <a href="https://www.theguardian.com/technology/2021/apr/17/ai-ethicist-kate-darling-robots-can-be-our-partners">proposes</a> a more useful way to think about algorithmic behavior is as if they were animals, specifically, as if they were pets. Algorithms should be companions, not something to be feared; and, not only does this guide the way we think of algorithms now, it can guide how they are developed in the future. E.g., I’m not worried about my dog spying on me, maybe I shouldn’t worry about an algorithm doing the same.<a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7"><p>Of note, a whole field and history of semiotics is dedicated to studying the root of this question.<a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8"><p>I.e., a relatively complex and uninterpretable machine learning algorithm, which uses a series or network of mini-algorithms to assign labels to input data.<a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9"><p>This phenomenon is a consequence of the so called “Moravec Paradox” (after roboticist <a href="https://www.amazon.com/Mind-Children-Future-Robot-Intelligence/dp/0674576187">Hans Moravec</a>) which can be roughly summarized in the words of computer scientist <a href="https://www.amazon.com/Society-Mind-Marvin-Minsky/dp/0671657135">Marvin Minsky</a>: “easy things are hard”, <a href="https://doi.org/10.1017/S0140525X00005914">and</a> “in general, we’re least aware of what our minds do best”.<a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10"><p>The use of this word is interesting here. I’m referring to an algorithmic entity as <em>sensitive</em>, but it seems not to be unsettling. E.g., we can speak of a metal detector as being highly <em>sensitive</em> to particular metal, or a sonar/radar as being <em>sensitive</em> to particular inputs. Even so, this word can simultaneously carry a comparatively poignant meaning in the human sense, in such a way that it is rendered inappropriate under Proposition A. So, is it really inappropriate? Maybe in time, some words, if used enough in non-human contexts, will attain some sort of human-and-algorithm connotations. Nonetheless, until this point is reached for a given term, Proposition A seems to be an innocuous policy at the very least.<a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+        for (let i=0; i<annoteTargets.length; i++) {
+          const annoteTarget = annoteTargets[i];
+          const targetCell = annoteTarget.getAttribute("data-target-cell");
+          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+          const contentFn = () => {
+            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            if (content) {
+              const tipContent = content.cloneNode(true);
+              tipContent.classList.add("code-annotation-tip-content");
+              return tipContent.outerHTML;
+            }
+          }
+          const config = {
+            allowHTML: true,
+            content: contentFn,
+            onShow: (instance) => {
+              selectCodeLines(instance.reference);
+              instance.reference.classList.add('code-annotation-active');
+              window.tippy.hideAll();
+            },
+            onHide: (instance) => {
+              unselectCodeLines();
+              instance.reference.classList.remove('code-annotation-active');
+            },
+            maxWidth: 300,
+            delay: [50, 0],
+            duration: [200, 0],
+            offset: [5, 10],
+            arrow: true,
+            appendTo: function(el) {
+              return el.parentElement.parentElement.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'quarto',
+            placement: 'right',
+            popperOptions: {
+              modifiers: [
+              {
+                name: 'flip',
+                options: {
+                  flipVariations: false, // true by default
+                  allowedAutoPlacements: ['right'],
+                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                },
+              },
+              {
+                name: 'preventOverflow',
+                options: {
+                  mainAxis: false,
+                  altAxis: false
+                }
+              }
+              ]        
+            }      
+          };
+          window.tippy(annoteTarget, config); 
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

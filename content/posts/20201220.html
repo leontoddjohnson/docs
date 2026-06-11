@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2020-12-20">
+
+<title>reinforcement learning and ethics – ltj</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d6c07edd3d23bd2380ab709eca864cd.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-a405c485f01f3dc5ee0e34b642a39a9f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">ltj</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/teaching.html"> 
+<span class="menu-text">teaching</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/coding.html"> 
+<span class="menu-text">coding</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../content/posts.html"> 
+<span class="menu-text">journal</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">on this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">introduction</a></li>
+  <li><a href="#the-framework" id="toc-the-framework" class="nav-link" data-scroll-target="#the-framework">the framework</a></li>
+  <li><a href="#anthropomorphisation" id="toc-anthropomorphisation" class="nav-link" data-scroll-target="#anthropomorphisation">anthropomorphisation</a></li>
+  <li><a href="#premises-and-probabilities" id="toc-premises-and-probabilities" class="nav-link" data-scroll-target="#premises-and-probabilities">premises and probabilities</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion">conclusion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">reinforcement learning and ethics</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">AI</div>
+    <div class="quarto-category">music</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 20, 2020</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="introduction" class="level1">
+<h1>introduction</h1>
+<p>In the short film <em>Perfectly Natural</em> <span class="citation" data-cites="alonsoberbel2018perfectly">(<a href="#ref-alonsoberbel2018perfectly" role="doc-biblioref">Alonso-Berbel 2018</a>)</span>, we see a young couple, their new baby, and a simulated reality where the baby interacts with her artificially programmed parents. Over the course of this film’s fourteen minutes, we see a familiar thread of theoretical interactions between humans and their artificially intelligent counterparts. First, there is an apparent excitement from experiencing something new and fantastic, then a series of routine correspondence, and finally a hint of mortal obsoletion. Now, if we replace the human parents in this film with humans in the real world, and the simulated reality with colloquial “artificial intelligence”, these three interactions are not a far cry from what we have observed since the idea of AI was born. That is, the human creates some thing new and fantastic, exploits the utility of said thing via regular correspondence (or use), and is potentially overtaken by the same. What does this say about our place in the evolution of “thinking machines,” and what are some ethical concerns therein?</p>
+<p>A few years ago, David Abel, et al, at Brown University wrote a paper on Reinforcement Learning as a Framework for Ethical Decision Making <span class="citation" data-cites="abel2016rlethical">(<a href="#ref-abel2016rlethical" role="doc-biblioref">Abel et al. 2016</a>)</span>. The purpose of this paper was to investigate the use of the Reinforcement Learning framework, namely a cleverly specified Partially Observable Markov Decision Processes, as an algorithmic solution to the problem of designing artificial ethical agents. More to the point, seamlessly translating ethics into some kind of algorithmic computable format for an artificial agent to embody is all but an impossible problem. To be fair, it is apparent to the reader that the authors do not intend to diminish the complexity of this problem to the confines of their solution (e.g., they provide a list of issues and possible improvements to their proposal at the end of the paper), but I believe there are at least two additional considerations that should be made, which I will address here: anthropomorphisation of artificial entities, and the potentially problematic probabilistic interpretation of ethics. I will also provide a brief overview of the framework itself.</p>
+</section>
+<section id="the-framework" class="level1">
+<h1>the framework</h1>
+<p>In Reinforcement Learning as a Framework for Ethical Decision Making (RLE), Abel et al use Reinforcement Learning (RL) as a tool to place ethical decision making into an algorithmic context. The framework is based on the Partially Observable Markov Decision Process (POMDP), whereby the world (i.e., an environment) is defined in terms of possible discrete states it can take on (e.g., it is raining in Nairobi and the time is 14:31:05.003). An agent navigates (interacts with) this environment by taking actions based on some policy which maximizes an overall reward function. At any given time, the actual state of the environment is unbeknownst to the agent, but it can infer a best policy based on its history of observations and actions.<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<p>The authors inject ethics into this framework by interpreting ethical truths as some part of the hidden state (e.g., it is raining in Nairobi and killing is bad could be a state), and insist that among the actions an agent may take, we must include the ability to ask a companion.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> The idea, then, is that an agent can learn to act ethically through a series of observing the environment, estimating the environment’s true underlying state based on historical observations and actions, and taking an action (often asking a companion).</p>
+<p>It should be noted that all aspects of this framework are probabilistic. We first assume some initial state (which has some prior probability associated with it), and then for every other state (of which there can be infinitely many) there is a probability that the environment will transition to that state, and so on recursively. Then, given some action and the resulting state, there is a probability associated with each possible observation. Finally, the overall future reward is contingent on the chosen policy and estimated belief of the hidden underlying state. Small state spaces like the ones illustrated in RLE are fairly easily modelled, but solving the general (infinite-horizon) POMDP has been shown to be intractable if not uncomputable <span class="citation" data-cites="madani1999computability">(<a href="#ref-madani1999computability" role="doc-biblioref">Madani 1999</a>)</span>.</p>
+<p>In the paper, the authors illustrate examples of how to apply this framework using two ethical dilemma thought experiments: “Cake or Death”, where the agent needs to ascertain whether to bake a cake for someone or kill them, and “The Burning Room”, whether they need to determine the best way to retrieve a valuable item from a potentially burning room, taking into account the difference in value between the item and themself. The authors make it clear that these are only toy ethical dilemmas, and just as they would be used in a philosophical setting, they do not describe how an agent should behave, but they shed light on how we can evaluate the ethical system itself.</p>
+</section>
+<section id="anthropomorphisation" class="level1">
+<h1>anthropomorphisation</h1>
+<p>Throughout the course of my reading RLE, I find myself — and the authors for that matter — using anthropomorphising terms to describe a mechanical agent, like when the agent learns, or is unsure, or even when it asks a question.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> In the documentation for the R (programming language) implementation for solving the finite POMDP, the authors even refer to an RL agent as “she” <span class="citation" data-cites="kamalzadeh2019pomdp">(<a href="#ref-kamalzadeh2019pomdp" role="doc-biblioref">Kamalzadeh and Hahsler 2019</a>)</span>. We often project human-like attributes onto non-human entities, like when we give our car a name, or comment on the “happy little trees” on a canvas. When we do so, similarities between us and them seem to fly out of thin air, but at the same time a mountain of differences are lurking in the fog: we can talk about them as if they are, but cars and trees are not humans. Anthropomorphisation shapes the way we find similarities between us and the algorithms we create, but it also causes inconsistencies in our reasoning when they exhibit non-human behaviors.</p>
+<p>While the authors do not make it explicit in the paper, there is an uncanny similarity between the way humans view ethics and the way ethics is modeled for the RL agent. That is, the artificial agent is painted as an entity which has choices, acts on observations, and in particular, is constantly attempting to discover some hidden underlying ethical truth. In the previous section, we discussed how the “state of the world” is completely unknown to the agent within this framework, and that it can only use previous observations and actions as a guide to understand and interact with its environment. As humans, we have created a whole field of philosophical inquiry in an effort to understand what is ethical. That is not to say that any artificial agent described in the paper has the capacity to create and theorize within sub-fields of philosophy, but only that we too only have our observations as tools to understand the hidden state beyond the veil.</p>
+<p>It is not uncommon for the agent to ask “what is moral” (as the authors put it) in a situation to understand the most “ethical” policy. I recognize that humans often do something similar when we ask our religious teacher for guidance, or when we heed the advice of our parents as children.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> But, as the question “what is moral” leaves no room for doubt, and as the underlying ethical truth is made concrete, there is an element here reminiscent of Kantian categorical human imperative. The difference is instead of being based on human attributes, the agent’s ethical policy is based on human (or companion) direction. Suppose a nefarious actor directs the agent toward malicious, humanly unethical behavior. In this case, the understanding of “what is right” or “what is moral” is tainted from our perspective, but it is only new from the perspective of the agent. Therefore, in the formulation of this framework, there is an element of servitude: the ethical system of the machine must match that of its companion counterparts.</p>
+<p>Perhaps there is a underlying latent statement being made in this conversation on artificial agents and automatons: because we cannot help but use anthropomorphising terms to describe their nature, we are either incapable of conceiving of a totally new kind of intelligence with a new system of ethics, or it is simply uninteresting to us. That is, maybe we are only interested in creating human-like intelligence, sharing our system of ethics. And, if this is the case, we should concern ourselves with whether any artificial agent is acting in conflict with what we see as ethical and fair; one could further evaluate the RLE proposal from this perspective.</p>
+</section>
+<section id="premises-and-probabilities" class="level1">
+<h1>premises and probabilities</h1>
+<p>To recapitulate the purpose of RLE, we are attempting to use the RL framework, namely POMDPs, to model a process by which some automaton could learn an ethical system. In the previous section, we discussed reasons why it is safest to assume this ethical system is in fact our own. This framework is inherently probabilistic, and when we model something probabilistically, we are by definition accepting some level of uncertainty in calculation and bias in data. In the case of RLE, the calculations involve state estimations, actions taken, reward expectations, and observation likelihoods, whereas the data stems primarily from observations of the environment. Now, suppose we describe an RL agent’s activity as a mixture of exploring its environment (training) while also exploiting it (rewarding), then how do we reconcile the ethical implications of the way this system would progress?</p>
+<p>First, during the exploration process, the agent must build a representative sample of potential observations by taking actions with incrementally more information about its environment. So, within this framework where states (i.e., ethical truths) are estimated using historical observations, the agent must partake in various forms of action to get a robust, diverse data set. In other words, to take ethical actions in the future, the agent must take unethical actions in the near term. Depending on the setting we place this agent, the risks here could be very low. But, in some cases, say those related to medicine or war, the risks could be considerably high. By design, the agent’s view of the true ethical state is never fully lucid, so even after having built a sufficient history, there is still a fair amount of uncertainty, especially in these high risk situations. Always, the action the agent takes is based purely on random selection from some probability distribution.</p>
+<p>Is this in conflict with ethical decision making? Rather, is there an aspect of this explicitly stochastic process which is at odds with the human ethical system? Even though the agent is led to “ask a companion”, whom we will assume is altruistic, and rewards are so defined that ethical decisions yield more reward, if the reward has an infinite-horizon (as is the case in RLE), there is an element of making decisions now that will yield higher rewards in the future. Just as an automated chess player may sacrifice its queen mid-way through the game as part of its successful strategy to win, this agent may make an unethical choice in the near term to yield a larger reward in the future. In this way, there is an inherent consequentialist attitude that reigns over any deontologist “responsibility.”</p>
+<p>Secondly, an agent in this framework exploits the environment by taking actions that yield favorable observations, and thereby non-negative rewards. In other words, the agent is taking actions based on prior information about what that action might do to the environment. This sounds like a model of human behavior, but the agent is not a human, and a human does not have memoried access to everything it has ever observed, but the agent does. If an aspect of this environment is human activity, it could be argued that the agent is affecting human activity, and potentially free will. We could draw a parallel here with advertisements on social media based on our search and click history. I might ask, “am I clicking on this item because I am and have been sincerely interested, or am I clicking because there is something about me which the recommending agent can exploit to gain a reward through my engagement?” Of course, the answer is not always clear, but en masse (as is evidenced by the recent The Social Dilemma Documentary) this kind of thing can have dangerous implications.</p>
+</section>
+<section id="conclusion" class="level1">
+<h1>conclusion</h1>
+<p>The modus operandi of any RL agent is to maximize some numerical reward value, and RLE proposes a way we can use this model to design an ethical agent. Above, we show that unless we take a strictly utilitarian view of intention, this framework may be in conﬂict with the natural mechanisms by which humans treat ethical goals. Not only that, but it may be foolish to rely solely on probabilistic processes in ethical decision making. We also discussed ways in which our design of any automated agent will be strongly affected by the language we use to describe it. In a sense, for as long as we lack words to analogize the nature of non-human entities with our own, artificial agents are essentially bound to serve, which has implications for their agency we cannot ignore. Inasmuch as this is not an easy problem to solve, I do believe that research efforts like RLE are a step in the right direction to the development of artificial intelligence, whatever that may become.</p>
+
+
+
+</section>
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-abel2016rlethical" class="csl-entry" role="listitem">
+Abel, David, James MacGlashan, and Michael L. Littman. 2016. <span>“Reinforcement Learning as a Framework for Ethical Decision Making.”</span> <em>AAAI Workshop on AI, Ethics, and Society</em>.
+</div>
+<div id="ref-alonsoberbel2018perfectly" class="csl-entry" role="listitem">
+Alonso-Berbel, Victor. 2018. <em>Perfectly Natural</em>. Film; DUST.
+</div>
+<div id="ref-kamalzadeh2019pomdp" class="csl-entry" role="listitem">
+Kamalzadeh, Hamed, and Michael Hahsler. 2019. <em>POMDP: Introduction to Partially Observable Markov Decision Processes</em>. <a href="https://cran.r-project.org/web/packages/pomdp/vignettes/POMDP.html#defining-a-pomdp-problem" class="uri">Https://cran.r-project.org/web/packages/pomdp/vignettes/POMDP.html#defining-a-pomdp-problem</a>.
+</div>
+<div id="ref-madani1999computability" class="csl-entry" role="listitem">
+Madani, Omid. 1999. <em>On the Computability of Infinite-Horizon Partially Observable Markov Decision Processes</em>.
+</div>
+</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>Abel pg 6. Observations and actions yield further actions via a Bayesian update process where new observations inform a “belief” of the environment’s true state. This is the difference between the POMDP and the canonical MDP, where actions depend on full knowledge of the actual state of the environment.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Abel pg 5. In the paper, it is not made explicit exactly what “companion” means. This could be another agent, an honest and ethical human, or some kind of nefarious actor.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>RLE, pgs 4, 5<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Arguably, this is where our less deterministic “gut feeling” originates. In The Eden Project, Jungian psychologist James Hollis, claims our understanding of the world is shaped quite explicitly at an early age.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        const annoteTargets = window.document.querySelectorAll('.code-annotation-anchor');
+        for (let i=0; i<annoteTargets.length; i++) {
+          const annoteTarget = annoteTargets[i];
+          const targetCell = annoteTarget.getAttribute("data-target-cell");
+          const targetAnnotation = annoteTarget.getAttribute("data-target-annotation");
+          const contentFn = () => {
+            const content = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+            if (content) {
+              const tipContent = content.cloneNode(true);
+              tipContent.classList.add("code-annotation-tip-content");
+              return tipContent.outerHTML;
+            }
+          }
+          const config = {
+            allowHTML: true,
+            content: contentFn,
+            onShow: (instance) => {
+              selectCodeLines(instance.reference);
+              instance.reference.classList.add('code-annotation-active');
+              window.tippy.hideAll();
+            },
+            onHide: (instance) => {
+              unselectCodeLines();
+              instance.reference.classList.remove('code-annotation-active');
+            },
+            maxWidth: 300,
+            delay: [50, 0],
+            duration: [200, 0],
+            offset: [5, 10],
+            arrow: true,
+            appendTo: function(el) {
+              return el.parentElement.parentElement.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'quarto',
+            placement: 'right',
+            popperOptions: {
+              modifiers: [
+              {
+                name: 'flip',
+                options: {
+                  flipVariations: false, // true by default
+                  allowedAutoPlacements: ['right'],
+                  fallbackPlacements: ['right', 'top', 'top-start', 'top-end', 'bottom', 'bottom-start', 'bottom-end', 'left'],
+                },
+              },
+              {
+                name: 'preventOverflow',
+                options: {
+                  mainAxis: false,
+                  altAxis: false
+                }
+              }
+              ]        
+            }      
+          };
+          window.tippy(annoteTarget, config); 
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
