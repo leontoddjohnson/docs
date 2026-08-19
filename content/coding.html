@@ -216,6 +216,8 @@ ul.task-list li input[type="checkbox"] {
 <li>swons: an extension to @tehn’s <a href="https://monome.org/docs/iii/library/snows/">snows</a> (for <a href="https://monome.org/docs/iii/">iii</a>)</li>
 <li>tutti: an extension to @infinitedigits’s <a href="https://llllllll.co/t/mx-samples/41400">mx.samples</a> to play multiple instruments</li>
 </ul>
+<hr>
+<p>I visualize inst <a href="https://observablehq.com/@123d">123d</a> on ObservableHQ.</p>
 
 
 
@@ -293,7 +295,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/leontoddjohnson\.github\.io\/docs\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -241,7 +241,7 @@ ul.task-list li input[type="checkbox"] {
 <li>flipped (or at least semi-flipped) classroom</li>
 <li>ungrading (“grading” becomes “feedback”)</li>
 </ul>
-<p>For more on these, please see the methods section (in the menu to the left) as well as my <a href="../philosophy">teaching philosophy</a>.</p>
+<p>For more on these, please see the methods section (in the menu to the left) as well as my <a href="../philosophy.html">teaching philosophy</a>.</p>
 <div class="callout callout-style-default callout-warning no-icon callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -332,7 +332,7 @@ Warning
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/leontoddjohnson\.github\.io\/docs\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

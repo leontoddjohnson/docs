@@ -339,14 +339,10 @@ div.csl-indent {
 </thead>
 <tbody>
 <tr class="odd">
-<td><a href="https://go.playposit.com/">PlayPosit</a></td>
-<td>Host lecture videos, but also to allow for in-lecture checks for understanding. I use these checks to guide our class meeting review sessions.</td>
-</tr>
-<tr class="even">
 <td><a href="https://hackmd.io/">HackMD</a></td>
 <td>Students use this to learn how to share their mathematical explanations using LaTeX. It also gives them a great introduction to Markdown syntax, which they’ll be using a lot in the future. Lastly, it has a nice commenting feature which makes feedback easy for TAs and I.</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td><a href="https://colab.research.google.com/">Google Colab</a></td>
 <td>I use Colab to host Python code that implements the weekly content into something practical. There are usually visualizations students can use to see what’s going on.</td>
 </tr>
@@ -441,7 +437,7 @@ Mazur, Eric. 1997. <em>Peer Instruction: A User’s Manual</em>. Prentice Hall.
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/leontoddjohnson\.github\.io\/docs\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
