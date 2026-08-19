@@ -1,3 +1,6 @@
+# PREVIEW: quarto preview
+# RENDER: quarto render
+
 project:
   type: website
 

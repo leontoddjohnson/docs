@@ -386,6 +386,7 @@ The first **sample** display is the **track pool** display. On the right side is
 
 - **K2** on this page will enter the file selection, where you can pick a folder to load into the current bank for the focussed track.
   - After a folder is loaded, the folder name will show up at the bottom of this page (specifically for the selected bank).
+  - **Loading a new folder into a bank will overwrite all previously loaded samples.**
 - The order of the audio files on this page correspond to the order of the `sample`s in the `track_pool` (and `track_pool_cue`). To ensure a particular order, make sure to select (or deselect) samples on the grid accordingly.
 
 ![track pool 2](movements/screen_2.png){width=50%}
