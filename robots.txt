@@ -1,1 +1,1 @@
-Sitemap: https://leontoddjohnson.github.io/docs/sitemap.xml
+Sitemap: https://docs.leontoddjohnson.com/sitemap.xml
