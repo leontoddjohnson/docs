@@ -1,5 +1,6 @@
 # PREVIEW: quarto preview
 # RENDER: quarto render
+# PUBLISH: quarto publish
 
 project:
   type: website
