@@ -85,11 +85,13 @@ transport | the mechanism moving a sequence from step to step
 
 The **sample** functionality is meant for loading, playing, and sequencing audio files from a `bank`. There are 4 banks of up to 32 possible samples each, and there are 7 sample tracks with independent clocks. The **sample** functionality in this script uses an adaptation of the [Timber](https://github.com/markwheeler/timber/tree/master) engine.
 
-- Each track has a `track_pool` of samples that the sequencer will rotate through. You can adjust *how* (forward, backward, or random) with the `play_order` parameter in the **PARAMS** menu.
+- Each track can have a `track_pool` of samples that the sequencer will rotate through. You can adjust *how* with the `play_order` parameter[^fn:playorder] in the **PARAMS** menu.
 - Once a sample is assigned to a `track_pool`, it cannot be assigned to any other track. So, you cannot have a sample "shared" between tracks.
 - A `track_pool` can only contain samples from *one* bank. That said, each track can have a separate `track_pool_cue` for each bank, and any of these can replace the `track_pool` on the fly using the grid interface (see the [grid](#grid) section below, as well as the [ui](#ui) section).
 - [According to the Timber developer](https://llllllll.co/t/timber/21407), Timber is intended to play up to 7 voices at a time; this is why the **sample** functionality is limited to seven tracks.
 - When playing a sequence, movements will stop playing the "current" step before starting to play the next step.
+
+[^fn:playorder]: See the Sample Sequence section below for more on this.
 
 ::: {.callout-note}
 If an audio file is *over* 5 seconds stereo or over 10 seconds mono (at 48kHz), then Timber will stream it. Otherwise, shorter files will be loaded into the Timber buffer. Shorter audio files are more versatile in Timber, as streaming samples cannot be played backward, and they do not have the `Infinite Loop` option.
@@ -223,6 +225,10 @@ The **sample seq** page is an interface for the transports for the 7 **sample** 
 #### track rows
 
 - The first 7 rows correspond to the 7 sample `track`s. When a transport is playing, movements will cycle through the samples loaded in the `track_pool` as long as a `step` is active.
+- You can adjust *how* the transport cycles through the pool with the `play_order` parameter in the **PARAMS** menu.
+  - The options here are "forward", "backward", "random", or "fixed".
+  - With "forward" and "backward", the first active step of a pattern will always be the first or last sample loaded in a pool, respectively.
+  - With "fixed", the sample pool cycles across grid pads in the track's row, and remains locked. So, for a track pool containing 3 samples, the first five pads in the track's row would *remain* `pool_1 | pool_2 | pool_3 | pool_1 | pool_2`, and so on.
 - There are 4 brightness levels here:
   1. The current `step` will be the brightest in a row.
   2. Slightly less bright are inactive/"loaded" steps. (Of course, unlit pads are "skipped")
