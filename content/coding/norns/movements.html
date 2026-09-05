@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -12,10 +12,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -40,10 +43,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-1d6c07edd3d23bd2380ab709eca864cd.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-dark-8ce2ddb9297137fa64f04d9ebcea97da.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-a405c485f01f3dc5ee0e34b642a39a9f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
+<link href="../../../site_libs/bootstrap/bootstrap-d6a59259e5510a1e9e0b7a3a05bfc726.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -434,7 +437,7 @@ window.Quarto = {
 <h2 class="anchored" data-anchor-id="sample-1">sample</h2>
 <p>The <strong>sample</strong> functionality is meant for loading, playing, and sequencing audio files from a <code>bank</code>. There are 4 banks of up to 32 possible samples each, and there are 7 sample tracks with independent clocks. The <strong>sample</strong> functionality in this script uses an adaptation of the <a href="https://github.com/markwheeler/timber/tree/master">Timber</a> engine.</p>
 <ul>
-<li>Each track has a <code>track_pool</code> of samples that the sequencer will rotate through. You can adjust <em>how</em> (forward, backward, or random) with the <code>play_order</code> parameter in the <strong>PARAMS</strong> menu.</li>
+<li>Each track can have a <code>track_pool</code> of samples that the sequencer will rotate through. You can adjust <em>how</em> with the <code>play_order</code> parameter<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> in the <strong>PARAMS</strong> menu.</li>
 <li>Once a sample is assigned to a <code>track_pool</code>, it cannot be assigned to any other track. So, you cannot have a sample “shared” between tracks.</li>
 <li>A <code>track_pool</code> can only contain samples from <em>one</em> bank. That said, each track can have a separate <code>track_pool_cue</code> for each bank, and any of these can replace the <code>track_pool</code> on the fly using the grid interface (see the <a href="#grid">grid</a> section below, as well as the <a href="#ui">ui</a> section).</li>
 <li><a href="https://llllllll.co/t/timber/21407">According to the Timber developer</a>, Timber is intended to play up to 7 voices at a time; this is why the <strong>sample</strong> functionality is limited to seven tracks.</li>
@@ -469,7 +472,7 @@ Warning
 </section>
 <section id="tape-1" class="level2">
 <h2 class="anchored" data-anchor-id="tape-1">tape</h2>
-<p>The <strong>tape</strong> functionality is meant for playing, recording, and sequencing slices from a <code>partition</code> of the stereo <a href="https://monome.org/docs/norns/softcut/">softcut</a> buffer(s). There are <em>four</em> such partitions: each one is 80 seconds long<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, and each partition is divided into 32 slices. By default, these slices are evenly distributed, so they start at 2.5 seconds long, but the user can adjust the start/stop positions for each slice. There are 4 tracks, each one with access to the four partitions.</p>
+<p>The <strong>tape</strong> functionality is meant for playing, recording, and sequencing slices from a <code>partition</code> of the stereo <a href="https://monome.org/docs/norns/softcut/">softcut</a> buffer(s). There are <em>four</em> such partitions: each one is 80 seconds long<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>, and each partition is divided into 32 slices. By default, these slices are evenly distributed, so they start at 2.5 seconds long, but the user can adjust the start/stop positions for each slice. There are 4 tracks, each one with access to the four partitions.</p>
 <ul>
 <li>The <code>track_pool</code> and <code>track_pool_cue</code> for <strong>tape</strong> behave the same as they do for the <strong>sample</strong> functionality, above. Just swap out the word “sample” with “slice”, and “bank” with “partition”.</li>
 <li>Each <code>partition</code> consists of two <code>buffer</code>s, which can be thought of as either a <em>single</em> stereo buffer or <em>two</em> separate mono buffers to swap between. You can assign tracks to record/play as mono from either buffer, or as stereo from both.</li>
@@ -647,6 +650,12 @@ Note
 <h4 class="anchored" data-anchor-id="track-rows">track rows</h4>
 <ul>
 <li>The first 7 rows correspond to the 7 sample <code>track</code>s. When a transport is playing, movements will cycle through the samples loaded in the <code>track_pool</code> as long as a <code>step</code> is active.</li>
+<li>You can adjust <em>how</em> the transport cycles through the pool with the <code>play_order</code> parameter in the <strong>PARAMS</strong> menu.
+<ul>
+<li>The options here are “forward”, “backward”, “random”, or “fixed”.</li>
+<li>With “forward” and “backward”, the first active step of a pattern will always be the first or last sample loaded in a pool, respectively.</li>
+<li>With “fixed”, the sample pool cycles across grid pads in the track’s row, and remains locked. So, for a track pool containing 3 samples, the first five pads in the track’s row would <em>remain</em> <code>pool_1 | pool_2 | pool_3 | pool_1 | pool_2</code>, and so on.</li>
+</ul></li>
 <li>There are 4 brightness levels here:
 <ol type="1">
 <li>The current <code>step</code> will be the brightest in a row.</li>
@@ -1014,7 +1023,7 @@ Note
 <ul>
 <li>The top two horizontal lines indicate the left and right buffers, respectively. In the regions where these are bright, there is audio.
 <ul>
-<li>The <code>rec_threshold</code> parameter in <strong>PARAMS</strong> sets the minimum level required for audio to be shown here.<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> E.g., increasing this parameter will make the “audio regions” seem more sparse.</li>
+<li>The <code>rec_threshold</code> parameter in <strong>PARAMS</strong> sets the minimum level required for audio to be shown here.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> E.g., increasing this parameter will make the “audio regions” seem more sparse.</li>
 <li>Adjusting <code>rec_threshold</code> will also determine which <em>grid</em> pads in the <strong>partition</strong> indicate audio.</li>
 </ul></li>
 <li>If your selected <code>slice</code> contains a region in which a file loaded into the buffer, the text at the bottom of the screen will show the name of the <em>latest</em> file loaded in that range.</li>
@@ -1054,7 +1063,7 @@ Note
 <li>If already playing/recording, either key will stop the recording/playing.</li>
 </ul></li>
 <li>On this display, <strong>E2</strong> and <strong>E3</strong> will still adjust the <code>slice</code> start and end times, respectively.</li>
-<li>If the current track is playing a slice, then either <strong>K2</strong> or <strong>K3</strong> on this page will stop the track from playing.<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></li>
+<li>If the current track is playing a slice, then either <strong>K2</strong> or <strong>K3</strong> on this page will stop the track from playing.<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
 </ul>
 </section>
 </section>
@@ -1337,7 +1346,7 @@ Note
 <li>Create a new folder to contain the renamed clips. Name it as you like.</li>
 <li>Find the <em>&lt;abletonproject&gt;/Samples/Processed/Crop</em> directory, and <strong>Copy</strong> the corresponding clips from this original <em>Crop</em> folder into your new folder (use the date/time as a guide …). Ableton needs the original files named as they are. <font color="orange">Do not edit the “Crop” folder.</font></li>
 <li>Navigate in your command line to the place where the <em>filenaming.py</em> file is stored.</li>
-<li>Run <code>python filenaming.py &lt;filepath&gt; [name_by] [filetype]</code> using the filepath in #4, where <code>name_by</code> is <code>row</code>, <code>col</code>, or <code>bank</code>. <br>E.g., <code>python filenaming.py /Users/Me/My_Stuff/cropfolder row wav</code>, where <em>row</em> and <em>wav</em> are the default (so, I could omit them here, and it would behave the same way).<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></li>
+<li>Run <code>python filenaming.py &lt;filepath&gt; [name_by] [filetype]</code> using the filepath in #4, where <code>name_by</code> is <code>row</code>, <code>col</code>, or <code>bank</code>. <br>E.g., <code>python filenaming.py /Users/Me/My_Stuff/cropfolder row wav</code>, where <em>row</em> and <em>wav</em> are the default (so, I could omit them here, and it would behave the same way).<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a></li>
 <li>You’ll be prompted to verify you want to change file names; I recommend waiting until you’re absolutely sure it’s correct :).</li>
 <li>You do not need the <em>.asd</em> files in the new folder, so you can delete them if you like.</li>
 </ol>
@@ -1365,10 +1374,11 @@ Note
 <div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>In total, the stereo softcut buffer is about 350 seconds long, and for this script, we use softcut for both the <strong>tape</strong> and the <strong>tape delay</strong> functionality. Since delay time is synced with the internal clock, the <strong>tape delay</strong> uses 6 x <strong>s</strong> seconds of the buffer, where 6 is the highest <code>clock_fraction</code> value, and <strong>s</strong> is the number of seconds per beat of the internal <strong>CLOCK/TEMPO</strong>. With a low end BPM of 12, this equates to 6 x (60 / 12) = 30 seconds, leaving the 320 seconds needed for the <strong>tape</strong> functionality.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Fast encoder turns to update the <code>rec_threshold</code> parameter may seem to cause a minor lag on the norns. This is because each delta change to the parameter requires the script to run a “check” across all 19,200 samples of the <strong>tape</strong> buffer. Nothing is wrong, the value you want in the end will update accordingly. It is recommended, though, that you only update this parameter when nothing is playing to avoid any lagging.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3"><p>Note that <strong>tape</strong> slices are not separate audio clips existing in their own right, as they are on the <strong>sample</strong> side. When a slice is played, the associated track (i.e., softcut voice) playhead is moved to that position in the buffer, and it plays. <em>To stop playing a slice is to stop playing the track altogether.</em><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4"><p>On a Mac, you can drag and drop the folder onto the terminal itself to show the filepath.<a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>See the Sample Sequence section below for more on this.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>In total, the stereo softcut buffer is about 350 seconds long, and for this script, we use softcut for both the <strong>tape</strong> and the <strong>tape delay</strong> functionality. Since delay time is synced with the internal clock, the <strong>tape delay</strong> uses 6 x <strong>s</strong> seconds of the buffer, where 6 is the highest <code>clock_fraction</code> value, and <strong>s</strong> is the number of seconds per beat of the internal <strong>CLOCK/TEMPO</strong>. With a low end BPM of 12, this equates to 6 x (60 / 12) = 30 seconds, leaving the 320 seconds needed for the <strong>tape</strong> functionality.<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Fast encoder turns to update the <code>rec_threshold</code> parameter may seem to cause a minor lag on the norns. This is because each delta change to the parameter requires the script to run a “check” across all 19,200 samples of the <strong>tape</strong> buffer. Nothing is wrong, the value you want in the end will update accordingly. It is recommended, though, that you only update this parameter when nothing is playing to avoid any lagging.<a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Note that <strong>tape</strong> slices are not separate audio clips existing in their own right, as they are on the <strong>sample</strong> side. When a slice is played, the associated track (i.e., softcut voice) playhead is moved to that position in the buffer, and it plays. <em>To stop playing a slice is to stop playing the track altogether.</em><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>On a Mac, you can drag and drop the folder onto the terminal itself to show the filepath.<a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
